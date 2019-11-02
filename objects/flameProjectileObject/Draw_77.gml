@@ -1,0 +1,2 @@
+// Wall collisions
+handleCollisionWith(wallObject);
