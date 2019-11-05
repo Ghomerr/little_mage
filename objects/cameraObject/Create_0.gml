@@ -1,5 +1,31 @@
-width = 584;
-height = 384;
+/// @description Set up camera
 
-mainCamera = camera_create_view(x, y, 512, 384, 0, self, -1, -1, width / 2, height / 2);
+follow = playerObject;
+
+// Get camera configuration
+mainCamera = view_camera[0];
+width = camera_get_view_width(mainCamera);
+height = camera_get_view_height(mainCamera);
+widthHalf = width * 0.5;
+heightHalf = height * 0.5;
+
+// Create a new camera instance
+mainCamera = camera_create_view(follow.x, follow.y, width, height, 0, self, -1, -1, widthHalf, heightHalf);
 view_camera[0] = mainCamera;
+
+/*
+// Init camera
+mainCamera = view_camera[0];
+follow = playerObject;
+
+// Camera constants
+cameraSpeed = 0.04;
+width = camera_get_view_width(mainCamera);
+height = camera_get_view_height(mainCamera);
+widthHalf = width * 0.5;
+heightHalf = height * 0.5;
+
+// Camera variables
+xTo = xstart;
+yTo = ystart;
+*/

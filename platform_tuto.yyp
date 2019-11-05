@@ -351,6 +351,14 @@
             }
         },
         {
+            "Key": "9314e2b0-29f9-47a8-a98b-5d28000f548c",
+            "Value": {
+                "id": "36cf291f-aea3-4873-94ed-936b8be4a2ee",
+                "resourcePath": "tilesets\\natureEnvTileset\\natureEnvTileset.yy",
+                "resourceType": "GMTileSet"
+            }
+        },
+        {
             "Key": "98592d44-23d1-4d7c-b496-e9e4cf3e5d1c",
             "Value": {
                 "id": "83c10863-b5e6-482c-9df5-d2a1f465aedf",
@@ -511,6 +519,14 @@
             }
         },
         {
+            "Key": "e0a83a6e-e4ad-46be-85a9-896dff4e63d8",
+            "Value": {
+                "id": "1b3cdc3c-a368-435b-b71c-c921df420682",
+                "resourcePath": "sprites\\collisionSprite\\collisionSprite.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "e3e4aebf-5032-4a56-b690-e68d7e8f25ab",
             "Value": {
                 "id": "6fc1b913-09c7-4281-a05c-fc3dfc40ba2f",
@@ -524,6 +540,14 @@
                 "id": "cc552490-990d-457e-b95a-371a3a56310f",
                 "resourcePath": "scripts\\debugPlayer\\debugPlayer.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "e9d25853-581e-453d-9d41-0d0a9a3931b1",
+            "Value": {
+                "id": "6d2c6660-4efb-420d-a103-794fdaf0aaba",
+                "resourcePath": "sprites\\natureEnvSprite\\natureEnvSprite.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
