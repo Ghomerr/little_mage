@@ -1,5 +1,5 @@
 // Flame constants
-prjSpeed = 10;
+prjSpeed = 6;
 burstObject = flameBurstObject;
 
 // Flame variables
