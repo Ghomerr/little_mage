@@ -1,28 +1,31 @@
 // User inputs
-keyLeft = keyboard_check(ord("Q")) or keyboard_check(ord("A"));
-keyRight = keyboard_check(ord("D"));
-keyJump = keyboard_check_pressed(vk_space);
-hAxis = gamepad_axis_value(0, gp_axislh);
+if (hasControl) {
+	keyLeft = keyboard_check(ord("Q")) or keyboard_check(ord("A"));
+	keyRight = keyboard_check(ord("D"));
+	keyJump = keyboard_check_pressed(vk_space);
+	hAxis = gamepad_axis_value(0, gp_axislh);
 
-// Check if keyboard is used
-if (keyLeft or keyRight or keyJump) {
-	controller = false;
-}
-// Check if gamepad is used and get gamepad direction
-if (abs(hAxis) > gpMin) {
-	keyLeft = abs(min(hAxis, 0));
-	keyRight = max(hAxis, 0);
-	controller = true;
-}
-if (gamepad_button_check_pressed(0, gp_face1)) {
-	controller = true;
-	keyJump = true;
-}
+	// Check if keyboard is used
+	if (keyLeft or keyRight or keyJump) {
+		controller = false;
+	}
+	// Check if gamepad is used and get gamepad direction
+	if (abs(hAxis) > gpMin) {
+		keyLeft = abs(min(hAxis, 0));
+		keyRight = max(hAxis, 0);
+		controller = true;
+	}
+	if (gamepad_button_check_pressed(0, gp_face1)) {
+		controller = true;
+		keyJump = true;
+	}
 
-move = keyRight - keyLeft;
-
-// DEBUG
-debugPlayer();
+	move = keyRight - keyLeft;
+} else {
+	keyLeft = 0;
+	keyRight = 0;
+	keyJump = 0;
+}
 
 initMovement();
 

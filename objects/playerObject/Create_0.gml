@@ -12,7 +12,9 @@ hsp = 0; // horizonral speed
 vsp = 0; // vertical speed
 isGrounded = false; // grounded flag
 jumpBuffer = 0; // jump buffer to handle jump before the actual jump
-flash = 0;
+flash = 0; // counter to handle player being hit
+hasControl = false; // define if player can do inputs
+move = 0; // movement orientation
 
 // Gamepad inputs
 hAxis = 0;

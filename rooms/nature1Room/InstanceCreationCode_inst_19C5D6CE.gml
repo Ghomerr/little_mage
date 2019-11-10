@@ -1,0 +1,1 @@
+target = nature2Room;
