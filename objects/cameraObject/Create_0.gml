@@ -9,6 +9,11 @@ height = camera_get_view_height(mainCamera);
 widthHalf = width * 0.5;
 heightHalf = height * 0.5;
 
+// Shake variables
+shakeLength = 0;
+shakeMagnitude = 0;
+shakeRemain = 0;
+
 // Create a new camera instance
 mainCamera = camera_create_view(follow.x, follow.y, width, height, 0, self, -1, -1, widthHalf, heightHalf);
 view_camera[0] = mainCamera;
