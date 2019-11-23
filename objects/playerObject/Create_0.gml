@@ -1,7 +1,7 @@
 // Player constants
 grv = 0.2; // gravity
-spd = 3; // running speed
-jump = 5.5; // jumping force
+spd = 2; // running speed
+jump = 4; // jumping force
 // https://twitter.com/Case_Portman/status/1183067181480890368
 jumpCooldown = 15; // number of frames before the actual jump 
 gpMin = 0.2; // minimum value for gamepad 

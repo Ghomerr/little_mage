@@ -18,7 +18,7 @@ if (playerObject.hasControl) {
 	if ((mouse_check_button(mb_left) or gamepad_button_check(0, gp_shoulderrb)) and firingDelay < 0) {
 		
 		// Screen shake
-		screenShake(2, 10);
+		//screenShake(2, 10);
 		
 		// Set firing cooldown
 		firingDelay = firingCooldown;
