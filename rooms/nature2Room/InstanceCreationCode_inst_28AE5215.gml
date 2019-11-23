@@ -1,4 +1,4 @@
 target = nature1Room;
 playerX = 960;
-playerY = 416;
+playerY = 400;
 staffAngle = 180;

@@ -119,6 +119,14 @@
             }
         },
         {
+            "Key": "2d8e1180-b0de-45fe-b79e-c7b74c1626b9",
+            "Value": {
+                "id": "e4797716-3b96-495b-865e-65625135f6ae",
+                "resourcePath": "sprites\\grassSprite\\grassSprite.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "30fe6cbe-07ff-4754-ba11-d78a30e8dd9c",
             "Value": {
                 "id": "9a8a17e2-7a2e-463c-b13f-1d60131aa733",
@@ -156,6 +164,14 @@
                 "id": "18f30312-6895-4ca8-8486-0d493e3e6c69",
                 "resourcePath": "rooms\\nature2Room\\nature2Room.yy",
                 "resourceType": "GMRoom"
+            }
+        },
+        {
+            "Key": "4134d966-29d3-4ae2-b231-95a79cc8e721",
+            "Value": {
+                "id": "1878b380-1c98-4edc-8bbb-350b5972fa87",
+                "resourcePath": "objects\\backgroundManager\\backgroundManager.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -383,6 +399,14 @@
             }
         },
         {
+            "Key": "86da675e-46cf-446a-ae5d-48b9a58ca516",
+            "Value": {
+                "id": "0f0b7231-7fcc-45c1-a606-f67a329a8425",
+                "resourcePath": "views\\86da675e-46cf-446a-ae5d-48b9a58ca516.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "8b52175b-24ab-4979-a3e0-5d997d3ba843",
             "Value": {
                 "id": "72d4229d-b87c-4660-a59a-6aef377245a8",
@@ -463,6 +487,14 @@
             }
         },
         {
+            "Key": "9edb26ff-b273-4c6b-aef9-714b736abaf4",
+            "Value": {
+                "id": "2630fec4-1530-41c1-b708-a7b03cb8e056",
+                "resourcePath": "sprites\\hillsSprite\\hillsSprite.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "a6b8ca92-477d-4f9e-b7b0-093fba2811c8",
             "Value": {
                 "id": "fab30130-bcda-4b26-8732-26a33873e3f5",
@@ -484,6 +516,14 @@
                 "id": "5432a4d4-7298-4dbd-9c42-3d14156f15c9",
                 "resourcePath": "objects\\staffObject\\staffObject.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "b88ff2bd-a6a4-4112-afab-07f586b3c265",
+            "Value": {
+                "id": "49c8720d-a803-42f6-aa8f-53e50511b95f",
+                "resourcePath": "scripts\\initForestParallax\\initForestParallax.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -551,6 +591,14 @@
             }
         },
         {
+            "Key": "d1e0ee1a-bfab-49c7-827c-64665bae1492",
+            "Value": {
+                "id": "f31e0770-24af-46c5-a9ab-ad6656b2e88e",
+                "resourcePath": "views\\d1e0ee1a-bfab-49c7-827c-64665bae1492.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "d27ce5d1-1e74-44fa-a474-69be0ee73a8e",
             "Value": {
                 "id": "183a4f21-eb8c-43e1-a9f6-3e76474324de",
@@ -583,6 +631,14 @@
             }
         },
         {
+            "Key": "de4cc3d4-fa1b-41d5-b5c7-78cfb6f2688a",
+            "Value": {
+                "id": "76953ddc-ae0b-4d9c-8511-4f90fe6e1eb3",
+                "resourcePath": "scripts\\handleBackgroundsParallax\\handleBackgroundsParallax.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "e0a83a6e-e4ad-46be-85a9-896dff4e63d8",
             "Value": {
                 "id": "1b3cdc3c-a368-435b-b71c-c921df420682",
@@ -603,6 +659,14 @@
             "Value": {
                 "id": "6d2c6660-4efb-420d-a103-794fdaf0aaba",
                 "resourcePath": "sprites\\natureEnvSprite\\natureEnvSprite.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "ebd5bd3e-4924-4568-b6ad-3a33befe1f50",
+            "Value": {
+                "id": "1c28aac3-14fb-49c3-9163-7ef454208e5a",
+                "resourcePath": "sprites\\cloudsSprite\\cloudsSprite.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -648,7 +712,9 @@
         "868d601d-1635-4df2-87b2-0af6e99e2297",
         "7c20732f-c050-4aec-a7a2-5fa38cf93385",
         "30fe6cbe-07ff-4754-ba11-d78a30e8dd9c",
-        "864774dc-aca7-4039-8a95-bd41a0b2f9f0"
+        "864774dc-aca7-4039-8a95-bd41a0b2f9f0",
+        "de4cc3d4-fa1b-41d5-b5c7-78cfb6f2688a",
+        "b88ff2bd-a6a4-4112-afab-07f586b3c265"
     ],
     "tutorial": ""
 }

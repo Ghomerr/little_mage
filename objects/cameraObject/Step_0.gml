@@ -38,3 +38,6 @@ if (shakeRemain > 0) {
 // Update camera position
 camera_set_view_pos(mainCamera, x - widthHalf, y - heightHalf);
 //*/
+
+// Handle background parallax
+handleBackgroundsParallax(self);

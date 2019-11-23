@@ -3,7 +3,7 @@ if (hsp != 0) {
 	// Sprite orientation
 	image_xscale = sign(hsp);
 }
-if (vsp == 0) {
+if (isGrounded) {
 	if (hsp != 0) {
 		// Entity running
 		sprite_index = runningSprite;
