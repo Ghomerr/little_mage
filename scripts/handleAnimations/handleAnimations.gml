@@ -1,7 +1,7 @@
 // Animation
 if (!isPlayer and hsp != 0) {
 	// Sprite orientation
-	image_xscale = sign(hsp);
+	image_xscale = sign(hsp) * size;
 }
 if (isGrounded) {
 	if (hsp != 0) {

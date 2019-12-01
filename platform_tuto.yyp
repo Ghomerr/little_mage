@@ -383,11 +383,11 @@
             }
         },
         {
-            "Key": "634831a6-6210-4d99-a5ee-04ee391f3712",
+            "Key": "68c4b47a-c912-4357-88b2-d7da2b91b7ba",
             "Value": {
-                "id": "ad9b2a2a-3d69-47cf-bf31-a07a673660d2",
-                "resourcePath": "objects\\buffshroomDyingObject\\buffshroomDyingObject.yy",
-                "resourceType": "GMObject"
+                "id": "7a0947c5-f441-439a-817f-48a23ea4ad71",
+                "resourcePath": "views\\68c4b47a-c912-4357-88b2-d7da2b91b7ba.yy",
+                "resourceType": "GMFolder"
             }
         },
         {

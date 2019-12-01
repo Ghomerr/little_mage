@@ -1,4 +1,4 @@
-// Player 
+// Player constants
 isPlayer = true;
 grv = 0.2; // gravity
 spd = 2; // running speed

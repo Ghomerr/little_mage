@@ -1,7 +1,9 @@
 if (handleCollisionWith(other)) {
 	with(other) {
-		hp--;
-		flash = hitDelay;
-		hitfrom = other.direction
+		if (!isDying) {
+			hp--;
+			flash = hitDelay;
+			hitfrom = other.direction
+		}
 	}
 }
