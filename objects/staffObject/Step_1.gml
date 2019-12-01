@@ -24,13 +24,13 @@ if (playerObject.hasControl) {
 		firingDelay = firingCooldown;
 	
 		// Compute projectile start coordinates at the end of the staff
-		var prjX = x + lengthdir_x(8, image_angle);
-		var prjY = y + lengthdir_y(8, image_angle);
+		var prjX = x + lengthdir_x(STAFF_LENGTH, image_angle);
+		var prjY = y + lengthdir_y(STAFF_LENGTH, image_angle);
 	
 		// Create a new projectile using staff angle
 		with (instance_create_layer(prjX, prjY, "Projectiles", flameProjectileObject)) {
 			speed = prjSpeed;
-			direction = other.image_angle + random_range(-3, 3);
+			direction = other.image_angle + random_range(-other.STAFF_DISPERSION, other.STAFF_DISPERSION);
 			image_angle = direction;
 		}
 	}

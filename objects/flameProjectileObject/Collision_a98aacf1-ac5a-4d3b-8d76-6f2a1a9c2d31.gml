@@ -1,4 +1,4 @@
-if (handleCollisionWith(buffshroomObject)) {
+if (handleCollisionWith(other)) {
 	with(other) {
 		hp--;
 		flash = hitDelay;

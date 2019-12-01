@@ -4,7 +4,7 @@ if (currentProjectile != noone) {
 	currentProjectile = noone;
 }
 
-with(instance_create_layer(x+20, y, "Projectiles", flameProjectileObject)) {
+with(instance_create_layer(x+11, y, "Projectiles", flameProjectileObject)) {
 	other.currentProjectile = self;
 	speed = prjSpeed;
 	direction = other.image_angle + random_range(-3, 3);

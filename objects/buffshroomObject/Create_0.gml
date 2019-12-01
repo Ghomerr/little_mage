@@ -1,4 +1,5 @@
 // Monster constants
+isPlayer = false;
 spd = 1; // running speed
 jump = 5.5; // jumping force
 grv = 0.3; // gravity

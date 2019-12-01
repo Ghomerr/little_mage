@@ -1,4 +1,5 @@
-// Player constants
+// Player 
+isPlayer = true;
 grv = 0.2; // gravity
 spd = 2; // running speed
 jump = 4; // jumping force

@@ -39,6 +39,12 @@ if (hasControl) {
 		case MENU_CHOICE.QUIT:
 			game_end();
 			break;
+			
+		case MENU_CHOICE.CONTINUE:
+			// Load from the game save the room to start if it exists
+			var startRoom = loadGameSave();
+			startTransition(TRANS_MODE.GOTO, startRoom);
+			break;
 		
 		case MENU_CHOICE.NEW_GAME:
 		default:
