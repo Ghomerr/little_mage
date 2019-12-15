@@ -15,6 +15,7 @@ if (hasControl) {
 		gamepadIsChecked = true;
 		menuChoice++;
 		if (menuChoice >= length) menuChoice = 0;
+		audio_sound_pitch(jumpSound, choose(0.9, 1.0, 1.1));
 		audio_play_sound(jumpSound, 5, false);
 	}
 	
@@ -26,6 +27,7 @@ if (hasControl) {
 		gamepadIsChecked = true;
 		menuChoice--;
 		if (menuChoice < 0) menuChoice = length - 1;
+		audio_sound_pitch(jumpSound, choose(0.9, 1.0, 1.1));
 		audio_play_sound(jumpSound, 5, false);
 	}
 	
