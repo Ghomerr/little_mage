@@ -31,7 +31,14 @@ initMovement();
 
 handleHorizontalCollision();
 
+var wasGrounded = isGrounded;
 handleVerticalCollision();
+
+// Play landing sound only when landing
+if (!wasGrounded and isGrounded) {
+	audio_sound_pitch(landingSound, choose(0.7, 1.0, 1.3));
+	audio_play_sound(landingSound, 3, false);
+}
 
 // Jump Buffer and Coyote Time: 
 // https://www.yoyogames.com/blog/544/flynn-advanced-jump-mechanics
@@ -48,6 +55,8 @@ if (isGrounded) {
 		vsp -= jump;
 		jumpBuffer = 0;
 		isJumping = true;
+		audio_sound_pitch(jumpSound, choose(0.9, 1.0, 1.1));
+		audio_play_sound(jumpSound, 5, false);
 	}
 } 
 // While not grounded :
@@ -60,6 +69,8 @@ else {
 			// Do JUMP
 			vsp -= jump;
 			isJumping = true;
+			audio_sound_pitch(jumpSound, choose(0.9, 1.0, 1.1));
+			audio_play_sound(jumpSound, 5, false);
 		}
 	}
 	// if buffer is positive
@@ -77,3 +88,26 @@ else {
 updatePosition();
 
 handleAnimations();
+
+// Handle footsteps sounds
+if (sprite_index == runningSprite) {
+	
+	var imageIndex = round(image_index);
+	var isFootStepIndex = imageIndex == 2 or imageIndex == 5;
+	
+	if (isFootStepIndex and !isFootStepSoundPlayed) {
+		isFootStepSoundPlayed = true;
+		audio_play_sound(
+			choose(
+				footStep1Sound,
+				footStep2Sound,
+				footStep3Sound,
+				footStep4Sound
+			), 
+			1,
+			false
+		);
+	} else if (!isFootStepIndex) {
+		isFootStepSoundPlayed = false;
+	}
+}

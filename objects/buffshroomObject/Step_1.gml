@@ -1,6 +1,8 @@
 if (!isDying and hp <= 0) {
 	// Shake screen on dying
 	screenShake(6, 25);
+	// Play dead sound
+	audio_play_sound(monsterDeadSound, 10, false);
 	
 	isDying = true;
 	sprite_index = hitSprite;

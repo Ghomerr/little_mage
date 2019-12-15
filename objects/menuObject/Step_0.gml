@@ -15,6 +15,7 @@ if (hasControl) {
 		gamepadIsChecked = true;
 		menuChoice++;
 		if (menuChoice >= length) menuChoice = 0;
+		audio_play_sound(jumpSound, 5, false);
 	}
 	
 	// Next menu choice, arrow goes down
@@ -25,6 +26,7 @@ if (hasControl) {
 		gamepadIsChecked = true;
 		menuChoice--;
 		if (menuChoice < 0) menuChoice = length - 1;
+		audio_play_sound(jumpSound, 5, false);
 	}
 	
 	// Select menu choice
@@ -32,6 +34,7 @@ if (hasControl) {
 		menuTargetX = guiWidth + menuHideOffset;
 		screenShake(4, screenShakeLength);
 		hasControl = false;
+		audio_play_sound(manaBoltSound, 10, false);
 	}
 } else {
 	// Handle menu choice

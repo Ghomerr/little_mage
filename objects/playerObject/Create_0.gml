@@ -33,3 +33,6 @@ runningSprite = playerRunningSprite;
 fallingSprite = playerFallingSprite;
 jumpingSprite = playerJumpingSprite;
 hitSprite = playerHitSprite;
+
+// Sound
+isFootStepSoundPlayed = false;
