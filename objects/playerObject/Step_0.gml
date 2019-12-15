@@ -29,30 +29,48 @@ if (hasControl) {
 
 initMovement();
 
-// Decrease jump buffer is it's positive
-if (jumpBuffer > 0) {
-	jumpBuffer--;	
-}
-
-// Only jump when player is grounded
-if (keyJump and isGrounded) {
-	// Handle jump and reset jump buffer
-	vsp -= jump;
-	jumpBuffer = 0;
-	
-} else if (keyJump and jumpBuffer == 0) {
-	// If player pressed jump before being on ground, start the buffer
-	jumpBuffer = jumpCooldown;
-}
-
 handleHorizontalCollision();
 
-if (handleVerticalCollision()) {
-	// Actually hit the ground with the jump buffer positive
-	if (jumpBuffer > 0) {
-		// Handle jump and reset jump buffer
+handleVerticalCollision();
+
+// Jump Buffer and Coyote Time: 
+// https://www.yoyogames.com/blog/544/flynn-advanced-jump-mechanics
+
+// Check if player is grounded
+if (isGrounded) {
+	// if player is grounded, he isnt jumping, reset coyote counter
+	isJumping = false;
+	coyoteCounter = COYOTE_MAX;
+	
+	// If player hit keyJump or jump buffer is positive
+	if (keyJump or jumpBuffer > 0) {
+		// Do JUMP
 		vsp -= jump;
 		jumpBuffer = 0;
+		isJumping = true;
+	}
+} 
+// While not grounded :
+else { 
+	// During the Coyote time
+	if (coyoteCounter > 0) {
+		coyoteCounter--;
+		// if player is not jumping and key jump is hit
+		if (!isJumping and keyJump) {
+			// Do JUMP
+			vsp -= jump;
+			isJumping = true;
+		}
+	}
+	// if buffer is positive
+	if (jumpBuffer > 0) {
+		// Decrease the buffer until the player is grounded
+		jumpBuffer--;
+	}
+	// if player hit keyJump
+	if (keyJump) {
+		// start the buffer
+		jumpBuffer = JUMP_COOLDOWN;
 	}
 }
 

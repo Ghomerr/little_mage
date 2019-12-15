@@ -4,15 +4,20 @@ grv = 0.2; // gravity
 spd = 2; // running speed
 jump = 4; // jumping force
 // https://twitter.com/Case_Portman/status/1183067181480890368
-jumpCooldown = 15; // number of frames before the actual jump 
-gpMin = 0.2; // minimum value for gamepad 
+JUMP_COOLDOWN = 5; // Frames before a jump can be done
+COYOTE_MAX = 10; // Frames during the player can still jump in air 
+gpMin = 0.8; // minimum value for gamepad 
 
 // Player variables
 controller = false;
 hsp = 0; // horizonral speed
 vsp = 0; // vertical speed
+
 isGrounded = false; // grounded flag
+isJumping = true; // jumping flag (true to avoid creating player air-jump)
 jumpBuffer = 0; // jump buffer to handle jump before the actual jump
+coyoteCounter = 0;
+
 flash = 0; // counter to handle player being hit
 hasControl = false; // define if player can do inputs
 move = 0; // movement orientation
