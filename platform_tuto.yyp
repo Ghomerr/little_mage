@@ -263,6 +263,14 @@
             }
         },
         {
+            "Key": "4b68f6cd-daf9-4771-927f-f58e1f091f32",
+            "Value": {
+                "id": "30a0bcf0-1abe-49a2-862e-b8ce443cfcef",
+                "resourcePath": "views\\4b68f6cd-daf9-4771-927f-f58e1f091f32.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "4c5a906e-d73c-445c-b2ea-f7d47d01f473",
             "Value": {
                 "id": "cf6f8620-8f1c-4a67-9bde-f7bc289be5a5",
@@ -551,6 +559,14 @@
             }
         },
         {
+            "Key": "94431fb1-ae82-4f38-9d53-8d001941ce09",
+            "Value": {
+                "id": "7dee46cb-2af4-407f-91dc-bfdf01c8dfb7",
+                "resourcePath": "sounds\\bipSound\\bipSound.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "98592d44-23d1-4d7c-b496-e9e4cf3e5d1c",
             "Value": {
                 "id": "83c10863-b5e6-482c-9df5-d2a1f465aedf",
@@ -620,6 +636,14 @@
                 "id": "2630fec4-1530-41c1-b708-a7b03cb8e056",
                 "resourcePath": "sprites\\hillsSprite\\hillsSprite.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "a06005bf-cdde-447a-b150-35a33774d7ad",
+            "Value": {
+                "id": "b72e92b5-81aa-456a-a2bf-4ac7a4ed1717",
+                "resourcePath": "sounds\\selectSound\\selectSound.yy",
+                "resourceType": "GMSound"
             }
         },
         {

@@ -15,8 +15,8 @@ if (hasControl) {
 		gamepadIsChecked = true;
 		menuChoice++;
 		if (menuChoice >= length) menuChoice = 0;
-		audio_sound_pitch(jumpSound, choose(0.9, 1.0, 1.1));
-		audio_play_sound(jumpSound, 5, false);
+		audio_sound_pitch(bipSound, choose(0.8, 1.0, 1.2));
+		audio_play_sound(bipSound, 5, false);
 	}
 	
 	// Next menu choice, arrow goes down
@@ -27,8 +27,8 @@ if (hasControl) {
 		gamepadIsChecked = true;
 		menuChoice--;
 		if (menuChoice < 0) menuChoice = length - 1;
-		audio_sound_pitch(jumpSound, choose(0.9, 1.0, 1.1));
-		audio_play_sound(jumpSound, 5, false);
+		audio_sound_pitch(bipSound, choose(0.8, 1.0, 1.2));
+		audio_play_sound(bipSound, 5, false);
 	}
 	
 	// Select menu choice
@@ -36,7 +36,7 @@ if (hasControl) {
 		menuTargetX = guiWidth + menuHideOffset;
 		screenShake(4, screenShakeLength);
 		hasControl = false;
-		audio_play_sound(manaBoltSound, 10, false);
+		audio_play_sound(selectSound, 10, false);
 	}
 } else {
 	// Handle menu choice
