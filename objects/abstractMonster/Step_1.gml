@@ -1,3 +1,4 @@
+/// @description Check if dying to go dead
 if (!isDying and hp <= 0) {
 	// Shake screen on dying
 	screenShake(6, 25);

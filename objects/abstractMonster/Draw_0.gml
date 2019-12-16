@@ -1,5 +1,5 @@
+/// @description Draw shader and self
 draw_self();
-//draw_text(x, y-20, string(hp));
 
 // If flash is positive
 if (flash > 0) {

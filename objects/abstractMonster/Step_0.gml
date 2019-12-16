@@ -1,3 +1,4 @@
+/// @description Handle updates
 initMovement();
 
 // While not dying, do normal cycle 
