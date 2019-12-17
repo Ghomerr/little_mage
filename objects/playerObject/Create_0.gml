@@ -7,8 +7,11 @@ jump = 4; // jumping force
 JUMP_COOLDOWN = 5; // Frames before a jump can be done
 COYOTE_MAX = 10; // Frames during the player can still jump in air 
 gpMin = 0.8; // minimum value for gamepad 
+GAME_SPEED = game_get_speed(gamespeed_fps);
 
 // Player variables
+hp = 1;
+isDying = false;
 controller = false;
 hsp = 0; // horizonral speed
 vsp = 0; // vertical speed
@@ -21,6 +24,7 @@ coyoteCounter = 0;
 flash = 0; // counter to handle player being hit
 hasControl = false; // define if player can do inputs
 move = 0; // movement orientation
+lastMonster = 0;
 
 // Gamepad inputs
 hAxis = 0;

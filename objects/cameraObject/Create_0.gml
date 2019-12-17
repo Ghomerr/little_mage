@@ -6,6 +6,7 @@ follow = playerObject;
 shakeLength = 0;
 shakeMagnitude = 0;
 shakeRemain = 0;
+isFollowing = true;
 
 /*
 // Camera lerp mode
