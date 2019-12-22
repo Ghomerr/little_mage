@@ -1,18 +1,34 @@
 /// @description Progress display of text
 if (letters < length) {
-	letters += DRAW_SPEED;
+	
+	// Handle fast text display only if player is not already pressing
+	var isPlayerActing = keyboard_check(vk_anykey) 
+	or mouse_check_button(mb_any)
+	or gamepad_button_check(0, gp_face2)
+	or gamepad_button_check(0, gp_face1);
+	
+	// If player press button, text speed x2
+	var speedFactor = isPlayerActing ? 10 : 1;
+	letters += DRAW_SPEED * speedFactor;
 	currentText = string_copy(text, 1, floor(letters));
 
+	// Compute bubble dimensions
 	draw_set_font(signPostFont);
 	if (textHeight == 0) {
 		textHeight = string_height(text);
 	}
-
 	textWidth = string_width(currentText);
-} else if (keyboard_check_pressed(vk_anykey) or gamepad_button_check_pressed(0, gp_face1)) {
+
+} else if (keyboard_check_pressed(vk_anykey) 
+	or mouse_check_button_pressed(mb_any)
+	or gamepad_button_check_pressed(0, gp_face2)
+	or gamepad_button_check_pressed(0, gp_face1)) {
+	
+	// Reset text showing state
+	with(cameraObject) follow = playerObject;
+	with(playerObject) hasControl = true;
+	parent.isShowingText = false;
+	
 	// Destroy when done
-	with(cameraObject) {
-		follow = playerObject;
-	}
 	instance_destroy();
 }

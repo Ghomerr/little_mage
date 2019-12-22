@@ -9,8 +9,8 @@ draw_roundrect_ext(
 	y - textHeight - (margin*2),
 	x + halfWidth + margin,
 	y,
-	15,
-	15,
+	BUBBLE_RADIUS,
+	BUBBLE_RADIUS,
 	false
 );
 draw_sprite(textMarkerSprite,0,x,y);

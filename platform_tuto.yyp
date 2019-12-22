@@ -1023,6 +1023,14 @@
             }
         },
         {
+            "Key": "f935d772-0d05-4854-9043-386f6ed2718e",
+            "Value": {
+                "id": "d9a33a26-a72f-489e-9e14-e0f5311ad917",
+                "resourcePath": "sprites\\actionMarkerSprite\\actionMarkerSprite.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "fab3501a-dc33-4a25-814d-1f484c9d35a1",
             "Value": {
                 "id": "874d66eb-ba3c-4f90-b566-3fcda90b8ceb",

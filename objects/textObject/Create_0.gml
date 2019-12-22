@@ -2,6 +2,7 @@
 
 // Constants
 DRAW_SPEED = 0.25; // Number of character by frame
+BUBBLE_RADIUS = 15;
 
 // Variables
 letters = 0; // Current number of letters to display
@@ -11,3 +12,6 @@ currentText = "";
 textWidth = 0;
 textHeight = 0;
 margin = 10;
+
+// Parent of this text
+parent = noone;
