@@ -3,6 +3,8 @@ menuX += (menuTargetX - menuX) / menuSpeed;
 
 if (hasControl) {
 	
+	// KEYBOARD INPUTS HANDLING
+	
 	var gamepadDirection = gamepad_axis_value(0, gp_axislv);
 	if (abs(gamepadDirection) <= gpMin) gamepadIsChecked = false;
 	
@@ -33,11 +35,26 @@ if (hasControl) {
 	
 	// Select menu choice
 	if (keyboard_check_pressed(vk_enter) or gamepad_button_check_pressed(0, gp_face1)) {
-		menuTargetX = guiWidth + menuHideOffset;
-		screenShake(4, screenShakeLength);
-		hasControl = false;
-		audio_play_sound(selectSound, 10, false);
+		doMenuSelect();
 	}
+	
+	// MOUSE INPUTS HANDLING
+	var guiMouseY = device_mouse_y_to_gui(0);
+	if (guiMouseY < menuY and guiMouseY > menuTop) {
+		var newMenuChoice = (menuY - guiMouseY) div (fontHeight);
+		// Save new value and do sound if a new menu choice is selected
+		if (menuChoice != newMenuChoice) {
+			menuChoice = newMenuChoice;
+			audio_sound_pitch(bipSound, choose(0.8, 1.0, 1.2));
+			audio_play_sound(bipSound, 5, false);
+		}
+		
+		// Handle left click to do a choice on the menu
+		if (mouse_check_button_pressed(mb_left)) {
+			doMenuSelect();
+		}
+	}
+	
 } else {
 	// Handle menu choice
 	switch (menuChoice) {

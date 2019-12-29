@@ -29,6 +29,7 @@ length = array_length_1d(menu);
 menuX = guiWidth + menuHideOffset;
 menuY = guiHeight - guiMargin;
 menuTargetX = guiWidth - guiMargin;
+menuTop = menuY - fontHeight * length;
 
 menuChoice = MENU_CHOICE.NEW_GAME;
 hasControl = true;
