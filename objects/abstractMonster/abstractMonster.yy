@@ -140,7 +140,7 @@
             "resourceFilter": 1023,
             "value": "3",
             "varName": "jump",
-            "varType": 1
+            "varType": 0
         },
         {
             "id": "b4f6543f-7585-4def-a928-ceb62991a116",
@@ -351,6 +351,34 @@
             "value": "-1",
             "varName": "hitSprite",
             "varType": 5
+        },
+        {
+            "id": "54281a46-c653-4739-9e06-a207a5cb390e",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "True",
+            "varName": "isAfraidOfHeight",
+            "varType": 3
+        },
+        {
+            "id": "a5cc2e9f-6430-4bfd-b22a-112463fcf212",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "False",
+            "varName": "isDebugEnabled",
+            "varType": 3
         }
     ],
     "solid": false,

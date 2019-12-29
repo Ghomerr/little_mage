@@ -1,12 +1,23 @@
 /// @description Handle updates
 initMovement();
+debugColor = c_red;
 
 // While not dying, do normal cycle 
 if (!isDying) {
+	
+	// Dont walk off edges
+	if (isGrounded and isAfraidOfHeight and !place_meeting(x + sign(hsp) * (spriteWidth+1) + hsp, y + 1, wallObject)) {
+		// Reverse direction
+		move = -move;
+		debugColor = c_green;
+	}
+	
 	if (handleHorizontalCollision()) {
 		// Reverse direction
 		move = -move;
+		debugColor = c_blue;
 	}
+	
 	handleVerticalCollision();
 	updatePosition();
 	handleAnimations();

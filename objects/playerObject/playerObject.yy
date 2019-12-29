@@ -73,6 +73,56 @@
             "enumb": 0,
             "eventtype": 4,
             "m_owner": "84caa4fe-ba7a-4838-93a8-95e3909fe058"
+        },
+        {
+            "id": "b1cf0840-b77e-4c19-8478-8c61ad6a3a99",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 113,
+            "eventtype": 9,
+            "m_owner": "84caa4fe-ba7a-4838-93a8-95e3909fe058"
+        },
+        {
+            "id": "fd54a37b-514e-41d2-b7af-78d3d51148ef",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 8,
+            "m_owner": "84caa4fe-ba7a-4838-93a8-95e3909fe058"
+        },
+        {
+            "id": "414c9c40-e556-4ed2-a5bb-56ce74af7f98",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 107,
+            "eventtype": 9,
+            "m_owner": "84caa4fe-ba7a-4838-93a8-95e3909fe058"
+        },
+        {
+            "id": "0d7eeba4-9022-4a1f-8d68-030c40b1cb2a",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 109,
+            "eventtype": 9,
+            "m_owner": "84caa4fe-ba7a-4838-93a8-95e3909fe058"
+        },
+        {
+            "id": "bebec8d0-2679-4ddf-96ef-a2fbb49ce787",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 77,
+            "eventtype": 9,
+            "m_owner": "84caa4fe-ba7a-4838-93a8-95e3909fe058"
         }
     ],
     "maskSpriteId": "9917b106-1c2f-44fa-9221-84d0e108e539",

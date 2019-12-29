@@ -15,6 +15,8 @@ isDying = false;
 controller = false;
 hsp = 0; // horizonral speed
 vsp = 0; // vertical speed
+isDebugEnabled = false;
+debugFactor = 15;
 
 isGrounded = false; // grounded flag
 isJumping = true; // jumping flag (true to avoid creating player air-jump)
