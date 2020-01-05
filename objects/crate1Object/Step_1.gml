@@ -4,5 +4,5 @@
 event_inherited();
 
 if (hp < initHp) {
-	image_index++;	
+	image_index = 1;
 }
