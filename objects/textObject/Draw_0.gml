@@ -3,7 +3,7 @@ var halfWidth = textWidth * 0.5;
 
 // Draw the box
 draw_set_color(c_black);
-draw_set_alpha(0.5);
+draw_set_alpha(0.75);
 draw_roundrect_ext(
 	x - halfWidth - margin,
 	y - textHeight - (margin*2),

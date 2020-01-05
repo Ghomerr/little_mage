@@ -4,6 +4,7 @@ if (room != menuRoom) {
 
 	// Create new save file
 	var file = file_text_open_write(SAVEFILE);
-	file_text_write_real(file, room);
+	var savedData = (playerObject.hasWeapon ? WEAPON_OFFSET : 0) + room;
+	file_text_write_real(file, savedData);
 	file_text_close(file);
 }

@@ -1,4 +1,4 @@
 /// @desc hande idle delay update
-if (idleDelay > 0) {
+if (isVisible and !isDying and idleDelay > 0) {
 	idleDelay--;	
 }

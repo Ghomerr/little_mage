@@ -13,7 +13,6 @@ if (mode != TRANS_MODE.OFF) {
 			// Stop transition
 			case TRANS_MODE.INTRO:
 				mode = TRANS_MODE.OFF;
-				playerObject.hasControl = true;
 				break;
 				
 			// Go to next room

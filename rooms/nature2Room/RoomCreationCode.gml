@@ -1,4 +1,5 @@
-initPlayerPosition();
+// Init position of player in this room
+initPlayerPosition(48, 400);
 
 initForestParallax();
 

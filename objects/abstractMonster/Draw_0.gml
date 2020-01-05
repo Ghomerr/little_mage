@@ -1,15 +1,7 @@
-/// @description Draw shader and self
-draw_self();
+/// @description Draw flash and debug
 
-// If flash is positive
-if (flash > 0) {
-	// Decrement
-	flash--;
-	// Apply hit shader
-	shader_set(hitShader);
-	draw_self();
-	shader_reset();
-}
+// Inherit the parent event
+event_inherited();
 
 if (isDebugEnabled) {
 	// Draw collision box

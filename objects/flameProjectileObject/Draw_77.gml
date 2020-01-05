@@ -1,2 +1,0 @@
-// Wall collisions
-handleCollisionWith(wallObject);

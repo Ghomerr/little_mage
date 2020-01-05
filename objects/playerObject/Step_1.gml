@@ -1,13 +1,14 @@
 /// @description Check if dying to go dead
-if (!isDying and hp <= 0) {
+if (isVisible and !isDying and (hp <= 0 or y >= maxYbeforeDead)) {
 	hasControl = false;
 	// Shake screen on dying
 	screenShake(4, 30);
 	// Play dead sound
 	audio_play_sound(monsterDeadSound, 10, false);
 	
-	// Remove staff
+	// Remove staff or hands
 	with (staffObject) instance_destroy();
+	with (handsObject) instance_destroy();
 
 	// Slow mo
 	game_set_speed(GAME_SPEED/2, gamespeed_fps);
