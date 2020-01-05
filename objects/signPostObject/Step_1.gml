@@ -6,7 +6,7 @@ if (instance_exists(playerObject)) {
 		isShowingText = true;
 		
 		// Create a new text bubble
-		with(instance_create_layer(x, y - PLAYER_RADIUS, layer, textObject)) {
+		with(instance_create_layer(x, y - PLAYER_RADIUS, "Cameras", textObject)) {
 			text = other.text;
 			length = string_length(text);
 			parent = other;
@@ -14,7 +14,7 @@ if (instance_exists(playerObject)) {
 	
 		// Focus camera on sign post
 		with(cameraObject) {
-			follow = other.id;	
+			follow = other.id;
 		}
 	}
 }
