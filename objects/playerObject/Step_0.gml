@@ -1,3 +1,4 @@
+/// Desc Handle inputs, collisions, movements, animations, death
 if (isVisible) {
 	if (!isDying) {
 
@@ -32,10 +33,36 @@ if (isVisible) {
 
 		initMovement();
 
-		handleHorizontalCollision();
+		var isHorizontallyColliding = handleHorizontalCollision();
+		if (isHorizontallyColliding) {
+			debugColor = c_blue;	
+		} else {
+			debugColor = c_red;
+		}
 
 		var wasGrounded = isGrounded;
-		handleVerticalCollision();
+		var isVerticallyColliding = handleVerticalCollision();
+		if (isVerticallyColliding) {
+			if (debugColor == c_blue) {
+				debugColor = c_purple;	
+			} else {
+				debugColor = c_green;
+			}
+		} else if (!isHorizontallyColliding) {
+			debugColor = c_red;
+		}
+		
+		// Diagonal collision
+		if (!isHorizontallyColliding and !isVerticallyColliding and place_meeting(x + hsp, y + vsp, wallObject)) {
+			while(!place_meeting(x + sign(hsp), y + sign(vsp), wallObject)) {
+				x += sign(hsp);
+				y += sign(vsp);
+			}
+			isGrounded = vsp > 0; // grounded only if falling
+			hsp = 0;
+			vsp = 0;
+			debugColor = c_orange;
+		}
 
 		// Play landing sound only when landing
 		if (!wasGrounded and isGrounded) {

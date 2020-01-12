@@ -21,7 +21,7 @@ controller = false;
 hsp = 0; // horizonral speed
 vsp = 0; // vertical speed
 isDebugEnabled = false;
-debugFactor = 15;
+debugFactor = GAME_SPEED/4;
 maxYbeforeDead = 0;
 
 isGrounded = false; // grounded flag
@@ -48,3 +48,6 @@ hitSprite = playerHitSprite;
 
 // Sound
 isFootStepSoundPlayed = false;
+
+// Debug
+debugColor = c_red;

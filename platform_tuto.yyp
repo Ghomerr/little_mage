@@ -391,6 +391,14 @@
             }
         },
         {
+            "Key": "4eeebcec-b4ce-4da4-87fd-50e054849c76",
+            "Value": {
+                "id": "38df6b88-98a1-4e20-ae16-3b294141f13c",
+                "resourcePath": "scripts\\setGameSpeed\\setGameSpeed.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "503b1c07-b576-42ab-a7a0-8bd83e7b2745",
             "Value": {
                 "id": "f2eac450-0dac-438e-91b1-4cafff380571",
@@ -959,6 +967,14 @@
             }
         },
         {
+            "Key": "c8bf4678-f0f2-4ca0-9fd9-563e10481533",
+            "Value": {
+                "id": "bc0b3b4b-336f-4c4c-a297-aff06eec5079",
+                "resourcePath": "views\\c8bf4678-f0f2-4ca0-9fd9-563e10481533.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "c9721030-87e0-4d7c-94ad-6198fb6b2e80",
             "Value": {
                 "id": "2b585ceb-a14e-492c-81b8-26e35ee0cd31",
@@ -1246,7 +1262,8 @@
         "81a849a7-a3b4-4692-8d32-b2b829e476e3",
         "9b12f3ff-07de-430e-944b-069a994d6f74",
         "492dfe61-5c67-4ef5-b4ce-add9b98e1261",
-        "05219028-ced4-4066-b22b-1e8cc20bce5c"
+        "05219028-ced4-4066-b22b-1e8cc20bce5c",
+        "4eeebcec-b4ce-4da4-87fd-50e054849c76"
     ],
     "tutorial": ""
 }
