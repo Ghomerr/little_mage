@@ -8,7 +8,7 @@ if (letters < length) {
 	or gamepad_button_check(0, gp_face1);
 	
 	// If player press button, text speed x2
-	var speedFactor = isPlayerActing ? 10 : 1;
+	var speedFactor = isPlayerActing ? 3 : 1;
 	letters += DRAW_SPEED * speedFactor;
 	currentText = string_copy(text, 1, floor(letters));
 
