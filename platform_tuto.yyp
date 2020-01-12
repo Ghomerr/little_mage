@@ -47,6 +47,14 @@
             }
         },
         {
+            "Key": "036df095-cc68-41f8-b391-25ae46c9e158",
+            "Value": {
+                "id": "6faa1eb1-e289-4589-ba47-661a3aaf9fd6",
+                "resourcePath": "sprites\\signPostDangerSprite\\signPostDangerSprite.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "05219028-ced4-4066-b22b-1e8cc20bce5c",
             "Value": {
                 "id": "df9cbbaf-8bc7-481e-bf5f-02b00e3911e8",
@@ -431,6 +439,14 @@
             }
         },
         {
+            "Key": "53a1077f-bce5-4d69-95d5-12fb6a3040e0",
+            "Value": {
+                "id": "676bc54f-9293-4ac7-867d-9d0fe9db410b",
+                "resourcePath": "sprites\\signPostTextSprite\\signPostTextSprite.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "548b8e22-4d21-402f-b5d6-f8bc4d6fa12a",
             "Value": {
                 "id": "9ace9d46-45fe-4d3b-9aa8-090e168b8fce",
@@ -631,6 +647,14 @@
             }
         },
         {
+            "Key": "889e9219-965c-41ce-bb60-2d9864cf7926",
+            "Value": {
+                "id": "661a4782-a45f-406e-903a-48da3ad4914b",
+                "resourcePath": "objects\\signPostLeftObject\\signPostLeftObject.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "89b37f63-04ae-45e4-8232-ac168afa89e2",
             "Value": {
                 "id": "29517049-7fcd-47a8-bde4-80fdb05ffe07",
@@ -783,6 +807,14 @@
             }
         },
         {
+            "Key": "a0da107d-0a6f-437b-af70-fc492f4f7670",
+            "Value": {
+                "id": "0e34200d-5a16-4e5b-90cf-b2e34408ebd1",
+                "resourcePath": "objects\\signPostDangerObject\\signPostDangerObject.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "a6560367-77ce-4670-b47a-44c593ce65c2",
             "Value": {
                 "id": "aefd9550-fef6-48f7-a09f-43d219e0b197",
@@ -863,6 +895,14 @@
             }
         },
         {
+            "Key": "bde657e5-2ec4-49c7-86ac-53acc2e94f3f",
+            "Value": {
+                "id": "5f5c1500-7c22-406f-8cf5-2ffedc38b1c5",
+                "resourcePath": "sprites\\signPostLeftSprite\\signPostLeftSprite.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "c314de00-40f3-4546-9c6f-61377511d231",
             "Value": {
                 "id": "b196bc5a-e816-431d-a41d-285c02c35d48",
@@ -903,6 +943,14 @@
             }
         },
         {
+            "Key": "c87ea77c-4f0b-4703-bcaa-a38444489443",
+            "Value": {
+                "id": "050725bd-989a-420f-970a-e82d7e2c170f",
+                "resourcePath": "sprites\\signPostUpSprite\\signPostUpSprite.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "c88fbf33-c678-4170-8dc6-93f66764daea",
             "Value": {
                 "id": "d8259977-212c-4d8c-8b47-addc268764f0",
@@ -932,6 +980,14 @@
                 "id": "e25b618e-9dcf-4701-8242-233ee7899194",
                 "resourcePath": "options\\windows\\options_windows.yy",
                 "resourceType": "GMWindowsOptions"
+            }
+        },
+        {
+            "Key": "ccef2477-d558-4294-88ff-d57ffc5b79af",
+            "Value": {
+                "id": "eca5c14b-d9be-4f74-9d5b-6bef92472e31",
+                "resourcePath": "objects\\signPostRightObject\\signPostRightObject.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -988,6 +1044,14 @@
                 "id": "4f44535a-6538-4db9-a444-9e51d48094b4",
                 "resourcePath": "views\\d4b7f913-fbe9-412f-86c0-e8c0f5687041.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "d5c605ee-788d-4816-983a-cafe50c0c2d5",
+            "Value": {
+                "id": "997ec0b8-8235-4bd9-b888-448c383a16bd",
+                "resourcePath": "sprites\\signPostRightSprite\\signPostRightSprite.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -1087,6 +1151,14 @@
             }
         },
         {
+            "Key": "f6529c49-cbc7-4072-ba31-288f4f7ad2ae",
+            "Value": {
+                "id": "c82836fd-ae8d-4970-91de-9128cdab4085",
+                "resourcePath": "objects\\signPostTextObject\\signPostTextObject.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "f763d76c-e37a-4647-ae9b-607effb231af",
             "Value": {
                 "id": "f4196b49-c638-4a39-baf8-9485f3e17ba2",
@@ -1147,6 +1219,14 @@
             "Value": {
                 "id": "6922aed8-d0fb-45b0-ae20-ff5f2a9c55e2",
                 "resourcePath": "objects\\transitionsHandler\\transitionsHandler.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "fc78a557-75aa-4395-9332-a7dbb3f2ba4c",
+            "Value": {
+                "id": "4c934582-9306-40e1-9a07-00b0794c662c",
+                "resourcePath": "objects\\signPostUpObject\\signPostUpObject.yy",
                 "resourceType": "GMObject"
             }
         }

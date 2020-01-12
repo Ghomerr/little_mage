@@ -23,8 +23,6 @@
         "d81849ff-0a4d-4334-a91b-771c7ca51c7a",
         "e5c09f69-d4b5-4f7f-9a14-07e265796b4c",
         "f737ebb3-79f8-42c8-bfab-c6cda7373be7",
-        "0fc46f91-b37b-46c4-b162-012a78635def",
-        "a1242f8c-f895-4491-9a8f-48a5556e10d0",
         "a94aa9fd-bd05-420c-ab70-592a38fe43c4",
         "53c6291d-8c40-4dbd-b898-b98737e83340",
         "bc65a761-195c-4bc0-8d1b-0dc134b3217c",
@@ -32,7 +30,9 @@
         "e83cb367-dcf6-4b1e-997e-521a5f2450b6",
         "04ab20e2-91ea-4f4e-87bd-7370d830f966",
         "3f5709a8-7fb1-475e-88e0-b635b3fa4e49",
-        "2f8f1564-5820-47bd-9938-c14c81aa371c"
+        "2f8f1564-5820-47bd-9938-c14c81aa371c",
+        "116c732d-5665-495e-8174-bfa832703094",
+        "3bb9015d-e3b2-4166-ab89-81783d5843f2"
     ],
     "IsDnD": false,
     "layers": [
@@ -186,9 +186,9 @@
             "inheritSubLayers": false,
             "inheritVisibility": false,
             "instances": [
-{"name": "inst_7D14470D","id": "0fc46f91-b37b-46c4-b162-012a78635def","colour": { "Value": 4294967295 },"creationCodeFile": "","creationCodeType": "","ignore": false,"imageIndex": 0,"imageSpeed": 1,"inheritCode": false,"inheritItemSettings": false,"IsDnD": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "inst_7D14470D","objId": "2c1c2d50-e4cf-4f86-bac3-e529c6b5ad40","properties": [{"id": "0f5448c7-ae73-49bf-93d3-13f90f70e464","modelName": "GMOverriddenProperty","objectId": "2c1c2d50-e4cf-4f86-bac3-e529c6b5ad40","propertyId": "4487f603-dd89-42b6-a4fc-c76642012af9","mvc": "1.0","value": "\"Avoid Buffshrooms !\\nThey punch people !!"}],"rotation": 0,"scaleX": 1,"scaleY": 1,"mvc": "1.1","x": 120,"y": 440},
-{"name": "inst_2F5C396C","id": "a1242f8c-f895-4491-9a8f-48a5556e10d0","colour": { "Value": 4294967295 },"creationCodeFile": "","creationCodeType": "","ignore": false,"imageIndex": 0,"imageSpeed": 1,"inheritCode": false,"inheritItemSettings": false,"IsDnD": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "inst_2F5C396C","objId": "2c1c2d50-e4cf-4f86-bac3-e529c6b5ad40","properties": [{"id": "8dc5b8ac-ae63-4054-86ba-bced584e664c","modelName": "GMOverriddenProperty","objectId": "2c1c2d50-e4cf-4f86-bac3-e529c6b5ad40","propertyId": "4487f603-dd89-42b6-a4fc-c76642012af9","mvc": "1.0","value": "\"Safer path >\\n- Mage's Tower -\""}],"rotation": 0,"scaleX": 1,"scaleY": 1,"mvc": "1.1","x": 184,"y": 408},
-{"name": "inst_19175035","id": "416dbcde-a631-48c8-94c1-e3f11d11604c","colour": { "Value": 4294967295 },"creationCodeFile": "","creationCodeType": "","ignore": false,"imageIndex": 0,"imageSpeed": 1,"inheritCode": false,"inheritItemSettings": false,"IsDnD": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "inst_19175035","objId": "2c1c2d50-e4cf-4f86-bac3-e529c6b5ad40","properties": [{"id": "a7acde41-4a70-46e9-9eb5-d5f48b4a9225","modelName": "GMOverriddenProperty","objectId": "2c1c2d50-e4cf-4f86-bac3-e529c6b5ad40","propertyId": "4487f603-dd89-42b6-a4fc-c76642012af9","mvc": "1.0","value": "\"Mind the gap !\""}],"rotation": 0,"scaleX": 1,"scaleY": 1,"mvc": "1.1","x": 872,"y": 424}
+{"name": "inst_19175035","id": "416dbcde-a631-48c8-94c1-e3f11d11604c","colour": { "Value": 4294967295 },"creationCodeFile": "","creationCodeType": "","ignore": false,"imageIndex": 0,"imageSpeed": 1,"inheritCode": false,"inheritItemSettings": false,"IsDnD": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "inst_19175035","objId": "2c1c2d50-e4cf-4f86-bac3-e529c6b5ad40","properties": [{"id": "a7acde41-4a70-46e9-9eb5-d5f48b4a9225","modelName": "GMOverriddenProperty","objectId": "2c1c2d50-e4cf-4f86-bac3-e529c6b5ad40","propertyId": "4487f603-dd89-42b6-a4fc-c76642012af9","mvc": "1.0","value": "\"Mind the gap !\""}],"rotation": 0,"scaleX": 1,"scaleY": 1,"mvc": "1.1","x": 872,"y": 424},
+{"name": "inst_141141AE","id": "116c732d-5665-495e-8174-bfa832703094","colour": { "Value": 4294967295 },"creationCodeFile": "","creationCodeType": "","ignore": false,"imageIndex": 0,"imageSpeed": 1,"inheritCode": false,"inheritItemSettings": false,"IsDnD": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "inst_141141AE","objId": "a0da107d-0a6f-437b-af70-fc492f4f7670","properties": [{"id": "b0e9d556-2f9b-4004-b8d4-763fda5e912a","modelName": "GMOverriddenProperty","objectId": "2c1c2d50-e4cf-4f86-bac3-e529c6b5ad40","propertyId": "4487f603-dd89-42b6-a4fc-c76642012af9","mvc": "1.0","value": "\"Avoid Buffshrooms !\\nThey punch people !!"}],"rotation": 0,"scaleX": 1,"scaleY": 1,"mvc": "1.1","x": 120,"y": 440},
+{"name": "inst_5B8FE33D","id": "3bb9015d-e3b2-4166-ab89-81783d5843f2","colour": { "Value": 4294967295 },"creationCodeFile": "","creationCodeType": "","ignore": false,"imageIndex": 0,"imageSpeed": 1,"inheritCode": false,"inheritItemSettings": false,"IsDnD": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "inst_5B8FE33D","objId": "ccef2477-d558-4294-88ff-d57ffc5b79af","properties": [{"id": "7fa949c3-41bd-4661-8a0e-8c67121343f4","modelName": "GMOverriddenProperty","objectId": "2c1c2d50-e4cf-4f86-bac3-e529c6b5ad40","propertyId": "4487f603-dd89-42b6-a4fc-c76642012af9","mvc": "1.0","value": "\"Safer path >\\n- Mage's Tower -\""}],"rotation": 0,"scaleX": 1,"scaleY": 1,"mvc": "1.1","x": 184,"y": 408}
             ],
             "layers": [
 
