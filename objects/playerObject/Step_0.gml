@@ -1,4 +1,4 @@
-/// Desc Handle inputs, collisions, movements, animations, death
+/// @desc Handle inputs, collisions, movements, animations, death
 if (isVisible) {
 	if (!isDying) {
 
@@ -68,6 +68,12 @@ if (isVisible) {
 		if (!wasGrounded and isGrounded) {
 			audio_sound_pitch(landingSound, choose(0.7, 1.0, 1.3));
 			audio_play_sound(landingSound, 3, false);
+			// Make dusts
+			repeat(5) {
+				with(instance_create_layer(x, bbox_bottom, "Projectiles", dustObject)) {
+					vsp = 0; // Landing dust shouldn't move vertically
+				}
+			}
 		}
 
 		// Jump Buffer and Coyote Time: 

@@ -295,6 +295,14 @@
             }
         },
         {
+            "Key": "354b95da-05d5-46c3-8020-3999c4039e3c",
+            "Value": {
+                "id": "f54a7ebb-6fc6-4804-96c2-67a1d4a37771",
+                "resourcePath": "objects\\dustObject\\dustObject.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "365df632-f2b4-42e5-abe9-9a726dd4677a",
             "Value": {
                 "id": "c2acb364-70f5-435d-8a6f-254f9c9a4d91",
@@ -364,6 +372,14 @@
                 "id": "246fc1b6-09fd-483c-b729-548cb0c067c9",
                 "resourcePath": "scripts\\drawSetText\\drawSetText.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "49ccdde4-da7b-45a6-a00f-7c8eef1a94d2",
+            "Value": {
+                "id": "8f99428b-f0b7-4380-ac32-c249f78f0725",
+                "resourcePath": "objects\\abstractBurstObject\\abstractBurstObject.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -567,6 +583,14 @@
             }
         },
         {
+            "Key": "6b469ad3-dd18-49ea-814a-25ae4143fe1c",
+            "Value": {
+                "id": "20579bdd-1ae8-4e12-8d8f-b9e13eef68cf",
+                "resourcePath": "views\\6b469ad3-dd18-49ea-814a-25ae4143fe1c.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "70fd3ec6-ef6a-41e9-b7b1-8e58eea58915",
             "Value": {
                 "id": "3207b0b7-9b5c-4fac-af7b-38ec4d981625",
@@ -588,6 +612,14 @@
                 "id": "50ec9d8b-6c52-4f56-a029-f716a5158092",
                 "resourcePath": "scripts\\startTransition\\startTransition.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "7f34e096-7366-457c-817b-7dcf13435218",
+            "Value": {
+                "id": "60b29e3d-de01-4b3b-8fa4-f1c56f4ff937",
+                "resourcePath": "objects\\abstractProjectileObject\\abstractProjectileObject.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -1095,6 +1127,14 @@
             }
         },
         {
+            "Key": "e0547695-772b-4be2-9453-20b19ed2a4ba",
+            "Value": {
+                "id": "d5a718dd-49f3-468f-80a1-d0e808dc3cee",
+                "resourcePath": "sprites\\dustSprite\\dustSprite.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "e0a83a6e-e4ad-46be-85a9-896dff4e63d8",
             "Value": {
                 "id": "1b3cdc3c-a368-435b-b71c-c921df420682",
@@ -1108,6 +1148,14 @@
                 "id": "5e1cf1ee-88ec-4a05-84e8-eeb6e31f3426",
                 "resourcePath": "sprites\\staffPickupSprite\\staffPickupSprite.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "e2cf261e-d130-4cbf-93cd-8240d848b9e0",
+            "Value": {
+                "id": "aa603f31-2fe5-42ac-89ef-87ff72de0a11",
+                "resourcePath": "views\\e2cf261e-d130-4cbf-93cd-8240d848b9e0.yy",
+                "resourceType": "GMFolder"
             }
         },
         {

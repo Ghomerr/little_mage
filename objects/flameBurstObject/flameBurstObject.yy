@@ -4,20 +4,11 @@
     "mvc": "1.0",
     "name": "flameBurstObject",
     "eventList": [
-        {
-            "id": "aab9f50d-a1a5-4125-a492-92613315d592",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 7,
-            "eventtype": 7,
-            "m_owner": "98592d44-23d1-4d7c-b496-e9e4cf3e5d1c"
-        }
+        
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
-    "parentObjectId": "00000000-0000-0000-0000-000000000000",
+    "parentObjectId": "49ccdde4-da7b-45a6-a00f-7c8eef1a94d2",
     "persistent": false,
     "physicsAngularDamping": 0.1,
     "physicsDensity": 0.5,

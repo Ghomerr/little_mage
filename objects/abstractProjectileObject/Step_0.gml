@@ -1,4 +1,10 @@
-/// @description Handle collision with shootable objects first then walls
+/// @description Handle movement and collisions
+
+// Update projectile coordinates
+x += lengthdir_x(prjSpeed, direction);
+y += lengthdir_y(prjSpeed, direction);
+
+/// Handle collision with shootable objects first then walls
 if (handleCollisionWith(shootableObject)) {
 	with(instance_place(x, y, shootableObject)) {
 		if (!isDying) {
@@ -9,9 +15,7 @@ if (handleCollisionWith(shootableObject)) {
 			hitfrom = other.direction
 		}
 	}
-	instance_destroy();
 } else {
-	if (handleCollisionWith(wallObject)) {
-		instance_destroy();	
-	}
+	// Handle wall objects collision
+	handleCollisionWith(wallObject);
 }

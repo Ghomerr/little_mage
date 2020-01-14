@@ -32,7 +32,7 @@ if (playerObject.hasControl) {
 	
 		// Create a new projectile using staff angle
 		with (instance_create_layer(prjX, prjY, "Projectiles", flameProjectileObject)) {
-			speed = prjSpeed;
+			prjSpeed = DEFAULT_SPEED;
 			direction = other.image_angle + random_range(-other.STAFF_DISPERSION, other.STAFF_DISPERSION);
 			image_angle = direction;
 		}
