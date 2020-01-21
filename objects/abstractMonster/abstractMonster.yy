@@ -300,6 +300,20 @@
             "varType": 5
         },
         {
+            "id": "6aa5395f-1ee9-4e64-87cd-62d4d71dcd85",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "-1",
+            "varName": "landingSprite",
+            "varType": 5
+        },
+        {
             "id": "54281a46-c653-4739-9e06-a207a5cb390e",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",
@@ -326,6 +340,20 @@
             "value": "False",
             "varName": "isDebugEnabled",
             "varType": 3
+        },
+        {
+            "id": "885a755a-f419-4b96-afd6-761cdd9fed7a",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "noone",
+            "varName": "deadObject",
+            "varType": 5
         }
     ],
     "solid": false,

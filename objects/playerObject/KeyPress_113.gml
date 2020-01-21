@@ -3,7 +3,7 @@ if (!isDebugEnabled) {
 	// Enable debug
 	isDebugEnabled = true;
 	// Slow game speed
-	game_set_speed(GAME_SPEED/debugFactor, gamespeed_fps);
+	game_set_speed(debugFps, gamespeed_fps);
 } else {
 	// Disable debug
 	isDebugEnabled = false;

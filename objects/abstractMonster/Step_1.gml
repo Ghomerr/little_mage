@@ -11,5 +11,5 @@ if (!isDying and hp <= 0) {
 	hsp = lengthdir_x(jump, direction);
 	vsp = lengthdir_y(jump, direction)-jump;
 	move =  (hsp != 0) ? sign(hsp) : 1;
-	image_xscale = move * size;
+	image_xscale *= sign(hsp) ;
 }

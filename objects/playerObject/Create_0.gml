@@ -21,7 +21,7 @@ controller = false;
 hsp = 0; // horizonral speed
 vsp = 0; // vertical speed
 isDebugEnabled = false;
-debugFactor = GAME_SPEED/4;
+debugFps = GAME_SPEED/2;
 maxYbeforeDead = 0;
 
 isGrounded = false; // grounded flag

@@ -27,7 +27,7 @@ if (!isDying) {
 	handleHorizontalCollision();
 	// If dying and is grounded, change to dead object
 	if (handleVerticalCollision() and isGrounded) {
-		with(instance_create_layer(round(x), round(y), layer, buffshroomDeadObject)) {
+		with(instance_create_layer(round(x), round(y), layer, deadObject)) {
 			image_xscale = other.image_xscale;
 			image_yscale = other.image_yscale;
 		}

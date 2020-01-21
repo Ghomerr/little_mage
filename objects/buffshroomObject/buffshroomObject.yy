@@ -55,6 +55,14 @@
             "objectId": "2f80b86a-f496-4621-988a-3bc5c5fd2787",
             "propertyId": "c6de9a1c-22b4-4a79-bb5a-48480af1d5af",
             "value": "irandom_range(-1, 1);"
+        },
+        {
+            "id": "ce93c06e-09ef-47b2-8fa3-d13157498374",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "2f80b86a-f496-4621-988a-3bc5c5fd2787",
+            "propertyId": "885a755a-f419-4b96-afd6-761cdd9fed7a",
+            "value": "buffshroomDeadObject"
         }
     ],
     "parentObjectId": "2f80b86a-f496-4621-988a-3bc5c5fd2787",
