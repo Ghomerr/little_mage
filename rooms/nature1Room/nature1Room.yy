@@ -378,7 +378,7 @@
         },
         {
             "__type": "GMRBackgroundLayer_Model:#YoYoStudio.MVCFormat",
-            "name": "Grass",
+            "name": "Close",
             "id": "6af3887b-83d3-4e64-9e81-cb562921d6ec",
             "animationFPS": 15,
             "animationSpeedType": "0",
@@ -413,7 +413,7 @@
         },
         {
             "__type": "GMRBackgroundLayer_Model:#YoYoStudio.MVCFormat",
-            "name": "Hills",
+            "name": "Mid",
             "id": "b6e66573-64ac-452f-a567-5d3b40dce524",
             "animationFPS": 15,
             "animationSpeedType": "0",
@@ -448,7 +448,7 @@
         },
         {
             "__type": "GMRBackgroundLayer_Model:#YoYoStudio.MVCFormat",
-            "name": "Clouds",
+            "name": "Far",
             "id": "ed62b202-aeed-46e8-9a10-5c49e90ef077",
             "animationFPS": 15,
             "animationSpeedType": "0",

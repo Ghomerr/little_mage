@@ -1,4 +1,4 @@
-target = nature1Room;
-playerX = 960;
-playerY = 400;
+target = nature2Room;
+playerX = 1000;
+playerY = 96;
 staffAngle = 180;
