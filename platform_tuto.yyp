@@ -71,6 +71,14 @@
             }
         },
         {
+            "Key": "0a88d0cf-735b-41a3-be25-159a425c11d7",
+            "Value": {
+                "id": "7887cd22-3d1f-4183-a690-e488519d55eb",
+                "resourcePath": "views\\0a88d0cf-735b-41a3-be25-159a425c11d7.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "0a94b8f4-ba34-4470-9b28-7f83eaab1e92",
             "Value": {
                 "id": "bfde6ff4-6994-46c7-9d29-dcdd8f3b8233",
@@ -175,6 +183,14 @@
             }
         },
         {
+            "Key": "1a12523f-46a9-4188-b55b-a0a4f2e471f0",
+            "Value": {
+                "id": "aa917331-5592-484d-a518-b161421d6017",
+                "resourcePath": "objects\\acornBurstObject\\acornBurstObject.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "1b888e7c-5bf2-4ca6-bdf5-57cc6762849a",
             "Value": {
                 "id": "174883b2-f027-4e06-a8ae-7b6359834d8a",
@@ -220,6 +236,14 @@
                 "id": "a3baf02c-373c-4d87-a5d9-8a3419b98800",
                 "resourcePath": "rooms\\menuRoom\\menuRoom.yy",
                 "resourceType": "GMRoom"
+            }
+        },
+        {
+            "Key": "26293d67-f711-4977-904b-37c1b86d172d",
+            "Value": {
+                "id": "c0eded7c-b6c1-4b91-b023-943ddbd9e298",
+                "resourcePath": "views\\26293d67-f711-4977-904b-37c1b86d172d.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -484,6 +508,14 @@
                 "id": "6d2404be-88a2-4b46-a859-8af4b1a498f9",
                 "resourcePath": "sprites\\playerIdleSprite\\playerIdleSprite.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "52fa23fb-3a5e-4f64-8b38-3f8873028071",
+            "Value": {
+                "id": "fee9f98f-60fe-48b8-aafa-3afce5456392",
+                "resourcePath": "objects\\acornProjectile\\acornProjectile.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -823,6 +855,14 @@
             }
         },
         {
+            "Key": "8cf879b5-760e-4841-924d-347a24c64432",
+            "Value": {
+                "id": "2c2d9027-ff34-4f02-aed6-8c260387d8fd",
+                "resourcePath": "views\\8cf879b5-760e-4841-924d-347a24c64432.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "8f2090a7-8757-4e7e-b8e9-006661f27c02",
             "Value": {
                 "id": "7bf382f4-f7c7-4243-9a1c-a3250f36ab54",
@@ -975,6 +1015,14 @@
             }
         },
         {
+            "Key": "a10bffca-4eab-457f-849a-83180d4daee9",
+            "Value": {
+                "id": "7fe22c98-4739-4221-8ec2-180c4a4b43ec",
+                "resourcePath": "sprites\\acornSprite\\acornSprite.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "a6560367-77ce-4670-b47a-44c593ce65c2",
             "Value": {
                 "id": "aefd9550-fef6-48f7-a09f-43d219e0b197",
@@ -1059,6 +1107,14 @@
             "Value": {
                 "id": "56ed1460-a994-4d9a-b118-eafc26e9c57d",
                 "resourcePath": "views\\b8ae9d96-c5c4-4a7a-8c02-7b33148a0bf8.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "b922c423-340e-4303-a6e7-5c394be28834",
+            "Value": {
+                "id": "eeb017b1-7d74-44da-b930-d3120a149622",
+                "resourcePath": "views\\b922c423-340e-4303-a6e7-5c394be28834.yy",
                 "resourceType": "GMFolder"
             }
         },
@@ -1379,6 +1435,14 @@
             "Value": {
                 "id": "1c28aac3-14fb-49c3-9163-7ef454208e5a",
                 "resourcePath": "sprites\\cloudsSprite\\cloudsSprite.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "ece9874b-28a9-4172-8f51-7c231069606c",
+            "Value": {
+                "id": "30dd5bbf-8865-4a5c-94ec-7d03d5fcb06b",
+                "resourcePath": "sprites\\acornBurstSprite\\acornBurstSprite.yy",
                 "resourceType": "GMSprite"
             }
         },

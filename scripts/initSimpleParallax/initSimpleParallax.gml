@@ -1,11 +1,27 @@
+/// @desc Set simple parallax data
+/// @arg bgSpeeds
+/// @arg bgNames
+
+// Default values
+var bgNames = ["Close","Mid","Far"];
+var bgSpeeds = [0.6, 0.3, 0.1];
+
+if (argument_count > 0) {
+	bgSpeeds = argument[0];
+}
+if (argument_count > 1) {
+	bgNames = argument[1];
+}
+
 with(instance_create_layer(0, 0, "Cameras", backgroundManager)) {
+	
 	// Init backgrounds ids
-	backgroundsIds[0] = layer_get_id("Close");
-	backgroundsIds[1] = layer_get_id("Mid");
-	backgroundsIds[2] = layer_get_id("Far");
+	for (var i = 0 ; i < array_length_1d(bgNames) ; i++) {
+		backgroundsIds[i] = layer_get_id(bgNames[i]);
+	}
 	
 	// Init backgrounds speed
-	backgroundsSpeeds[0] = 0.6;
-	backgroundsSpeeds[1] = 0.3;
-	backgroundsSpeeds[2] = 0.1;
+	for (var i = 0 ; i < array_length_1d(bgSpeeds) ; i++) {
+		backgroundsSpeeds[i] = bgSpeeds[i];
+	}
 }
