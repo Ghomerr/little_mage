@@ -2,8 +2,9 @@ Little mage game based on Shaun Spalding's Youtube Platformer tutorials series.
 
 ## Resources
 * Youtube tutorials playlist : https://www.youtube.com/watch?v=izNXbMdu348&list=PLPRT_JORnIupqWsjRpJZjG07N01Wsw_GJ
-* Forest Tileset for menu, levels 1 & 2 : https://rottingpixels.itch.io/nature-platformer-tileset
+* Forest Tileset for menu, levels 1 & 2 : https://rottingpixels.itch.io/nature-platformer-tileset (with small changes)
 * Parallax for menu, levels 1 & 2 : https://mamanezakon.itch.io/forest-tileset
+* Forest Tileset for level 3 : https://mamanezakon.itch.io/forest-tileset (with small changes)
 * Parallax for level 3 : https://aethrall.itch.io/demon-woods-parallax-background
 
 ## Controls :
