@@ -33,6 +33,16 @@
             "enumb": 0,
             "eventtype": 0,
             "m_owner": "7f34e096-7366-457c-817b-7dcf13435218"
+        },
+        {
+            "id": "774b01f1-dc6e-4da5-8d61-d1c945202ec2",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 1,
+            "eventtype": 3,
+            "m_owner": "7f34e096-7366-457c-817b-7dcf13435218"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
@@ -67,6 +77,20 @@
             "varType": 0
         },
         {
+            "id": "c0b99a0b-f7b3-4284-8ddd-a8062a4c58a7",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "BACKUP_SPEED",
+            "varType": 0
+        },
+        {
             "id": "54afb833-16b1-446a-a6de-c5edf1d0146a",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",
@@ -93,6 +117,20 @@
             "value": "True",
             "varName": "stopAnimationAtEnd",
             "varType": 3
+        },
+        {
+            "id": "acf9cb41-2572-4950-9ae3-94096bfd6b84",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "noone",
+            "varName": "shooter",
+            "varType": 5
         }
     ],
     "solid": false,

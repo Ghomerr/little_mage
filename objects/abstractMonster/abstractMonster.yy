@@ -53,6 +53,26 @@
             "enumb": 0,
             "eventtype": 8,
             "m_owner": "2f80b86a-f496-4621-988a-3bc5c5fd2787"
+        },
+        {
+            "id": "4b79eddf-ff2b-4beb-9336-2c902df5b8b7",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 2,
+            "m_owner": "2f80b86a-f496-4621-988a-3bc5c5fd2787"
+        },
+        {
+            "id": "0800dc15-6315-46ef-a9ba-b1495d2e3cdf",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 7,
+            "eventtype": 7,
+            "m_owner": "2f80b86a-f496-4621-988a-3bc5c5fd2787"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
@@ -89,20 +109,6 @@
     "physicsShapePoints": null,
     "physicsStartAwake": true,
     "properties": [
-        {
-            "id": "b5bfdec3-ddd9-449c-83b5-baa9fe09e45f",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "0",
-            "varName": "isPlayer",
-            "varType": 3
-        },
         {
             "id": "f40f3585-eaac-47fc-8048-8c78d250e50d",
             "modelName": "GMObjectProperty",
@@ -230,6 +236,34 @@
             "varType": 0
         },
         {
+            "id": "6fc8c848-a7fd-4d1f-92fc-d21ef589a967",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "shootingRate",
+            "varType": 0
+        },
+        {
+            "id": "6957e7c2-3c8b-421b-b003-cebe0708727c",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "shootingRange",
+            "varType": 0
+        },
+        {
             "id": "c1f879e3-5b88-4e2c-b1f4-c47c72b91837",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",
@@ -311,6 +345,20 @@
             "resourceFilter": 1023,
             "value": "-1",
             "varName": "landingSprite",
+            "varType": 5
+        },
+        {
+            "id": "6a459a0b-9397-437b-83ab-6c5cc511cafc",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "-1",
+            "varName": "attackSprite",
             "varType": 5
         },
         {

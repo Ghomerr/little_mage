@@ -1,15 +1,48 @@
 /// @description Check if dying to go dead
-if (!isDying and hp <= 0) {
-	// Shake screen on dying
-	screenShake(6, 25);
-	// Play dead sound
-	audio_play_sound(monsterDeadSound, 10, false);
+if (!isDying) {
 	
-	isDying = true;
-	sprite_index = hitSprite;
-	direction = other.hitfrom;
-	hsp = lengthdir_x(DYING_JUMP, direction);
-	vsp = lengthdir_y(DYING_JUMP, direction) - DYING_JUMP;
-	move =  (hsp != 0) ? sign(hsp) : 1;
-	image_xscale *= sign(hsp);
+	// If no more HP -> go dying
+	if (hp <= 0) {
+		// Shake screen on dying
+		screenShake(6, 25);
+		// Play dead sound
+		audio_play_sound(monsterDeadSound, 10, false);
+	
+		isDying = true;
+		sprite_index = hitSprite;
+		direction = other.hitfrom;
+		hsp = lengthdir_x(DYING_JUMP, direction);
+		vsp = lengthdir_y(DYING_JUMP, direction) - DYING_JUMP;
+		move =  (hsp != 0) ? sign(hsp) : 1;
+		image_xscale *= sign(hsp);
+		
+		// Leave projectile fall, if any
+		with (myProjectile) {
+			isFalling = true;
+			var dir = irandom_range(45, 135);
+			hsp = lengthdir_x(MAX_FALL_SPEED, dir);
+			vsp = lengthdir_y(MAX_FALL_SPEED, dir);
+		}
+	}
+	
+	// If this monster can shoot
+	if (shootingRate > 0 and shootingRange > 0 and instance_exists(playerObject) and !playerObject.isDying) {
+		if (point_distance(x, y, playerObject.x, playerObject.y) < shootingRange) {
+			// Turn monster face to the player
+			var newScale = sign(playerObject.x - x);
+			if (newScale != 0) {
+				image_xscale = newScale * size;
+			}
+			
+			// Handle shooting
+			shootCounter--;
+			if (shootCounter <= 0) {
+				shootCounter = shootingRate;
+				isAttacking = true;
+			}
+		} else {
+			isAttacking = false;
+			shootCounter = 0;
+		}
+	}
 }

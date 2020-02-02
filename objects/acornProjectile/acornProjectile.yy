@@ -13,6 +13,16 @@
             "enumb": 0,
             "eventtype": 0,
             "m_owner": "52fa23fb-3a5e-4f64-8b38-3f8873028071"
+        },
+        {
+            "id": "600bb1a5-1ac0-45d0-9faf-8efd0354d152",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 8,
+            "m_owner": "52fa23fb-3a5e-4f64-8b38-3f8873028071"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
@@ -40,6 +50,14 @@
             "objectId": "7f34e096-7366-457c-817b-7dcf13435218",
             "propertyId": "54afb833-16b1-446a-a6de-c5edf1d0146a",
             "value": "acornBurstObject"
+        },
+        {
+            "id": "3be85793-04c1-4c96-b292-a7a55126908f",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "7f34e096-7366-457c-817b-7dcf13435218",
+            "propertyId": "c0b99a0b-f7b3-4284-8ddd-a8062a4c58a7",
+            "value": "4"
         }
     ],
     "parentObjectId": "7f34e096-7366-457c-817b-7dcf13435218",

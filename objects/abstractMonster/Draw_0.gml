@@ -15,6 +15,13 @@ if (instance_exists(playerObject) and playerObject.isDebugEnabled and isDebugEna
 	//draw_line(x - testValue, y, x + testValue, y);
 	
 	// Draw spriteWidth and spriteHeight values
-	//drawSetText(c_red, signPostFont, fa_center, fa_middle);
+	/*drawSetText(c_red, signPostFont, fa_center, fa_middle);
+	draw_text(x, y - 20, string(shootCounter));
+	if (isAttacking) {
+		draw_set_color(c_yellow);
+	} else {
+		draw_set_color(c_red);	
+	}
+	draw_text(x, y - 30, string(image_speed)); */
 	//draw_text(x, y - 20, string(spriteWidth) + " " + string(spriteHeight));
 }

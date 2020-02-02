@@ -1,5 +1,17 @@
 /// @description Handle movement and collisions
-if (prjSpeed > 0) {
+
+// Falling projectile
+if (isFalling) {
+	x += hsp;
+	y += vsp;
+	if (vsp < MAX_FALL_SPEED) {
+		vsp += GRV;
+	}
+	
+	// Handle wall objects collision
+	handleCollisionWith(wallObject);
+	
+} else if (prjSpeed > 0) {
 	// Update projectile coordinates
 	x += lengthdir_x(prjSpeed, direction);
 	y += lengthdir_y(prjSpeed, direction);
@@ -12,7 +24,7 @@ if (prjSpeed > 0) {
 				audio_play_sound(manaBoltHitSound, 5, false);
 				hp--;
 				flash = hitDelay;
-				hitfrom = other.direction
+				hitfrom = other.direction;
 			}
 		}
 	} else {

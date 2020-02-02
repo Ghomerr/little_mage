@@ -9,25 +9,43 @@ if (isGrounded) {
 		sprite_index = runningSprite;
 		image_speed = 1;
 	} else {
-		// Entity is idle
-		switch (idleDelay) {
-			case -1:
-				sprite_index = defaultSprite;
-				break;
-				
-			case 0:
-				// Random blinking
-				var idleRnd = irandom_range(1, 100);
-				if (idleRnd == 50) {
-					// Blink once or twice
-					idleDelay = irandom_range(1, 2);
-					sprite_index = idleSprite;
-					image_speed = 1;
-				} else {
+		// For monsters : handle attack animation
+		if (!isPlayer and isAttacking) {
+			// Restart animation
+			if (shootCounter == shootingRate) {
+				image_index = 0;
+				image_speed = 1;
+				sprite_index = attackSprite;
+			}
+		}
+		
+		// Is player or is not attacking : idle animation
+		if (isPlayer or !isAttacking) {
+			// Entity is idle
+			switch (idleDelay) {
+				case -1:
 					sprite_index = defaultSprite;
-					image_speed = 0;
-				}
-				break;
+					if (idleRestart) {
+						idleRestart = false;
+						image_speed = 0;
+						alarm[0] = irandom_range(30, 90);
+					}
+					break;
+				
+				case 0:
+					// Random blinking
+					var idleRnd = irandom_range(1, 100);
+					if (idleRnd == 50) {
+						// Blink once or twice
+						idleDelay = irandom_range(1, 2);
+						sprite_index = idleSprite;
+						image_speed = 1;
+					} else {
+						sprite_index = defaultSprite;
+						image_speed = 0;
+					}
+					break;
+			}
 		}
 	}
 } else {
@@ -39,4 +57,8 @@ if (isGrounded) {
 		// Entity jumping
 		sprite_index = jumpingSprite;
 	}
+}
+
+if (sprite_index != defaultSprite) {
+	idleRestart = true;
 }

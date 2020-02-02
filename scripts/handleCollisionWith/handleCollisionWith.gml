@@ -1,15 +1,22 @@
-/// @desc handle collisions
-if (x < 0 or y < 0 or x > room_width or y > room_height) {
-	// Destroy if out of screen
-	instance_destroy();
- 
-} else if (place_meeting(x, y, argument0)) {
+/// @desc handle collisions with given entity type
+/// @arg object type to check collision with
+if (place_meeting(x, y, argument0)) {
+	// Avoid self shooting
+	var collidingInstance = instance_place(x, y, argument0);
+	if (shooter == collidingInstance.id) {
+		debugColor = c_green;
+		return false;
+	}
+	
+	debugColor = c_yellow;
 	prjSpeed = 0;
 	
-	// Avoid projectile to burst inside the wall object
-	while(place_meeting(x, y, argument0)) {
-		x -= lengthdir_x(1, direction);
-		y -= lengthdir_y(1, direction);
+	if (!isFalling) {
+		// Avoid projectile to burst inside the wall object
+		while(place_meeting(x, y, argument0)) {
+			x -= lengthdir_x(1, direction);
+			y -= lengthdir_y(1, direction);
+		}
 	}
 
 	// Change into a burst
@@ -17,5 +24,6 @@ if (x < 0 or y < 0 or x > room_width or y > room_height) {
 	
 	return true;
 } else {
+	debugColor = c_red;
 	return false;
 }
