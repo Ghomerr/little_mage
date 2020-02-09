@@ -3,9 +3,20 @@
 if (place_meeting(x, y, argument0)) {
 	// Avoid self shooting
 	var collidingInstance = instance_place(x, y, argument0);
-	if (shooter == collidingInstance.id) {
+	
+	if (object_is_ancestor(collidingInstance.object_index, abstractMonster) 
+		and shooter == collidingInstance.id) 
+	{
 		debugColor = c_green;
 		return false;
+	}
+	
+	// Platforms don't collide with projectiles
+	if (object_is_ancestor(collidingInstance.object_index, wallObject) 
+		and collidingInstance.isPlatform) 
+	{
+		debugColor = c_aqua;
+		return false;	
 	}
 	
 	debugColor = c_yellow;

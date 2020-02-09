@@ -11,7 +11,7 @@ if (isAttacking) {
 		layer_add_instance("Projectiles", self);
 		prjSpeed = DEFAULT_SPEED > 0 ? DEFAULT_SPEED : BACKUP_SPEED;
 		direction = point_direction(other.x, other.y, playerObject.x, playerObject.y);
-		image_angle = direction;		
+		image_angle = direction + 90;		
 	}
 	myProjectile = noone;
 	

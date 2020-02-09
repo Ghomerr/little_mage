@@ -1,3 +1,5 @@
 /// @description Hit by monster
-hp--;
-lastMonster = other;
+if (!other.isDying) {
+	hp--;
+	lastMonster = other;
+}

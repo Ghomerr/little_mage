@@ -375,6 +375,14 @@
             }
         },
         {
+            "Key": "41173556-9b24-44df-b734-2a54b3954aff",
+            "Value": {
+                "id": "181c7f0b-492a-423d-b212-2dd399960644",
+                "resourcePath": "objects\\platformObject\\platformObject.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "4134d966-29d3-4ae2-b231-95a79cc8e721",
             "Value": {
                 "id": "1878b380-1c98-4edc-8bbb-350b5972fa87",
@@ -715,6 +723,14 @@
             "Value": {
                 "id": "b978040c-510e-485d-8488-af578747edfd",
                 "resourcePath": "sprites\\forestTilesetSprite\\forestTilesetSprite.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "7bc75239-0cc1-4c5b-ab9f-02bbad12ea8c",
+            "Value": {
+                "id": "d34dfcce-1269-4977-85d6-0febfb3f969f",
+                "resourcePath": "sprites\\platformCollisionSprite\\platformCollisionSprite.yy",
                 "resourceType": "GMSprite"
             }
         },
