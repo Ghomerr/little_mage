@@ -12,10 +12,10 @@ GAME_SPEED = game_get_speed(gamespeed_fps);
 WEAPON_Y_OFFSET = 8;
 
 // Player variables
-hp = 1;
+//hp = 1;
 initHp = hp;
 hasWeapon = false;
-isDying = false;
+//isDying = false;
 isVisible = true;
 controller = false;
 hsp = 0; // horizonral speed
@@ -26,13 +26,13 @@ maxYbeforeDead = 0;
 
 isGrounded = false; // grounded flag
 isJumping = true; // jumping flag (true to avoid creating player air-jump)
+isBeingHit = false; // is true if player is flying in the air after being hit
 jumpBuffer = 0; // jump buffer to handle jump before the actual jump
 coyoteCounter = 0;
 
-flash = 0; // counter to handle player being hit
+//flash = 0; // counter to handle player being hit
 hasControl = false; // define if player can do inputs
 move = 0; // movement orientation
-lastMonster = 0;
 
 // Gamepad inputs
 hAxis = 0;

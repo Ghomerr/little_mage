@@ -15,9 +15,5 @@ if (isVisible and !isDying and (hp <= 0 or y >= maxYbeforeDead)) {
 	
 	isDying = true;
 	sprite_index = hitSprite;
-	direction = point_direction(lastMonster.x, lastMonster.y, x, y);
-	hsp = lengthdir_x(6, direction);
-	vsp = lengthdir_y(4, direction)-2;
-	move =  (hsp != 0) ? sign(hsp) : 1;
-	image_xscale = -move;
+	beHitInTheAir();
 }

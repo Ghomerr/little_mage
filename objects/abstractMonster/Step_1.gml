@@ -38,7 +38,13 @@ if (!isDying) {
 			shootCounter--;
 			if (shootCounter <= 0) {
 				shootCounter = shootingRate;
-				isAttacking = true;
+				var wallInstance = collision_line(x, y, playerObject.x, playerObject.y, wallObject, false, true);
+				// Attack if no wall or it's a platform
+				if (!wallInstance or wallInstance.isPlatform) {
+					isAttacking = true;
+				} else {
+					isAttacking = false;
+				}
 			}
 		} else {
 			isAttacking = false;

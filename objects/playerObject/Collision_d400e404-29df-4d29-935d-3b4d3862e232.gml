@@ -1,5 +1,6 @@
 /// @description Hit by monster
 if (!other.isDying) {
-	hp--;
-	lastMonster = other;
+	beHit();
+	beHitInTheAir(2, 2);
+	isBeingHit = true;
 }

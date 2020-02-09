@@ -50,12 +50,16 @@ if (isGrounded) {
 	}
 } else {
 	image_speed = 1;
-	if (vsp > 0) {
-		// Entity falling
-		sprite_index = fallingSprite;
+	if (isBeingHit) {
+		sprite_index = hitSprite;
 	} else {
-		// Entity jumping
-		sprite_index = jumpingSprite;
+		if (vsp > 0) {
+			// Entity falling
+			sprite_index = fallingSprite;
+		} else {
+			// Entity jumping
+			sprite_index = jumpingSprite;
+		}
 	}
 }
 

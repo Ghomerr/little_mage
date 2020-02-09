@@ -215,6 +215,14 @@
             }
         },
         {
+            "Key": "22d8a09a-1732-4051-aaf9-d0851053ac19",
+            "Value": {
+                "id": "296bbafe-843e-462f-b258-5b29dcaeb1b2",
+                "resourcePath": "scripts\\beHitInTheAir\\beHitInTheAir.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "238a4fec-68d7-42ef-bd1b-f8c99936e45e",
             "Value": {
                 "id": "8063ed3e-c890-48e1-ba3e-a40e5422679d",
@@ -380,6 +388,14 @@
                 "id": "181c7f0b-492a-423d-b212-2dd399960644",
                 "resourcePath": "objects\\platformObject\\platformObject.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "411d24d7-3015-4b78-a29b-0718167a3da5",
+            "Value": {
+                "id": "1cad8bde-5e18-4525-b2b0-d94ad750cb81",
+                "resourcePath": "scripts\\beHit\\beHit.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -1565,6 +1581,8 @@
         "0faa606a-8ae3-4340-9c03-a0f10e183bc3",
         "3211a3de-4598-4636-93dc-1ab1547e20e0",
         "503d1adc-2797-4163-a494-20758f02e557",
+        "411d24d7-3015-4b78-a29b-0718167a3da5",
+        "22d8a09a-1732-4051-aaf9-d0851053ac19",
         "868d601d-1635-4df2-87b2-0af6e99e2297",
         "7c20732f-c050-4aec-a7a2-5fa38cf93385",
         "30fe6cbe-07ff-4754-ba11-d78a30e8dd9c",

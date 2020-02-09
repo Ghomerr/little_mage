@@ -66,6 +66,7 @@ if (isVisible) {
 
 		// Play landing sound only when landing
 		if (!wasGrounded and isGrounded) {
+			isBeingHit = false; // reset being hit when landing
 			audio_sound_pitch(landingSound, choose(0.7, 1.0, 1.3));
 			audio_play_sound(landingSound, 3, false);
 			// Make dusts
@@ -157,9 +158,14 @@ if (isVisible) {
 			isVisible = false; // hide player
 			// Reset player data while being not visible
 			isDying = false;
+			isBeingHit = false;
 			hp = initHp;
+			hsp = 0;
+			vsp = 0;
+			move = 0;
 			// Focus camera on dead object
 			cameraObject.follow = instance_create_layer(x, y, layer, playerDeadObject);
+			cameraObject.follow.image_xscale = image_xscale;
 			// Move player out of the screen to avoid collision check
 			x = -100;
 			y = -100;

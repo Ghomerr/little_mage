@@ -1,6 +1,6 @@
 /// @description Draw self + debug
 if (isVisible) {
-	draw_self();
+	event_inherited();
 }
 
 if (isDebugEnabled) {
@@ -14,11 +14,10 @@ if (isDebugEnabled) {
 		draw_set_color(c_black);	
 	}
 	
-	/*draw_set_font(signPostFont);
-	draw_set_halign(fa_right);
-	draw_text(x - 10, y - 16, string(hsp));
-	draw_text(x - 10, y - 32, string(x));
-	draw_set_halign(fa_left);
-	draw_text(x + 10, y - 16, string(vsp));
-	draw_text(x + 10, y - 32, string(y));*/
+	/*
+	draw_set_font(signPostFont);
+	draw_set_halign(fa_middle);
+	draw_text(x, y - 32, string(hitfrom));
+	draw_line(x, y, x + lengthdir_x(4, hitfrom), y + lengthdir_y(4, hitfrom));
+	*/
 }

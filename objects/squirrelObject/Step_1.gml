@@ -1,6 +1,5 @@
 /// @description Create or Move acorn 
 
-
 if (!isDying) {
 	if (myProjectile != noone and instance_exists(myProjectile) and myProjectile.prjSpeed == 0) {
 		// Move acorn according to squirrel
