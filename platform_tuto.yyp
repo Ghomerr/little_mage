@@ -311,6 +311,14 @@
             }
         },
         {
+            "Key": "2f83e9df-1325-4a47-9a7e-05dd590a63ce",
+            "Value": {
+                "id": "09902906-26c7-4247-8a55-c0ebbfcfc03c",
+                "resourcePath": "objects\\GameHandler\\GameHandler.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "30fe6cbe-07ff-4754-ba11-d78a30e8dd9c",
             "Value": {
                 "id": "9a8a17e2-7a2e-463c-b13f-1d60131aa733",

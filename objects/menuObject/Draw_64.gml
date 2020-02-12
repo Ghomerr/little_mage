@@ -42,3 +42,7 @@ for (var i = 0; i < length; i++) {
 	draw_set_color(col);
 	draw_text(drawX, drawY, text);
 }
+
+// Draw black rectangle to hide menu selection when disappearing
+draw_set_color(c_black);
+draw_rectangle(guiWidth, guiHeight - menuHideOffset, guiWidth + menuHideOffset, guiHeight, false);

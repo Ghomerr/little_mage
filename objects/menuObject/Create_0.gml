@@ -1,5 +1,5 @@
 /// @description Init menu
-
+show_debug_message("menuObject");
 // Menu constants
 titleText = "Little Mage Adventure";
 guiWidth = display_get_gui_width();
