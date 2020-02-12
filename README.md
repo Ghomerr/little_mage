@@ -17,8 +17,11 @@ Little mage game based on Shaun Spalding's Youtube Platformer tutorials series.
 
 ## Debug controls :
 * `F2` : enable debug
-* `F3` : in debug, display wall hitboxes
+* `F3` : in debug, display walls hitboxes
 * `M` : in debug, display monsters hitboxes
+* `J` : in debug, make squirrels jump
+* `K` : in debug, make squirrels move
 * Numpad `+` : add 5 FPS to the current debug FPS value
 * Numpad `-` : remove 5 FPS from the current debug FPS value
-* `R` : restart fame
+* `R` : restart the game
+* `CTRL + F` : toggle fullscreen mode
