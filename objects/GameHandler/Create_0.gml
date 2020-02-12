@@ -1,5 +1,4 @@
 /// @description Init
-show_debug_message("GameHandler");
 
 // Resolution const
 #macro RES_W 1024
