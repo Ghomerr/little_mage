@@ -6,6 +6,8 @@ if (file_exists(SAVEFILE)) {
 	playerObject.hasWeapon = file_text_read_real(file) == 1;
 	global.kills = file_text_read_real(file);
 	afterUpdateKillsCounter();
+	global.coins = file_text_read_real(file);
+	afterUpdateCoinsCounter();
 	file_text_close(file);
 	
 	return targetRoom;

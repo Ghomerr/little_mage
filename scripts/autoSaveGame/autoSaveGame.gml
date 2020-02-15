@@ -7,5 +7,6 @@ if (room != menuRoom) {
 	file_text_write_real(file, room);
 	file_text_write_real(file, playerObject.hasWeapon ? 1 : 0);
 	file_text_write_real(file, global.kills);
+	file_text_write_real(file, global.coins);
 	file_text_close(file);
 }

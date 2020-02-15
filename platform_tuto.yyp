@@ -207,6 +207,14 @@
             }
         },
         {
+            "Key": "1f04c537-5a91-4ccd-8a8c-95930a5124ce",
+            "Value": {
+                "id": "1dcf69b9-a38e-45be-8ead-0db9da7f43dc",
+                "resourcePath": "objects\\goldCoinObject\\goldCoinObject.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "2061a3d2-28fd-44af-954e-036edd9d9d39",
             "Value": {
                 "id": "ea242066-646a-4389-bc14-bb574265c43f",
@@ -455,6 +463,14 @@
             }
         },
         {
+            "Key": "478f9e12-759f-4e44-991e-bce50670bc85",
+            "Value": {
+                "id": "5822ab83-4445-4451-86f5-1fbe655cb983",
+                "resourcePath": "sounds\\coinSound\\coinSound.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "492dfe61-5c67-4ef5-b4ce-add9b98e1261",
             "Value": {
                 "id": "246fc1b6-09fd-483c-b729-548cb0c067c9",
@@ -468,6 +484,14 @@
                 "id": "8f99428b-f0b7-4380-ac32-c249f78f0725",
                 "resourcePath": "objects\\abstractBurstObject\\abstractBurstObject.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "49f01be5-4103-4286-98d9-2ab9f65aa8b2",
+            "Value": {
+                "id": "b96ef794-5384-4c19-bd77-3684688fa847",
+                "resourcePath": "scripts\\afterUpdateCoinsCounter\\afterUpdateCoinsCounter.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -719,6 +743,14 @@
             }
         },
         {
+            "Key": "68f0f3ee-135f-45d7-aa21-edf90ed9dda6",
+            "Value": {
+                "id": "487dad50-b8f5-4130-895c-2eb9ab13471f",
+                "resourcePath": "sprites\\goldCoinSprite\\goldCoinSprite.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "6b469ad3-dd18-49ea-814a-25ae4143fe1c",
             "Value": {
                 "id": "20579bdd-1ae8-4e12-8d8f-b9e13eef68cf",
@@ -740,6 +772,22 @@
                 "id": "70d74a8c-1e41-46b3-917f-3deab7fad6f2",
                 "resourcePath": "tilesets\\treesTileset\\treesTileset.yy",
                 "resourceType": "GMTileSet"
+            }
+        },
+        {
+            "Key": "7446e022-5810-427d-a685-a59a4c44fbda",
+            "Value": {
+                "id": "66ed7c6b-a0c9-44ca-a9f7-85b60c4850af",
+                "resourcePath": "sprites\\coinsCounterSprite\\coinsCounterSprite.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "7617732e-9489-454b-861d-4968b06a957b",
+            "Value": {
+                "id": "c48e7d6d-970e-4f05-8ba2-11c7143da2da",
+                "resourcePath": "views\\7617732e-9489-454b-861d-4968b06a957b.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -1103,6 +1151,14 @@
             }
         },
         {
+            "Key": "aadc294a-434f-40e9-b230-d6892cf7a0ef",
+            "Value": {
+                "id": "35285f8a-e3ce-4c05-a765-2176612ed3aa",
+                "resourcePath": "views\\aadc294a-434f-40e9-b230-d6892cf7a0ef.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "ac3c9817-877e-47ab-ae9a-ee282c28ea5e",
             "Value": {
                 "id": "4d6eb5ea-c924-4121-9bb3-e65fc0388a03",
@@ -1115,6 +1171,14 @@
             "Value": {
                 "id": "5432a4d4-7298-4dbd-9c42-3d14156f15c9",
                 "resourcePath": "objects\\staffObject\\staffObject.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "af3615e2-e85c-4595-834a-48ad8d1fa320",
+            "Value": {
+                "id": "597a3b25-66db-422d-91ea-ce510d6af8af",
+                "resourcePath": "objects\\collectibleObject\\collectibleObject.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -1315,6 +1379,14 @@
             "Value": {
                 "id": "926797fb-14ee-47d0-9b92-5691e3a5c25d",
                 "resourcePath": "views\\d023a4aa-7819-4f15-9948-09d4042f83b1.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "d1b88010-fe9a-4cca-9b35-0f455fe256e8",
+            "Value": {
+                "id": "35f1d967-111a-4139-a4d0-c10f002c35ea",
+                "resourcePath": "views\\d1b88010-fe9a-4cca-9b35-0f455fe256e8.yy",
                 "resourceType": "GMFolder"
             }
         },
@@ -1618,6 +1690,7 @@
         "492dfe61-5c67-4ef5-b4ce-add9b98e1261",
         "05219028-ced4-4066-b22b-1e8cc20bce5c",
         "61efac8a-1be5-4dfd-b939-5c581b95ce8a",
+        "49f01be5-4103-4286-98d9-2ab9f65aa8b2",
         "4eeebcec-b4ce-4da4-87fd-50e054849c76"
     ],
     "tutorial": ""

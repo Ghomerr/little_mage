@@ -2,11 +2,13 @@
 /// @arg killTextScale value
 
 with (gameHandler) {
-	if (argument_count > 0) {
-		killsTextScale = argument[0];	
-	}
 	
 	killsText = string(global.kills);
-	var textWidth = string_width(killsText);
-	killsCounterX = killsTextX - (textWidth + killsCounterOffset) * killsTextScale;
+	killsTextWidth = string_width(killsText);
+	
+	if (argument_count > 0) {
+		killsTextScale = argument[0];
+	} else {
+		killsCounterX = killsTextX - (killsTextWidth + killsCounterOffset) * killsTextScale;
+	}
 }
