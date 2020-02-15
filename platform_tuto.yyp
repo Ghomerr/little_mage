@@ -314,7 +314,7 @@
             "Key": "2f83e9df-1325-4a47-9a7e-05dd590a63ce",
             "Value": {
                 "id": "09902906-26c7-4247-8a55-c0ebbfcfc03c",
-                "resourcePath": "objects\\GameHandler\\GameHandler.yy",
+                "resourcePath": "objects\\gameHandler\\gameHandler.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -679,6 +679,14 @@
             }
         },
         {
+            "Key": "61efac8a-1be5-4dfd-b939-5c581b95ce8a",
+            "Value": {
+                "id": "54ab510d-3059-4aa0-b084-edfc7b65452d",
+                "resourcePath": "scripts\\afterUpdateKillsCounter\\afterUpdateKillsCounter.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "629d3613-ade8-4c48-8829-2bc1d5c5ee5c",
             "Value": {
                 "id": "2a37f7a3-83f1-4b48-9df2-fc1dc1bf79f9",
@@ -828,6 +836,14 @@
                 "id": "59fe2e9f-04ef-4f0b-b54d-583a5624ffd6",
                 "resourcePath": "scripts\\screenShake\\screenShake.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "8664b306-655c-4d33-b00a-1f60910de303",
+            "Value": {
+                "id": "6b9108fb-c6c6-4ace-935e-926a75a2d8c3",
+                "resourcePath": "sprites\\killsCounterSprite\\killsCounterSprite.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -1601,6 +1617,7 @@
         "9b12f3ff-07de-430e-944b-069a994d6f74",
         "492dfe61-5c67-4ef5-b4ce-add9b98e1261",
         "05219028-ced4-4066-b22b-1e8cc20bce5c",
+        "61efac8a-1be5-4dfd-b939-5c581b95ce8a",
         "4eeebcec-b4ce-4da4-87fd-50e054849c76"
     ],
     "tutorial": ""

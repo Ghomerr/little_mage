@@ -23,6 +23,12 @@ if (!isDying) {
 			hsp = lengthdir_x(MAX_FALL_SPEED, dir);
 			vsp = lengthdir_y(MAX_FALL_SPEED, dir);
 		}
+		
+		if (instance_exists(playerObject)) {
+			global.kills++;
+			global.killsInRoom++;
+			afterUpdateKillsCounter(2);
+		}
 	}
 	
 	// If this monster can shoot

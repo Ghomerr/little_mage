@@ -2,16 +2,10 @@
 if (file_exists(SAVEFILE)) {
 	
 	var file = file_text_open_read(SAVEFILE);
-	var savedData = file_text_read_real(file);
-	
-	// Handle weapon save
-	if (savedData >= WEAPON_OFFSET) {
-		playerObject.hasWeapon = true;	
-		savedData -= WEAPON_OFFSET;
-	}
-	
-	var targetRoom = savedData;
-	
+	var targetRoom = file_text_read_real(file);
+	playerObject.hasWeapon = file_text_read_real(file) == 1;
+	global.kills = file_text_read_real(file);
+	afterUpdateKillsCounter();
 	file_text_close(file);
 	
 	return targetRoom;

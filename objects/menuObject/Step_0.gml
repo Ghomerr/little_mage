@@ -1,4 +1,4 @@
-/// @description ?
+/// @description Handle menu selection
 menuX += (menuTargetX - menuX) / menuSpeed;
 
 if (hasControl) {

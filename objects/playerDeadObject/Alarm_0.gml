@@ -1,5 +1,11 @@
 /// @description Restart room
 
+// Restart room
+startTransition(TRANS_MODE.GOTO, room);
+
 // Reset game speed
 game_set_speed(playerObject.GAME_SPEED, gamespeed_fps);
-startTransition(TRANS_MODE.GOTO, room);
+
+// Reset current room kills
+global.kills -= global.killsInRoom;
+afterUpdateKillsCounter();
