@@ -19,7 +19,7 @@ if (room != menuRoom and instance_exists(playerObject)) {
 		// Coins text counter
 		drawSetText(c_black, menuFont, fa_left, fa_top);
 		draw_text_transformed(coinsTextShadowX, coinsTextShadowY, coinsText, coinsTextScale, coinsTextScale, 0);
-		draw_set_color(c_orange);
+		draw_set_color(coinsColor);
 		draw_text_transformed(coinsTextX, coinsTextY, coinsText, coinsTextScale, coinsTextScale, 0);
 	}
 }

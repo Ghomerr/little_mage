@@ -9,3 +9,5 @@ game_set_speed(playerObject.GAME_SPEED, gamespeed_fps);
 // Reset current room kills
 global.kills -= global.killsInRoom;
 afterUpdateKillsCounter();
+// Reset coins color
+afterUpdateCoinsCounter(1, c_orange);

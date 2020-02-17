@@ -9,6 +9,7 @@ display_set_gui_size(RES_W, RES_H);
 
 // Money handling
 global.coins = 0;
+coinsColor = c_orange;
 coinsTextScale = 1;
 coinsSpriteX = 10;
 coinsSpriteY = 12;

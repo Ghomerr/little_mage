@@ -13,6 +13,10 @@ if (isVisible and !isDying and (hp <= 0 or y >= maxYbeforeDead)) {
 	// Slow mo
 	game_set_speed(GAME_SPEED/2, gamespeed_fps);
 	
+	// Coins update + color
+	global.coins -= 10;
+	afterUpdateCoinsCounter(2, c_red);
+	
 	// Start player dying
 	isDying = true;
 	sprite_index = hitSprite;

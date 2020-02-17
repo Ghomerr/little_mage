@@ -1575,6 +1575,14 @@
             }
         },
         {
+            "Key": "ed4384e6-faa0-4072-a51b-04a5fda4db6b",
+            "Value": {
+                "id": "f2571e38-4d02-4705-a96f-5ab6c7af36b6",
+                "resourcePath": "sprites\\heartSprite\\heartSprite.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "ee6904be-d877-41ed-84bc-be9c2b2aee1c",
             "Value": {
                 "id": "b503bf5b-1955-45ee-b4f4-98cc59c8f38a",

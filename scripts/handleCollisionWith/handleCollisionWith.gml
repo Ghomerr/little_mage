@@ -30,6 +30,8 @@ if (place_meeting(x, y, argument0)) {
 
 	// Change into a burst
 	instance_change(burstObject, true);
+	//layer_add_instance("Environment", id);
+	//depth++;
 	
 	return collidingInstance;
 } else {
