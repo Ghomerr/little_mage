@@ -5,7 +5,6 @@ STAFF_DISPERSION = 3;
 
 // Staff variables
 firingDelay = 0;
-controllerAngle = 0;
 isAimingRight = true;
 
 // Projectile

@@ -322,7 +322,7 @@
             "Key": "2f83e9df-1325-4a47-9a7e-05dd590a63ce",
             "Value": {
                 "id": "09902906-26c7-4247-8a55-c0ebbfcfc03c",
-                "resourcePath": "objects\\gameHandler\\gameHandler.yy",
+                "resourcePath": "objects\\gameManager\\gameManager.yy",
                 "resourceType": "GMObject"
             }
         },

@@ -2,7 +2,12 @@
 /// @arg coinsTextScale value
 /// @arg coinsColor value
 
-with (gameHandler) {
+// Check global coins if negative set to zero
+if (global.coins < 0) {
+	global.coins = 0;
+}
+
+with (gameManager) {
 	
 	coinsText = string(global.coins);
 

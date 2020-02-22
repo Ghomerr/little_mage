@@ -10,4 +10,5 @@ game_set_speed(playerObject.GAME_SPEED, gamespeed_fps);
 global.kills -= global.killsInRoom;
 afterUpdateKillsCounter();
 // Reset coins color
+global.coinsPickedUp = global.coins > 0;
 afterUpdateCoinsCounter(1, c_orange);

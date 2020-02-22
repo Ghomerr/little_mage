@@ -13,7 +13,7 @@ if (room != menuRoom and instance_exists(playerObject)) {
 	}
 	
 	// Draw coins counter
-	if (global.coins > 0) {
+	if (global.coinsPickedUp and global.coins >= 0) {
 		// Coins sprite counter
 		draw_sprite_ext(coinsCounterSprite, 0, coinsSpriteX, coinsSpriteY, coinsTextScale, coinsTextScale, 0, c_white, 1);
 		// Coins text counter
@@ -21,5 +21,14 @@ if (room != menuRoom and instance_exists(playerObject)) {
 		draw_text_transformed(coinsTextShadowX, coinsTextShadowY, coinsText, coinsTextScale, coinsTextScale, 0);
 		draw_set_color(coinsColor);
 		draw_text_transformed(coinsTextX, coinsTextY, coinsText, coinsTextScale, coinsTextScale, 0);
+	}
+	
+	// Draw health heart sprites
+	for (var i = 0 ; i < playerObject.initHp ; i++) {
+		// Move sprite x according to current heart to draw
+		var spriteX = heartSpriteX + (heartSpriteWidth + heartSpriteGap) * i;
+		// Check if health is above current heart
+		var fullHeart = i < playerObject.hp and playerObject.isVisible ? 0 : 1;
+		draw_sprite_ext(heartSprite, fullHeart, spriteX, heartSpriteY, heartSpriteScale, heartSpriteScale, 0, c_white, 1);
 	}
 }

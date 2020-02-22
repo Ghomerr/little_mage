@@ -36,6 +36,8 @@ with (transitionsHandler) {
 			hasControl = true;
 			isVisible = true;
 			if (hasWeapon) {
+				// Turn player to the right side after transition
+				staffObject.isAimingRight = other.staffAngle == 0;
 				staffObject.image_angle = other.staffAngle;
 			}
 		}

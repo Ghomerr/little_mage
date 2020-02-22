@@ -9,7 +9,7 @@ if (room != menuRoom and instance_exists(playerObject)) {
 	}
 	
 	// Update coins counter position
-	if (global.coins > 0 and coinsTextScale > 1) {
+	if (global.coins >= 0 and coinsTextScale > 1) {
 		coinsTextScale = max (coinsTextScale * 0.95, 1);
 		coinsTextX = coinsSpriteX + coinsCounterOffset * coinsTextScale;
 		coinsTextShadowX = coinsTextX + 2;

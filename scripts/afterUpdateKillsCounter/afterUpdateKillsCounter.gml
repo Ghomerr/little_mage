@@ -1,7 +1,7 @@
 /// @desc Handle event of kills counter update
 /// @arg killTextScale value
 
-with (gameHandler) {
+with (gameManager) {
 	
 	killsText = string(global.kills);
 	killsTextWidth = string_width(killsText);

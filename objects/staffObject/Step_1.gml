@@ -10,14 +10,14 @@ if (playerObject.hasControl) {
 		var controllerV = gamepad_axis_value(0, gp_axisrv);
 		
 		if (abs(controllerH) > playerObject.gpMin) {
-			controllerAngle = point_direction(0, 0, controllerH, controllerV);
+			image_angle = point_direction(0, 0, controllerH, controllerV);
 			isAimingRight = sign(controllerH) >= 0;
 			
 		} else if (abs(controllerV) > playerObject.gpMin) {
-			controllerAngle = point_direction(0, 0, controllerH, controllerV);
+			image_angle = point_direction(0, 0, controllerH, controllerV);
 		}
-		image_angle = controllerAngle;
 	}
+	
 
 	// Firing event
 	firingDelay--;

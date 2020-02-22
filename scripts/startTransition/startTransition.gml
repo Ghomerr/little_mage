@@ -21,6 +21,6 @@ with (transitionsHandler) {
 	} else {
 		playerX = 0;
 		playerY = 0;
-		staffAngle = 1;
+		staffAngle = 0;
 	}
 }

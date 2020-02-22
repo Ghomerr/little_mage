@@ -9,6 +9,7 @@ display_set_gui_size(RES_W, RES_H);
 
 // Money handling
 global.coins = 0;
+global.coinsPickedUp = false;
 coinsColor = c_orange;
 coinsTextScale = 1;
 coinsSpriteX = 10;
@@ -35,3 +36,10 @@ killsCounterX = killsTextX - (0 + killsCounterOffset) * killsTextScale;
 killsText = "";
 killsTextWidth = 0;
 
+// Health bar
+heartSpriteScale = 1;
+heartSpriteWidth = sprite_get_width(heartSprite);
+heartMiddleScreen = RES_W / 2;
+heartSpriteGap = 4;
+heartSpriteY = 12;
+heartSpriteX = heartMiddleScreen - (playerObject.initHp * heartSpriteWidth + (playerObject.initHp - 1) * heartSpriteGap ) / 2;

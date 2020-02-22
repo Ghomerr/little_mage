@@ -2,7 +2,7 @@
     "id": "2f83e9df-1325-4a47-9a7e-05dd590a63ce",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "gameHandler",
+    "name": "gameManager",
     "eventList": [
         {
             "id": "88947b15-cd60-4014-a497-628c2137f458",
