@@ -17,8 +17,16 @@ if (isVisible and !isDying and (hp <= 0 or y >= maxYbeforeDead)) {
 	global.coins -= 10;
 	afterUpdateCoinsCounter(2, c_red);
 	
+	// Only if player is dying because of falling
+	with(gameManager) {
+		if (heartSpriteScale == 1) {
+			heartSpriteScale = 2;
+		}
+	}
+	
 	// Start player dying
 	isDying = true;
 	sprite_index = hitSprite;
+	invulCounter = 0;
 	beHitInTheAir();
 }

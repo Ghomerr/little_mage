@@ -1,4 +1,4 @@
-// Staff position
+/// @desc Staff position and orientation
 x = playerObject.x - playerObject.image_xscale;
 y = playerObject.y + playerObject.WEAPON_Y_OFFSET;
 

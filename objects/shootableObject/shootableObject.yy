@@ -133,6 +133,20 @@
             "varType": 0
         },
         {
+            "id": "71ed8769-f809-4407-be04-7d804e063f21",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "hitFromX",
+            "varType": 0
+        },
+        {
             "id": "d41dbcc7-6e9e-4f35-9f3c-3646f15dad84",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",
@@ -159,6 +173,20 @@
             "value": "whiteShader",
             "varName": "hitShader",
             "varType": 5
+        },
+        {
+            "id": "5d8e79d4-4099-46da-9d39-08d89b1ef5ab",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "isPlayer",
+            "varType": 3
         }
     ],
     "solid": false,

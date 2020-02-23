@@ -5,4 +5,5 @@ if (flash <= 0) {
 	hp--;
 	flash = hitDelay;
 	hitfrom = point_direction(x, y, other.x, other.y) + 180;
+	hitFromX = other.x;
 }

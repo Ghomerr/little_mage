@@ -1,5 +1,4 @@
 // Player constants
-isPlayer = true;
 grv = 0.2; // gravity
 spd = 2; // running speed
 jump = 4; // jumping force
@@ -10,10 +9,15 @@ COYOTE_MAX = 10; // Frames during the player can still jump in air
 gpMin = 0.8; // minimum value for gamepad 
 GAME_SPEED = game_get_speed(gamespeed_fps);
 WEAPON_Y_OFFSET = 8;
+INVUL_TIMER = 100;
+INVUL_INTERVAL = 5;
 
 // Player variables
 //hp = 1;
 initHp = hp;
+invulCounter = 0;
+invulShaderTransparent = false;
+invulShader = semiTransparentShader;
 hasWeapon = false;
 //isDying = false;
 isVisible = true;

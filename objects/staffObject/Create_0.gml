@@ -1,3 +1,5 @@
+/// @desc Init variables
+
 // Staff constants
 firingCooldown = 30;
 STAFF_LENGTH = 11;

@@ -863,6 +863,14 @@
             }
         },
         {
+            "Key": "81f7b92f-2056-4381-afc4-3cb1e49bf1ff",
+            "Value": {
+                "id": "5df3e9ce-d8df-469a-812a-66dcf9a12dfa",
+                "resourcePath": "scripts\\resetPlayerAfterDeath\\resetPlayerAfterDeath.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "831d5b43-4baa-49bf-960e-299e5ed55aa9",
             "Value": {
                 "id": "758e011d-3648-4c63-aaa6-6570aa812bdc",
@@ -980,6 +988,14 @@
                 "id": "ada7eacb-9f46-4075-97de-3b483c008811",
                 "resourcePath": "views\\91b0e382-061c-42a2-a6fd-ea0b3116ddb0.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "92da80bc-c1ce-4acd-8210-608dcf64c20d",
+            "Value": {
+                "id": "e7a6f5a9-d95e-4b74-af0b-18ecc1f6fab7",
+                "resourcePath": "shaders\\transparentShader\\transparentShader.yy",
+                "resourceType": "GMShader"
             }
         },
         {
@@ -1260,6 +1276,14 @@
                 "id": "d70c0089-64b7-4899-ae77-67a2ec520930",
                 "resourcePath": "sprites\\squirrelIdleSprite\\squirrelIdleSprite.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "bfd9edcf-42b7-4c96-a276-2fb426feb08c",
+            "Value": {
+                "id": "32d569ec-20d5-4157-bff3-45371ff2d2fa",
+                "resourcePath": "shaders\\semiTransparentShader\\semiTransparentShader.yy",
+                "resourceType": "GMShader"
             }
         },
         {
@@ -1687,6 +1711,7 @@
         "503d1adc-2797-4163-a494-20758f02e557",
         "411d24d7-3015-4b78-a29b-0718167a3da5",
         "22d8a09a-1732-4051-aaf9-d0851053ac19",
+        "81f7b92f-2056-4381-afc4-3cb1e49bf1ff",
         "868d601d-1635-4df2-87b2-0af6e99e2297",
         "7c20732f-c050-4aec-a7a2-5fa38cf93385",
         "30fe6cbe-07ff-4754-ba11-d78a30e8dd9c",

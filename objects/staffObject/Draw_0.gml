@@ -1,5 +1,5 @@
-/// @description Handle hands drawing when no weapon and handle invul frames too
-if (playerObject.isVisible and !playerObject.hasWeapon) {
+/// @description Handle staff drawing and player invul frames
+if (playerObject.isVisible) {
 	if (playerObject.flash == 0 and playerObject.invulCounter > 0) {
 		shader_set(playerObject.invulShader);
 		draw_self();

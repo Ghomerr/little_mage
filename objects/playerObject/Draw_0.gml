@@ -1,7 +1,26 @@
 /// @description Draw self + debug
 if (isVisible) {
-	event_inherited();
+	
+	// When no flashing anymore after being hit
+	if (flash == 0 and invulCounter > 0) {
+		
+		invulShader = invulShaderTransparent ? transparentShader : semiTransparentShader;
+		shader_set(invulShader);
+		draw_self();
+		shader_reset();
+	
+		// When interval is reached, changed shader
+		if (invulCounter % INVUL_INTERVAL == 0) {
+			invulShaderTransparent = !invulShaderTransparent;
+		}
+	
+		invulCounter--;
+	} else {
+		event_inherited();
+	}
 }
+
+
 
 if (isDebugEnabled) {
 	draw_set_alpha(0.5);

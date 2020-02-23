@@ -1,3 +1,5 @@
+/// @desc Handle staff direction and firing
+
 if (playerObject.hasControl) {
 	// Player inputs to fire
 	if (!playerObject.controller) {

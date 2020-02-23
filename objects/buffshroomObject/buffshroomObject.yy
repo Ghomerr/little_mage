@@ -63,6 +63,14 @@
             "objectId": "2f80b86a-f496-4621-988a-3bc5c5fd2787",
             "propertyId": "885a755a-f419-4b96-afd6-761cdd9fed7a",
             "value": "buffshroomDeadObject"
+        },
+        {
+            "id": "fb807d0f-e182-428c-b516-a098ffc625ad",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "89b37f63-04ae-45e4-8232-ac168afa89e2",
+            "propertyId": "c2302562-bcba-4df9-9293-b25e6de8fab4",
+            "value": "2"
         }
     ],
     "parentObjectId": "2f80b86a-f496-4621-988a-3bc5c5fd2787",

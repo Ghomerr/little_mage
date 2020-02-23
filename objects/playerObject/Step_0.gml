@@ -156,13 +156,10 @@ if (isVisible) {
 		if (handleVerticalCollision() and isGrounded or y >= maxYbeforeDead) {
 			audio_play_sound(landingSound, 3, false);
 			isVisible = false; // hide player
+			
 			// Reset player data while being not visible
-			isDying = false;
-			isBeingHit = false;
-			hp = initHp;
-			hsp = 0;
-			vsp = 0;
-			move = 0;
+			resetPlayerAfterDeath();
+			
 			// Focus camera on dead object
 			cameraObject.follow = instance_create_layer(x, y, layer, playerDeadObject);
 			cameraObject.follow.image_xscale = image_xscale;

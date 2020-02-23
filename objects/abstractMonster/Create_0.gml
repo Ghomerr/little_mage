@@ -3,7 +3,6 @@ event_inherited();
 
 DYING_JUMP = 3;
 
-isPlayer = false;
 isBeingHit = false;
 isAttacking = false;
 idleRestart = true;
