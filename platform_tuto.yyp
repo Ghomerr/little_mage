@@ -247,6 +247,14 @@
             }
         },
         {
+            "Key": "2555e036-4770-49c4-b354-4a3f28fdc3d3",
+            "Value": {
+                "id": "b7d7ce5b-663f-41f9-b013-1b1ed6565191",
+                "resourcePath": "scripts\\setPlayerUniforms\\setPlayerUniforms.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "25dc93c6-412b-4c6f-8bd0-3997bc6f30ce",
             "Value": {
                 "id": "a3baf02c-373c-4d87-a5d9-8a3419b98800",
@@ -447,11 +455,27 @@
             }
         },
         {
+            "Key": "4321aa08-68e9-4a00-889e-ef115cf72be5",
+            "Value": {
+                "id": "fba833e5-9dd6-41d2-9315-16ff59e6d42c",
+                "resourcePath": "views\\4321aa08-68e9-4a00-889e-ef115cf72be5.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "44488061-713b-451e-ad27-d81fd867d87f",
             "Value": {
                 "id": "a2d52be6-f96b-49d3-aca9-59a45593e4d8",
                 "resourcePath": "sounds\\monsterDeadSound\\monsterDeadSound.yy",
                 "resourceType": "GMSound"
+            }
+        },
+        {
+            "Key": "4490f27c-9e27-4fa9-a180-b76c3885fe6b",
+            "Value": {
+                "id": "c8f185d7-c5f5-419c-8a08-f27a01ad63a9",
+                "resourcePath": "shaders\\playerShader\\playerShader.yy",
+                "resourceType": "GMShader"
             }
         },
         {
@@ -1724,7 +1748,8 @@
         "05219028-ced4-4066-b22b-1e8cc20bce5c",
         "61efac8a-1be5-4dfd-b939-5c581b95ce8a",
         "49f01be5-4103-4286-98d9-2ab9f65aa8b2",
-        "4eeebcec-b4ce-4da4-87fd-50e054849c76"
+        "4eeebcec-b4ce-4da4-87fd-50e054849c76",
+        "2555e036-4770-49c4-b354-4a3f28fdc3d3"
     ],
     "tutorial": ""
 }

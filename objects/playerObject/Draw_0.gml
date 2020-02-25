@@ -1,26 +1,38 @@
 /// @description Draw self + debug
 if (isVisible) {
 	
-	// When no flashing anymore after being hit
-	if (flash == 0 and invulCounter > 0) {
+	shader_set(playerShader);
+	
+	show_debug_message("flash=" + string(flash));
+	
+	if (flash > 0) {
+		// Handle flashing on hit
+		flash--;
+		shader_set_uniform_f(isFlashingUniform, true);
+		shader_set_uniform_f(useColorSwapUniform, false);	
 		
-		invulShader = invulShaderTransparent ? transparentShader : semiTransparentShader;
-		shader_set(invulShader);
-		draw_self();
-		shader_reset();
-	
-		// When interval is reached, changed shader
-		if (invulCounter % INVUL_INTERVAL == 0) {
-			invulShaderTransparent = !invulShaderTransparent;
-		}
-	
-		invulCounter--;
 	} else {
-		event_inherited();
+		// Handle transparency after being hit
+		if (invulCounter > 0) {
+			shader_set_uniform_f(transparencyUniform, invulShaderTransparent ? 0.0 : 0.5);
+			
+			// When interval is reached, changed shader
+			if (invulCounter % INVUL_INTERVAL == 0) {
+				invulShaderTransparent = !invulShaderTransparent;
+			}
+	
+			invulCounter--;
+		} else {
+			shader_set_uniform_f(transparencyUniform, 1);
+		}
+		
+		// Handle color swapping
+		setPlayerUniforms();
 	}
+	
+	draw_self();
+	shader_reset();
 }
-
-
 
 if (isDebugEnabled) {
 	draw_set_alpha(0.5);
