@@ -1,8 +1,11 @@
 //
 // Simple passthrough fragment shader
 //
-varying vec2 v_vTexcoord;
+varying vec2 v_vTexcoord_Player;
+varying vec2 v_vTexcoord_Cloth;
 varying vec4 v_vColour;
+
+uniform sampler2D clothTexture;
 
 // https://stackoverflow.com/a/43467645
 
@@ -22,7 +25,7 @@ uniform vec3 newRightLegColor;
 
 void main()
 {
-	gl_FragColor = v_vColour * texture2D( gm_BaseTexture, v_vTexcoord );
+	gl_FragColor = v_vColour * texture2D( gm_BaseTexture, v_vTexcoord_Player );
 	
 	if (isFlashing) {
 		// White flashing
@@ -48,7 +51,18 @@ void main()
 				needReplace = true;
 			}
 			if (!needReplace && test == fillColor) {
-				test = newFillColor; 
+				// Compute texture color
+				vec4 tmp = v_vColour * texture2D( clothTexture, v_vTexcoord_Cloth );
+				if (tmp.a > 0.0) {
+					// Make a new pixel vector from texture color
+					test = vec3(
+						tmp.r * 255.0, 
+						tmp.g * 255.0,
+						tmp.b * 255.0
+					);
+				} else {
+					test = newFillColor; 
+				}
 				needReplace = true;
 			}
 			if (!needReplace && test == leftLegColor) {
