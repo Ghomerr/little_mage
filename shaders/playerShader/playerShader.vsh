@@ -6,8 +6,13 @@ attribute vec3 in_Position;                  // (x,y,z)
 attribute vec4 in_Colour;                    // (r,g,b,a)
 attribute vec2 in_TextureCoord;              // (u,v)
 
-varying vec2 v_vTexcoord;
+uniform vec4 playerUV;
+uniform vec4 clothUV;
+
+varying vec2 v_vTexcoord_Player;
+varying vec2 v_vTexcoord_Cloth;
 varying vec4 v_vColour;
+
 
 void main()
 {
@@ -15,5 +20,6 @@ void main()
     gl_Position = gm_Matrices[MATRIX_WORLD_VIEW_PROJECTION] * object_space_pos;
     
     v_vColour = in_Colour;
-    v_vTexcoord = in_TextureCoord;
+    v_vTexcoord_Player = in_TextureCoord;
+    v_vTexcoord_Cloth = clothUV.xy + ( in_TextureCoord - playerUV.xy ) * clothUV.zw / playerUV.zw;
 }

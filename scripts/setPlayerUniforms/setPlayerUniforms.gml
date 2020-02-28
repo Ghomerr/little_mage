@@ -1,4 +1,7 @@
 // Enable color swapping
+var currentSprite = sprite_index;
+var currentImage = image_index;
+
 with (playerObject) {
 	// No flashing
 	shader_set_uniform_f(isFlashingUniform, false);
@@ -17,6 +20,19 @@ with (playerObject) {
 		shader_set_uniform_f(newFillColorUniform, 68, 137, 26);
 		shader_set_uniform_f(newLeftLegColorUniform, 38, 86, 71);
 		shader_set_uniform_f(newRightLegColorUniform, 19, 58, 59);
+		
+		// Cloth texture 
+		var textureSampler = shader_get_sampler_index( playerShader, "clothTexture" );
+		var clothSpriteTexure = sprite_get_texture( clothSprite, 1 );
+		texture_set_stage( textureSampler, clothSpriteTexure );
+		
+		var playerUV = sprite_get_uvs( currentSprite, currentImage );
+		var clothUV = sprite_get_uvs( clothSprite, 1 );
+		
+		shader_set_uniform_f( shader_get_uniform( playerShader, "playerUV" ), playerUV[0], playerUV[1], playerUV[2]-playerUV[0], playerUV[3]-playerUV[1] );
+		shader_set_uniform_f( shader_get_uniform( playerShader, "clothUV" ), clothUV[0], clothUV[1], clothUV[2]-clothUV[0], clothUV[3]-clothUV[1] );
+
+		
 	} else {
 		shader_set_uniform_f(useColorSwapUniform, false);
 	}
