@@ -1647,6 +1647,14 @@
             }
         },
         {
+            "Key": "f30a4f31-aed9-4727-9c6c-9c5a7fc947b5",
+            "Value": {
+                "id": "f19fba11-7b68-4281-b6f1-42aa7aeb664c",
+                "resourcePath": "sprites\\clothSprite\\clothSprite.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "f6529c49-cbc7-4072-ba31-288f4f7ad2ae",
             "Value": {
                 "id": "c82836fd-ae8d-4970-91de-9128cdab4085",
