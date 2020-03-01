@@ -1,4 +1,4 @@
-/// @description Draw GUI (and Debug)
+/// @description Draw debug
 if (isDebugEnabled) {
 	var options = "";
 	if (instance_exists(abstractMonster) and abstractMonster.isDebugEnabled) {

@@ -207,6 +207,14 @@
             }
         },
         {
+            "Key": "1c2ead76-bd22-46db-950e-e972c1dee0f7",
+            "Value": {
+                "id": "457431ca-44f7-4a95-ab55-7d93f744f951",
+                "resourcePath": "sprites\\hatsSprite\\hatsSprite.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "1f04c537-5a91-4ccd-8a8c-95930a5124ce",
             "Value": {
                 "id": "1dcf69b9-a38e-45be-8ead-0db9da7f43dc",
@@ -483,6 +491,14 @@
             "Value": {
                 "id": "7c1b7741-19b8-4651-ba47-9cdd72d2d2dc",
                 "resourcePath": "sprites\\buffshroomFallingSprite\\buffshroomFallingSprite.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "45cdb4b4-f365-40e0-ac58-60bb06eadf3d",
+            "Value": {
+                "id": "345cc1d4-e491-4511-9b01-5ec8b7c2492e",
+                "resourcePath": "sprites\\hatsWheelSprite\\hatsWheelSprite.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -1207,6 +1223,14 @@
             }
         },
         {
+            "Key": "ac5f5c59-9625-4e21-9a90-1f929b929ae4",
+            "Value": {
+                "id": "e5396f07-3fd3-40f5-9526-e1188486d4d4",
+                "resourcePath": "sprites\\hatSelectorSprite\\hatSelectorSprite.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "ac9e02ec-5181-4640-9d9b-8f096cacb34c",
             "Value": {
                 "id": "5432a4d4-7298-4dbd-9c42-3d14156f15c9",
@@ -1220,6 +1244,14 @@
                 "id": "597a3b25-66db-422d-91ea-ce510d6af8af",
                 "resourcePath": "objects\\collectibleObject\\collectibleObject.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "afc24dc7-011d-4c19-998d-e9fbf44a0e4c",
+            "Value": {
+                "id": "23913ea9-1f3e-4b8d-8d45-3db5c6fc0066",
+                "resourcePath": "views\\afc24dc7-011d-4c19-998d-e9fbf44a0e4c.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -1308,6 +1340,14 @@
                 "id": "32d569ec-20d5-4157-bff3-45371ff2d2fa",
                 "resourcePath": "shaders\\semiTransparentShader\\semiTransparentShader.yy",
                 "resourceType": "GMShader"
+            }
+        },
+        {
+            "Key": "c21e4715-ab4c-4e46-8678-04afe0be47b8",
+            "Value": {
+                "id": "801b4884-b040-4cf9-8524-72fc6de0c851",
+                "resourcePath": "scripts\\getHatFromStaffAngle\\getHatFromStaffAngle.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -1452,6 +1492,14 @@
                 "id": "f31e0770-24af-46c5-a9ab-ad6656b2e88e",
                 "resourcePath": "views\\d1e0ee1a-bfab-49c7-827c-64665bae1492.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "d1f64a47-3a28-4535-96a9-cedcebe068db",
+            "Value": {
+                "id": "f9333917-5144-416e-8f2d-f21c3e1c6d24",
+                "resourcePath": "sprites\\selectedHatSprite\\selectedHatSprite.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -1756,6 +1804,7 @@
         "05219028-ced4-4066-b22b-1e8cc20bce5c",
         "61efac8a-1be5-4dfd-b939-5c581b95ce8a",
         "49f01be5-4103-4286-98d9-2ab9f65aa8b2",
+        "c21e4715-ab4c-4e46-8678-04afe0be47b8",
         "4eeebcec-b4ce-4da4-87fd-50e054849c76",
         "2555e036-4770-49c4-b354-4a3f28fdc3d3"
     ],

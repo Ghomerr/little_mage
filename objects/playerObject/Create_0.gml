@@ -18,7 +18,6 @@ INVUL_INTERVAL = 5;
 initHp = hp;
 invulCounter = 0;
 invulShaderTransparent = false;
-
 hasWeapon = false;
 isVisible = true;
 controller = false;
@@ -35,8 +34,40 @@ coyoteCounter = 0;
 hasControl = false; // define if player can do inputs
 move = 0; // movement orientation
 
+// Magics
+enum HATS {
+	NATURE,
+	ICE,
+	STONE,
+	FIRE,
+	DEATH,
+	ELECTRIC,
+	WIND,
+	GRAVITY,
+	NONE
+}
+enum WHEEL_UI {
+	X, Y, MIN, MAX, HAT
+}
+
+// UI COnfig : x, y, min, max, hat
+NAT_UI = [1, -24, 73, 107, HATS.NATURE]; // Nature - North
+ICE_UI = [19, -17, 36, 68, HATS.ICE]; // Ice - North East
+STO_UI = [27, 0, 1, 33, HATS.STONE]; // Stone - East
+FIR_UI = [19, 17, 312, 354, HATS.FIRE]; // Fire - South East
+DEA_UI = [1, 24, 235, 302, HATS.DEATH]; // Death - South
+ELE_UI = [-17, 17, 182, 225, HATS.ELECTRIC]; // Electric - South West
+WIN_UI = [-25, 0, 145, 176, HATS.WIND]; // Wind - West
+GRA_UI = [-17, -17, 110, 142, HATS.GRAVITY]; // Gravity - North Wast
+// List indexed by hats
+UI_CONFIG = [NAT_UI, ICE_UI, STO_UI, FIR_UI, DEA_UI, ELE_UI, WIN_UI, GRA_UI];
+
+currentHat = HATS.NONE;
+selectedHat = HATS.NONE;
+
 // Gamepad inputs
 hAxis = 0;
+showHatsWheel = false;
 
 // Animations
 idleDelay = 0; // idle delay

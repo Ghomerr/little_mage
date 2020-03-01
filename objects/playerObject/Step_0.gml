@@ -1,6 +1,25 @@
 /// @desc Handle inputs, collisions, movements, animations, death
 if (isVisible) {
 	if (!isDying) {
+		// Handle hats wheel show input
+		if (!showHatsWheel) {
+			showHatsWheel = keyboard_check_pressed(vk_shift);
+		} else if (keyboard_check_released(vk_shift)) {
+			showHatsWheel = false;
+			
+			// If a hat is selected
+			if (selectedHat != HATS.NONE) {
+				if (selectedHat == currentHat) {
+					// Same hat : remove it
+					currentHat = HATS.NONE;
+					enableColorSwapping = false;
+				} else {
+					// It's a new hat : change it
+					currentHat = selectedHat;
+					enableColorSwapping = true;
+				}
+			}
+		}
 
 		// User inputs
 		if (hasControl) {
