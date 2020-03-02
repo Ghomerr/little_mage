@@ -62,8 +62,18 @@ GRA_UI = [-17, -17, 110, 142, HATS.GRAVITY]; // Gravity - North Wast
 // List indexed by hats
 UI_CONFIG = [NAT_UI, ICE_UI, STO_UI, FIR_UI, DEA_UI, ELE_UI, WIN_UI, GRA_UI];
 
+// Palettes config
+enum COLOR {
+	R, G, B	
+}
+enum PALETTE {
+	OUTLINE, FILL, LEFT_LEG, RIGHT_LEG
+}
+PLAYER_PALETTES = buildPlayerPalettes();
+
 currentHat = HATS.NONE;
 selectedHat = HATS.NONE;
+currentPalette = noone;
 
 // Gamepad inputs
 hAxis = 0;

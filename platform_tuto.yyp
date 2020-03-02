@@ -1135,6 +1135,14 @@
             }
         },
         {
+            "Key": "9dd8b2e1-2898-4744-8b16-40871fd77a41",
+            "Value": {
+                "id": "42d8431c-fb02-4e49-bcb4-52c001bdfc9c",
+                "resourcePath": "scripts\\buildPlayerPalettes\\buildPlayerPalettes.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "9e260047-8dd3-4935-a1ee-7a241e74aac4",
             "Value": {
                 "id": "e4c5b30b-b383-4627-a02d-582f3713702e",
@@ -1806,7 +1814,8 @@
         "49f01be5-4103-4286-98d9-2ab9f65aa8b2",
         "c21e4715-ab4c-4e46-8678-04afe0be47b8",
         "4eeebcec-b4ce-4da4-87fd-50e054849c76",
-        "2555e036-4770-49c4-b354-4a3f28fdc3d3"
+        "2555e036-4770-49c4-b354-4a3f28fdc3d3",
+        "9dd8b2e1-2898-4744-8b16-40871fd77a41"
     ],
     "tutorial": ""
 }
