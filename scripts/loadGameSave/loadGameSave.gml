@@ -8,6 +8,8 @@ if (file_exists(SAVEFILE)) {
 	afterUpdateKillsCounter();
 	global.coins = file_text_read_real(file);
 	afterUpdateCoinsCounter();
+	playerObject.selectedHat = file_text_read_real(file);
+	with (playerObject) selectNewHat();
 	file_text_close(file);
 	
 	return targetRoom;

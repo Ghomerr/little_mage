@@ -7,20 +7,7 @@ if (isVisible) {
 		} else if (keyboard_check_released(vk_shift)) {
 			showHatsWheel = false;
 			
-			// If a hat is selected
-			if (selectedHat != HATS.NONE) {
-				if (selectedHat == currentHat) {
-					// Same hat : remove it
-					currentHat = HATS.NONE;
-					enableColorSwapping = false;
-					currentPalette = noone;
-				} else {
-					// It's a new hat : change it
-					currentHat = selectedHat;
-					enableColorSwapping = true;
-					currentPalette = PLAYER_PALETTES[currentHat];
-				}
-			}
+			selectNewHat();
 		}
 
 		// User inputs

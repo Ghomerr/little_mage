@@ -34,4 +34,5 @@ menuTop = menuY - fontHeight * length;
 menuChoice = MENU_CHOICE.NEW_GAME;
 hasControl = true;
 gamepadIsChecked = false;
+isChoiceDone = false;
 

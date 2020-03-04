@@ -17,6 +17,9 @@ with (playerObject) {
 		// Create staff
 		with(instance_create_layer(x, y, layer, staffObject)) {
 			depth = other.depth - 1; // Get in front of player
+			// Set speed to 0 and staff sprite to default (last image)
+			image_speed = 0;
+			image_index = other.currentHat;
 		}
 	}
 }

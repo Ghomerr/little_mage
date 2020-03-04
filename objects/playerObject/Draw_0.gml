@@ -3,8 +3,6 @@ if (isVisible) {
 	
 	shader_set(playerShader);
 	
-	show_debug_message("flash=" + string(flash));
-	
 	if (flash > 0) {
 		// Handle flashing on hit
 		flash--;
