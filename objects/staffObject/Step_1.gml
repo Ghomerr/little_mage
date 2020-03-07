@@ -27,10 +27,6 @@ if (playerObject.hasControl) {
 		// Screen shake
 		//screenShake(2, 10);
 		
-		// Play sound
-		audio_sound_pitch(sound, choose(0.9, 1.0, 1.1));
-		audio_play_sound(sound, 5, false);
-		
 		// Set firing cooldown
 		firingDelay = firingCooldown;
 	
@@ -40,6 +36,10 @@ if (playerObject.hasControl) {
 	
 		// Create a new projectile using staff angle
 		with (instance_create_layer(prjX, prjY, "Projectiles", projectile)) {
+			// Play sound
+			audio_sound_pitch(sound, choose(0.9, 1.0, 1.1));
+			audio_play_sound(sound, 5, false);
+			
 			shooter = playerObject.id;
 			prjSpeed = DEFAULT_SPEED;
 			direction = other.image_angle + random_range(-other.STAFF_DISPERSION, other.STAFF_DISPERSION);

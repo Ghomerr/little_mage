@@ -14,6 +14,6 @@ if (selectedHat != HATS.NONE) {
 	
 	// If player has weapon, change current sprite
 	if (hasWeapon) {
-		with (staffObject) image_index = other.currentHat;
+		changeStaffMagic();
 	}
 }

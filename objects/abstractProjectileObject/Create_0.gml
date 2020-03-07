@@ -7,3 +7,5 @@ hsp = 0;
 vsp = 0;
 GRV = 0.2;
 MAX_FALL_SPEED = 3;
+
+collidingInstance = noone;

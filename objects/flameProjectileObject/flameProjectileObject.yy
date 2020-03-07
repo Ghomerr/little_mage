@@ -23,6 +23,14 @@
             "objectId": "7f34e096-7366-457c-817b-7dcf13435218",
             "propertyId": "54afb833-16b1-446a-a6de-c5edf1d0146a",
             "value": "flameBurstObject"
+        },
+        {
+            "id": "d461a2a4-ff6c-4e72-95b7-f078848dcb54",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "7f34e096-7366-457c-817b-7dcf13435218",
+            "propertyId": "9a62caa3-0f43-4e92-9ced-037540617723",
+            "value": "manaBoltSound"
         }
     ],
     "parentObjectId": "7f34e096-7366-457c-817b-7dcf13435218",

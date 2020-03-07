@@ -10,5 +10,16 @@ firingDelay = 0;
 isAimingRight = true;
 
 // Projectile
-sound = manaBoltSound;
-projectile = flameProjectileObject;
+PROJECTILES = [
+	natureProjectileObject, // nature
+	flameProjectileObject,	// ice
+	flameProjectileObject,	// stone
+	flameProjectileObject,  // fire
+	flameProjectileObject,	// death
+	flameProjectileObject,	// elec
+	flameProjectileObject,	// wind
+	flameProjectileObject,	// gravity
+	flameProjectileObject	// mana bolt
+];
+
+changeStaffMagic();

@@ -28,8 +28,14 @@ if (place_meeting(x, y, argument0)) {
 		}
 	}*/
 
+	// If shootable instance, store it to be used later by the projectile
+	if (object_is_ancestor(collidingInstance.object_index, shootableObject)) {
+		self.collidingInstance = collidingInstance;
+	}
+	
 	// Change into a burst
 	instance_change(burstObject, true);
+	
 	//layer_add_instance("Environment", id);
 	//depth++;
 	
