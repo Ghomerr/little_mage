@@ -1,0 +1,9 @@
+/// @description Create particle
+
+// Inherit the parent event
+event_inherited();
+
+var partDir = image_angle + 180;
+part_type_direction(pm.fireball, partDir - 45, partDir + 45, 0, 0);
+part_type_gravity(pm.fireball, 0.1, partDir);
+part_particles_create(pm.ps, x + irandom_range(-3, 3), y + irandom_range(-3, 3), pm.fireball, irandom_range(4, 8));

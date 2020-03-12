@@ -14,7 +14,7 @@ PROJECTILES = [
 	natureProjectileObject, // nature
 	flameProjectileObject,	// ice
 	flameProjectileObject,	// stone
-	flameProjectileObject,  // fire
+	fireProjectileObject,  // fire
 	flameProjectileObject,	// death
 	flameProjectileObject,	// elec
 	flameProjectileObject,	// wind
