@@ -42,8 +42,11 @@ if (isVisible) {
 		}
 
 		initMovement();
+		
+		var nextX = x + hsp;
+		var nextY = y + roundVsp(vsp);
 
-		var isHorizontallyColliding = handleHorizontalCollision();
+		var isHorizontallyColliding = handleHorizontalCollision(nextX);
 		if (isHorizontallyColliding) {
 			debugColor = c_blue;	
 		} else {
@@ -51,7 +54,7 @@ if (isVisible) {
 		}
 
 		var wasGrounded = isGrounded;
-		var isVerticallyColliding = handleVerticalCollision();
+		var isVerticallyColliding = handleVerticalCollision(nextY);
 		if (isVerticallyColliding) {
 			if (debugColor == c_blue) {
 				debugColor = c_purple;	
@@ -63,15 +66,20 @@ if (isVisible) {
 		}
 		
 		// Diagonal collision
-		if (!isHorizontallyColliding and !isVerticallyColliding and place_meeting(x + hsp, y + vsp, wallObject)) {
-			while(!place_meeting(x + sign(hsp), y + sign(vsp), wallObject)) {
-				x += sign(hsp);
-				y += sign(vsp);
+		if (!isHorizontallyColliding and !isVerticallyColliding) {
+			if (place_meeting(nextX, nextY, wallObject)) {
+				// Check if player isn't colliding a platform from beneath
+				if (!isCollidingPlatform(nextX, nextY)) {
+					while(!place_meeting(x + sign(hsp), y + sign(vsp), wallObject)) {
+						x += sign(hsp);
+						y += sign(vsp);
+					}
+					isGrounded = vsp > 0; // grounded only if falling
+					hsp = 0;
+					vsp = 0;
+					debugColor = c_orange;
+				}
 			}
-			isGrounded = vsp > 0; // grounded only if falling
-			hsp = 0;
-			vsp = 0;
-			debugColor = c_orange;
 		}
 
 		// Play landing sound only when landing
@@ -160,10 +168,14 @@ if (isVisible) {
 		}
 	} else {
 		initMovement();
+		
+		var nextX = x + hsp;
+		var nextY = y + roundVsp(vsp);
+		
 		// When dying, handle only the falling
-		handleHorizontalCollision();
+		handleHorizontalCollision(nextX);
 		// If dying and is grounded, change to dead object
-		if (handleVerticalCollision() and isGrounded or y >= maxYbeforeDead) {
+		if (handleVerticalCollision(nextY) and isGrounded or y >= maxYbeforeDead) {
 			audio_play_sound(landingSound, 3, false);
 			isVisible = false; // hide player
 			

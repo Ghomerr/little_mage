@@ -279,6 +279,14 @@
             }
         },
         {
+            "Key": "240aec97-84d2-4c37-87d9-09c3e79c522c",
+            "Value": {
+                "id": "7008ef11-e20e-4b92-a586-cfc86ef98221",
+                "resourcePath": "scripts\\roundVsp\\roundVsp.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "250282d8-e79b-4a5a-ad07-60ac1cfded19",
             "Value": {
                 "id": "a851f913-d472-4c39-abd7-e5c4982eb8b8",
@@ -1847,6 +1855,14 @@
             }
         },
         {
+            "Key": "f22bce76-5e44-440c-bf53-70a12c832267",
+            "Value": {
+                "id": "50dc5865-0507-4734-ac25-abefca79b806",
+                "resourcePath": "scripts\\isCollidingPlatform\\isCollidingPlatform.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "f27a5dcf-fa19-4b41-b4bd-541896c5f001",
             "Value": {
                 "id": "0a1636be-24ed-451d-9327-cbe1920485f6",
@@ -1971,6 +1987,7 @@
         "503d1adc-2797-4163-a494-20758f02e557",
         "411d24d7-3015-4b78-a29b-0718167a3da5",
         "22d8a09a-1732-4051-aaf9-d0851053ac19",
+        "f22bce76-5e44-440c-bf53-70a12c832267",
         "868d601d-1635-4df2-87b2-0af6e99e2297",
         "7c20732f-c050-4aec-a7a2-5fa38cf93385",
         "864774dc-aca7-4039-8a95-bd41a0b2f9f0",
@@ -1987,7 +2004,8 @@
         "2555e036-4770-49c4-b354-4a3f28fdc3d3",
         "9dd8b2e1-2898-4744-8b16-40871fd77a41",
         "f68c04a8-cfef-44b3-8cb8-ca8586882e2e",
-        "e559797d-41a4-4f86-9e4e-5c33714b8b38"
+        "e559797d-41a4-4f86-9e4e-5c33714b8b38",
+        "240aec97-84d2-4c37-87d9-09c3e79c522c"
     ],
     "tutorial": ""
 }

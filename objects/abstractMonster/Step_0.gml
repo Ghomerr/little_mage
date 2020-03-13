@@ -2,6 +2,9 @@
 initMovement();
 debugColor = c_red;
 
+var nextX = x + hsp;
+var nextY = y + roundVsp(vsp);
+
 // While not dying, do normal cycle 
 if (!isDying) {
 	
@@ -12,21 +15,21 @@ if (!isDying) {
 		debugColor = c_green;
 	}
 	
-	if (handleHorizontalCollision()) {
+	if (handleHorizontalCollision(nextX)) {
 		// Reverse direction
 		move = -move;
 		debugColor = c_blue;
 	}
 	
-	handleVerticalCollision();
+	handleVerticalCollision(nextY);
 	updatePosition();
 	handleAnimations();
 	
 } else {
 	// When dying, handle only the falling
-	handleHorizontalCollision();
+	handleHorizontalCollision(nextX);
 	// If dying and is grounded, change to dead object
-	if (handleVerticalCollision() and isGrounded) {
+	if (handleVerticalCollision(nextY) and isGrounded) {
 		with(instance_create_layer(round(x), round(y), global.deadsLayer, deadObject)) {
 			image_xscale = other.image_xscale;
 			image_yscale = other.image_yscale;
