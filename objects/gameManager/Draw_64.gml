@@ -13,7 +13,7 @@ if (room != menuRoom and instance_exists(playerObject)) {
 	}
 	
 	// Draw coins counter
-	if (global.coinsPickedUp and global.coins >= 0) {
+	if (global.coins > 0 or global.coinsPickedUp) {
 		// Coins sprite counter
 		draw_sprite_ext(coinsCounterSprite, 0, coinsSpriteX, coinsSpriteY, coinsTextScale, coinsTextScale, 0, c_white, 1);
 		// Coins text counter

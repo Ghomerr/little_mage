@@ -8,5 +8,5 @@ global.kills -= global.killsInRoom;
 afterUpdateKillsCounter();
 
 // Reset coins color
-global.coinsPickedUp = global.coins > 0;
+global.coinsPickedUp = global.coins > 0
 afterUpdateCoinsCounter(1, c_orange);

@@ -5,6 +5,9 @@
 // Check global coins if negative set to zero
 if (global.coins < 0) {
 	global.coins = 0;
+} else if (global.coins > 0) {
+	// Simulate player having picked coins up to be displayed
+	global.coinsPickedUp = true;	
 }
 
 with (gameManager) {
