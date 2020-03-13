@@ -14,6 +14,7 @@ Little mage game based on Shaun Spalding's Youtube Platformer tutorials series.
 * Aiming : mouse or gamepad right pad
 * Shoot : left mouse button or gamepad right top trigger
 * Action : right mouse button or gamepad `B` or `O` button
+* Hats wheel : `shift` 
 
 ## Debug controls :
 * `F2` : enable debug
