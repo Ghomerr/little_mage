@@ -2,12 +2,14 @@
 if (isVisible) {
 	if (!isDying) {
 		// Handle hats wheel show input
-		if (!showHatsWheel) {
-			showHatsWheel = keyboard_check_pressed(vk_shift);
-		} else if (keyboard_check_released(vk_shift)) {
-			showHatsWheel = false;
+		if (hasWeapon) {
+			if (!showHatsWheel) {
+				showHatsWheel = keyboard_check_pressed(vk_shift);
+			} else if (keyboard_check_released(vk_shift)) {
+				showHatsWheel = false;
 			
-			selectNewHat();
+				selectNewHat();
+			}
 		}
 
 		// User inputs
