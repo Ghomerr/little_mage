@@ -4,6 +4,6 @@ if (flash <= 0) {
 	audio_play_sound(manaBoltHitSound, 5, false);
 	hp--;
 	flash = hitDelay;
-	hitfrom = point_direction(x, y, other.x, other.y) + 180;
+	hitfrom = point_direction(x, y, other.x, other.y) + ANGLE.OPPOSITE;
 	hitFromX = other.x;
 }

@@ -11,7 +11,7 @@ with (dustParticleSystem) {
 	psMaxX = other.x + 5;
 	psMinY = other.y - 5;
 	psMaxY = other.y + 5;
-	//psDir = other.direction + 180;
+	//psDir = other.direction + ANGLE.LEFT;
 	event_user(0);
 }
 //*/

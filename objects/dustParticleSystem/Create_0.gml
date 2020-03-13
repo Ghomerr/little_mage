@@ -17,7 +17,7 @@ psMinX = 0;
 psMaxX = 0;
 psMinY = 0;
 psMaxY = 0;
-psDir = 90;
+//psDir = 90;
 
 /*
 var offset = 1;

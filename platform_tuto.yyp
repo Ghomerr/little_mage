@@ -359,6 +359,14 @@
             }
         },
         {
+            "Key": "2ed0fc13-54e2-4a64-b4b0-7b9bf1773c57",
+            "Value": {
+                "id": "4bafc906-ce75-494d-9bc6-37493c53c914",
+                "resourcePath": "objects\\iceBurstObject\\iceBurstObject.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "2f80b86a-f496-4621-988a-3bc5c5fd2787",
             "Value": {
                 "id": "8031a622-37b8-47eb-8417-d58719d575ed",
@@ -439,11 +447,11 @@
             }
         },
         {
-            "Key": "3fae34f4-b3b0-4699-9f30-9148648ad51e",
+            "Key": "3bf009da-1b11-4669-a8be-fd04e0ca0075",
             "Value": {
-                "id": "fe1e7f54-79e3-4dbd-83dd-fb041acb33b9",
-                "resourcePath": "views\\3fae34f4-b3b0-4699-9f30-9148648ad51e.yy",
-                "resourceType": "GMFolder"
+                "id": "f9ca988f-beb1-4ea3-beed-13c188463336",
+                "resourcePath": "sprites\\iceBurstSprite\\iceBurstSprite.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -539,6 +547,14 @@
             "Value": {
                 "id": "345cc1d4-e491-4511-9b01-5ec8b7c2492e",
                 "resourcePath": "sprites\\hatsWheelSprite\\hatsWheelSprite.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "47574e22-fe41-4251-b5c4-d70c04a053c1",
+            "Value": {
+                "id": "50e813eb-9a67-4bea-b1ec-de8472ae9ab6",
+                "resourcePath": "sprites\\iceProjectileSprite\\iceProjectileSprite.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -844,6 +860,14 @@
                 "id": "20579bdd-1ae8-4e12-8d8f-b9e13eef68cf",
                 "resourcePath": "views\\6b469ad3-dd18-49ea-814a-25ae4143fe1c.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "6dd28a4f-4ff1-4086-833e-83ef397304c4",
+            "Value": {
+                "id": "27e2a9f4-76a2-491e-b26a-0f441308488d",
+                "resourcePath": "sprites\\snowParticleSprite\\snowParticleSprite.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -1180,6 +1204,14 @@
                 "id": "4314d02f-90e2-4be5-9db2-292ec09b0fed",
                 "resourcePath": "sprites\\playerSprite\\playerSprite.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "9941d998-8ab7-433a-9e6f-1f94fc1b11ae",
+            "Value": {
+                "id": "635b52b3-1908-4fb9-814c-16ebda4653a9",
+                "resourcePath": "objects\\iceProjectileObject\\iceProjectileObject.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -1727,6 +1759,14 @@
             }
         },
         {
+            "Key": "e559797d-41a4-4f86-9e4e-5c33714b8b38",
+            "Value": {
+                "id": "ca6af8d9-3bc3-477f-907d-c29c8aa20fbb",
+                "resourcePath": "scripts\\createEnums\\createEnums.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "e5f092ab-23b6-45d4-b561-713efd699220",
             "Value": {
                 "id": "a22b213b-f45a-4c21-889e-83a646c3f04e",
@@ -1807,6 +1847,14 @@
             }
         },
         {
+            "Key": "f27a5dcf-fa19-4b41-b4bd-541896c5f001",
+            "Value": {
+                "id": "0a1636be-24ed-451d-9327-cbe1920485f6",
+                "resourcePath": "views\\f27a5dcf-fa19-4b41-b4bd-541896c5f001.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "f2ad4ec0-eb9d-4fee-ba52-3e4f1e5f203b",
             "Value": {
                 "id": "427469f3-e124-4caa-b596-2dd9cf9480dd",
@@ -1828,6 +1876,14 @@
                 "id": "c82836fd-ae8d-4970-91de-9128cdab4085",
                 "resourcePath": "objects\\signPostTextObject\\signPostTextObject.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "f68c04a8-cfef-44b3-8cb8-ca8586882e2e",
+            "Value": {
+                "id": "92337a5b-efc6-4983-ae16-a6f8d54b42c2",
+                "resourcePath": "scripts\\angleRound\\angleRound.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -1929,7 +1985,9 @@
         "c21e4715-ab4c-4e46-8678-04afe0be47b8",
         "4eeebcec-b4ce-4da4-87fd-50e054849c76",
         "2555e036-4770-49c4-b354-4a3f28fdc3d3",
-        "9dd8b2e1-2898-4744-8b16-40871fd77a41"
+        "9dd8b2e1-2898-4744-8b16-40871fd77a41",
+        "f68c04a8-cfef-44b3-8cb8-ca8586882e2e",
+        "e559797d-41a4-4f86-9e4e-5c33714b8b38"
     ],
     "tutorial": ""
 }

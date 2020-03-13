@@ -11,7 +11,7 @@ if (isAttacking) {
 		layer_add_instance("Projectiles", self);
 		prjSpeed = DEFAULT_SPEED > 0 ? DEFAULT_SPEED : BACKUP_SPEED;
 		direction = point_direction(other.x, other.y, playerObject.x, playerObject.y) + random_range(-3, 3);
-		image_angle = direction + 90; // +90° to turn acorn in the right direction when shooted
+		image_angle = direction + ANGLE.UP; // +90° to turn acorn in the right direction when shooted
 		image_speed = 1;
 	}
 	myProjectile = noone;
