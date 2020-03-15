@@ -14,9 +14,9 @@ Play it on itch.io : https://ghomerr.itch.io/magic-hatventure
 * Move right : `D` or gamepad left pad
 * Jump : `space` or gamepad `A` or `X` button
 * Aiming : mouse or gamepad right pad
-* Shoot : left mouse button or gamepad right top trigger
+* Shoot : left mouse button or gamepad right trigger
 * Action : right mouse button or gamepad `B` or `O` button
-* Hats wheel : `shift` 
+* Hats wheel : `shift`  or gamepad left trigger
 
 ## Debug controls :
 * `F2` : enable debug
