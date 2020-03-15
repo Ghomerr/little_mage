@@ -1,5 +1,7 @@
 Little mage game based on Shaun Spalding's Youtube Platformer tutorials series.
 
+Play it on itch.io : https://ghomerr.itch.io/magic-hatventure
+
 ## Resources
 * Youtube tutorials playlist : https://www.youtube.com/watch?v=izNXbMdu348&list=PLPRT_JORnIupqWsjRpJZjG07N01Wsw_GJ
 * Forest Tileset for menu, levels 1 & 2 : https://rottingpixels.itch.io/nature-platformer-tileset (with small changes)
