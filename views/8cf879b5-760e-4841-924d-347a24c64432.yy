@@ -11,7 +11,9 @@
         "1e7d733b-95e2-4fd3-ab58-efe46027fa59",
         "76b68beb-1f67-4e6d-8378-054dbf81d9bf",
         "9941d998-8ab7-433a-9e6f-1f94fc1b11ae",
-        "2ed0fc13-54e2-4a64-b4b0-7b9bf1773c57"
+        "2ed0fc13-54e2-4a64-b4b0-7b9bf1773c57",
+        "7c5e3494-74e9-4f4a-887b-ec74d99c75e0",
+        "9f2ca188-6475-4836-a6f8-7f1764d62a97"
     ],
     "filterType": "GMObject",
     "folderName": "Magics",

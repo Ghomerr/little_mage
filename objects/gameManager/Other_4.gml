@@ -1,8 +1,9 @@
-/// @description Reset kills in room
+/// @description Reset kills in room and save layers
 global.killsInRoom = 0;
 
 // Layers
 global.deadsLayer = layer_get_id("Deads");
+global.projLayer = layer_get_id("Projectiles");
 
 if (transitionsHandler.mode == TRANS_MODE.INTRO) {
 	// Reset game speed

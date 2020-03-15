@@ -101,6 +101,20 @@
             "varType": 0
         },
         {
+            "id": "cfff63a4-6ea8-49c9-a4e4-ace4e21add26",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "GRV",
+            "varType": 0
+        },
+        {
             "id": "54afb833-16b1-446a-a6de-c5edf1d0146a",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",
@@ -154,6 +168,48 @@
             "resourceFilter": 1023,
             "value": "noone",
             "varName": "shooter",
+            "varType": 0
+        },
+        {
+            "id": "66cb98b9-03ba-44f4-b4e7-591fbeeb6b29",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "isFalling",
+            "varType": 3
+        },
+        {
+            "id": "9acd0d96-462b-4f40-8f80-4e03c8487562",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "FALLING_GRV",
+            "varType": 0
+        },
+        {
+            "id": "3ea05729-2787-4e90-8f89-a22102e8688f",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "STEP_ANGLE",
             "varType": 0
         }
     ],

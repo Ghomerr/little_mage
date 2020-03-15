@@ -319,6 +319,14 @@
             }
         },
         {
+            "Key": "27d11d9e-a9e3-413f-b7e2-44cf0f9ed325",
+            "Value": {
+                "id": "77c7783b-80da-4ac7-a011-4d07987f0747",
+                "resourcePath": "sprites\\stoneProjectileSprite\\stoneProjectileSprite.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "280fb53e-3f62-45d9-8459-d0b9325d0102",
             "Value": {
                 "id": "df8a5dd7-e899-407c-a3ae-06da01e54fa5",
@@ -903,6 +911,14 @@
             }
         },
         {
+            "Key": "75d5c437-78ed-46c7-9237-6de1f320c0d0",
+            "Value": {
+                "id": "a1e9ed83-92d0-47db-a9c1-4ec7e3702972",
+                "resourcePath": "scripts\\getCollidingAngle\\getCollidingAngle.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "7617732e-9489-454b-861d-4968b06a957b",
             "Value": {
                 "id": "c48e7d6d-970e-4f05-8ba2-11c7143da2da",
@@ -956,6 +972,14 @@
                 "id": "50ec9d8b-6c52-4f56-a029-f716a5158092",
                 "resourcePath": "scripts\\startTransition\\startTransition.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "7c5e3494-74e9-4f4a-887b-ec74d99c75e0",
+            "Value": {
+                "id": "6781f5a4-7e43-4bc9-a086-468fd056691b",
+                "resourcePath": "objects\\stoneProjectileObject\\stoneProjectileObject.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -1303,6 +1327,14 @@
             }
         },
         {
+            "Key": "9f2ca188-6475-4836-a6f8-7f1764d62a97",
+            "Value": {
+                "id": "9fa960ec-3230-45fc-ab50-6ae56d20685c",
+                "resourcePath": "objects\\stoneBurstObject\\stoneBurstObject.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "a06005bf-cdde-447a-b150-35a33774d7ad",
             "Value": {
                 "id": "b72e92b5-81aa-456a-a2bf-4ac7a4ed1717",
@@ -1468,6 +1500,14 @@
                 "id": "eeb017b1-7d74-44da-b930-d3120a149622",
                 "resourcePath": "views\\b922c423-340e-4303-a6e7-5c394be28834.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "bbfc6c4c-6cdb-4d4c-9288-f46a81e67327",
+            "Value": {
+                "id": "4536409f-58ac-44d1-877c-d80b39d44f46",
+                "resourcePath": "sprites\\stoneBurstSprite\\stoneBurstSprite.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -1989,6 +2029,7 @@
         "22d8a09a-1732-4051-aaf9-d0851053ac19",
         "f22bce76-5e44-440c-bf53-70a12c832267",
         "868d601d-1635-4df2-87b2-0af6e99e2297",
+        "75d5c437-78ed-46c7-9237-6de1f320c0d0",
         "7c20732f-c050-4aec-a7a2-5fa38cf93385",
         "864774dc-aca7-4039-8a95-bd41a0b2f9f0",
         "de4cc3d4-fa1b-41d5-b5c7-78cfb6f2688a",

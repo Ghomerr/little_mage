@@ -89,7 +89,7 @@ if (isVisible) {
 			audio_play_sound(landingSound, 3, false);
 			// Make dusts
 			repeat(5) {
-				with(instance_create_layer(x, bbox_bottom, "Projectiles", dustObject)) {
+				with(instance_create_layer(x, bbox_bottom, global.projLayer, dustObject)) {
 					vsp = 0; // Landing dust shouldn't move vertically
 				}
 			}

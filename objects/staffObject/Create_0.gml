@@ -13,7 +13,7 @@ isAimingRight = true;
 PROJECTILES = [
 	natureProjectileObject, // nature
 	iceProjectileObject,	// ice
-	flameProjectileObject,	// stone
+	stoneProjectileObject,	// stone
 	fireProjectileObject,  // fire
 	flameProjectileObject,	// death
 	flameProjectileObject,	// elec

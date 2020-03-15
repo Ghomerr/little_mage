@@ -1,8 +1,11 @@
 /// @desc handle collisions with given entity type
 /// @arg object type to check collision with
-if (place_meeting(x, y, argument0)) {
+/// @arg nextX of projectile
+/// @arg nextY of projectile
+
+if (place_meeting(argument1, argument2, argument0)) {
 	// Avoid self shooting
-	var collidingInstance = instance_place(x, y, argument0);
+	var collidingInstance = instance_place(argument1, argument2, argument0);
 
 	if (shooter == collidingInstance.id) {
 		debugColor = c_green;
@@ -18,19 +21,26 @@ if (place_meeting(x, y, argument0)) {
 	}
 	
 	debugColor = c_yellow;
-	prjSpeed = 0;
+	prjSpeed = 0; // stop projectile
 	
-	/*if (!isFalling) {
-		// Avoid projectile to burst inside the wall object
-		while(place_meeting(x, y, argument0)) {
-			x -= lengthdir_x(1, direction);
-			y -= lengthdir_y(1, direction);
-		}
-	}*/
-
-	// If shootable instance, store it to be used later by the projectile
+	// For shooting instance, check if it can be followed
 	if (object_is_ancestor(collidingInstance.object_index, shootableObject)) {
-		self.collidingInstance = collidingInstance;
+		followInstance = true;
+	}
+	self.collidingInstance = collidingInstance;
+	
+	// Save colliding angle
+	collidingAngle = getCollidingAngle(collidingInstance);
+	
+	// Update projectile position to be pixel perfect
+	var doX = true;
+	while(!place_meeting(x, y, argument0)) {
+		if (doX) {
+			x += sign(hsp);
+		} else {
+			y += sign(vsp);
+		}
+		doX = !doX;
 	}
 	
 	// Change into a burst

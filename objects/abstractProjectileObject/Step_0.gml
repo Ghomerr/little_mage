@@ -1,31 +1,47 @@
 /// @description Handle movement and collisions
 
-// Falling projectile
-if (isFalling) {
-	x += hsp;
-	y += vsp;
-	if (vsp < MAX_FALL_SPEED) {
+// Handle falling or moving projectile only
+if (isFalling or prjSpeed > 0) {
+	
+	// Turn the sprite
+	if (STEP_ANGLE > 0) {
+		if (isAimingRight) {
+			image_angle = angleRound(image_angle - STEP_ANGLE);	
+		} else {
+			image_angle = angleRound(image_angle + STEP_ANGLE);	
+		}
+	}
+	
+	// Update projectile position
+	//x += hsp;
+	//y += vsp;
+	
+	// Apply gravity if needed
+	if (GRV > 0 and vsp < MAX_FALL_SPEED) {
 		vsp += GRV;
 	}
 	
-	// Handle wall objects collision
-	handleCollisionWith(wallObject);
-	
-} else if (prjSpeed > 0) {
-	// Update projectile coordinates
-	x += lengthdir_x(prjSpeed, direction);
-	y += lengthdir_y(prjSpeed, direction);
+	var nextX = x + hsp;
+	var nextY = y + vsp;
 
-	/// Handle collision with shootable objects first then walls
-	var collidingInstance = handleCollisionWith(shootableObject);
-	if (collidingInstance != noone) {
-		with(collidingInstance) {
-			if (!isDying) {
-				beHit();
+	// If projectile is not falling (= can hit things)
+	if (!isFalling) {
+		// Check colliding entity
+		var collidingInstance = handleCollisionWith(shootableObject, nextX, nextY);
+		if (collidingInstance != noone) {
+			with(collidingInstance) {
+				if (!isDying) {
+					beHit();
+				}
 			}
+			return;
 		}
-	} else {
-		// Handle wall objects collision
-		handleCollisionWith(wallObject);
+	}
+
+	// Handle wall objects collision
+	if (handleCollisionWith(wallObject, nextX, nextY) == noone) {
+		// Update position if no collision
+		x = nextX;
+		y = nextY;
 	}
 }

@@ -19,6 +19,7 @@ if (!isDying) {
 		// Leave projectile fall, if any
 		with (myProjectile) {
 			isFalling = true;
+			GRV = FALLING_GRV;
 			var dir = irandom_range(45, 135);
 			hsp = lengthdir_x(MAX_FALL_SPEED, dir);
 			vsp = lengthdir_y(MAX_FALL_SPEED, dir);

@@ -3,9 +3,6 @@
 // Inherit the parent event
 event_inherited();
 
-// Turn the sprite
-image_angle = angleRound(image_angle + 2);
-
 // Create ice particles behind the projectile
 var partDir = direction + ANGLE.OPPOSITE;
 var partX = lengthdir_x(3, partDir);
