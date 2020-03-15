@@ -8,15 +8,15 @@
     "option_windows_company_info": "Ghomerr Games",
     "option_windows_copy_exe_to_dest": false,
     "option_windows_copyright_info": "(c) 2019-2020 Ghomerr Games",
-    "option_windows_description_info": "Little Mage Platformer Game",
+    "option_windows_description_info": "Platform and shooter game as a little mage using magical hats",
     "option_windows_disable_sandbox": false,
     "option_windows_display_cursor": true,
-    "option_windows_display_name": "Little Mage Adventure",
+    "option_windows_display_name": "Magic Hat'venture",
     "option_windows_enable_steam": false,
-    "option_windows_executable_name": "${project_name}",
-    "option_windows_icon": "${base_options_dir}\\windows\\icons\\icon.ico",
-    "option_windows_installer_finished": "${base_options_dir}\\windows\\installer\\finished.bmp",
-    "option_windows_installer_header": "${base_options_dir}\\windows\\installer\\header.bmp",
+    "option_windows_executable_name": "MagicHatventure",
+    "option_windows_icon": "${options_dir}\\windows\\icons\\icon.ico",
+    "option_windows_installer_finished": "${options_dir}\\windows\\installer\\finished.bmp",
+    "option_windows_installer_header": "${options_dir}\\windows\\installer\\header.bmp",
     "option_windows_interpolate_pixels": false,
     "option_windows_license": "${base_options_dir}\\windows\\installer\\license.txt",
     "option_windows_nsis_file": "${base_options_dir}\\windows\\installer\\nsis_script.nsi",
@@ -31,10 +31,10 @@
     "option_windows_texture_page": "2048x2048",
     "option_windows_use_splash": false,
     "option_windows_version": {
-        "build": 0,
-        "major": 1,
-        "minor": 0,
-        "revision": 0
+        "build": 3,
+        "major": 0,
+        "minor": 2020,
+        "revision": 15
     },
     "option_windows_vsync": false
 }

@@ -1,7 +1,7 @@
 /// @description Init menu
 
 // Version
-version = "v0.2020.03.15";
+version = "v" + GM_version;
 
 // Menu constants
 titleText = "Little Mage Adventure";
