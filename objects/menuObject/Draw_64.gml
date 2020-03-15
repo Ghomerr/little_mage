@@ -1,16 +1,22 @@
 /// @description Draw Menu
 
 // Draw Title
-draw_set_font(menuTitleFont);
-draw_set_halign(fa_center);
-draw_set_valign(fa_top);
-draw_set_color(c_black);
+drawSetText(c_black, menuTitleFont, fa_center, fa_top);
 draw_text(guiHalfWidth - drawOffset, guiMargin, titleText);
 draw_text(guiHalfWidth + drawOffset, guiMargin, titleText);
 draw_text(guiHalfWidth, guiMargin - drawOffset, titleText);
 draw_text(guiHalfWidth, guiMargin + drawOffset, titleText);
 draw_set_color(c_white);
 draw_text(guiHalfWidth, guiMargin, titleText);
+
+// Draw version
+drawSetText(c_black, signPostFont, fa_left, fa_top);
+draw_text(versionPos - 1, versionPos, version);
+draw_text(versionPos + 1, versionPos, version);
+draw_text(versionPos, versionPos - 1, version);
+draw_text(versionPos, versionPos + 1, version);
+draw_set_color(c_white);
+draw_text(versionPos, versionPos, version);
 
 // Draw Menu
 draw_set_font(font);

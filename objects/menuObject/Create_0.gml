@@ -1,10 +1,14 @@
 /// @description Init menu
 
+// Version
+version = "v0.2020.03.13";
+
 // Menu constants
 titleText = "Little Mage Adventure";
 guiWidth = display_get_gui_width();
 guiHalfWidth = guiWidth / 2;
 guiHeight = display_get_gui_height();
+versionPos = 10;
 guiMargin = 32;
 menuHideOffset = 200; // to hide and show the menu
 drawOffset = 2; // for outline
