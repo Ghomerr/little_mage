@@ -399,6 +399,14 @@
             }
         },
         {
+            "Key": "30ee9e3c-7879-4aeb-8827-ff8fe34a219a",
+            "Value": {
+                "id": "60b0eb12-983e-4bea-8669-b0bf3e679377",
+                "resourcePath": "sprites\\stonePikesSprite\\stonePikesSprite.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "30fe6cbe-07ff-4754-ba11-d78a30e8dd9c",
             "Value": {
                 "id": "9a8a17e2-7a2e-463c-b13f-1d60131aa733",
@@ -1556,6 +1564,14 @@
                 "id": "b196bc5a-e816-431d-a41d-285c02c35d48",
                 "resourcePath": "sounds\\manaBoltSound\\manaBoltSound.yy",
                 "resourceType": "GMSound"
+            }
+        },
+        {
+            "Key": "c5947338-67c6-4d3f-94c8-6892aed7ccb5",
+            "Value": {
+                "id": "849f906f-d828-45f5-80fb-aa0d402f026b",
+                "resourcePath": "objects\\stonePikesObject\\stonePikesObject.yy",
+                "resourceType": "GMObject"
             }
         },
         {

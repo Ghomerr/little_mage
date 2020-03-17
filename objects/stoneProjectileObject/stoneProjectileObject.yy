@@ -47,6 +47,14 @@
             "objectId": "7f34e096-7366-457c-817b-7dcf13435218",
             "propertyId": "9a62caa3-0f43-4e92-9ced-037540617723",
             "value": "manaBoltSound"
+        },
+        {
+            "id": "fe3e56b4-88ee-4a86-8278-9720b658ef4d",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "7f34e096-7366-457c-817b-7dcf13435218",
+            "propertyId": "0b78330d-4bae-464b-a3f3-2c5abc1b3cce",
+            "value": "stonePikesObject"
         }
     ],
     "parentObjectId": "7f34e096-7366-457c-817b-7dcf13435218",

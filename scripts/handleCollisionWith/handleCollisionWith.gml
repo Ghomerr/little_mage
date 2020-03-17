@@ -44,7 +44,11 @@ if (place_meeting(argument1, argument2, argument0)) {
 	}
 	
 	// Change into a burst
-	instance_change(burstObject, true);
+	if (followInstance and onEntityBurstObject != noone) {
+		instance_change(onEntityBurstObject, true);
+	} else {
+		instance_change(burstObject, true);
+	}
 	
 	//layer_add_instance("Environment", id);
 	//depth++;

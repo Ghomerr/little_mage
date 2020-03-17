@@ -129,6 +129,20 @@
             "varType": 5
         },
         {
+            "id": "0b78330d-4bae-464b-a3f3-2c5abc1b3cce",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "noone",
+            "varName": "onEntityBurstObject",
+            "varType": 5
+        },
+        {
             "id": "9a62caa3-0f43-4e92-9ced-037540617723",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",
