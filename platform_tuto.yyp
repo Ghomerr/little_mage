@@ -207,6 +207,14 @@
             }
         },
         {
+            "Key": "18d7f235-622f-4ff2-9ca9-75021be48b93",
+            "Value": {
+                "id": "39134a85-95b7-4d73-bfa4-c5a3b31fbad2",
+                "resourcePath": "scripts\\getLayer\\getLayer.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "1a12523f-46a9-4188-b55b-a0a4f2e471f0",
             "Value": {
                 "id": "aa917331-5592-484d-a518-b161421d6017",
@@ -943,6 +951,14 @@
             }
         },
         {
+            "Key": "78029738-9442-430b-b7ba-6a1cf8f7ad62",
+            "Value": {
+                "id": "26c78d02-6347-47f7-9754-1aba0107a39f",
+                "resourcePath": "sprites\\stonePillarSprite\\stonePillarSprite.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "79bef463-007a-45d3-9f37-5c36dd2ff3c6",
             "Value": {
                 "id": "1f40eafa-823e-44fc-85a0-7084eb214961",
@@ -1164,6 +1180,14 @@
                 "id": "2c2d9027-ff34-4f02-aed6-8c260387d8fd",
                 "resourcePath": "views\\8cf879b5-760e-4841-924d-347a24c64432.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "8d7cda8a-dff3-4a88-9dd6-311d72b15350",
+            "Value": {
+                "id": "0b88df6d-ab03-4b2f-8861-9e2c9c42053c",
+                "resourcePath": "objects\\stonePillarObject\\stonePillarObject.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -2062,7 +2086,8 @@
         "9dd8b2e1-2898-4744-8b16-40871fd77a41",
         "f68c04a8-cfef-44b3-8cb8-ca8586882e2e",
         "e559797d-41a4-4f86-9e4e-5c33714b8b38",
-        "240aec97-84d2-4c37-87d9-09c3e79c522c"
+        "240aec97-84d2-4c37-87d9-09c3e79c522c",
+        "18d7f235-622f-4ff2-9ca9-75021be48b93"
     ],
     "tutorial": ""
 }

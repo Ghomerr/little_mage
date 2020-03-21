@@ -1,5 +1,10 @@
 /// @description Init
 
+// Layers
+global.deadsLayer = -1;
+global.projLayer = -1;
+global.wallLayer = -1;
+
 // Resolution const
 #macro RES_W 1024
 #macro RES_H 768

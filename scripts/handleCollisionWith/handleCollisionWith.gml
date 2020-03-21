@@ -33,7 +33,7 @@ if (place_meeting(argument1, argument2, argument0)) {
 	collidingAngle = getCollidingAngle(collidingInstance);
 	
 	// Update projectile position to be pixel perfect
-	var doX = true;
+	/*var doX = true;
 	while(!place_meeting(x, y, argument0)) {
 		if (doX) {
 			x += sign(hsp);
@@ -41,7 +41,7 @@ if (place_meeting(argument1, argument2, argument0)) {
 			y += sign(vsp);
 		}
 		doX = !doX;
-	}
+	}*/
 	
 	// Change into a burst
 	if (followInstance and onEntityBurstObject != noone) {
