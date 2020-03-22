@@ -187,6 +187,20 @@
             "value": "0",
             "varName": "isPlayer",
             "varType": 3
+        },
+        {
+            "id": "5e44a1a6-0fcc-4684-9a10-f9a8bbc4ca79",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "noone",
+            "varName": "burstObject",
+            "varType": 5
         }
     ],
     "solid": false,

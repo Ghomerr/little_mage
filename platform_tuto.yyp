@@ -47,6 +47,14 @@
             }
         },
         {
+            "Key": "03670d22-5130-409a-8f33-253f66e2db5f",
+            "Value": {
+                "id": "e91ba80a-710e-4a4d-b9c9-cb897a319e5a",
+                "resourcePath": "sprites\\stonePillarBurstSprite\\stonePillarBurstSprite.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "036df095-cc68-41f8-b391-25ae46c9e158",
             "Value": {
                 "id": "6faa1eb1-e289-4589-ba47-661a3aaf9fd6",
@@ -452,6 +460,14 @@
                 "id": "d0183aed-ac5b-47ca-98fb-5ce55ae94e29",
                 "resourcePath": "scripts\\updatePosition\\updatePosition.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "321870a1-2e50-4e12-8b32-f6ad4926804e",
+            "Value": {
+                "id": "9dc640d8-f0dc-405b-bb6c-d48360915d7b",
+                "resourcePath": "views\\321870a1-2e50-4e12-8b32-f6ad4926804e.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -1079,6 +1095,14 @@
             }
         },
         {
+            "Key": "84eee432-9cfd-4939-889d-0987fd9be3c9",
+            "Value": {
+                "id": "c6e1bfc1-4598-4d37-88b2-41660b930661",
+                "resourcePath": "scripts\\createStonePillar\\createStonePillar.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "864774dc-aca7-4039-8a95-bd41a0b2f9f0",
             "Value": {
                 "id": "59fe2e9f-04ef-4f0b-b54d-583a5624ffd6",
@@ -1187,6 +1211,14 @@
             "Value": {
                 "id": "0b88df6d-ab03-4b2f-8861-9e2c9c42053c",
                 "resourcePath": "objects\\stonePillarObject\\stonePillarObject.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "8e1d686e-4af1-43e7-94c4-e7570f5740f1",
+            "Value": {
+                "id": "1bc7fc68-4fc6-42d2-81ff-e2e8d1bddd31",
+                "resourcePath": "objects\\stonePillarBurstObject\\stonePillarBurstObject.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -2070,6 +2102,7 @@
         "f22bce76-5e44-440c-bf53-70a12c832267",
         "868d601d-1635-4df2-87b2-0af6e99e2297",
         "75d5c437-78ed-46c7-9237-6de1f320c0d0",
+        "84eee432-9cfd-4939-889d-0987fd9be3c9",
         "7c20732f-c050-4aec-a7a2-5fa38cf93385",
         "864774dc-aca7-4039-8a95-bd41a0b2f9f0",
         "de4cc3d4-fa1b-41d5-b5c7-78cfb6f2688a",

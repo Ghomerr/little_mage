@@ -13,6 +13,16 @@
             "enumb": 7,
             "eventtype": 7,
             "m_owner": "8d7cda8a-dff3-4a88-9dd6-311d72b15350"
+        },
+        {
+            "id": "9639de17-a5f2-4e45-a953-b7b82354e1b3",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 0,
+            "m_owner": "8d7cda8a-dff3-4a88-9dd6-311d72b15350"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
@@ -31,7 +41,15 @@
             "mvc": "1.0",
             "objectId": "89b37f63-04ae-45e4-8232-ac168afa89e2",
             "propertyId": "c2302562-bcba-4df9-9293-b25e6de8fab4",
-            "value": "3"
+            "value": "1"
+        },
+        {
+            "id": "8c55d24a-daa0-4a66-8f0f-a7be67446583",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "89b37f63-04ae-45e4-8232-ac168afa89e2",
+            "propertyId": "5e44a1a6-0fcc-4684-9a10-f9a8bbc4ca79",
+            "value": "stonePillarBurstObject"
         }
     ],
     "parentObjectId": "89b37f63-04ae-45e4-8232-ac168afa89e2",
