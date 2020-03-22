@@ -29,3 +29,13 @@ part_type_speed(snow, 0.1, 0.25, -0.01, 0);
 part_type_gravity(snow, 0.01, ANGLE.DOWN);
 part_type_size(snow, 0.25, 1, 0, 0);
 part_type_color2(snow, $f7e483, c_white);
+
+rock = part_type_create();
+part_type_sprite(rock, stoneRockSprite, 0, 0, 0);
+part_type_alpha3(rock, 1, 0.9, 0.75);
+part_type_life(rock, 45, 60);
+part_type_speed(rock, 0.75, 2, 0, 0);
+part_type_gravity(rock, 0.1, ANGLE.DOWN);
+part_type_size(rock, 0.25, 1, 0, 0);
+//part_type_color3(rock, c_white, c_maroon, c_black);
+part_type_orientation(rock, ANGLE.MIN, ANGLE.MAX, 0, 0, 0);

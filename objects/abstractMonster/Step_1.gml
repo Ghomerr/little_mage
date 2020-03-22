@@ -20,7 +20,7 @@ if (!isDying) {
 		with (myProjectile) {
 			isFalling = true;
 			GRV = FALLING_GRV;
-			var dir = irandom_range(45, 135);
+			var dir = irandom_range(ANGLE.HALF_CORNER, 135);
 			hsp = lengthdir_x(MAX_FALL_SPEED, dir);
 			vsp = lengthdir_y(MAX_FALL_SPEED, dir);
 		}

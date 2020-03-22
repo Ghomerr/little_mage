@@ -1,4 +1,4 @@
-/// @description ?
+/// @description Burst snow particles
 
 // Inherit the parent event
 event_inherited();

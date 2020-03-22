@@ -79,6 +79,14 @@
             }
         },
         {
+            "Key": "070f5c93-bb3d-4c04-bb6e-7a32ad8e54a2",
+            "Value": {
+                "id": "bf4931f1-1850-4eec-a6c6-30c6c4d44710",
+                "resourcePath": "sprites\\stoneRockSprite\\stoneRockSprite.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "07e990f2-dc8d-4f38-8c6a-8c74dc80d1d3",
             "Value": {
                 "id": "9e230251-a909-4d94-ae03-2f1158abfb8c",

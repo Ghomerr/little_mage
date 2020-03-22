@@ -4,7 +4,16 @@
     "mvc": "1.0",
     "name": "stonePikesObject",
     "eventList": [
-        
+        {
+            "id": "536c585b-5966-4339-98f3-388850f6a7aa",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 0,
+            "m_owner": "c5947338-67c6-4d3f-94c8-6892aed7ccb5"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,

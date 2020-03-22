@@ -4,7 +4,16 @@
     "mvc": "1.0",
     "name": "stoneProjectileObject",
     "eventList": [
-        
+        {
+            "id": "3fbd67d5-9dd4-440b-9398-3a3c7700abce",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 3,
+            "m_owner": "7c5e3494-74e9-4f4a-887b-ec74d99c75e0"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": [

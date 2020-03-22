@@ -36,4 +36,11 @@ with(instance_create_layer(x, y, layer, stonePillarObject)) {
 			beHit(initHp);	
 		}
 	}
+	
+	// Burst rock particles
+	part_type_direction(pm.rock, image_angle - ANGLE.HALF_CORNER, image_angle + ANGLE.HALF_CORNER, 0, 0);
+	part_type_speed(pm.rock, 2, 5, 0, 0);
+	part_particles_create(pm.ps, x + irandom_range(-1, 1), y + irandom_range(-1, 1), pm.rock, irandom_range(10, 20));
+	// Reset speed 
+	part_type_speed(pm.rock, 0.75, 2, 0, 0);
 }
