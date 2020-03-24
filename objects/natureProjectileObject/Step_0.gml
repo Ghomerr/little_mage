@@ -1,4 +1,4 @@
-/// @description ?
+/// @description Emit particles
 
 // Test particles
 
