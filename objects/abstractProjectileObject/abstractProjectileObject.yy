@@ -15,16 +15,6 @@
             "m_owner": "7f34e096-7366-457c-817b-7dcf13435218"
         },
         {
-            "id": "976fbd7f-c7af-441c-b189-6cf6df04a2b2",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 7,
-            "eventtype": 7,
-            "m_owner": "7f34e096-7366-457c-817b-7dcf13435218"
-        },
-        {
             "id": "90672f65-d35c-4ece-bf0b-a37897a2fce6",
             "modelName": "GMEvent",
             "mvc": "1.0",
@@ -155,20 +145,6 @@
             "value": "noone",
             "varName": "sound",
             "varType": 5
-        },
-        {
-            "id": "7f7ba3b4-263c-4f26-a2fe-11be60341e9e",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "True",
-            "varName": "stopAnimationAtEnd",
-            "varType": 3
         },
         {
             "id": "acf9cb41-2572-4950-9ae3-94096bfd6b84",

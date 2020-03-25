@@ -5,26 +5,6 @@
     "name": "natureProjectileObject",
     "eventList": [
         {
-            "id": "686e1ebd-2715-4287-ba1a-ed861d5971d5",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 7,
-            "eventtype": 7,
-            "m_owner": "800d346c-2b79-4d50-828b-d8b26e2465ce"
-        },
-        {
-            "id": "b3605a68-2670-4f09-bc5e-79ef4a2fcc83",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 2,
-            "eventtype": 3,
-            "m_owner": "800d346c-2b79-4d50-828b-d8b26e2465ce"
-        },
-        {
             "id": "357ac962-11e6-4a71-a729-686eb0d1d3f5",
             "modelName": "GMEvent",
             "mvc": "1.0",

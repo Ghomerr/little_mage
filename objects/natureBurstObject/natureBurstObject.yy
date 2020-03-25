@@ -5,23 +5,13 @@
     "name": "natureBurstObject",
     "eventList": [
         {
-            "id": "6e266a3a-c8f9-4e8b-9ef0-03d46195dc2d",
+            "id": "d65a434f-93f4-46cd-b717-a16c8a34bc9d",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 1,
             "eventtype": 3,
-            "m_owner": "8bfb72b1-2042-471a-b82e-84909e5fe28d"
-        },
-        {
-            "id": "f615a264-8102-4eab-9b9c-cd6a8cdc08b3",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 0,
             "m_owner": "8bfb72b1-2042-471a-b82e-84909e5fe28d"
         }
     ],
