@@ -4,14 +4,10 @@
 
 event_inherited();
 
-/*
-with (dustParticleSystem) {
-	//show_debug_message("proj step");
-	psMinX = other.x - 5;
-	psMaxX = other.x + 5;
-	psMinY = other.y - 5;
-	psMaxY = other.y + 5;
-	//psDir = other.direction + ANGLE.LEFT;
-	event_user(0);
+// Create leaf particles behind projectile
+if (irandom_range(1, 10) == 5) {
+	var partDir = direction + ANGLE.OPPOSITE;
+	var leafPart = choose(0, 1) ? pm.leafLeft : pm.leafRight;
+	part_type_direction(leafPart, partDir - ANGLE.HALF_CORNER, partDir + ANGLE.HALF_CORNER, 0, 0);
+	part_particles_create(pm.ps, x + irandom_range(-3, 3), y + irandom_range(-3, 3), leafPart, 1);
 }
-//*/
