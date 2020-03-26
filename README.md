@@ -21,6 +21,7 @@ Play it on itch.io : https://ghomerr.itch.io/magic-hatventure
 ## Debug controls :
 * `F2` : enable debug
 * `F3` : in debug, display walls hitboxes
+* `F4` : in debug, add or remove staff
 * `M` : in debug, display monsters hitboxes
 * `J` : in debug, make squirrels jump
 * `K` : in debug, make squirrels move
