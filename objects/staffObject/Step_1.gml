@@ -27,15 +27,15 @@ if (playerObject.hasControl) {
 		// Screen shake
 		//screenShake(2, 10);
 		
-		// Set firing cooldown
-		firingDelay = firingCooldown;
-	
 		// Compute projectile start coordinates at the end of the staff
 		var prjX = x + lengthdir_x(STAFF_LENGTH, image_angle);
 		var prjY = y + lengthdir_y(STAFF_LENGTH, image_angle);
 	
 		// Create a new projectile using staff angle
 		with (instance_create_layer(prjX, prjY, global.projLayer, projectile)) {
+			// Set firing cooldown
+			other.firingDelay = cooldown;
+			
 			// Play sound
 			audio_sound_pitch(sound, choose(0.9, 1.0, 1.1));
 			audio_play_sound(sound, 5, false);

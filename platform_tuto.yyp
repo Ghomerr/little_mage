@@ -391,6 +391,14 @@
             }
         },
         {
+            "Key": "29a58fa5-668b-4b7c-9c6d-9209f2d2183a",
+            "Value": {
+                "id": "3c7a5e4a-1871-4c0d-a0bf-b168205dca40",
+                "resourcePath": "sprites\\electricalProjectileSprite\\electricalProjectileSprite.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "29d27291-acc2-4916-86e4-f14412c6ffa8",
             "Value": {
                 "id": "e6e89471-7769-4545-ac72-233d6fdafb5e",
@@ -524,6 +532,14 @@
                 "id": "f54a7ebb-6fc6-4804-96c2-67a1d4a37771",
                 "resourcePath": "objects\\dustObject\\dustObject.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "35b95588-5f02-477d-9b97-c99e1a10e796",
+            "Value": {
+                "id": "c6399946-b51d-46c2-896e-3bd5ce5cbe57",
+                "resourcePath": "sprites\\electricalBurstSprite\\electricalBurstSprite.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -687,6 +703,14 @@
             }
         },
         {
+            "Key": "4b4960ba-4828-44b1-9212-a0f7bdae51c9",
+            "Value": {
+                "id": "6d4507f4-9199-428d-9502-b6f7b3b9ebbf",
+                "resourcePath": "objects\\electricalBurstObject\\electricalBurstObject.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "4b68f6cd-daf9-4771-927f-f58e1f091f32",
             "Value": {
                 "id": "30a0bcf0-1abe-49a2-862e-b8ce443cfcef",
@@ -756,6 +780,14 @@
                 "id": "9d4148f2-4092-4b0c-aea3-81f0d35b88f4",
                 "resourcePath": "views\\51500b0e-af87-4006-adae-124fa99b419a.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "51bd00d6-17e8-42e8-9728-c98a11410418",
+            "Value": {
+                "id": "d813fc85-07eb-4773-9de7-f6aa220c8a60",
+                "resourcePath": "sprites\\electricalParticle1Sprite\\electricalParticle1Sprite.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -1519,6 +1551,14 @@
             }
         },
         {
+            "Key": "aa5b2d22-a054-4374-97b7-e162d08e51ed",
+            "Value": {
+                "id": "62f594fb-4945-41a0-8b30-346d4697c5af",
+                "resourcePath": "objects\\electricalProjectileObject\\electricalProjectileObject.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "aadc294a-434f-40e9-b230-d6892cf7a0ef",
             "Value": {
                 "id": "35285f8a-e3ce-4c05-a765-2176612ed3aa",
@@ -1908,6 +1948,14 @@
                 "id": "76953ddc-ae0b-4d9c-8511-4f90fe6e1eb3",
                 "resourcePath": "scripts\\handleBackgroundsParallax\\handleBackgroundsParallax.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "e03fdfe4-7768-41e0-8fc7-3bd627bd9ede",
+            "Value": {
+                "id": "b2a7aa62-b754-43b7-8b6b-00191d62cd1b",
+                "resourcePath": "sprites\\electricalParticle2Sprite\\electricalParticle2Sprite.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

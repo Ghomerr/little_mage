@@ -142,7 +142,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "noone",
+            "value": "manaBoltSound",
             "varName": "sound",
             "varType": 5
         },
@@ -158,6 +158,20 @@
             "resourceFilter": 1023,
             "value": "noone",
             "varName": "shooter",
+            "varType": 0
+        },
+        {
+            "id": "37f7e140-883c-4f91-94d2-af0f5cac5fd8",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "30",
+            "varName": "cooldown",
             "varType": 0
         },
         {
