@@ -71,6 +71,14 @@
             }
         },
         {
+            "Key": "05b0843d-b41c-4daa-b3b6-5bd3c75dec10",
+            "Value": {
+                "id": "27a8f8ea-f8ec-432e-87c5-daa534483f4b",
+                "resourcePath": "sprites\\naturePlantGrowthSprite\\naturePlantGrowthSprite.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "0618db3a-0857-4516-81c7-d29cc90b6a93",
             "Value": {
                 "id": "e67f9a6b-7cb7-41a3-a851-b6519d857d83",
@@ -135,6 +143,14 @@
             }
         },
         {
+            "Key": "0d9fba51-4044-403f-81e9-31c4c6ee4b85",
+            "Value": {
+                "id": "71eb909d-4e35-47e5-a48e-900cec3a23f1",
+                "resourcePath": "sprites\\natureInfectedPlantMoveSprite\\natureInfectedPlantMoveSprite.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "0e0b994c-8ef8-4454-b016-d02d530cd8b7",
             "Value": {
                 "id": "9c85ca97-dfe4-4afa-9b9c-3734524d7164",
@@ -191,6 +207,14 @@
             }
         },
         {
+            "Key": "1138a440-0a9b-4440-afcf-3e42a6a97535",
+            "Value": {
+                "id": "8eac426a-1165-4673-9e78-4e5e6b277fb2",
+                "resourcePath": "sprites\\naturePlantMoveSprite\\naturePlantMoveSprite.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "130d32f8-2e86-4dc0-b5aa-f51d4e1c80e3",
             "Value": {
                 "id": "3d2b6995-d678-465d-a88e-582d80234f55",
@@ -204,6 +228,14 @@
                 "id": "3099e728-d243-4f92-97be-87c776b82ce8",
                 "resourcePath": "fonts\\menuTitleFont\\menuTitleFont.yy",
                 "resourceType": "GMFont"
+            }
+        },
+        {
+            "Key": "17131c7f-ac75-442b-b637-1116fed222c1",
+            "Value": {
+                "id": "22006281-42f3-4aec-aec6-d9b93c0956fe",
+                "resourcePath": "scripts\\initPlantPosition\\initPlantPosition.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -1079,6 +1111,14 @@
             }
         },
         {
+            "Key": "7f8d9e25-c8ca-44ab-b07b-f67978680a69",
+            "Value": {
+                "id": "3214eeba-29b6-4417-808b-67f4c2cc05b1",
+                "resourcePath": "sprites\\naturePlantDeathSprite\\naturePlantDeathSprite.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "800d346c-2b79-4d50-828b-d8b26e2465ce",
             "Value": {
                 "id": "2ecc52b5-23f1-4de6-a331-fcaf7f665f3c",
@@ -1839,19 +1879,19 @@
             }
         },
         {
-            "Key": "d76a11b8-b685-426e-926e-defeeeef7050",
-            "Value": {
-                "id": "2a869132-c405-4cca-bdae-ece0f55ec311",
-                "resourcePath": "objects\\natureInfectObject\\natureInfectObject.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "d8639802-1007-4b21-832f-ab2b3e19e09f",
             "Value": {
                 "id": "63e8d69c-a4d0-43d6-b4d2-cc3d79eab2b1",
                 "resourcePath": "views\\d8639802-1007-4b21-832f-ab2b3e19e09f.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "d9bac138-ca30-4b8e-b650-51f6d5ee403a",
+            "Value": {
+                "id": "1b313096-f09d-4fc8-b377-92eada4fd91b",
+                "resourcePath": "objects\\naturePlantObject\\naturePlantObject.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -2152,6 +2192,7 @@
         "868d601d-1635-4df2-87b2-0af6e99e2297",
         "75d5c437-78ed-46c7-9237-6de1f320c0d0",
         "84eee432-9cfd-4939-889d-0987fd9be3c9",
+        "17131c7f-ac75-442b-b637-1116fed222c1",
         "7c20732f-c050-4aec-a7a2-5fa38cf93385",
         "864774dc-aca7-4039-8a95-bd41a0b2f9f0",
         "de4cc3d4-fa1b-41d5-b5c7-78cfb6f2688a",

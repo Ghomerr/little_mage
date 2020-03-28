@@ -10,3 +10,4 @@ MAX_FALL_SPEED = 3;
 
 followInstance = false;
 collidingInstance = noone;
+hasCollidedLivingEntity = false;

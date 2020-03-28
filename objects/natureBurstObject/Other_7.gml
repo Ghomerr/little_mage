@@ -3,11 +3,17 @@
 // Inherit the parent event
 event_inherited();
 
-// Create the infect object
-if (followInstance) {
-	with (collidingInstance) {
-		with(instance_create_layer(x, y, other.layer, natureInfectObject)) {
-			collidingInstance = other;
-		}
+// Check if instance still exists
+if (instance_exists(collidingInstance)) {
+	with(instance_create_layer(x, y, layer, naturePlantObject)) {
+		// init plant variables
+		collidingInstance = other.collidingInstance;
+		followInstance = other.followInstance;
+		collidingAngle = other.collidingAngle;
+		onLivingInstance = other.hasCollidedLivingEntity;
+		projectileAngle = other.image_angle;
+			
+		// Move it accordingly
+		initPlantPosition();
 	}
 }

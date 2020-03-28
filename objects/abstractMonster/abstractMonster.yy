@@ -92,6 +92,14 @@
             "objectId": "89b37f63-04ae-45e4-8232-ac168afa89e2",
             "propertyId": "8693fe03-8db6-4e67-9b84-7759c18bc6ec",
             "value": "redShader"
+        },
+        {
+            "id": "e47d10fc-1597-40e0-9694-b860525f87a4",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "89b37f63-04ae-45e4-8232-ac168afa89e2",
+            "propertyId": "9dccba65-68bc-40b3-a167-e10c254dd900",
+            "value": "True"
         }
     ],
     "parentObjectId": "89b37f63-04ae-45e4-8232-ac168afa89e2",

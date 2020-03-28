@@ -26,6 +26,7 @@ if (place_meeting(argument1, argument2, argument0)) {
 	// For shooting instance, check if it can be followed
 	if (object_is_ancestor(collidingInstance.object_index, shootableObject)) {
 		followInstance = true;
+		hasCollidedLivingEntity = collidingInstance.isLivingEntity;
 	}
 	self.collidingInstance = collidingInstance;
 	
@@ -43,7 +44,7 @@ if (place_meeting(argument1, argument2, argument0)) {
 		doX = !doX;
 	}*/
 	
-	// Change into a burst
+	// Change into a burst depending of
 	if (followInstance and onEntityBurstObject != noone) {
 		instance_change(onEntityBurstObject, true);
 	} else {
