@@ -64,6 +64,14 @@
             "objectId": "7f34e096-7366-457c-817b-7dcf13435218",
             "propertyId": "0b78330d-4bae-464b-a3f3-2c5abc1b3cce",
             "value": "stonePikesObject"
+        },
+        {
+            "id": "86987e31-b93e-452c-9462-7e7dd178aab7",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "7f34e096-7366-457c-817b-7dcf13435218",
+            "propertyId": "37f7e140-883c-4f91-94d2-af0f5cac5fd8",
+            "value": "60"
         }
     ],
     "parentObjectId": "7f34e096-7366-457c-817b-7dcf13435218",

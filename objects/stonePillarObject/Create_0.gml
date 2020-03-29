@@ -15,3 +15,10 @@ wall = noone;
 with(instance_create_layer(x, y, getLayer(LAYER.WALLS), wallObject)) {
 	other.wall = self;
 }
+
+// Handle shake and autodestruction
+life = 120;
+shakingLife = life / 4;
+shakeMagnitude = 1;
+shakeTimer = 5;
+shakeCounter = 0;
