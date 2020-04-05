@@ -1415,6 +1415,14 @@
             }
         },
         {
+            "Key": "98c2fc48-ffdb-4904-b243-1174bbc87e81",
+            "Value": {
+                "id": "0d71ec09-c6ef-4a25-a1ed-dd6c22978a46",
+                "resourcePath": "scripts\\changeMonsterDirection\\changeMonsterDirection.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "98dde7e0-2c68-45f8-a0eb-69ef61356c04",
             "Value": {
                 "id": "231291f8-e93e-43c5-971f-ab2d61a9820b",
@@ -2285,6 +2293,7 @@
         "411d24d7-3015-4b78-a29b-0718167a3da5",
         "22d8a09a-1732-4051-aaf9-d0851053ac19",
         "f22bce76-5e44-440c-bf53-70a12c832267",
+        "98c2fc48-ffdb-4904-b243-1174bbc87e81",
         "868d601d-1635-4df2-87b2-0af6e99e2297",
         "75d5c437-78ed-46c7-9237-6de1f320c0d0",
         "84eee432-9cfd-4939-889d-0987fd9be3c9",

@@ -12,7 +12,21 @@ if (!isDying) {
 	if (isGrounded and isAfraidOfHeight and !place_meeting(x + sign(hsp) * (spriteWidth+1) + hsp, y + 1, wallObject)) {
 		// Reverse direction
 		move = -move;
+		nextX *= move;
+		hsp *= move;
 		debugColor = c_green;
+	} else {
+		// Handle monster colliding
+		if (place_meeting(x, y, abstractMonster)) {
+			var otherMonster = instance_place(x, y, abstractMonster);
+			changeMonsterDirection();
+			nextX *= move;
+			with (otherMonster) {
+				changeMonsterDirection();
+			}
+		} else {
+			isCollidingOther = false;
+		}	
 	}
 	
 	if (handleHorizontalCollision(nextX)) {

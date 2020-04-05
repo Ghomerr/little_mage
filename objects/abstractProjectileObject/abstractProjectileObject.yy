@@ -229,6 +229,20 @@
             "value": "True",
             "varName": "avoidPlatform",
             "varType": 3
+        },
+        {
+            "id": "38e63daa-23ae-418d-b05f-f2f10d01761f",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "1",
+            "varName": "damage",
+            "varType": 0
         }
     ],
     "solid": false,

@@ -31,7 +31,7 @@ if (isFalling or prjSpeed > 0) {
 		if (collidingInstance != noone) {
 			with(collidingInstance) {
 				if (!isDying) {
-					beHit();
+					beHit(damage);
 				}
 			}
 			return;

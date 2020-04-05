@@ -2,6 +2,7 @@
 image_angle = ANGLE.MIN;
 life = 240;
 isDying = false;
+damage = 1;
 
 spriteWidth = sprite_get_width(windTornadoSprite) + 1;
 MIN_HSP = 0.3;

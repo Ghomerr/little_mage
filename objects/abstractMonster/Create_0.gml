@@ -20,3 +20,4 @@ debugColor = c_red;
 // Shooting init
 shootCounter = 0;
 myProjectile = noone;
+isCollidingOther = false;
