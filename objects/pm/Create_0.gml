@@ -72,3 +72,11 @@ part_type_size(elec2, 0.25, 1, -0.01, 0);
 part_type_orientation(elec2, ANGLE.MIN, ANGLE.MAX, 0, 0, 0);
 part_type_direction(elec2, ANGLE.MIN, ANGLE.MAX, 0, 0);
 part_type_speed(elec2, 0, 0, 0, 0);
+
+windDust = part_type_create();
+part_type_sprite(windDust, dustSprite, 1, 1, 0);
+part_type_alpha3(windDust, 1, 0.5, 0.2);
+part_type_life(windDust, 30, 60);
+part_type_size(windDust, 0.2, 0.8, -0.01, 0);
+part_type_orientation(windDust, ANGLE.MIN, ANGLE.MAX, 0, 0, 0);
+part_type_speed(windDust, 0.5, 1, -0.02, 0);

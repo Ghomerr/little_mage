@@ -13,11 +13,11 @@ if (place_meeting(argument1, argument2, argument0)) {
 	}
 	
 	// Platforms don't collide with projectiles
-	if (object_is_ancestor(collidingInstance.object_index, wallObject) 
+	if (avoidPlatform and object_is_ancestor(collidingInstance.object_index, wallObject) 
 		and collidingInstance.isPlatform) 
 	{
 		debugColor = c_aqua;
-		return noone;	
+		return noone;
 	}
 	
 	debugColor = c_yellow;

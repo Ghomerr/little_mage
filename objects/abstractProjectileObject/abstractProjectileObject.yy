@@ -215,6 +215,20 @@
             "value": "0",
             "varName": "STEP_ANGLE",
             "varType": 0
+        },
+        {
+            "id": "3661df58-5e87-4fa1-9a7d-76853a7b79b2",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "True",
+            "varName": "avoidPlatform",
+            "varType": 3
         }
     ],
     "solid": false,

@@ -7,7 +7,8 @@
         "868d601d-1635-4df2-87b2-0af6e99e2297",
         "75d5c437-78ed-46c7-9237-6de1f320c0d0",
         "84eee432-9cfd-4939-889d-0987fd9be3c9",
-        "17131c7f-ac75-442b-b637-1116fed222c1"
+        "17131c7f-ac75-442b-b637-1116fed222c1",
+        "9581edef-6f86-4391-8af3-a8e2c1c66165"
     ],
     "filterType": "GMScript",
     "folderName": "Projectiles",

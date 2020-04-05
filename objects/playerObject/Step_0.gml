@@ -120,7 +120,7 @@ if (isVisible) {
 			if (coyoteCounter > 0) {
 				coyoteCounter--;
 				// if player is not jumping and key jump is hit
-				if (!isJumping and keyJump) {
+				if (!isJumping and keyJump and !isBeingHit) {
 					// Do JUMP
 					vsp -= jump;
 					isJumping = true;

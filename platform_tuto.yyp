@@ -791,6 +791,14 @@
             }
         },
         {
+            "Key": "51ef037c-e327-4a33-9fff-995b3ad7c2cf",
+            "Value": {
+                "id": "8c86b1dc-30ca-4b54-b616-92284be214a4",
+                "resourcePath": "sprites\\windTornadoSprite\\windTornadoSprite.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "52e743f5-d7d5-453b-8630-a77667a9647d",
             "Value": {
                 "id": "6d2404be-88a2-4b46-a859-8af4b1a498f9",
@@ -996,6 +1004,14 @@
                 "id": "20579bdd-1ae8-4e12-8d8f-b9e13eef68cf",
                 "resourcePath": "views\\6b469ad3-dd18-49ea-814a-25ae4143fe1c.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "6db54f93-dd39-4769-ae26-3166d04770ac",
+            "Value": {
+                "id": "311d562e-a4c0-4945-8499-fd0aba39779c",
+                "resourcePath": "objects\\windTornadoObject\\windTornadoObject.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -1303,6 +1319,14 @@
             }
         },
         {
+            "Key": "8ca35f54-05fc-4c4b-9070-150ab3959176",
+            "Value": {
+                "id": "ce19ba36-f88f-4cbb-825f-953d79b36eb1",
+                "resourcePath": "sprites\\windTornadoBurstSprite\\windTornadoBurstSprite.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "8cf879b5-760e-4841-924d-347a24c64432",
             "Value": {
                 "id": "2c2d9027-ff34-4f02-aed6-8c260387d8fd",
@@ -1375,6 +1399,14 @@
             }
         },
         {
+            "Key": "9581edef-6f86-4391-8af3-a8e2c1c66165",
+            "Value": {
+                "id": "edbfdf30-079a-42de-8d8b-a85ad8970b49",
+                "resourcePath": "scripts\\initWindProjectilePosition\\initWindProjectilePosition.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "98592d44-23d1-4d7c-b496-e9e4cf3e5d1c",
             "Value": {
                 "id": "83c10863-b5e6-482c-9df5-d2a1f465aedf",
@@ -1412,6 +1444,14 @@
                 "id": "635b52b3-1908-4fb9-814c-16ebda4653a9",
                 "resourcePath": "objects\\iceProjectileObject\\iceProjectileObject.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "9a987eda-6cb3-46de-a633-f68b41e12b3a",
+            "Value": {
+                "id": "e62cad45-c32f-48d9-adae-95253ea3d5fa",
+                "resourcePath": "sprites\\windProjectileSprite\\windProjectileSprite.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -1636,6 +1676,14 @@
                 "id": "7f05ddbe-55e8-4e6f-8634-16fb3df7679e",
                 "resourcePath": "sprites\\squirrelRunningSprite\\squirrelRunningSprite.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "b832a7c5-6a9b-4dd3-8754-76b51f68c492",
+            "Value": {
+                "id": "85c8d5f3-0b67-4392-817e-229f00063eb5",
+                "resourcePath": "objects\\windProjectileObject\\windProjectileObject.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -2241,6 +2289,7 @@
         "75d5c437-78ed-46c7-9237-6de1f320c0d0",
         "84eee432-9cfd-4939-889d-0987fd9be3c9",
         "17131c7f-ac75-442b-b637-1116fed222c1",
+        "9581edef-6f86-4391-8af3-a8e2c1c66165",
         "7c20732f-c050-4aec-a7a2-5fa38cf93385",
         "864774dc-aca7-4039-8a95-bd41a0b2f9f0",
         "de4cc3d4-fa1b-41d5-b5c7-78cfb6f2688a",
