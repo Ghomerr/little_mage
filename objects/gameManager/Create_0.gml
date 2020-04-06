@@ -1,8 +1,9 @@
 /// @description Init
 
 // Layers
-global.deadsLayer = -1;
 global.projLayer = -1;
+global.playerLayer = -1;
+global.deadsLayer = -1;
 global.wallLayer = -1;
 
 // Resolution const

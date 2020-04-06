@@ -25,7 +25,9 @@
         "35b95588-5f02-477d-9b97-c99e1a10e796",
         "9a987eda-6cb3-46de-a633-f68b41e12b3a",
         "51ef037c-e327-4a33-9fff-995b3ad7c2cf",
-        "8ca35f54-05fc-4c4b-9070-150ab3959176"
+        "8ca35f54-05fc-4c4b-9070-150ab3959176",
+        "bfa4e659-857a-43d7-a36a-ebe3409b0ffc",
+        "781b7d3f-bc45-42b6-8638-38e4f93d1905"
     ],
     "filterType": "GMSprite",
     "folderName": "Magics",

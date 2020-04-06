@@ -63,6 +63,14 @@
             }
         },
         {
+            "Key": "0464646f-44c9-4bfe-ac26-d59648b91270",
+            "Value": {
+                "id": "77625092-00f0-4f72-b4c8-627996bcabc3",
+                "resourcePath": "objects\\deathBurstObject\\deathBurstObject.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "05219028-ced4-4066-b22b-1e8cc20bce5c",
             "Value": {
                 "id": "df9cbbaf-8bc7-481e-bf5f-02b00e3911e8",
@@ -307,6 +315,14 @@
             "Value": {
                 "id": "1dcf69b9-a38e-45be-8ead-0db9da7f43dc",
                 "resourcePath": "objects\\goldCoinObject\\goldCoinObject.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "1fa866bf-8aef-4e62-9887-2ef1d494618d",
+            "Value": {
+                "id": "477aedbd-fc73-4dfb-a555-482706991e92",
+                "resourcePath": "objects\\deathProjectileObject\\deathProjectileObject.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -1087,6 +1103,14 @@
             }
         },
         {
+            "Key": "781b7d3f-bc45-42b6-8638-38e4f93d1905",
+            "Value": {
+                "id": "e8c54b65-d471-41cd-a9f2-2c951aa4bd3d",
+                "resourcePath": "sprites\\deathBurstSprite\\deathBurstSprite.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "79bef463-007a-45d3-9f37-5c36dd2ff3c6",
             "Value": {
                 "id": "1f40eafa-823e-44fc-85a0-7084eb214961",
@@ -1763,6 +1787,14 @@
             "Value": {
                 "id": "d70c0089-64b7-4899-ae77-67a2ec520930",
                 "resourcePath": "sprites\\squirrelIdleSprite\\squirrelIdleSprite.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "bfa4e659-857a-43d7-a36a-ebe3409b0ffc",
+            "Value": {
+                "id": "bd5ab5c6-4ab0-4e64-b032-12a4d8308421",
+                "resourcePath": "sprites\\deathProjectileSprite\\deathProjectileSprite.yy",
                 "resourceType": "GMSprite"
             }
         },

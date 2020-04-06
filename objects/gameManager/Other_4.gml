@@ -2,8 +2,8 @@
 global.killsInRoom = 0;
 
 // Layers
-global.deadsLayer = getLayer(LAYER.DEADS);
 global.projLayer = getLayer(LAYER.PROJECTILES);
+global.deadsLayer = getLayer(LAYER.DEADS);
 global.wallLayer = getLayer(LAYER.WALLS);
 
 if (transitionsHandler.mode == TRANS_MODE.INTRO) {

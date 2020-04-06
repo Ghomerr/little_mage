@@ -1,5 +1,6 @@
 /// @description Particle Manager
 ps = part_system_create();
+psUnderProj = part_system_create_layer(getLayer(LAYER.PLAYER), true);
 
 // Fireball particle type
 fireball = part_type_create();
@@ -80,3 +81,14 @@ part_type_life(windDust, 30, 60);
 part_type_size(windDust, 0.2, 0.8, -0.01, 0);
 part_type_orientation(windDust, ANGLE.MIN, ANGLE.MAX, 0, 0, 0);
 part_type_speed(windDust, 0.5, 1, -0.02, 0);
+
+deathSmoke = part_type_create();
+part_type_sprite(deathSmoke, dustSprite, 1, 1, 0);
+part_type_color1(deathSmoke, c_dkgray);
+part_type_alpha2(deathSmoke, 0.5, 0);
+part_type_life(deathSmoke, 60, 60);
+part_type_size(deathSmoke, 0.75, 1, 0, 0);
+part_type_orientation(deathSmoke, ANGLE.MIN, ANGLE.MAX, 0, 0, 0);
+part_type_direction(pm.deathSmoke, ANGLE.MIN, ANGLE.MAX, 0, 0);
+//part_type_speed(deathSmoke, 0.5, 0.5, -0.01, 0);
+part_type_gravity(deathSmoke, 0.01, ANGLE.UP);
