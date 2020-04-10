@@ -1,4 +1,6 @@
 /// @description Handle updates
+event_inherited();
+
 initMovement();
 debugColor = c_red;
 

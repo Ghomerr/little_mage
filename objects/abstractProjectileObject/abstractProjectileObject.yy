@@ -231,6 +231,20 @@
             "varType": 3
         },
         {
+            "id": "5900b3cd-7f33-47e6-878c-0b3c34a2b41a",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "avoidWalls",
+            "varType": 3
+        },
+        {
             "id": "38e63daa-23ae-418d-b05f-f2f10d01761f",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",
@@ -242,6 +256,20 @@
             "resourceFilter": 1023,
             "value": "1",
             "varName": "damage",
+            "varType": 0
+        },
+        {
+            "id": "fc53186e-4f6e-42ee-9e34-07997381047c",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "1",
+            "varName": "hp",
             "varType": 0
         }
     ],

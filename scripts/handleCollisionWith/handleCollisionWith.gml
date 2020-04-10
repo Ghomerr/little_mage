@@ -4,29 +4,34 @@
 /// @arg nextY of projectile
 
 if (place_meeting(argument1, argument2, argument0)) {
-	// Avoid self shooting
+	// Get colliding instance
 	var collidingInstance = instance_place(argument1, argument2, argument0);
-
+	
+	// Avoid self shooting
 	if (shooter == collidingInstance.id) {
 		debugColor = c_green;
 		return noone;
 	}
 	
-	// Platforms don't collide with projectiles
-	if (avoidPlatform and object_is_ancestor(collidingInstance.object_index, wallObject) 
-		and collidingInstance.isPlatform) 
-	{
-		debugColor = c_aqua;
+	// Avoid walls
+	if (avoidWalls and collidingInstance.object_index == wallObject.object_index) {
+		debugColor = c_green;
 		return noone;
 	}
 	
-	debugColor = c_yellow;
-	prjSpeed = 0; // stop projectile
+	// Platforms don't collide with projectiles
+	if (avoidPlatform and collidingInstance.object_index == platformObject.object_index) {
+		debugColor = c_aqua;
+		return noone;
+	}
 	
 	// For shooting instance, check if it can be followed
 	if (object_is_ancestor(collidingInstance.object_index, shootableObject)) {
 		followInstance = true;
 		hasCollidedLivingEntity = collidingInstance.isLivingEntity;
+	} else {
+		followInstance = false;
+		hasCollidedLivingEntity = false;
 	}
 	self.collidingInstance = collidingInstance;
 	
@@ -43,12 +48,27 @@ if (place_meeting(argument1, argument2, argument0)) {
 		}
 		doX = !doX;
 	}*/
-	
-	// Change into a burst depending of
-	if (followInstance and onEntityBurstObject != noone) {
-		instance_change(onEntityBurstObject, true);
+		
+	if (hasCollidedLivingEntity) {
+		if (collidingInstance.projectileCounter == 0) {
+			hp--;
+		} else {
+			return noone;	
+		}
 	} else {
-		instance_change(burstObject, true);
+		hp = 0;
+	}
+		
+	if (hp <= 0) {
+		debugColor = c_yellow;
+		prjSpeed = 0; // stop projectile
+		
+		// Change into a burst depending of
+		if (followInstance and onEntityBurstObject != noone) {
+			instance_change(onEntityBurstObject, true);
+		} else {
+			instance_change(burstObject, true);
+		}
 	}
 	
 	//layer_add_instance("Environment", id);

@@ -45,6 +45,8 @@ if (playerObject.hasControl) {
 			isAimingRight = other.isAimingRight;
 			hsp = lengthdir_x(prjSpeed, direction);
 			vsp = lengthdir_y(prjSpeed, direction);
+			hspRatio = hsp / prjSpeed;
+			vspRatio = vsp / prjSpeed;
 			image_angle = direction;
 		}
 	}

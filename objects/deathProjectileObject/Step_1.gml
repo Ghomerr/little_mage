@@ -6,3 +6,8 @@ if (!isInit) {
 		image_yscale *= -1;	
 	}
 }
+
+hspVal = cos(life / 4) * vspRatio;
+vspVal = sin(life / 4) * hspRatio;
+hsp += hspVal;
+vsp += vspVal;

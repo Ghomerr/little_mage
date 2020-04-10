@@ -43,6 +43,16 @@
             "enumb": 0,
             "eventtype": 1,
             "m_owner": "89b37f63-04ae-45e4-8232-ac168afa89e2"
+        },
+        {
+            "id": "ba616ce8-a8f0-4406-af8f-4ac933dd55bb",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 3,
+            "m_owner": "89b37f63-04ae-45e4-8232-ac168afa89e2"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
@@ -215,6 +225,34 @@
             "value": "noone",
             "varName": "burstObject",
             "varType": 5
+        },
+        {
+            "id": "748d94de-995d-40fb-aca1-2c3bd894ae36",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "30",
+            "varName": "projectileDelay",
+            "varType": 0
+        },
+        {
+            "id": "90c1e84b-c7af-46fa-9656-a95dbab286bc",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "projectileCounter",
+            "varType": 0
         }
     ],
     "solid": false,
