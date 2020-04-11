@@ -115,48 +115,6 @@
             "varType": 0
         },
         {
-            "id": "219a4f10-66f9-449f-b632-696a0001ff7d",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "0",
-            "varName": "flash",
-            "varType": 0
-        },
-        {
-            "id": "38155ba4-d74f-4bd5-b315-7e5c260958a5",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "0",
-            "varName": "hitfrom",
-            "varType": 0
-        },
-        {
-            "id": "71ed8769-f809-4407-be04-7d804e063f21",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "0",
-            "varName": "hitFromX",
-            "varType": 0
-        },
-        {
             "id": "d41dbcc7-6e9e-4f35-9f3c-3646f15dad84",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",
@@ -225,34 +183,6 @@
             "value": "noone",
             "varName": "burstObject",
             "varType": 5
-        },
-        {
-            "id": "748d94de-995d-40fb-aca1-2c3bd894ae36",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "20",
-            "varName": "projectileDelay",
-            "varType": 0
-        },
-        {
-            "id": "90c1e84b-c7af-46fa-9656-a95dbab286bc",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "0",
-            "varName": "projectileCounter",
-            "varType": 0
         }
     ],
     "solid": false,

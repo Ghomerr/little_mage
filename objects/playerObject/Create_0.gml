@@ -1,4 +1,6 @@
 // Player constants
+event_inherited();
+
 grv = 0.2; // gravity
 spd = 2; // running speed
 jump = 4; // jumping force
@@ -14,8 +16,6 @@ INVUL_TIMER = 100;
 INVUL_INTERVAL = 5;
 
 // Player variables
-//hp = 1;
-initHp = hp;
 invulCounter = 0;
 invulShaderTransparent = false;
 hasWeapon = false;

@@ -39,10 +39,12 @@ if (place_meeting(argument1, argument2, argument0)) {
 	collidingAngle = getCollidingAngle(collidingInstance);
 			
 	// On living entities, handle projectile health
-	if (hasCollidedLivingEntity) {
+	if (hasCollidedLivingEntity) {	
 		// If projectile counter is 0, projectile hits target, decrease projectile health
 		if (collidingInstance.projectileCounter == 0) {
 			hp--;
+			// Init the projectile counter
+			collidingInstance.projectileCounter = projectileDelay;
 		} else {
 			// if projectile is still passing through entity, reset counter
 			collidingInstance.projectileCounter = projectileDelay;
