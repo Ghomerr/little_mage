@@ -236,7 +236,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "30",
+            "value": "20",
             "varName": "projectileDelay",
             "varType": 0
         },

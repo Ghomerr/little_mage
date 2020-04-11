@@ -11,6 +11,8 @@ if (flash > 0) {
 	shader_reset();
 }
 
+/*
 if (playerObject.isDebugEnabled) {
 	draw_healthbar(x-10, y-15, x+10, y-13, 100*(hp/initHp), c_black, c_red, c_green, 0, true, false);	
 }
+*/

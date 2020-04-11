@@ -32,6 +32,30 @@
             "objectId": "7f34e096-7366-457c-817b-7dcf13435218",
             "propertyId": "9a62caa3-0f43-4e92-9ced-037540617723",
             "value": "manaBoltSound"
+        },
+        {
+            "id": "12ff76d8-610b-4c7b-92c6-13cf37573356",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "7f34e096-7366-457c-817b-7dcf13435218",
+            "propertyId": "38e63daa-23ae-418d-b05f-f2f10d01761f",
+            "value": "2"
+        },
+        {
+            "id": "c5a0905c-bdf5-47b1-8b7a-9debfd3b1f74",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "7f34e096-7366-457c-817b-7dcf13435218",
+            "propertyId": "fabbc6f1-b136-4eab-ba62-366e45479963",
+            "value": "3"
+        },
+        {
+            "id": "ef61eb24-d0bd-488a-856f-7a8206d51127",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "7f34e096-7366-457c-817b-7dcf13435218",
+            "propertyId": "37f7e140-883c-4f91-94d2-af0f5cac5fd8",
+            "value": "60"
         }
     ],
     "parentObjectId": "7f34e096-7366-457c-817b-7dcf13435218",

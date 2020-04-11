@@ -12,11 +12,17 @@ if (!isDying) {
 	
 	// Dont walk off edges
 	if (isGrounded and isAfraidOfHeight and !place_meeting(x + sign(hsp) * (spriteWidth+1) + hsp, y + 1, wallObject)) {
-		// Reverse direction
-		move = -move;
-		nextX *= move;
-		hsp *= move;
-		debugColor = c_green;
+		
+		// Check if beneath wall is one tile large to reverse direction or not
+		var beneathWall = instance_place(x, y + 1, wallObject);
+		if (beneathWall != noone and beneathWall.sprite_width > 16) {
+			// Reverse direction
+			move = -move;
+			nextX *= move;
+			hsp *= move;
+			debugColor = c_green;
+		}
+		
 	} else {
 		// Handle monster colliding
 		if (place_meeting(x, y, abstractMonster)) {

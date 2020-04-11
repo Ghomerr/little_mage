@@ -37,28 +37,24 @@ if (place_meeting(argument1, argument2, argument0)) {
 	
 	// Save colliding angle
 	collidingAngle = getCollidingAngle(collidingInstance);
-	
-	// Update projectile position to be pixel perfect
-	/*var doX = true;
-	while(!place_meeting(x, y, argument0)) {
-		if (doX) {
-			x += sign(hsp);
-		} else {
-			y += sign(vsp);
-		}
-		doX = !doX;
-	}*/
-		
+			
+	// On living entities, handle projectile health
 	if (hasCollidedLivingEntity) {
+		// If projectile counter is 0, projectile hits target, decrease projectile health
 		if (collidingInstance.projectileCounter == 0) {
 			hp--;
 		} else {
-			return noone;	
+			// if projectile is still passing through entity, reset counter
+			collidingInstance.projectileCounter = projectileDelay;
+			// No collision handled until the projectile is out of the target
+			return noone;
 		}
 	} else {
+		// On other entities, just explode the projectile
 		hp = 0;
 	}
 		
+	// If projectile health is depleted : change to burst
 	if (hp <= 0) {
 		debugColor = c_yellow;
 		prjSpeed = 0; // stop projectile
@@ -70,9 +66,6 @@ if (place_meeting(argument1, argument2, argument0)) {
 			instance_change(burstObject, true);
 		}
 	}
-	
-	//layer_add_instance("Environment", id);
-	//depth++;
 	
 	return collidingInstance;
 } else {
