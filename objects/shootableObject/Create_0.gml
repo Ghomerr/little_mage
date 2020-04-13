@@ -16,3 +16,5 @@ if (isCollidable) {
 } else {
 	wall = noone;
 }
+
+inGravityBubble = false;

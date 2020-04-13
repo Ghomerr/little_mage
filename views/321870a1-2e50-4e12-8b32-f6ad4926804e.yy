@@ -23,7 +23,9 @@
         "b832a7c5-6a9b-4dd3-8754-76b51f68c492",
         "6db54f93-dd39-4769-ae26-3166d04770ac",
         "1fa866bf-8aef-4e62-9887-2ef1d494618d",
-        "0464646f-44c9-4bfe-ac26-d59648b91270"
+        "0464646f-44c9-4bfe-ac26-d59648b91270",
+        "610f9671-b9a4-45d2-b884-2e9ba990b330",
+        "ebe69590-6332-4fcd-ad9d-06b093dc786b"
     ],
     "filterType": "GMObject",
     "folderName": "Primary",

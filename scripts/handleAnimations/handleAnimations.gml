@@ -1,4 +1,8 @@
 // Animation
+if (inGravityBubble) {
+	sprite_index = hitSprite;
+	return;
+}
 if ((!isPlayer or !hasWeapon) and hsp != 0) {
 	// Sprite orientation
 	image_xscale = sign(hsp) * size;

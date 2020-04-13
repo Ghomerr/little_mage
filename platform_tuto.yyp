@@ -871,6 +871,14 @@
             }
         },
         {
+            "Key": "569d0a38-7b3d-4cef-b5de-5d26ee7a81fe",
+            "Value": {
+                "id": "5132d0af-303d-4ce5-a78c-14a15d1097f4",
+                "resourcePath": "sprites\\gravityBurstSprite\\gravityBurstSprite.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "571bf9b6-7fe9-4eb1-b8e1-d0cb991302c5",
             "Value": {
                 "id": "d56818dd-2e56-4fd0-b4df-7b8825eb34d4",
@@ -956,6 +964,14 @@
                 "id": "db25cf69-8ee7-4bda-9990-16ac8937107a",
                 "resourcePath": "sprites\\squirrelLandingSprite\\squirrelLandingSprite.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "610f9671-b9a4-45d2-b884-2e9ba990b330",
+            "Value": {
+                "id": "4c1be516-89b9-4b03-a4c8-1019b8ba269c",
+                "resourcePath": "objects\\gravityProjectileObject\\gravityProjectileObject.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -1823,6 +1839,14 @@
             }
         },
         {
+            "Key": "c3337940-f985-4997-9c3c-f6c143978b8f",
+            "Value": {
+                "id": "2ca10337-2954-4b4c-82b3-7b18221effaa",
+                "resourcePath": "sprites\\gravityBubbleSprite\\gravityBubbleSprite.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "c5947338-67c6-4d3f-94c8-6892aed7ccb5",
             "Value": {
                 "id": "849f906f-d828-45f5-80fb-aa0d402f026b",
@@ -2007,6 +2031,14 @@
             }
         },
         {
+            "Key": "d65856bb-c52c-408c-99c0-0f9244259c8d",
+            "Value": {
+                "id": "5a651985-8516-4d52-8398-64b04d593a5f",
+                "resourcePath": "sprites\\gravityProjectileSprite\\gravityProjectileSprite.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "d8639802-1007-4b21-832f-ab2b3e19e09f",
             "Value": {
                 "id": "63e8d69c-a4d0-43d6-b4d2-cc3d79eab2b1",
@@ -2164,6 +2196,14 @@
                 "id": "1c28aac3-14fb-49c3-9163-7ef454208e5a",
                 "resourcePath": "sprites\\cloudsSprite\\cloudsSprite.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "ebe69590-6332-4fcd-ad9d-06b093dc786b",
+            "Value": {
+                "id": "ebb8f8aa-0aec-4571-919f-1106058330cd",
+                "resourcePath": "objects\\gravityBurstObject\\gravityBurstObject.yy",
+                "resourceType": "GMObject"
             }
         },
         {

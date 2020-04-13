@@ -1,6 +1,10 @@
 /// @description Flash object
 draw_self();
 
+if (inGravityBubble) {
+	draw_sprite_ext(gravityBubbleSprite, 0, x, y, abs(image_xscale) * 1.5, image_yscale * 1.5, 0, c_white, 1);
+}
+
 // If flash is positive
 if (flash > 0) {
 	// Decrement

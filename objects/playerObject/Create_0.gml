@@ -104,6 +104,10 @@ newFillColorUniform = shader_get_uniform( playerShader, "newFillColor" );
 newLeftLegColorUniform = shader_get_uniform( playerShader, "newLeftLegColor" );
 newRightLegColorUniform = shader_get_uniform( playerShader, "newRightLegColor" );
 
+clothTextureSampler = shader_get_sampler_index( playerShader, "clothTexture" );
+playerUvUniform = shader_get_uniform( playerShader, "playerUV" );
+clothUvUniform = shader_get_uniform( playerShader, "clothUV" );
+
 // Sound
 isFootStepSoundPlayed = false;
 

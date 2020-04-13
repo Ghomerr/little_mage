@@ -1,7 +1,10 @@
 /// @description Handle updates
 event_inherited();
 
-initMovement();
+if (!inGravityBubble) {
+	initMovement();
+}
+
 debugColor = c_red;
 
 var nextX = x + hsp;

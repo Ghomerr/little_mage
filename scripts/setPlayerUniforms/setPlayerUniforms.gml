@@ -30,15 +30,14 @@ with (playerObject) {
 		shader_set_uniform_f(newRightLegColorUniform, rightLegPalette[COLOR.R], rightLegPalette[COLOR.G], rightLegPalette[COLOR.B]);
 		
 		// Cloth texture 
-		var textureSampler = shader_get_sampler_index( playerShader, "clothTexture" );
 		var clothSpriteTexure = sprite_get_texture( clothSprite, currentHat );
-		texture_set_stage( textureSampler, clothSpriteTexure );
+		texture_set_stage( clothTextureSampler, clothSpriteTexure );
 		
 		var playerUV = sprite_get_uvs( currentSprite, currentImage );
 		var clothUV = sprite_get_uvs( clothSprite, currentHat );
 		
-		shader_set_uniform_f( shader_get_uniform( playerShader, "playerUV" ), playerUV[0], playerUV[1], playerUV[2]-playerUV[0], playerUV[3]-playerUV[1] );
-		shader_set_uniform_f( shader_get_uniform( playerShader, "clothUV" ), clothUV[0], clothUV[1], clothUV[2]-clothUV[0], clothUV[3]-clothUV[1] );
+		shader_set_uniform_f( playerUvUniform, playerUV[0], playerUV[1], playerUV[2]-playerUV[0], playerUV[3]-playerUV[1] );
+		shader_set_uniform_f( clothUvUniform, clothUV[0], clothUV[1], clothUV[2]-clothUV[0], clothUV[3]-clothUV[1] );
 
 		
 	} else {

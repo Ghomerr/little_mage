@@ -17,7 +17,7 @@ PROJECTILES = [
 	deathProjectileObject,	// death
 	electricalProjectileObject,	// elec
 	windProjectileObject,	// wind
-	flameProjectileObject,	// gravity
+	gravityProjectileObject,	// gravity
 	flameProjectileObject	// mana bolt
 ];
 
