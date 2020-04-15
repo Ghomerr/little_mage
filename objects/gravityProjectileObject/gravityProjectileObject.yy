@@ -4,7 +4,16 @@
     "mvc": "1.0",
     "name": "gravityProjectileObject",
     "eventList": [
-        
+        {
+            "id": "c3a690ce-be23-4b61-ad60-b42b0cc46a26",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 0,
+            "m_owner": "610f9671-b9a4-45d2-b884-2e9ba990b330"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": [
@@ -14,7 +23,7 @@
             "mvc": "1.0",
             "objectId": "7f34e096-7366-457c-817b-7dcf13435218",
             "propertyId": "fabbc6f1-b136-4eab-ba62-366e45479963",
-            "value": "2"
+            "value": "3"
         },
         {
             "id": "99b5710b-4b2b-46c9-9b6d-353d70785915",
