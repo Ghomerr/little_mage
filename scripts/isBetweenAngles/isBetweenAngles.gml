@@ -4,10 +4,14 @@
 /// @arg maxAngle
 /// @arg strict (default false)
 
-var angle = argument0;
-var minAngle = sign(argument0) ? angleRound(argument1) : angleRound(argument1) + ANGLE.COMPLETE;
-var maxAngle = sign(argument0) ? angleRound(argument2) : angleRound(argument2) + ANGLE.COMPLETE;
+var angle = sign(argument0) ? argument0 : argument0 + ANGLE.COMPLETE;
+var minAngle = argument1;
+var maxAngle = argument2;
 var strict = false;
+
+if (angle > maxAngle) {
+	angle -= ANGLE.COMPLETE;	
+}
 
 if (argument_count >= 4) {
 	strict = argument[3];	

@@ -5,4 +5,6 @@ if (hp <= 0) {
 	} else {
 		instance_destroy();
 	}
+	
+	createGravityBubbleBurst();
 }

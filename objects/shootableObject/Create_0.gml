@@ -18,3 +18,4 @@ if (isCollidable) {
 }
 
 inGravityBubble = false;
+gravityBubbleScale = 1.5;

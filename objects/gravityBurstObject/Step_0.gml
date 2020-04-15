@@ -42,7 +42,7 @@ if (!isDone) {
 	} else {
 		isDone = true;
 		with (collidingInstance) {
-			inGravityBubble = false;
+			createGravityBubbleBurst();
 		}
 	}
 }

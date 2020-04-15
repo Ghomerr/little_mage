@@ -255,6 +255,14 @@
             }
         },
         {
+            "Key": "181641d9-9e3b-4112-8467-fe005017c24c",
+            "Value": {
+                "id": "be9ef151-553f-4c10-ad7d-72ca5bb7a2e1",
+                "resourcePath": "objects\\gravityBubbleBurstObject\\gravityBubbleBurstObject.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "18352e7c-346e-48c3-b5eb-7c5a13ebc1e8",
             "Value": {
                 "id": "1fd7dfa4-4a88-4b05-8376-854d91b5dd93",
@@ -644,6 +652,14 @@
                 "id": "40e1604c-37cb-4668-a139-743cb6380946",
                 "resourcePath": "objects\\transitionObject\\transitionObject.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "427e0eaf-cbb0-4d10-a162-d83e712c8754",
+            "Value": {
+                "id": "5b02ed38-1d7a-460a-a1d1-63609dcd2f29",
+                "resourcePath": "scripts\\createGravityBubbleBurst\\createGravityBubbleBurst.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -2007,6 +2023,14 @@
             }
         },
         {
+            "Key": "d21895a1-6c09-447d-8a6e-6851e26d2439",
+            "Value": {
+                "id": "f775890b-5e75-44c2-a51e-c25220788f94",
+                "resourcePath": "sprites\\gravityBubbleBurstSprite\\gravityBubbleBurstSprite.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "d27ce5d1-1e74-44fa-a474-69be0ee73a8e",
             "Value": {
                 "id": "183a4f21-eb8c-43e1-a9f6-3e76474324de",
@@ -2379,6 +2403,7 @@
         "84eee432-9cfd-4939-889d-0987fd9be3c9",
         "17131c7f-ac75-442b-b637-1116fed222c1",
         "9581edef-6f86-4391-8af3-a8e2c1c66165",
+        "427e0eaf-cbb0-4d10-a162-d83e712c8754",
         "7c20732f-c050-4aec-a7a2-5fa38cf93385",
         "864774dc-aca7-4039-8a95-bd41a0b2f9f0",
         "de4cc3d4-fa1b-41d5-b5c7-78cfb6f2688a",

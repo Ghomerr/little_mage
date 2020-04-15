@@ -30,7 +30,8 @@
         "781b7d3f-bc45-42b6-8638-38e4f93d1905",
         "d65856bb-c52c-408c-99c0-0f9244259c8d",
         "569d0a38-7b3d-4cef-b5de-5d26ee7a81fe",
-        "c3337940-f985-4997-9c3c-f6c143978b8f"
+        "c3337940-f985-4997-9c3c-f6c143978b8f",
+        "d21895a1-6c09-447d-8a6e-6851e26d2439"
     ],
     "filterType": "GMSprite",
     "folderName": "Magics",
