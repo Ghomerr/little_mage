@@ -92,3 +92,11 @@ part_type_orientation(deathSmoke, ANGLE.MIN, ANGLE.MAX, 0, 0, 0);
 part_type_direction(pm.deathSmoke, ANGLE.MIN, ANGLE.MAX, 0, 0);
 //part_type_speed(deathSmoke, 0.5, 0.5, -0.01, 0);
 part_type_gravity(deathSmoke, 0.01, ANGLE.UP);
+
+gravitySparkle = part_type_create();
+part_type_sprite(gravitySparkle, gravitySparkleSprite, 1, 1, 1);
+part_type_alpha3(gravitySparkle, 1, 0.75, 0.25);
+part_type_life(gravitySparkle, 40, 40);
+part_type_size(gravitySparkle, 0.5, 1, 0, 0);
+part_type_orientation(gravitySparkle, ANGLE.MIN, ANGLE.MAX, 0, 0, 0);
+part_type_direction(gravitySparkle, ANGLE.MIN, ANGLE.MAX, 0, 0);

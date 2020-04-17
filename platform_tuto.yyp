@@ -2071,6 +2071,14 @@
             }
         },
         {
+            "Key": "d83f3fb3-518d-4dc8-8500-2bf9af73ec45",
+            "Value": {
+                "id": "5fbd02ce-f3ae-49ba-95ed-958f33247db4",
+                "resourcePath": "sprites\\gravitySparkleSprite\\gravitySparkleSprite.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "d8639802-1007-4b21-832f-ab2b3e19e09f",
             "Value": {
                 "id": "63e8d69c-a4d0-43d6-b4d2-cc3d79eab2b1",

@@ -25,6 +25,16 @@ if (!isDone) {
 						} else {
 							vsp = playerObject.vsp;
 						}
+						
+						if (hsp != 0 or vsp != 0) {
+							// Emit particles
+							if (irandom_range(1, 5) == 5) {
+								part_particles_create(pm.ps, 
+									x + irandom_range(-other.spriteHalfWidth, other.spriteHalfWidth), 
+									y + irandom_range(-other.spriteHalfHeight, other.spriteHalfHeight), 
+									pm.gravitySparkle, 1);
+							}	
+						}
 					}
 				}
 			}

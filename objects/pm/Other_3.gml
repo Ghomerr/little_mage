@@ -10,6 +10,7 @@ part_type_destroy(elec1);
 part_type_destroy(elec2);
 part_type_destroy(windDust);
 part_type_destroy(deathSmoke);
+part_type_destroy(gravitySparkle);
 
 part_system_destroy(ps);
 part_system_destroy(psUnderProj);
