@@ -23,6 +23,16 @@
             "enumb": 0,
             "eventtype": 4,
             "m_owner": "af3615e2-e85c-4595-834a-48ad8d1fa320"
+        },
+        {
+            "id": "ec568b46-e40b-4777-8941-9f64f24d68f5",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 0,
+            "m_owner": "af3615e2-e85c-4595-834a-48ad8d1fa320"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
@@ -83,6 +93,20 @@
             "value": "noone",
             "varName": "PICKUP_SOUND",
             "varType": 5
+        },
+        {
+            "id": "4fc0ee32-fc98-4bec-8177-45b3c3a8bb22",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "True",
+            "varName": "doWave",
+            "varType": 3
         }
     ],
     "solid": false,

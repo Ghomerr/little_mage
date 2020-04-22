@@ -3,6 +3,12 @@
 // Inherit the parent event
 event_inherited();
 
+if (hasCollidedLivingEntity) {
+	with(collidingInstance) {
+		isInfected = true;
+	}
+}
+
 // Burst leaf particles
 part_type_direction(pm.leafLeft, ANGLE.MIN, ANGLE.MAX, 0, 0);
 part_type_speed(pm.leafLeft, 1, 2, -0.02, 0);

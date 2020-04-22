@@ -1,5 +1,5 @@
 /// @desc Vertical collision
-/// @arg nextY value with hsp
+/// @arg nextY value with vsp
 
 // Fix issue #14 :
 // Check an integer value of vsp to avoid boucing gravity check

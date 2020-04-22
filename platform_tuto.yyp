@@ -591,11 +591,27 @@
             }
         },
         {
+            "Key": "38e4587d-a16f-4c36-ac1f-6c986a068d87",
+            "Value": {
+                "id": "fb1b0c12-9a5a-4b7f-8bd2-c7e97fb4b0da",
+                "resourcePath": "sounds\\appleSound\\appleSound.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "3bf009da-1b11-4669-a8be-fd04e0ca0075",
             "Value": {
                 "id": "f9ca988f-beb1-4ea3-beed-13c188463336",
                 "resourcePath": "sprites\\iceBurstSprite\\iceBurstSprite.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "3cd7444b-ad16-4a0f-aed0-bacaaccb2b75",
+            "Value": {
+                "id": "fffbe6a0-2505-4d68-a8b9-6a566346b76f",
+                "resourcePath": "scripts\\createAppleUsingOdd\\createAppleUsingOdd.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -1463,6 +1479,14 @@
             }
         },
         {
+            "Key": "94972ee5-8cac-4d85-9836-f2ae92fc4ead",
+            "Value": {
+                "id": "72ed6ef6-e777-4dd8-9da5-6c9451ad60e0",
+                "resourcePath": "sounds\\popSound\\popSound.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "9581edef-6f86-4391-8af3-a8e2c1c66165",
             "Value": {
                 "id": "edbfdf30-079a-42de-8d8b-a85ad8970b49",
@@ -1660,6 +1684,22 @@
                 "id": "fab30130-bcda-4b26-8732-26a33873e3f5",
                 "resourcePath": "views\\a6b8ca92-477d-4f9e-b7b0-093fba2811c8.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "a7cdec56-23e7-4277-a388-240902d3c6b1",
+            "Value": {
+                "id": "b8a5b772-6fa6-4262-85da-71e3a0c7893f",
+                "resourcePath": "sprites\\appleSprite\\appleSprite.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "a9946429-64d5-48c6-9e1e-41eb6b995b81",
+            "Value": {
+                "id": "ae398e3a-416f-4447-a0ef-be7e71f8548f",
+                "resourcePath": "objects\\appleObject\\appleObject.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -2412,6 +2452,7 @@
         "17131c7f-ac75-442b-b637-1116fed222c1",
         "9581edef-6f86-4391-8af3-a8e2c1c66165",
         "427e0eaf-cbb0-4d10-a162-d83e712c8754",
+        "3cd7444b-ad16-4a0f-aed0-bacaaccb2b75",
         "7c20732f-c050-4aec-a7a2-5fa38cf93385",
         "864774dc-aca7-4039-8a95-bd41a0b2f9f0",
         "de4cc3d4-fa1b-41d5-b5c7-78cfb6f2688a",

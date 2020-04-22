@@ -9,7 +9,11 @@ if (!isDying) {
 		audio_play_sound(monsterDeadSound, 10, false);
 	
 		isDying = true;
+		
+		// Handle projectiles effects
 		createGravityBubbleBurst();
+		createAppleUsingOdd(5);
+		
 		sprite_index = hitSprite;
 		direction = other.hitfrom;
 		hsp = lengthdir_x(DYING_JUMP, direction);
