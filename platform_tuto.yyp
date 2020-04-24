@@ -687,6 +687,14 @@
             }
         },
         {
+            "Key": "44091b1f-42fd-4378-a5b7-130d9412a76c",
+            "Value": {
+                "id": "19109358-0a27-48c6-8da5-67565bd94873",
+                "resourcePath": "shaders\\frozenShader\\frozenShader.yy",
+                "resourceType": "GMShader"
+            }
+        },
+        {
             "Key": "44488061-713b-451e-ad27-d81fd867d87f",
             "Value": {
                 "id": "a2d52be6-f96b-49d3-aca9-59a45593e4d8",
@@ -1447,14 +1455,6 @@
             }
         },
         {
-            "Key": "92da80bc-c1ce-4acd-8210-608dcf64c20d",
-            "Value": {
-                "id": "e7a6f5a9-d95e-4b74-af0b-18ecc1f6fab7",
-                "resourcePath": "shaders\\transparentShader\\transparentShader.yy",
-                "resourceType": "GMShader"
-            }
-        },
-        {
             "Key": "9314e2b0-29f9-47a8-a98b-5d28000f548c",
             "Value": {
                 "id": "36cf291f-aea3-4873-94ed-936b8be4a2ee",
@@ -1876,14 +1876,6 @@
                 "id": "bd5ab5c6-4ab0-4e64-b032-12a4d8308421",
                 "resourcePath": "sprites\\deathProjectileSprite\\deathProjectileSprite.yy",
                 "resourceType": "GMSprite"
-            }
-        },
-        {
-            "Key": "bfd9edcf-42b7-4c96-a276-2fb426feb08c",
-            "Value": {
-                "id": "32d569ec-20d5-4157-bff3-45371ff2d2fa",
-                "resourcePath": "shaders\\semiTransparentShader\\semiTransparentShader.yy",
-                "resourceType": "GMShader"
             }
         },
         {

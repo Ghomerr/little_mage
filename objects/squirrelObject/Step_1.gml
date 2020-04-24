@@ -1,6 +1,6 @@
 /// @description Create or Move acorn 
 
-if (!isDying) {
+if (!isDying) {	
 	if (myProjectile != noone and instance_exists(myProjectile) and myProjectile.prjSpeed == 0) {
 		// Move acorn according to squirrel
 		myProjectile.x = x + sign(image_xscale) * projectileOffset;

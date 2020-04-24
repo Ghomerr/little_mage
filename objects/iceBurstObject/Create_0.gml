@@ -3,6 +3,12 @@
 // Inherit the parent event
 event_inherited();
 
+// Apply frozen effect to collided instance
+frozenTimer = 180;
+with (collidingInstance) {
+	frozenCounter = other.frozenTimer;
+}
+
 // Burst snow particles
 part_type_direction(pm.snow, ANGLE.MIN, ANGLE.MAX, 0, 0);
 part_type_speed(pm.snow, 0.3, 0.3, -0.02, 0);

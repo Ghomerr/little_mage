@@ -1,4 +1,6 @@
 // Animation
+var imgSpd = frozenCounter > 0 ? 0.3 : 1;
+
 if (inGravityBubble) {
 	sprite_index = hitSprite;
 	return;
@@ -11,14 +13,14 @@ if (isGrounded) {
 	if (hsp != 0) {
 		// Entity running
 		sprite_index = runningSprite;
-		image_speed = 1;
+		image_speed = imgSpd;
 	} else {
 		// For monsters : handle attack animation
 		if (!isPlayer and isAttacking) {
 			// Restart animation
 			if (shootCounter == shootingRate) {
 				image_index = 0;
-				image_speed = 1;
+				image_speed = imgSpd;
 				sprite_index = attackSprite;
 			}
 		}
@@ -43,7 +45,7 @@ if (isGrounded) {
 						// Blink once or twice
 						idleDelay = irandom_range(1, 2);
 						sprite_index = idleSprite;
-						image_speed = 1;
+						image_speed = imgSpd;
 					} else {
 						sprite_index = defaultSprite;
 						image_speed = 0;
@@ -53,7 +55,7 @@ if (isGrounded) {
 		}
 	}
 } else {
-	image_speed = 1;
+	image_speed = imgSpd;
 	if (isBeingHit) {
 		sprite_index = hitSprite;
 	} else {

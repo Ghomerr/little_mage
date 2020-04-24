@@ -16,6 +16,10 @@ if (flash > 0) {
 	shader_set(hitShader);
 	draw_self();
 	shader_reset();
+} else if (frozenCounter > 0) {
+	shader_set(frozenShader);
+	draw_self();
+	shader_reset();
 }
 
 /*
