@@ -4,6 +4,9 @@ projectileCounter = 0;
 flash = 0;
 hitfrom = 0;
 hitFromX = 0;
+inGravityBubble = false;
+gravityBubbleScale = 1.5;
+isInfected = false;
 
 // If collidable, create a wall instance scaled to this instance
 if (isCollidable) {
@@ -16,7 +19,3 @@ if (isCollidable) {
 } else {
 	wall = noone;
 }
-
-inGravityBubble = false;
-gravityBubbleScale = 1.5;
-isInfected = false;

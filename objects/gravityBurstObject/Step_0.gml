@@ -8,32 +8,37 @@ if (!isDone) {
 			if (hasCollidedLivingEntity) {
 				with (collidingInstance) {
 					if (!isDying) {
-						// Handle bubble hsp
-						if (isBetweenAngles(staffObject.image_angle, ANGLE.RIGHT - 15, ANGLE.RIGHT + 15)) {
-							hsp = playerObject.spd;
-						} else if (isBetweenAngles(staffObject.image_angle, ANGLE.LEFT - 15, ANGLE.LEFT + 15)) {
-							hsp = -playerObject.spd;
-						} else {
-							hsp = playerObject.hsp;
-						}
+						if (playerObject.currentHat == HATS.GRAVITY) {
+							// Handle bubble hsp
+							if (isBetweenAngles(staffObject.image_angle, ANGLE.RIGHT - 15, ANGLE.RIGHT + 15)) {
+								hsp = playerObject.spd;
+							} else if (isBetweenAngles(staffObject.image_angle, ANGLE.LEFT - 15, ANGLE.LEFT + 15)) {
+								hsp = -playerObject.spd;
+							} else {
+								hsp = playerObject.hsp;
+							}
 						
-						// Handle bubble vsp
-						if (isBetweenAngles(staffObject.image_angle, ANGLE.UP - 15, ANGLE.UP + 15)) {
-							vsp = -playerObject.spd;
-						} else if (isBetweenAngles(staffObject.image_angle, ANGLE.DOWN - 15, ANGLE.DOWN + 15)) {
-							vsp = playerObject.spd;
-						} else {
-							vsp = playerObject.vsp;
-						}
+							// Handle bubble vsp
+							if (isBetweenAngles(staffObject.image_angle, ANGLE.UP - 15, ANGLE.UP + 15)) {
+								vsp = -playerObject.spd;
+							} else if (isBetweenAngles(staffObject.image_angle, ANGLE.DOWN - 15, ANGLE.DOWN + 15)) {
+								vsp = playerObject.spd;
+							} else {
+								vsp = playerObject.vsp;
+							}
 						
-						if (hsp != 0 or vsp != 0) {
-							// Emit particles
-							if (irandom_range(1, 5) == 5) {
-								part_particles_create(pm.ps, 
-									x + irandom_range(-other.spriteHalfWidth, other.spriteHalfWidth), 
-									y + irandom_range(-other.spriteHalfHeight, other.spriteHalfHeight), 
-									pm.gravitySparkle, 1);
-							}	
+							if (hsp != 0 or vsp != 0) {
+								// Emit particles
+								if (irandom_range(1, 5) == 5) {
+									part_particles_create(pm.ps, 
+										x + irandom_range(-other.spriteHalfWidth, other.spriteHalfWidth), 
+										y + irandom_range(-other.spriteHalfHeight, other.spriteHalfHeight), 
+										pm.gravitySparkle, 1);
+								}	
+							}
+						} else {
+							hsp = 0;
+							vsp = 0;
 						}
 					}
 				}
