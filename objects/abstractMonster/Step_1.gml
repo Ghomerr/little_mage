@@ -47,7 +47,7 @@ if (!isDying) {
 			}
 			
 			// Handle shooting
-			shootCounter--;
+			shootCounter -= frozenCounter > 0 ? global.frozenFactor : 1;
 			if (shootCounter <= 0) {
 				shootCounter = shootingRate;
 				var wallInstance = collision_line(x, y, playerObject.x, playerObject.y, wallObject, false, true);

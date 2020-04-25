@@ -6,6 +6,9 @@ global.playerLayer = -1;
 global.deadsLayer = -1;
 global.wallLayer = -1;
 
+// Effetcs
+global.frozenFactor = 0.3;
+
 // Resolution const
 #macro RES_W 1024
 #macro RES_H 768

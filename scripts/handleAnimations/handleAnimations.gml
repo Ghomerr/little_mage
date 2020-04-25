@@ -1,5 +1,5 @@
 // Animation
-var imgSpd = frozenCounter > 0 ? 0.3 : 1;
+var imgSpd = frozenCounter > 0 ? global.frozenFactor : 1;
 
 if (inGravityBubble) {
 	sprite_index = hitSprite;

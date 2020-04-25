@@ -1,7 +1,6 @@
 // Init movement
 if (!isBeingHit) {
-	hsp = move * (frozenCounter > 0 ? spd * 0.3 : spd);
-	//hsp = move * spd;
+	hsp = move * (frozenCounter > 0 ? spd * global.frozenFactor : spd);
 }
 // Add gravity only if lesser than jump
 if (vsp < jump) {
