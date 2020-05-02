@@ -32,7 +32,7 @@ if (isVisible) {
 	shader_reset();
 	
 	// Handle the hats selection wheel drawing
-	if (showHatsWheel) {
+	if (!isDying and showHatsWheel) {
 		// Draw the wheel
 		draw_sprite(hatsWheelSprite, 0, x, y);
 		

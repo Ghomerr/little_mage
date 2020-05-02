@@ -3,7 +3,7 @@ event_inherited();
 
 DYING_JUMP = 3;
 
-isBeingHit = false;
+//isBeingHit = false;
 isAttacking = false;
 idleRestart = true;
 

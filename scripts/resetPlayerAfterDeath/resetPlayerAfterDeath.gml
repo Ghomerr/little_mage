@@ -5,3 +5,4 @@ hsp = 0;
 vsp = 0;
 move = 0;
 invulShaderTransparent = false;
+showHatsWheel = false;

@@ -46,7 +46,12 @@ if (!isDying) {
 		debugColor = c_blue;
 	}
 	
+	var wasGrounded = isGrounded;
 	handleVerticalCollision(nextY);
+	if (!wasGrounded and isGrounded) {
+		isBeingHit = false;	// reset being hit after landing
+	}
+	
 	updatePosition();
 	handleAnimations();
 	

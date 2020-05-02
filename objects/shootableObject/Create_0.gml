@@ -8,6 +8,8 @@ inGravityBubble = false;
 gravityBubbleScale = 1.5;
 isInfected = false;
 frozenCounter = 0;
+isInPillar = false;
+isBeingHit = false;
 
 // If collidable, create a wall instance scaled to this instance
 if (isCollidable) {

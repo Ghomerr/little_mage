@@ -1,6 +1,7 @@
 /// @description Rotate the sprite 
 
 image_angle = collidingAngle;
+jump = 4;
 
 // Pixel perfect correction 
 switch (image_angle) {

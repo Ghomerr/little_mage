@@ -183,6 +183,20 @@
             "value": "noone",
             "varName": "burstObject",
             "varType": 5
+        },
+        {
+            "id": "06679e53-f627-4c99-9c93-5d01447183fe",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "1",
+            "varName": "size",
+            "varType": 0
         }
     ],
     "solid": false,

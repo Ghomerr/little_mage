@@ -4,7 +4,6 @@ event_inherited();
 grv = 0.2; // gravity
 spd = 2; // running speed
 jump = 4; // jumping force
-size = 1;
 
 // https://twitter.com/Case_Portman/status/1183067181480890368
 JUMP_COOLDOWN = 5; // Frames before a jump can be done
@@ -28,7 +27,7 @@ debugFps = GAME_SPEED/2;
 maxYbeforeDead = 0;
 isGrounded = false; // grounded flag
 isJumping = true; // jumping flag (true to avoid creating player air-jump)
-isBeingHit = false; // is true if player is flying in the air after being hit
+//isBeingHit = false; // is true if player is flying in the air after being hit
 jumpBuffer = 0; // jump buffer to handle jump before the actual jump
 coyoteCounter = 0;
 hasControl = false; // define if player can do inputs

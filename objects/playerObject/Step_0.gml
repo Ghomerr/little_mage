@@ -1,6 +1,8 @@
 /// @desc Handle inputs, collisions, movements, animations, death
 if (isVisible) {
 	if (!isDying) {
+		event_inherited();
+		
 		// Handle hats wheel show input
 		if (hasWeapon) {
 			if (!showHatsWheel) {

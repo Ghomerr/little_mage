@@ -20,3 +20,7 @@ if (frozenCounter > 0) {
 		part_type_speed(pm.snow, 0.1, 0.25, -0.01, 0);
 	}
 }
+
+if (isInPillar and (!instance_exists(stoneBurstObject) or !place_meeting(x, y, stoneBurstObject))) {
+	isInPillar = false;
+}
