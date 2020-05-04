@@ -64,7 +64,7 @@ if (place_meeting(argument1, argument2, argument0)) {
 		// Change into a burst depending of
 		if (followInstance and onEntityBurstObject != noone) {
 			instance_change(onEntityBurstObject, true);
-		} else {
+		} else if (burstObject) {
 			instance_change(burstObject, true);
 		}
 	}
