@@ -1,12 +1,10 @@
-/// @description Decrease kife and move
+/// @description Decrease life and move
 if (life > 0) {
 	life--;
 	
 	// Handle vertical collisions
 	if (!isGrounded) {
-		if (abs(vsp) < MAX_VSP) {
-			vsp += grv;
-		}
+		updateVspWithGravity(abs(vsp), MAX_VSP);
 		var nextY = y + roundVsp(vsp);
 		if (place_meeting(x, nextY, wallObject)) {
 			while (!place_meeting(x, y + sign(vsp), wallObject)) {

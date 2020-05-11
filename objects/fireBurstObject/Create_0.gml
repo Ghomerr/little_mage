@@ -7,13 +7,10 @@ repeat(irandom_range(1, 3)) {
 		//audio_sound_pitch(sound, choose(0.9, 1.0, 1.1));
 		//audio_play_sound(sound, 5, false);
 		//shooter = playerObject.id;
-		prjSpeed = irandom_range(DEFAULT_SPEED/2, DEFAULT_SPEED);
+		var prjSpeed = random_range(2, 4);
 		direction = other.collidingAngle + irandom_range(-ANGLE.HALF_CORNER, ANGLE.HALF_CORNER);
-		//isAimingRight = other.isAimingRight;
 		hsp = lengthdir_x(prjSpeed, direction);
 		vsp = lengthdir_y(prjSpeed, direction);
-		hspRatio = hsp / prjSpeed;
-		vspRatio = vsp / prjSpeed;
 		image_angle = direction;
 	}
 }

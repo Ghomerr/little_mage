@@ -1847,6 +1847,14 @@
             }
         },
         {
+            "Key": "b93e9e00-3d8c-4773-8acd-e6120c11983e",
+            "Value": {
+                "id": "d641eb2d-2c57-40d9-8a8f-9b19e1937a8b",
+                "resourcePath": "scripts\\updateVspWithGravity\\updateVspWithGravity.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "bbfc6c4c-6cdb-4d4c-9288-f46a81e67327",
             "Value": {
                 "id": "4536409f-58ac-44d1-877c-d80b39d44f46",
@@ -2454,6 +2462,7 @@
         "22d8a09a-1732-4051-aaf9-d0851053ac19",
         "f22bce76-5e44-440c-bf53-70a12c832267",
         "98c2fc48-ffdb-4904-b243-1174bbc87e81",
+        "b93e9e00-3d8c-4773-8acd-e6120c11983e",
         "868d601d-1635-4df2-87b2-0af6e99e2297",
         "75d5c437-78ed-46c7-9237-6de1f320c0d0",
         "84eee432-9cfd-4939-889d-0987fd9be3c9",

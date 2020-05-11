@@ -2,9 +2,7 @@
 if (doWave) {
 	y = ystart + sin(get_timer() / TIMER_FACTOR) * WAVE_MAX;
 } else if (!isGrounded) {
-	if (vsp < jump) {
-		vsp += grv;
-	}
+	updateVspWithGravity(vsp, jump);
 	handleHorizontalCollision(x + hsp);
 	handleVerticalCollision(y + roundVsp(vsp));
 	updatePosition();
