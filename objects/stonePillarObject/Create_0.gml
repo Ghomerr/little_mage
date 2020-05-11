@@ -14,6 +14,7 @@ posOffset = 8;
 isCollidable = true;
 with(instance_create_layer(x, y, getLayer(LAYER.WALLS), wallObject)) {
 	other.wall = self;
+	owner = other;
 }
 
 // Handle shake and autodestruction

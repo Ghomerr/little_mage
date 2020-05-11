@@ -1,16 +1,21 @@
 /// @description Burst particles and embers
 
+// Apply burnt effect directly
+if (followInstance) {
+	applyBurntEffect(collidingInstance);
+}
+
 // Send embers
 repeat(irandom_range(1, 3)) {
 	with (instance_create_layer(x, y, global.projLayer, emberProjectileObject)) {		
+		burntTimer = other.burntTimer;
 		// Play sound
 		//audio_sound_pitch(sound, choose(0.9, 1.0, 1.1));
 		//audio_play_sound(sound, 5, false);
-		//shooter = playerObject.id;
-		var prjSpeed = random_range(2, 4);
-		direction = other.collidingAngle + irandom_range(-ANGLE.HALF_CORNER, ANGLE.HALF_CORNER);
-		hsp = lengthdir_x(prjSpeed, direction);
-		vsp = lengthdir_y(prjSpeed, direction);
+		shooter = playerObject.id;
+		direction = other.collidingAngle + irandom_range(-ANGLE.CORNER, ANGLE.CORNER);
+		hsp = lengthdir_x(jump, direction);
+		vsp = lengthdir_y(jump, direction);
 		image_angle = direction;
 	}
 }

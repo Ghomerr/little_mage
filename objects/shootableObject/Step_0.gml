@@ -2,6 +2,8 @@
 if (projectileCounter > 0) {
 	projectileCounter--;
 }
+
+// Handle fronzen effect
 if (frozenCounter > 0) {
 	frozenCounter--;
 	if (frozenCounter % 60 == 0) {
@@ -19,6 +21,26 @@ if (frozenCounter > 0) {
 		// Reset speed
 		part_type_speed(pm.snow, 0.1, 0.25, -0.01, 0);
 	}
+}
+
+// Handle fronzen effect
+if (burntCounter > 0) {
+	// Every second, be burnt a bit
+	if (burntCounter % 60 == 0) {
+		beHit(0.5);
+		
+		// Emit burnt particles
+		repeat(irandom_range(8, 16)) {
+			emitFireParticles(
+				ANGLE.UP,
+				ANGLE.UP,
+				ANGLE.UP,
+				spriteHalfWidth,
+				irandom_range(2, 4)
+			);
+		}
+	}
+	burntCounter--;
 }
 
 if (isInPillar and (!instance_exists(stoneBurstObject) or !place_meeting(x, y, stoneBurstObject))) {

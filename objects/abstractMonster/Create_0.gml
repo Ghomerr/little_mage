@@ -8,7 +8,7 @@ isAttacking = false;
 idleRestart = true;
 
 // Compute sprite width
-spriteWidth = (bbox_right - bbox_left) * size;
+//spriteWidth = (bbox_right - bbox_left) * size; // done in the parent !
 //spriteHeight = (bbox_bottom - bbox_top) * size; // unused for now
 
 // Set the yscale of the monster according to its size

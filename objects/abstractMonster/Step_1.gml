@@ -12,7 +12,7 @@ if (!isDying) {
 		
 		// Handle projectiles effects
 		createGravityBubbleBurst();
-		createAppleUsingOdd(5);
+		createAppleUsingOdd();
 		
 		sprite_index = hitSprite;
 		direction = other.hitfrom;

@@ -1191,6 +1191,14 @@
             }
         },
         {
+            "Key": "79f979e4-29b3-4ad1-a356-5ae3e0f0f470",
+            "Value": {
+                "id": "91690878-6132-418a-b7a6-c91dd60b60f7",
+                "resourcePath": "scripts\\emitFireParticles\\emitFireParticles.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "7a98c2a8-70e9-4d58-9586-66c0c893246c",
             "Value": {
                 "id": "b978040c-510e-485d-8488-af578747edfd",
@@ -1404,6 +1412,14 @@
                 "id": "d0d32481-8a1b-4d6a-b83d-a543792eaaaa",
                 "resourcePath": "scripts\\selectNewHat\\selectNewHat.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "8bebe374-b028-4dca-993b-28aa1cf49238",
+            "Value": {
+                "id": "7c54aa27-7a07-4404-917e-091c7b2e6e0f",
+                "resourcePath": "shaders\\burntShader\\burntShader.yy",
+                "resourceType": "GMShader"
             }
         },
         {
@@ -2159,6 +2175,14 @@
             }
         },
         {
+            "Key": "dbd2826f-cd2c-4975-af8b-7c87fcb94657",
+            "Value": {
+                "id": "a0206797-82ca-4a3c-9c2b-57d57a2bd8dc",
+                "resourcePath": "scripts\\applyBurntEffect\\applyBurntEffect.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "de4cc3d4-fa1b-41d5-b5c7-78cfb6f2688a",
             "Value": {
                 "id": "76953ddc-ae0b-4d9c-8511-4f90fe6e1eb3",
@@ -2470,6 +2494,8 @@
         "9581edef-6f86-4391-8af3-a8e2c1c66165",
         "427e0eaf-cbb0-4d10-a162-d83e712c8754",
         "3cd7444b-ad16-4a0f-aed0-bacaaccb2b75",
+        "dbd2826f-cd2c-4975-af8b-7c87fcb94657",
+        "79f979e4-29b3-4ad1-a356-5ae3e0f0f470",
         "7c20732f-c050-4aec-a7a2-5fa38cf93385",
         "864774dc-aca7-4039-8a95-bd41a0b2f9f0",
         "de4cc3d4-fa1b-41d5-b5c7-78cfb6f2688a",
