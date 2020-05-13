@@ -29,6 +29,12 @@ if (burntCounter > 0) {
 	if (burntCounter % 60 == 0) {
 		beHit(0.5);
 		
+		// Try to spread fire around
+		tryToSpreadFire(SPREAD_SIZE, 0, SPREAD_ODD);
+		tryToSpreadFire(-SPREAD_SIZE, 0, SPREAD_ODD);
+		tryToSpreadFire(0, SPREAD_SIZE, SPREAD_ODD);
+		tryToSpreadFire(0, -SPREAD_SIZE, SPREAD_ODD);
+		
 		// Emit burnt particles
 		repeat(irandom_range(8, 16)) {
 			emitFireParticles(

@@ -6,6 +6,7 @@ vsp = 0;
 grv = 0.1;
 jump = 3;
 isGrounded = false;
+wall = noone;
 
 // Projectile variables
 shooter = noone;

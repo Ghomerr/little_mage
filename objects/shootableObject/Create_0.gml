@@ -1,4 +1,8 @@
 /// @description Internal variables
+SPREAD_SIZE = 16;
+SPREAD_ODD = 5
+MAX_BURNT = 180;
+
 initHp = hp;
 projectileCounter = 0;
 flash = 0;

@@ -14,13 +14,13 @@ if (place_meeting(argument1, argument2, argument0)) {
 	}
 	
 	// Avoid walls
-	if (avoidWalls and collidingInstance.object_index == wallObject.object_index) {
+	if (avoidWalls and instance_exists(wallObject) and collidingInstance.object_index == wallObject.object_index) {
 		debugColor = c_green;
 		return noone;
 	}
 	
 	// Platforms don't collide with projectiles
-	if (avoidPlatform and collidingInstance.object_index == platformObject.object_index) {
+	if (avoidPlatform and instance_exists(platformObject) and collidingInstance.object_index == platformObject.object_index) {
 		debugColor = c_aqua;
 		return noone;
 	}

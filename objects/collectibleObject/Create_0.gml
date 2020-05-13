@@ -4,3 +4,4 @@ vsp = 0;
 grv = 0.2;
 jump = 3;
 isGrounded = false;
+wall = noone;

@@ -4,14 +4,23 @@
 // Fix issue #14 :
 // Check an integer value of vsp to avoid boucing gravity check
 
+var hasCollided = false;
+var oldWallX = 0;
+var oldWallY = 0;
+
+// Move wall to avoid auto-collision
+if (wall) {
+	oldWallX = wall.x;
+	oldWallY = wall.y;
+	wall.x = -100;
+	wall.y = -100;
+}
 
 // Check if collision should occur vertically
 if (place_meeting(x, argument0, wallObject)) {
 	
 	// If the wall is a platform and player is coming from beneath, no collision
-	if (isCollidingPlatform(x, argument0)) {
-		return false;
-	} else {
+	if (!isCollidingPlatform(x, argument0)) {
 		// Pixel perfect position
 		while(!place_meeting(x, y + sign(vsp), wallObject)) {
 			y += sign(vsp);
@@ -20,10 +29,17 @@ if (place_meeting(x, argument0, wallObject)) {
 	
 		isGrounded = vsp > 0; // grounded only if falling
 		vsp = 0;
-		return true;
+		hasCollided = true;
 	}
 	
 } else {
 	isGrounded = false;
-	return false;
 }
+
+// Restore wall position
+if (wall) {
+	wall.x = oldWallX;
+	wall.y = oldWallY;
+}
+
+return hasCollided;

@@ -2,12 +2,15 @@
 
 // Apply burnt effect directly
 if (followInstance) {
-	applyBurntEffect(collidingInstance);
+	applyBurntEffect(collidingInstance, playerObject.id, burntTimer);
 }
 
 // Send embers
 repeat(irandom_range(1, 3)) {
-	with (instance_create_layer(x, y, global.projLayer, emberProjectileObject)) {		
+	with (instance_create_layer(x, y, global.projLayer, emberProjectileObject)) {
+		if (place_meeting(x, y, wallObject)) {
+			instance_destroy();
+		}
 		burntTimer = other.burntTimer;
 		// Play sound
 		//audio_sound_pitch(sound, choose(0.9, 1.0, 1.1));

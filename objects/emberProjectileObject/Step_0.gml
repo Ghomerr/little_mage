@@ -17,19 +17,20 @@ if (life > 0) {
 	
 	// Add burnt effect to shootable objects
 	if (place_meeting(nextX, nextY, shootableObject)) {
-		applyBurntEffect(instance_place(nextX, nextY, shootableObject));
+		applyBurntEffect(instance_place(nextX, nextY, shootableObject), shooter, burntTimer);
 	}
 	
-	if (!isGrounded) {
-		updateVspWithGravity(vsp, jump);
-		if (handleHorizontalCollision(nextX) or handleVerticalCollision(nextY)) {
-			var wallInstance = instance_place(nextX, nextY, wallObject);
-			if (wallInstance and wallInstance.owner) { 
-				applyBurntEffect(wallInstance.owner);
-			}
+	updateVspWithGravity(vsp, jump);
+	if (handleHorizontalCollision(nextX) or handleVerticalCollision(nextY)) {
+		var wallInstance = instance_place(nextX, nextY, wallObject);
+		if (wallInstance and wallInstance.owner) { 
+			applyBurntEffect(wallInstance.owner, shooter, burntTimer);
 		}
-		updatePosition();
-	} else {
+	}
+	updatePosition();
+	
+	if (isGrounded) {
+		hsp = 0;
 		life--;
 	}
 	
