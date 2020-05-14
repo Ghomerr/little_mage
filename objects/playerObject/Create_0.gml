@@ -33,6 +33,11 @@ coyoteCounter = 0;
 hasControl = false; // define if player can do inputs
 move = 0; // movement orientation
 
+// Death magic variables
+deathHearts = 0; // total of death hearts
+deathHeartsTimer = 600; // duration of one death heart
+deathHeartsCounter = 0; // counter to decrease death heart
+
 // Magics
 enum HATS {
 	NATURE,
@@ -47,6 +52,14 @@ enum HATS {
 }
 enum WHEEL_UI {
 	X, Y, MIN, MAX, HAT
+}
+enum HEART {
+	EMPTY = 0,
+	FULL = 1,
+	DEATH_FULL = 2,
+	DEATH_GOOD = 3,
+	DEATH_MID = 4,
+	DEATH_CRIT = 5
 }
 
 // UI COnfig : x, y, min, max, hat

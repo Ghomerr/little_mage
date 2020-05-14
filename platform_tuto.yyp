@@ -1399,6 +1399,14 @@
             }
         },
         {
+            "Key": "8a4be7bf-6c8a-4cb5-9272-35ce8ec7a540",
+            "Value": {
+                "id": "99d96cc1-55a7-4ebc-9a45-27a98560ea9a",
+                "resourcePath": "scripts\\getHeartState\\getHeartState.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "8b52175b-24ab-4979-a3e0-5d997d3ba843",
             "Value": {
                 "id": "72d4229d-b87c-4660-a59a-6aef377245a8",
@@ -2055,6 +2063,14 @@
             }
         },
         {
+            "Key": "ce25e0ed-6b67-4783-b238-7f637dd49419",
+            "Value": {
+                "id": "0c20d69e-b9f9-4344-8d1a-598b24c52b77",
+                "resourcePath": "scripts\\emitDeathParticles\\emitDeathParticles.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "ce421c1d-97a4-479d-a3ac-90d8614621d3",
             "Value": {
                 "id": "563f9f2c-593d-466a-8a37-c1ba93ef04d9",
@@ -2513,6 +2529,7 @@
         "3cd7444b-ad16-4a0f-aed0-bacaaccb2b75",
         "dbd2826f-cd2c-4975-af8b-7c87fcb94657",
         "79f979e4-29b3-4ad1-a356-5ae3e0f0f470",
+        "ce25e0ed-6b67-4783-b238-7f637dd49419",
         "7c20732f-c050-4aec-a7a2-5fa38cf93385",
         "864774dc-aca7-4039-8a95-bd41a0b2f9f0",
         "de4cc3d4-fa1b-41d5-b5c7-78cfb6f2688a",
@@ -2524,6 +2541,7 @@
         "61efac8a-1be5-4dfd-b939-5c581b95ce8a",
         "49f01be5-4103-4286-98d9-2ab9f65aa8b2",
         "c21e4715-ab4c-4e46-8678-04afe0be47b8",
+        "8a4be7bf-6c8a-4cb5-9272-35ce8ec7a540",
         "4eeebcec-b4ce-4da4-87fd-50e054849c76",
         "2555e036-4770-49c4-b354-4a3f28fdc3d3",
         "9dd8b2e1-2898-4744-8b16-40871fd77a41",

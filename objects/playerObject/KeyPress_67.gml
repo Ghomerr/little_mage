@@ -17,5 +17,5 @@ if (room == testRoom) {
 	} else {
 		// Spawn one crate only
 		instance_create_layer(posX, posY, global.entitiesLayer, crate1Object);	
-	}	
+	}
 }

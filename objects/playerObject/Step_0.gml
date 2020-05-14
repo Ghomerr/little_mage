@@ -3,6 +3,13 @@ if (isVisible) {
 	if (!isDying) {
 		event_inherited();
 		
+		// Death Hearts counter
+		if (deathHeartsCounter > 0) {
+			deathHeartsCounter--;
+		} else if (deathHearts > 0) {
+			beHit(1);
+		}
+		
 		// Handle hats wheel show input
 		if (hasWeapon) {
 			if (!showHatsWheel) {

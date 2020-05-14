@@ -29,6 +29,7 @@ if (isFalling or prjSpeed > 0) {
 		// Check colliding entity
 		var collidingInstance = handleCollisionWith(shootableObject, nextX, nextY);
 		if (collidingInstance != noone) {
+			event_user(0); // notify projectile of hitting an instance
 			with(collidingInstance) {
 				if (!isDying) {
 					beHit(other.damage);

@@ -1,6 +1,7 @@
 /// @description Handle collection
 
-if (other.hp < other.initHp) {
+// Cannot eat apple if player has death hearts or max hp
+if (other.deathHearts < 1 and other.hp < other.initHp) {
 
 	with(gameManager) heartSpriteScale = 2;
 	other.hp++;

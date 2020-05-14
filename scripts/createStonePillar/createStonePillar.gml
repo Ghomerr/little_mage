@@ -33,7 +33,7 @@ with(instance_create_layer(x, y, layer, stonePillarObject)) {
 	if (place_meeting(x, y, stonePillarObject)) {
 		// Destroy it
 		with(instance_place(x, y, stonePillarObject)) {
-			beHit(initHp);	
+			beHit(initHp);
 		}
 	}
 	

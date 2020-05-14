@@ -27,8 +27,8 @@ if (room != menuRoom and instance_exists(playerObject)) {
 	for (var i = 0 ; i < playerObject.initHp ; i++) {
 		// Move sprite x according to current heart to draw
 		var spriteX = heartSpriteX + (heartSpriteWidth * heartSpriteScale + heartSpriteGap) * i;
+		
 		// Check if health is above current heart
-		var fullHeart = i < playerObject.hp and playerObject.isVisible ? 0 : 1;
-		draw_sprite_ext(heartSprite, fullHeart, spriteX, heartSpriteY, heartSpriteScale, heartSpriteScale, 0, c_white, 1);
+		draw_sprite_ext(heartSprite, getHeartState(i), spriteX, heartSpriteY, heartSpriteScale, heartSpriteScale, 0, c_white, 1);
 	}
 }
