@@ -21,7 +21,10 @@ if (life > 0) {
 	}
 	
 	updateVspWithGravity(vsp, jump);
-	if (handleHorizontalCollision(nextX) or handleVerticalCollision(nextY)) {
+	var hasHorizontalCollided = handleHorizontalCollision(nextX);
+	var hasVerticalCollided = handleVerticalCollision(nextY);
+	if (hasHorizontalCollided or hasVerticalCollided) {
+		// in cas of collision, if the wall is owned by an entity, apply burnt effect
 		var wallInstance = instance_place(nextX, nextY, wallObject);
 		if (wallInstance and wallInstance.owner) { 
 			applyBurntEffect(wallInstance.owner, shooter, burntTimer);
@@ -29,8 +32,9 @@ if (life > 0) {
 	}
 	updatePosition();
 	
+	// Only decrease life while on ground
 	if (isGrounded) {
-		hsp = 0;
+		hsp = 0; // avoir rolling on the ground
 		life--;
 	}
 	

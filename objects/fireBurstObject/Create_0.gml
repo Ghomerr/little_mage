@@ -16,7 +16,7 @@ repeat(irandom_range(1, 3)) {
 		//audio_sound_pitch(sound, choose(0.9, 1.0, 1.1));
 		//audio_play_sound(sound, 5, false);
 		shooter = playerObject.id;
-		direction = other.collidingAngle + irandom_range(-ANGLE.CORNER, ANGLE.CORNER);
+		direction = irandom_range(ANGLE.MIN, ANGLE.MAX);
 		hsp = lengthdir_x(jump, direction);
 		vsp = lengthdir_y(jump, direction);
 		image_angle = direction;

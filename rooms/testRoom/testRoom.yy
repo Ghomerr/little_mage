@@ -7,7 +7,8 @@
     "inheritCreationOrder": false,
     "inheritLayers": false,
     "instanceCreationOrderIDs": [
-        "af2a9e8e-798b-48a2-a4d1-9fdc9fac2d62"
+        "af2a9e8e-798b-48a2-a4d1-9fdc9fac2d62",
+        "b03e2f61-b7f3-46b2-b069-f49fb4917a26"
     ],
     "IsDnD": false,
     "layers": [
@@ -155,7 +156,7 @@
             "inheritSubLayers": false,
             "inheritVisibility": false,
             "instances": [
-
+{"name": "inst_7B0FE631","id": "b03e2f61-b7f3-46b2-b069-f49fb4917a26","colour": { "Value": 4294967295 },"creationCodeFile": "","creationCodeType": "","ignore": false,"imageIndex": 0,"imageSpeed": 1,"inheritCode": false,"inheritItemSettings": false,"IsDnD": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "inst_7B0FE631","objId": "2c1c2d50-e4cf-4f86-bac3-e529c6b5ad40","properties": [{"id": "df6b0941-2a16-43b8-852b-5502085492b6","modelName": "GMOverriddenProperty","objectId": "2c1c2d50-e4cf-4f86-bac3-e529c6b5ad40","propertyId": "4487f603-dd89-42b6-a4fc-c76642012af9","mvc": "1.0","value": "\"TEST ROOM\""}],"rotation": 0,"scaleX": 1,"scaleY": 1,"mvc": "1.1","x": 128,"y": 472}
             ],
             "layers": [
 
