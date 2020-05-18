@@ -4,7 +4,7 @@
 version = "v" + GM_version;
 
 // Menu constants
-titleText = "Little Mage Adventure";
+titleText = "Magic Hat'venture";
 guiWidth = display_get_gui_width();
 guiHalfWidth = guiWidth / 2;
 guiHeight = display_get_gui_height();
