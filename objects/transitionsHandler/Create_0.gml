@@ -1,10 +1,4 @@
 /// @description Init transition handler
-enum TRANS_MODE {
-	OFF, // Transition disabled
-	INTRO, // Transition for entering a room
-	GOTO, // Transition for going to another room
-	RESTART // Transition for restarting the game
-}
 
 // Transition constants
 T_WIDTH = display_get_gui_width();

@@ -12,7 +12,12 @@ if (!isDying) {
 		
 		// Handle projectiles effects
 		createGravityBubbleBurst();
-		createAppleUsingOdd();
+		if (deathMarkCounter > 0) {
+			addDeathHeart();
+			emitDeathParticles(0, 0, spriteHalfWidth, irandom_range(40, 50), false, true);
+		} else {
+			createAppleUsingOdd();	
+		}
 		
 		sprite_index = hitSprite;
 		direction = other.hitfrom;

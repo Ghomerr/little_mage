@@ -1,12 +1,5 @@
 /// @description Init variables
 
-enum PLANT_STATE {
-	GROWTH,
-	INFECTED,
-	NORMAL,
-	DEATH
-}
-
 state = PLANT_STATE.GROWTH;
 followInstance = false;
 onLivingInstance = false;

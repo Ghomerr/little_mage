@@ -7,7 +7,7 @@ if (life > 0) {
 	event_inherited();
 	
 	// Emit death smoke
-	emitDeathParticles(direction + ANGLE.OPPOSITE, 2, 4, 5, true);
+	emitDeathParticles(direction + ANGLE.OPPOSITE, 2, 4, 5, true, false);
 	
 } else if (life == 0) {
 	life--;

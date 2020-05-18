@@ -431,6 +431,14 @@
             }
         },
         {
+            "Key": "284cc30d-2bea-443a-8f94-20dfe9a452ed",
+            "Value": {
+                "id": "feaf19f2-e07a-4aa4-84f5-664d00c1b88f",
+                "resourcePath": "scripts\\addDeathHeart\\addDeathHeart.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "29a58fa5-668b-4b7c-9c6d-9209f2d2183a",
             "Value": {
                 "id": "3c7a5e4a-1871-4c0d-a0bf-b168205dca40",
@@ -2530,6 +2538,7 @@
         "dbd2826f-cd2c-4975-af8b-7c87fcb94657",
         "79f979e4-29b3-4ad1-a356-5ae3e0f0f470",
         "ce25e0ed-6b67-4783-b238-7f637dd49419",
+        "284cc30d-2bea-443a-8f94-20dfe9a452ed",
         "7c20732f-c050-4aec-a7a2-5fa38cf93385",
         "864774dc-aca7-4039-8a95-bd41a0b2f9f0",
         "de4cc3d4-fa1b-41d5-b5c7-78cfb6f2688a",

@@ -13,20 +13,24 @@ if (place_meeting(argument1, argument2, argument0)) {
 		return noone;
 	}
 	
-	// Avoid walls
-	if (avoidWalls and instance_exists(wallObject) and collidingInstance.object_index == wallObject.object_index) {
-		debugColor = c_green;
-		return noone;
-	}
-	
 	// Platforms don't collide with projectiles
 	if (avoidPlatform and instance_exists(platformObject) and collidingInstance.object_index == platformObject.object_index) {
 		debugColor = c_aqua;
 		return noone;
 	}
 	
+	// Avoid walls
+	if (avoidWalls and instance_exists(wallObject) and collidingInstance.object_index == wallObject.object_index) {
+		debugColor = c_green;
+		return noone;
+	}
+	
 	// For shooting instance, check if it can be followed
 	if (object_is_ancestor(collidingInstance.object_index, shootableObject)) {
+		// If the colliding instance has wall and the projectile goes through walls, dont collide
+		if (avoidWalls and collidingInstance.wall) {
+			return noone;
+		}
 		followInstance = true;
 		hasCollidedLivingEntity = collidingInstance.isLivingEntity;
 	} else {

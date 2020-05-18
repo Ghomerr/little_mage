@@ -6,9 +6,11 @@ if (flash <= 0) {
 			// If player has death hearts, decrease them first
 			if (deathHearts > 0) {
 				deathHearts--;
-				emitDeathParticles(0, 0, spriteWidth, 50, false);
+				emitDeathParticles(0, 0, spriteWidth, 50, false, false);
 				if (deathHearts > 0) {
 					deathHeartsCounter = deathHeartsTimer;	
+				} else {
+					deathHeartsCounter = 0;
 				}
 			}
 			hp--; // Player only takes damages one by one hp

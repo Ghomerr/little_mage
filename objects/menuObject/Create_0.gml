@@ -19,11 +19,6 @@ menuSpeed = 25;
 font = menuFont;
 fontHeight = font_get_size(menuFont) * 1.5;
 
-enum MENU_CHOICE {
-	NEW_GAME = 2,
-	CONTINUE = 1,
-	QUIT = 0
-}
 menu[MENU_CHOICE.NEW_GAME] = "New Game";
 menu[MENU_CHOICE.CONTINUE] = "Continue";
 menu[MENU_CHOICE.QUIT] = "Quit";

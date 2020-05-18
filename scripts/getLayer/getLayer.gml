@@ -1,12 +1,3 @@
-enum LAYER {
-	PROJECTILES,
-	PLAYER,
-	MONSTERS,
-	ENTITIES,
-	DEADS,
-	WALLS
-}
-
 switch (argument0) {
 	case LAYER.PROJECTILES:
 		if (global.projLayer == -1) global.projLayer = layer_get_id("Projectiles");

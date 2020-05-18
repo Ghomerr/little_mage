@@ -12,7 +12,7 @@ var nextY = y + roundVsp(vsp);
 
 // While not dying, do normal cycle 
 if (!isDying) {
-	
+		
 	// Dont walk off edges
 	if (isGrounded and isAfraidOfHeight and !place_meeting(x + sign(hsp) * (spriteWidth+1) + hsp, y + 1, wallObject)) {
 		
@@ -54,6 +54,10 @@ if (!isDying) {
 	
 	updatePosition();
 	handleAnimations();
+	if (deathMarkCounter > 0) {
+		deathMarkCounter--;
+		emitDeathParticles(0, 0, spriteHalfWidth, 1, false, false);	
+	}
 	
 } else {
 	// When dying, handle only the falling
