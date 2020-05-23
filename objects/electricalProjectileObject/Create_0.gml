@@ -6,7 +6,7 @@ event_inherited();
 elecShockTimer = 120;
 
 // Step angle of the projectile
-projectileStepAngle = 2;
+projectileStepAngle = 5;
 
 // Destroy projectile after this alarm
 alarm[0] = 180;

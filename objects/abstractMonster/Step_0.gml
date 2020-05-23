@@ -12,6 +12,8 @@ var nextY = y + roundVsp(vsp);
 
 // While not dying, do normal cycle 
 if (!isDying) {
+	
+	var hasCollidedOther = false;
 		
 	// Dont walk off edges
 	if (isGrounded and isAfraidOfHeight and !place_meeting(x + sign(hsp) * (spriteWidth+1) + hsp, y + 1, wallObject)) {
@@ -29,21 +31,27 @@ if (!isDying) {
 	} else {
 		// Handle monster colliding
 		if (place_meeting(x, y, abstractMonster)) {
-			var otherMonster = instance_place(x, y, abstractMonster);
-			changeMonsterDirection();
-			nextX *= move;
-			with (otherMonster) {
-				changeMonsterDirection();
-			}
-		} else {
+			hasCollidedOther = true;
+		} else if (isCollidingOther) {
 			isCollidingOther = false;
-		}	
+		}
 	}
 	
 	if (handleHorizontalCollision(nextX)) {
 		// Reverse direction
 		move = -move;
 		debugColor = c_blue;
+	} else if (hasCollidedOther and !isCollidingOther) {
+		var otherMonster = instance_place(x, y, abstractMonster);
+		changeMonsterDirection();
+		nextX *= move;
+		with (otherMonster) {
+			changeMonsterDirection(-other.move);
+			// Spread electrical shock
+			if (other.elecShockCounter > 0 and elecShockCounter <= 0) {
+				elecShockCounter = other.elecShockCounter;
+			}
+		}
 	}
 	
 	var wasGrounded = isGrounded;
@@ -57,6 +65,10 @@ if (!isDying) {
 	if (deathMarkCounter > 0) {
 		deathMarkCounter--;
 		emitDeathParticles(0, 0, spriteHalfWidth, 1, false, false);	
+	}
+	
+	if (elecShockCounter > 0 and elecShockCounter % 60 == 0) {
+		emitElectricalParticles(4, 8, spriteWidth);	
 	}
 	
 } else {

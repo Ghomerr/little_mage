@@ -1783,6 +1783,14 @@
             }
         },
         {
+            "Key": "ab1c3191-af95-4181-8828-716d7ced2c01",
+            "Value": {
+                "id": "ada951f9-9f94-4d97-b5f7-89fcc6284b32",
+                "resourcePath": "scripts\\emitElectricalParticles\\emitElectricalParticles.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "ac3c9817-877e-47ab-ae9a-ee282c28ea5e",
             "Value": {
                 "id": "4d6eb5ea-c924-4121-9bb3-e65fc0388a03",
@@ -2554,6 +2562,7 @@
         "dbd2826f-cd2c-4975-af8b-7c87fcb94657",
         "79f979e4-29b3-4ad1-a356-5ae3e0f0f470",
         "ce25e0ed-6b67-4783-b238-7f637dd49419",
+        "ab1c3191-af95-4181-8828-716d7ced2c01",
         "284cc30d-2bea-443a-8f94-20dfe9a452ed",
         "7c20732f-c050-4aec-a7a2-5fa38cf93385",
         "864774dc-aca7-4039-8a95-bd41a0b2f9f0",
