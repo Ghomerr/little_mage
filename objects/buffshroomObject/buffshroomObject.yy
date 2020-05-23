@@ -71,6 +71,14 @@
             "objectId": "89b37f63-04ae-45e4-8232-ac168afa89e2",
             "propertyId": "c2302562-bcba-4df9-9293-b25e6de8fab4",
             "value": "2"
+        },
+        {
+            "id": "99af2fee-416f-43e8-bc46-2a468362fa7b",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "2f80b86a-f496-4621-988a-3bc5c5fd2787",
+            "propertyId": "43ee3a5c-8972-4abd-aa2e-f52a46c584c2",
+            "value": "buffshroomShockedSprite"
         }
     ],
     "parentObjectId": "2f80b86a-f496-4621-988a-3bc5c5fd2787",

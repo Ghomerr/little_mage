@@ -3,6 +3,8 @@
 // Inherit the parent event
 event_inherited();
 
+elecShockTimer = 120;
+
 // Step angle of the projectile
 projectileStepAngle = 2;
 

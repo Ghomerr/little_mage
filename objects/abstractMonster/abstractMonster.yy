@@ -346,6 +346,20 @@
             "varType": 5
         },
         {
+            "id": "43ee3a5c-8972-4abd-aa2e-f52a46c584c2",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "noone",
+            "varName": "shockedSprite",
+            "varType": 5
+        },
+        {
             "id": "54281a46-c653-4739-9e06-a207a5cb390e",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",

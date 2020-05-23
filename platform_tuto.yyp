@@ -583,6 +583,14 @@
             }
         },
         {
+            "Key": "33c504d2-855b-4742-93b5-a84f57366707",
+            "Value": {
+                "id": "bb7b551a-c915-48bd-a2e2-d32d4a286b8d",
+                "resourcePath": "sprites\\electricalShockSprite\\electricalShockSprite.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "354b95da-05d5-46c3-8020-3999c4039e3c",
             "Value": {
                 "id": "f54a7ebb-6fc6-4804-96c2-67a1d4a37771",
@@ -1099,6 +1107,14 @@
             "Value": {
                 "id": "487dad50-b8f5-4130-895c-2eb9ab13471f",
                 "resourcePath": "sprites\\goldCoinSprite\\goldCoinSprite.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "6a8c47ca-22d5-487e-8773-3e5ed2f5e72b",
+            "Value": {
+                "id": "33adbe2e-51d7-4377-98bf-79616ad51f89",
+                "resourcePath": "sprites\\buffshroomShockedSprite\\buffshroomShockedSprite.yy",
                 "resourceType": "GMSprite"
             }
         },

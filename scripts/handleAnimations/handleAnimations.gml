@@ -5,11 +5,16 @@ if (inGravityBubble) {
 	sprite_index = hitSprite;
 	return;
 }
+
 if ((!isPlayer or !hasWeapon) and hsp != 0) {
 	// Sprite orientation
 	image_xscale = sign(hsp) * size;
 }
-if (isGrounded) {
+
+if (elecShockCounter > 0 and shockedSprite) {
+	sprite_index = shockedSprite;
+	image_speed = 1;
+} else if (isGrounded) {
 	if (hsp != 0) {
 		// Entity running
 		sprite_index = runningSprite;

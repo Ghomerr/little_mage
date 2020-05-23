@@ -3,6 +3,10 @@ if (projectileCounter > 0) {
 	projectileCounter--;
 }
 
+if (elecShockCounter > 0) {
+	elecShockCounter--;
+}
+
 // Handle fronzen effect
 if (frozenCounter > 0) {
 	frozenCounter--;

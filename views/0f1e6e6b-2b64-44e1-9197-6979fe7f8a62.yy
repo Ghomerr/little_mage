@@ -10,7 +10,8 @@
         "5fb06bad-4099-4b5d-9fc9-5603e265b8e2",
         "571bf9b6-7fe9-4eb1-b8e1-d0cb991302c5",
         "4c8c27a4-4ef6-46fb-8f92-c0078283e5b3",
-        "4501b63e-63cf-4cb5-b375-d5e17bac485c"
+        "4501b63e-63cf-4cb5-b375-d5e17bac485c",
+        "6a8c47ca-22d5-487e-8773-3e5ed2f5e72b"
     ],
     "filterType": "GMSprite",
     "folderName": "Buffshroom",

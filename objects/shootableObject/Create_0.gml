@@ -16,6 +16,7 @@ burntCounter = 0;
 isInPillar = false;
 isBeingHit = false;
 deathMarkCounter = 0;
+elecShockCounter = 0;
 
 spriteWidth = (bbox_right - bbox_left) * size;
 spriteHalfWidth = spriteWidth / 2;
