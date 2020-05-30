@@ -1,5 +1,5 @@
 // Init position of player in this room
-initPlayerPosition(80, 432);
+initPlayerPosition(96, 464);
 
 initSimpleParallax();
 

@@ -1,4 +1,5 @@
 /// @description Spawn Buffshroom
+/*
 if (room == testRoom) {
 	var posX = (sign(image_xscale) ? ceil (x / 16) + 1 : floor(x / 16) - 1) * 16;
 	var posY = y - 16;
@@ -20,3 +21,4 @@ if (room == testRoom) {
 		instance_create_layer(posX, posY, global.monstersLayer, buffshroomObject);
 	}
 }
+*/

@@ -31,4 +31,16 @@ if (room != menuRoom and instance_exists(playerObject)) {
 		// Check if health is above current heart
 		draw_sprite_ext(heartSprite, getHeartState(i), spriteX, heartSpriteY, heartSpriteScale, heartSpriteScale, 0, c_white, 1);
 	}
+	
+	// DEBUG DIALOG
+	if (isDebugOpen) {
+		draw_set_alpha(0.5);
+		draw_set_color(c_black);
+		draw_rectangle(0, RES_H - 40, RES_W, RES_H, 0);
+		draw_set_alpha(1);
+		drawSetText(commandResultColor, signPostFont, fa_left, fa_middle);
+		draw_text(10, RES_H - 30, commandResult);
+		draw_set_color(c_white);
+		draw_text(10, RES_H - 10, debugText);
+	}
 }

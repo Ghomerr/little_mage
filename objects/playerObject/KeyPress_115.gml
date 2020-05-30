@@ -1,4 +1,5 @@
 /// @description Toggle weapon
+/*
 if (isDebugEnabled) {
 	if (hasWeapon) {
 		with(staffObject) {
@@ -12,3 +13,4 @@ if (isDebugEnabled) {
 	hasWeapon = !hasWeapon;
 	createWeaponOrHands();
 }
+*/

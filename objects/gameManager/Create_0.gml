@@ -55,3 +55,10 @@ heartMiddleScreen = RES_W / 2;
 heartSpriteGap = 4;
 heartSpriteY = 12;
 heartSpriteX = heartMiddleScreen - (playerObject.initHp * heartSpriteWidth + (playerObject.initHp - 1) * heartSpriteGap ) / 2;
+
+// Debug
+playerHasControl = false;
+isDebugOpen = false;
+debugText = "";
+commandResult = "";
+commandResultColor = c_yellow;

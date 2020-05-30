@@ -1,2 +1,2 @@
 /// @description ?
-elecShockCounter = 120;
+//elecShockCounter = 120;

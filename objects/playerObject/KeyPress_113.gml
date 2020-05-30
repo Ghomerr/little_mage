@@ -1,4 +1,5 @@
 /// @description Toggle debug mode
+/*
 if (!isDebugEnabled) {
 	// Enable debug
 	isDebugEnabled = true;
@@ -10,3 +11,4 @@ if (!isDebugEnabled) {
 	// Restore game speed
 	game_set_speed(GAME_SPEED, gamespeed_fps);
 }
+*/
