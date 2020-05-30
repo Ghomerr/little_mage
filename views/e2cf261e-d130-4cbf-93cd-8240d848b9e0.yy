@@ -12,7 +12,8 @@
         "2d61015e-dbf6-412c-981d-bf82952702e2",
         "51bd00d6-17e8-42e8-9728-c98a11410418",
         "e03fdfe4-7768-41e0-8fc7-3bd627bd9ede",
-        "d83f3fb3-518d-4dc8-8500-2bf9af73ec45"
+        "d83f3fb3-518d-4dc8-8500-2bf9af73ec45",
+        "5bfe3eae-b2c8-424d-8a48-e64474e32d51"
     ],
     "filterType": "GMSprite",
     "folderName": "Effects",

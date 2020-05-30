@@ -991,6 +991,14 @@
             }
         },
         {
+            "Key": "5bfe3eae-b2c8-424d-8a48-e64474e32d51",
+            "Value": {
+                "id": "4eaebacf-33d2-4234-a926-9792a2afb881",
+                "resourcePath": "sprites\\healSprite\\healSprite.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "5c008328-b0cc-49b3-8e92-d4732f4196c6",
             "Value": {
                 "id": "b75f20d0-e4a3-43a4-8aa3-efbe43b9134c",

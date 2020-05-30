@@ -100,3 +100,11 @@ part_type_life(gravitySparkle, 40, 40);
 part_type_size(gravitySparkle, 0.5, 1, 0, 0);
 part_type_orientation(gravitySparkle, ANGLE.MIN, ANGLE.MAX, 0, 0, 0);
 part_type_direction(gravitySparkle, ANGLE.MIN, ANGLE.MAX, 0, 0);
+
+healParticle = part_type_create();
+part_type_sprite(healParticle, healSprite, 0, 0, 0);
+part_type_alpha3(healParticle, 1, 0.75, 0.25);
+part_type_life(healParticle, 45, 45);
+part_type_size(healParticle, 1, 2, -0.01, 0);
+part_type_speed(healParticle, 0.5, 1, -0.02, 0);
+part_type_direction(healParticle, ANGLE.UP, ANGLE.UP, 0, 0);
