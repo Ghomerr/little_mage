@@ -176,6 +176,14 @@
             "objectId": "2f80b86a-f496-4621-988a-3bc5c5fd2787",
             "propertyId": "6a459a0b-9397-437b-83ab-6c5cc511cafc",
             "value": "squirrelAttackSprite"
+        },
+        {
+            "id": "afa90669-094f-4ab2-873a-2ea6171881fb",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "2f80b86a-f496-4621-988a-3bc5c5fd2787",
+            "propertyId": "43ee3a5c-8972-4abd-aa2e-f52a46c584c2",
+            "value": "squirrelShockedSprite"
         }
     ],
     "parentObjectId": "2f80b86a-f496-4621-988a-3bc5c5fd2787",

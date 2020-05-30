@@ -1,0 +1,2 @@
+/// @description ?
+elecShockCounter = 120;

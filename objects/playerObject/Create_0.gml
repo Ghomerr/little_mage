@@ -73,7 +73,7 @@ runningSprite = playerRunningSprite;
 fallingSprite = playerFallingSprite;
 jumpingSprite = playerJumpingSprite;
 hitSprite = playerHitSprite;
-shockedSprite = noone;
+shockedSprite = playerShockedSprite;
 
 // Shaders
 isFlashingUniform = shader_get_uniform( playerShader, "isFlashing" );

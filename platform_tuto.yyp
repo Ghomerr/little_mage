@@ -1055,6 +1055,14 @@
             }
         },
         {
+            "Key": "61123140-9281-4db9-a3cf-77a744e08f6c",
+            "Value": {
+                "id": "2558a129-df40-4e59-8b1c-cd879f8ac996",
+                "resourcePath": "sprites\\playerShockedSprite\\playerShockedSprite.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "619505d0-d81e-408d-b19d-9d41fd656708",
             "Value": {
                 "id": "e752fa3e-a66d-45bc-9c0a-422d2aa72dbe",
@@ -1759,6 +1767,14 @@
             }
         },
         {
+            "Key": "a9188620-a624-4a5a-83ae-a1b53faf038b",
+            "Value": {
+                "id": "ef02dd93-5743-42b7-a76a-42084383b28e",
+                "resourcePath": "options\\linux\\options_linux.yy",
+                "resourceType": "GMLinuxOptions"
+            }
+        },
+        {
             "Key": "a9946429-64d5-48c6-9e1e-41eb6b995b81",
             "Value": {
                 "id": "ae398e3a-416f-4447-a0ef-be7e71f8548f",
@@ -2415,6 +2431,14 @@
             }
         },
         {
+            "Key": "f02fd8ab-d1ac-44aa-97d2-1e7b74bf856a",
+            "Value": {
+                "id": "14e99ecc-a17d-4149-9d17-06627ed6c757",
+                "resourcePath": "sprites\\squirrelShockedSprite\\squirrelShockedSprite.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "f22bce76-5e44-440c-bf53-70a12c832267",
             "Value": {
                 "id": "50dc5865-0507-4734-ac25-abefca79b806",
@@ -2444,6 +2468,14 @@
                 "id": "f19fba11-7b68-4281-b6f1-42aa7aeb664c",
                 "resourcePath": "sprites\\clothSprite\\clothSprite.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "f418569b-3bdd-4706-a0e4-364317f54032",
+            "Value": {
+                "id": "2d7a3a39-8aeb-4d5e-ab68-f19160c7382e",
+                "resourcePath": "options\\mac\\options_mac.yy",
+                "resourceType": "GMMacOptions"
             }
         },
         {
