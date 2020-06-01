@@ -12,7 +12,7 @@ if (instance_exists(playerObject)) {
 
 	// Update frame counter
 	frameCounter++;
-	if (frameCounter >= playerObject.GAME_SPEED) {
+	if (frameCounter >= gameManager.GAME_SPEED) {
 		frameCounter = 0;
 	}
 }

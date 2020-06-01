@@ -18,6 +18,8 @@ with (gameManager) {
 		coinsTextScale = argument[0];
 		if (argument_count > 1) {
 			coinsColor = argument[1];
+		} else {
+			coinsColor = c_orange;
 		}
 	} else {
 		coinsTextX = coinsSpriteX + coinsCounterOffset * coinsTextScale;

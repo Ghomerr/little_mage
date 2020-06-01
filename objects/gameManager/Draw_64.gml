@@ -43,4 +43,13 @@ if (room != menuRoom and instance_exists(playerObject)) {
 		draw_set_color(c_white);
 		draw_text(10, RES_H - 10, debugText);
 	}
+	
+	if (isDebugFpsEnabled) {
+		draw_set_alpha(0.5);
+		draw_set_color(c_black);
+		draw_rectangle(0, 0, RES_W, 20, 0);
+		draw_set_alpha(1);
+		drawSetText(c_white, signPostFont, fa_left, fa_middle);
+		draw_text(10, 10, "FPS: " + currentFpsDisplay);
+	}
 }

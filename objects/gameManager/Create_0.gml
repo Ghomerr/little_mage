@@ -56,9 +56,14 @@ heartSpriteGap = 4;
 heartSpriteY = 12;
 heartSpriteX = heartMiddleScreen - (playerObject.initHp * heartSpriteWidth + (playerObject.initHp - 1) * heartSpriteGap ) / 2;
 
+GAME_SPEED = game_get_speed(gamespeed_fps);
+
 // Debug
 playerHasControl = false;
 isDebugOpen = false;
+isDebugFpsEnabled = false;
+debugFps = GAME_SPEED/2;
+currentFpsDisplay = string(debugFps);
 debugText = "";
 commandResult = "";
 commandResultColor = c_yellow;

@@ -1,4 +1,14 @@
 /// @description Handle debug dialog inputs
+if (isDebugFpsEnabled) {
+	if (keyboard_check_pressed(vk_add)) {
+		setGameSpeed(5);
+		keyboard_lastkey = -1;
+	} else if (keyboard_check_pressed(vk_subtract)) {
+		setGameSpeed(-5);	
+		keyboard_lastkey = -1;
+	}
+}
+
 if (isDebugOpen) {
 	
 	// if a key has been typed
@@ -20,6 +30,7 @@ if (isDebugOpen) {
 				
 			// Add a space to the debug text
 			case vk_space:
+			case vk_subtract:
 				debugText += keyboard_lastchar;
 				break;
 				

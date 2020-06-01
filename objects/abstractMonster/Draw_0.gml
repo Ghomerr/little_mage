@@ -12,7 +12,7 @@ if (!isDying and hp < initHp) {
 	draw_healthbar(x-10, y-15, x+10, y-13, 100*(hp/initHp), c_black, c_red, c_green, 0, true, false);	
 }
 
-if (instance_exists(playerObject) and playerObject.isDebugEnabled and isDebugEnabled) {
+if (isDebugEnabled) {
 	// Draw collision box
 	draw_set_alpha(0.5);
 	draw_rectangle_colour(bbox_left,bbox_top,bbox_right,bbox_bottom,debugColor,debugColor,debugColor,debugColor,false);

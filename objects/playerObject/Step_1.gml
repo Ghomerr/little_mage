@@ -11,7 +11,7 @@ if (isVisible and !isDying and (hp <= 0 or y >= maxYbeforeDead)) {
 	with (handsObject) instance_destroy();
 
 	// Slow mo
-	game_set_speed(GAME_SPEED/2, gamespeed_fps);
+	game_set_speed(gameManager.GAME_SPEED/2, gamespeed_fps);
 	
 	// Coins update + color
 	global.coins -= 10;

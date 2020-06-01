@@ -7,15 +7,7 @@ if (other.deathHearts < 1 and other.hp < other.initHp) {
 	other.hp++;
 	
 	// Emit heal particle
-	repeat(3) {
-		part_particles_create(
-			pm.ps, 
-			other.x + irandom_range(-other.spriteWidth, other.spriteWidth), 
-			other.y + irandom_range(-other.spriteWidth, other.spriteWidth), 
-			pm.healParticle, 
-			1
-		);
-	}
+	emitHealParticles(other, other.spriteWidth);
 
 	// Inherit the parent event
 	event_inherited();
