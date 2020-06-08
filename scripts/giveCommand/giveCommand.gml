@@ -61,7 +61,7 @@ if (argument_count == 1 and array_length_1d(argument0) >= 2) {
 					commandResultColor = c_yellow;
 					commandResult = "Player lost " + quantityString + " hp";
 				} else {
-					commandResult = "Noting to give";
+					commandResult = "Nothing to give";
 				}
 				
 			} else {
@@ -83,7 +83,7 @@ if (argument_count == 1 and array_length_1d(argument0) >= 2) {
 				commandResultColor = c_yellow;
 				commandResult = "Player lost " + quantityString + " coins";
 			} else {
-				commandResult = "Noting to give";
+				commandResult = "Nothing to give";
 			}
 			break;
 			

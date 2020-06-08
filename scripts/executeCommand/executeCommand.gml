@@ -20,7 +20,7 @@ if (string_length(argument0) > 0) {
 	
 	} else {
 		commandResultColor = c_red;
-		commandResult = "Invalid command: " + argument0;	
+		commandResult = "Invalid command: " + argument0;
 	}
 } else {
 	commandResult = "";
