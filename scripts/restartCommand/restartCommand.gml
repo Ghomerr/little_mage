@@ -20,5 +20,5 @@ if (argument_count == 1 and array_length_1d(argument0) >= 1) {
 	
 } else {
 	commandResultColor = c_red;
-	commandResult = "Invalid restart arguments. Usage: restart [room|game]";
+	commandResult = "Invalid restart arguments. Usage: restart (room|game)";
 }

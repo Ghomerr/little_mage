@@ -1,6 +1,6 @@
 /// @desc give something to the player
 /// @arg args of the command
-var giveUsage = "Usage: give [staff|hp|coins] (quantity)";
+var giveUsage = "Usage: give [coins|hp|staff] (quantity)";
 
 if (argument_count == 1 and array_length_1d(argument0) >= 2) {
 
