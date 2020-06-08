@@ -6,11 +6,10 @@ if (argument_count == 1 and array_length_1d(argument0) >= 2) {
 
 	var giveElement = argument0[1];
 	
-	// Get give quantity
-	var quantityString = array_length_1d(argument0) >= 3 ? argument0[2] : "1";
-	var quantitySign = string_char_at(quantityString, 1) == "-" ? -1 : 1;
-	quantityString = string_digits(quantityString);
-	var quantity = quantitySign * (quantityString == "" ? 0 : real(quantityString));
+	// Get quantity
+	var qtyArray = getCommandQuantity(argument0);
+	var quantity = qtyArray[0];
+	var quantityString = qtyArray[1]; 
 	
 	switch (giveElement) {
 		case "staff":

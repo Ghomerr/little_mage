@@ -11,7 +11,9 @@
         "e36a8e31-8493-4098-a912-4d7f8e9b80c0",
         "6e4dd311-81c1-4539-adb4-46c5abf80975",
         "ab31c604-5f22-4038-9b9b-10012571caef",
-        "13ccf266-f295-4fe6-a2d2-06e485a1d386"
+        "34dd03c6-cc6a-41b3-917c-f8f3ff56975d",
+        "13ccf266-f295-4fe6-a2d2-06e485a1d386",
+        "e78a17dd-32eb-4265-9c8c-6f5767a2e172"
     ],
     "filterType": "GMScript",
     "folderName": "Commands",

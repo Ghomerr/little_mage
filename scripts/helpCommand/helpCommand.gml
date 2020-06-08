@@ -25,6 +25,10 @@ if (argument_count == 1) {
 				commandResult = "Teleport to the given room name. Usage: room [roomName]";
 				break;
 			
+			case "spawn":
+				commandResult = "Spawn between 1 and 100 entities. Usage: spawn [apple|buffshroom|crate|squirrel] (quantity)";
+				break;
+			
 			case "version":
 				commandResult = "Display the current game version. Usage: version";
 				break;
@@ -34,6 +38,6 @@ if (argument_count == 1) {
 				commandResult = "Unknown command: " + command;
 		}
 	} else {
-		commandResult = "Available commands: debug, give, quit, restart, room, version";
+		commandResult = "Available commands: debug, give, quit, restart, room, spawn, version";
 	}
 }
