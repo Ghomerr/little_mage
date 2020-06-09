@@ -3,17 +3,21 @@
 if (flash <= 0) {
 	if (argument0 > 0) {
 		if (isPlayer) {
-			// If player has death hearts, decrease them first
-			if (deathHearts > 0) {
-				deathHearts--;
-				emitDeathParticles(0, 0, spriteWidth, 50, false, false);
-				if (deathHearts > 0) {
-					deathHeartsCounter = deathHeartsTimer;	
-				} else {
-					deathHeartsCounter = 0;
+			with (playerObject) {
+				if (canBeHit) {
+					// If player has death hearts, decrease them first
+					if (deathHearts > 0) {
+						deathHearts--;
+						emitDeathParticles(0, 0, spriteWidth, 50, false, false);
+						if (deathHearts > 0) {
+							deathHeartsCounter = deathHeartsTimer;	
+						} else {
+							deathHeartsCounter = 0;
+						}
+					}
+					hp--; // Player only takes damages one by one hp
 				}
 			}
-			hp--; // Player only takes damages one by one hp
 			with(gameManager) heartSpriteScale = 2;
 		} else {
 			hp -= argument0;

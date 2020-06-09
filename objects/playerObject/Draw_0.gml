@@ -11,7 +11,7 @@ if (isVisible) {
 		// Handle flashing on hit
 		flash--;
 		shader_set_uniform_f(isFlashingUniform, true);
-		shader_set_uniform_f(useColorSwapUniform, false);	
+		shader_set_uniform_f(useColorSwapUniform, false);
 		
 	} else {
 		// Handle transparency after being hit
@@ -34,6 +34,19 @@ if (isVisible) {
 	
 	draw_self();
 	shader_reset();
+	
+	// Magical effects on player
+	if (flash <= 0) {
+		if (frozenCounter > 0) {
+			shader_set(frozenShader);
+			draw_self();
+			shader_reset();
+		} else if (burntCounter > 0) {
+			shader_set(burntShader);
+			draw_self();
+			shader_reset();
+		}
+	}
 	
 	// Handle the hats selection wheel drawing
 	if (!isDying and showHatsWheel) {

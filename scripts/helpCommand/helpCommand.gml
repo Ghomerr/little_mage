@@ -1,3 +1,5 @@
+/// @desc display help of each commands or list all available commands
+
 commandResultColor = c_yellow;
 
 if (argument_count == 1) {
@@ -9,8 +11,20 @@ if (argument_count == 1) {
 				commandResult = "Show debug infos. Usage: debug [player|monsters|walls|fps]";
 				break;
 			
+			case "effect":
+				commandResult = "Apply the given effect to the player. Usage: effect [burnt/fire,frozen/ice,shocked/electric] (duration in sec)";
+				break;
+			
 			case "give":
 				commandResult = "Give things to the player. Usage: give [coins|hp|staff] (quantity)";
+				break;
+				
+			case "god":
+				commandResult = "Toggle the player god mode ON/OFF. Usage: god";
+				break;
+				
+			case "help":
+				commandResult = "Show some help. Usage: help [command]";
 				break;
 			
 			case "quit":
@@ -38,6 +52,6 @@ if (argument_count == 1) {
 				commandResult = "Unknown command: " + command;
 		}
 	} else {
-		commandResult = "Available commands: debug, give, quit, restart, room, spawn, version";
+		commandResult = "Available commands: debug, effect, give, god, quit, restart, room, spawn, version";
 	}
 }

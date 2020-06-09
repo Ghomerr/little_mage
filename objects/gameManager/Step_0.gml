@@ -54,7 +54,7 @@ if (isDebugOpen) {
 			case vk_enter:
 				if (string_length(debugText) > 0) {
 					//show_debug_message("Do command : " + debugText);
-					executeCommand(debugText);
+					_executeCommand(debugText);
 				
 					// Command history update
 					lastCmd++;

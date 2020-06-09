@@ -1,6 +1,5 @@
 /// @desc give something to the player
-/// @arg args of the command
-var giveUsage = "Usage: give [coins|hp|staff] (quantity)";
+/// @arg args of the command : give <item> <quantity>
 
 if (argument_count == 1 and array_length_1d(argument0) >= 2) {
 
@@ -88,11 +87,11 @@ if (argument_count == 1 and array_length_1d(argument0) >= 2) {
 			
 		default:
 			commandResultColor = c_red;
-			commandResult = "Unknown give element: " + giveElement + ". " + giveUsage;
+			commandResult = "Unknown give element: " + giveElement + ". Type help give to see the usage.";
 			break;
 	}
 	
 } else {
 	commandResultColor = c_red;
-	commandResult = "Invalid give arguments. " + giveUsage;
+	commandResult = "Invalid give arguments. Type help give to see the usage.";
 }

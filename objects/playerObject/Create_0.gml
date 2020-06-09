@@ -14,6 +14,7 @@ INVUL_TIMER = 100;
 INVUL_INTERVAL = 5;
 
 // Player variables
+canBeHit = true;
 invulCounter = 0;
 invulShaderTransparent = false;
 hasWeapon = false;

@@ -1023,6 +1023,14 @@
             }
         },
         {
+            "Key": "5b99ade1-b883-4350-8719-de23bf4b0a5b",
+            "Value": {
+                "id": "28bbfc4e-4c98-4544-bac2-28c871e9e3e3",
+                "resourcePath": "views\\5b99ade1-b883-4350-8719-de23bf4b0a5b.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "5bfe3eae-b2c8-424d-8a48-e64474e32d51",
             "Value": {
                 "id": "4eaebacf-33d2-4234-a926-9792a2afb881",
@@ -1343,6 +1351,14 @@
             }
         },
         {
+            "Key": "7d53ec51-4efa-4ad4-b98d-903543e54399",
+            "Value": {
+                "id": "80681a52-3a1c-4ed9-80cd-99060de4e756",
+                "resourcePath": "scripts\\godCommand\\godCommand.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "7e2b2a9b-7146-4d42-9a22-b595c27958a8",
             "Value": {
                 "id": "dd07d6a7-180d-435c-bf4b-7bab2b60440a",
@@ -1418,7 +1434,7 @@
             "Key": "84c2a582-2e79-404d-80ca-e839a54c7482",
             "Value": {
                 "id": "29a482f9-8742-4bcd-9ba9-9b99d59cf528",
-                "resourcePath": "scripts\\executeCommand\\executeCommand.yy",
+                "resourcePath": "scripts\\_executeCommand\\_executeCommand.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -2551,6 +2567,14 @@
             }
         },
         {
+            "Key": "eed7f607-5320-47d7-b558-57f512d3855f",
+            "Value": {
+                "id": "196d9899-4f20-4813-837b-a64010536fda",
+                "resourcePath": "scripts\\effectCommand\\effectCommand.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "f02fd8ab-d1ac-44aa-97d2-1e7b74bf856a",
             "Value": {
                 "id": "14e99ecc-a17d-4149-9d17-06627ed6c757",
@@ -2738,9 +2762,11 @@
         "18d7f235-622f-4ff2-9ca9-75021be48b93",
         "30e2abce-f25f-4e7e-aa49-9320626ed26d",
         "4e6e0518-98e3-4e83-b9e8-cd6a5fac58f8",
-        "753293eb-e306-47c8-bc0b-3790722ec1f8",
         "84c2a582-2e79-404d-80ca-e839a54c7482",
+        "753293eb-e306-47c8-bc0b-3790722ec1f8",
+        "eed7f607-5320-47d7-b558-57f512d3855f",
         "d40c851f-ce28-4bd2-b074-d916a3c11174",
+        "7d53ec51-4efa-4ad4-b98d-903543e54399",
         "d98c8f99-4987-4a23-990a-5ce4aa5062ab",
         "e36a8e31-8493-4098-a912-4d7f8e9b80c0",
         "6e4dd311-81c1-4539-adb4-46c5abf80975",

@@ -1,5 +1,5 @@
 /// @desc Go to the named room
-/// @arg args
+/// @arg args of the command : room <name>
 
 if (argument_count == 1 and array_length_1d(argument0) >= 1) {
 
@@ -17,5 +17,5 @@ if (argument_count == 1 and array_length_1d(argument0) >= 1) {
 	
 } else {
 	commandResultColor = c_red;
-	commandResult = "Invalid room arguments. Usage: room [roomName]";
+	commandResult = "Invalid room arguments. Type help room to see the usage.";
 }

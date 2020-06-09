@@ -1,4 +1,5 @@
-var spawnUsage = "Usage: spawn [apple|buffshroom|crate|squirrel] (quantity)";
+/// @desc Spawn something with quantity
+/// @arg args of the command : spawn <entity> (<quantity>)
 
 if (argument_count == 1 and array_length_1d(argument0) >= 2) {
 	
@@ -66,5 +67,5 @@ if (argument_count == 1 and array_length_1d(argument0) >= 2) {
 	
 } else {
 	commandResultColor = c_red;
-	commandResult = "Invalid spawn arguments. " + spawnUsage;
+	commandResult = "Invalid spawn arguments. Type help spawn to see the usage." ;
 }

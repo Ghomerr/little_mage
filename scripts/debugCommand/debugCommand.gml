@@ -1,6 +1,5 @@
 /// @desc Debug the game
-/// @arg args of the command
-var debugUsage = "Usage: debug [player|monsters|walls|fps]";
+/// @arg args of the command : debug <target>
 
 if (argument_count == 1 and array_length_1d(argument0) >= 2) {
 
@@ -46,11 +45,11 @@ if (argument_count == 1 and array_length_1d(argument0) >= 2) {
 			
 		default:
 			commandResultColor = c_red;
-			commandResult = "Unknown debug argument: " + debugArg + ". " + debugUsage;
+			commandResult = "Unknown debug argument: " + debugArg + ". Type help debug to see the usage.";
 			break;
 	}
 	
 } else {
 	commandResultColor = c_red;
-	commandResult = "Invalid debug arguments. " + debugUsage;
+	commandResult = "Invalid debug arguments. Type help debug to see the usage.";
 }
