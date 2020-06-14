@@ -1615,6 +1615,14 @@
             }
         },
         {
+            "Key": "91fb81ef-ed97-4efd-a761-23ebf6e3ee32",
+            "Value": {
+                "id": "2f9baaf1-e6f6-4568-91e2-e819d315fdda",
+                "resourcePath": "scripts\\cointextCommand\\cointextCommand.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "9314e2b0-29f9-47a8-a98b-5d28000f548c",
             "Value": {
                 "id": "36cf291f-aea3-4873-94ed-936b8be4a2ee",
@@ -2763,6 +2771,7 @@
         "30e2abce-f25f-4e7e-aa49-9320626ed26d",
         "4e6e0518-98e3-4e83-b9e8-cd6a5fac58f8",
         "84c2a582-2e79-404d-80ca-e839a54c7482",
+        "91fb81ef-ed97-4efd-a761-23ebf6e3ee32",
         "753293eb-e306-47c8-bc0b-3790722ec1f8",
         "eed7f607-5320-47d7-b558-57f512d3855f",
         "d40c851f-ce28-4bd2-b074-d916a3c11174",

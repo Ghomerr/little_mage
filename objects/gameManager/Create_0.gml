@@ -57,6 +57,7 @@ heartSpriteY = 12;
 heartSpriteX = heartMiddleScreen - (playerObject.initHp * heartSpriteWidth + (playerObject.initHp - 1) * heartSpriteGap ) / 2;
 
 GAME_SPEED = game_get_speed(gamespeed_fps);
+TILE_SIZE = 16;
 
 // Debug
 playerHasControl = false;

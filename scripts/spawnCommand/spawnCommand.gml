@@ -13,8 +13,8 @@ if (argument_count == 1 and array_length_1d(argument0) >= 2) {
 	// Get complete spawn data
 	var entityIndex = 0;
 	var entityLayer = 0;
+	
 	switch (spawnName) {
-		
 		case "apple":
 			entityIndex = appleObject;
 			entityLayer = global.projLayer;
@@ -36,35 +36,42 @@ if (argument_count == 1 and array_length_1d(argument0) >= 2) {
 			break;
 	}
 	
-	// Init position of the spawn
-	with (playerObject) {
-		var posX = (sign(image_xscale) ? ceil (x / 16) + 1 : floor(x / 16) - 1) * 16;
-		var posY = y - 16;
+	if (entityIndex != 0 and entityLayer != 0) {
+		// Init position of the spawn
+		with (playerObject) {
+			var posX = (sign(image_xscale) ? ceil (x / gameManager.TILE_SIZE) + 1 : floor(x / gameManager.TILE_SIZE) - 1) * gameManager.TILE_SIZE;
+			var posY = ceil(y / gameManager.TILE_SIZE) * gameManager.TILE_SIZE;
 	
-		if (quantity > 1) {
+			if (quantity > 1) {
 		
-			// Compute rows and columns of the spawn
-			var spawnCounter = 0;
-			var rowsNum = floor(quantity / 10) + 1;
+				// Compute rows and columns of the spawn
+				var spawnCounter = 0;
+				var rowsNum = floor(quantity / 10) + 1;
 		
-			for (var row = 0 ; row < rowsNum ; row++) {
-				for (var col = 0 ; col < 10 and spawnCounter < quantity; col++) {
-					var deltaX = posX + sign(image_xscale) * col * 16;
-					var deltaY = posY - row * 16;
-					instance_create_layer(deltaX, deltaY, entityLayer, entityIndex);
-					spawnCounter++;
+				for (var row = 0 ; row < rowsNum ; row++) {
+					for (var col = 0 ; col < 10 and spawnCounter < quantity; col++) {
+						var deltaX = posX + sign(image_xscale) * col * gameManager.TILE_SIZE;
+						var deltaY = posY - row * gameManager.TILE_SIZE;
+						if (!place_meeting(deltaX, deltaY, wallObject)) {
+							instance_create_layer(deltaX, deltaY, entityLayer, entityIndex);
+						}
+						spawnCounter++;
+					}
+				}
+			} else {
+				// Spawn only on instance
+				if (!place_meeting(posX, posY, wallObject)) {
+					instance_create_layer(posX, posY, entityLayer, entityIndex);
 				}
 			}
-		
-		} else {
-			// Spawn only on instance
-			instance_create_layer(posX, posY, entityLayer, entityIndex);
 		}
-	}
 		
-	commandResultColor = c_yellow;
-	commandResult = string(quantity) + " " + spawnName + (quantity > 1 ? "s" : "") + " spawned";
-	
+		commandResultColor = c_yellow;
+		commandResult = string(quantity) + " " + spawnName + (quantity > 1 ? "s" : "") + " spawned";
+	} else {
+		commandResultColor = c_red;
+		commandResult = "Unknown entity to spawn. Type help spawn to see the usage." ;
+	}
 } else {
 	commandResultColor = c_red;
 	commandResult = "Invalid spawn arguments. Type help spawn to see the usage." ;
