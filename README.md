@@ -18,14 +18,7 @@ Play it on itch.io : https://ghomerr.itch.io/magic-hatventure
 * Action : right mouse button or gamepad `B` or `O` button
 * Hats wheel : `shift`  or gamepad left trigger
 
-## Debug controls :
-* `F2` : enable debug
-* `F3` : in debug, display walls hitboxes
-* `F4` : in debug, add or remove staff
-* `M` : in debug, display monsters hitboxes
-* `J` : in debug, make squirrels jump
-* `K` : in debug, make squirrels move
-* Numpad `+` : add 5 FPS to the current debug FPS value
-* Numpad `-` : remove 5 FPS from the current debug FPS value
-* `R` : restart the game
-* `CTRL + F` : toggle fullscreen mode
+## Debug commands :
+* Open debug dialog using the `home` key
+* Type `help` to see available commands
+* Type `help <command>` to see a specific command usage
