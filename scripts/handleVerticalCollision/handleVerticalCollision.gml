@@ -1,5 +1,9 @@
 /// @desc Vertical collision
 /// @arg nextY value with vsp
+/// @arg ignorePlatform optional flag to pass through platforms
+
+var nextY = argument[0];
+var ignorePlatform = argument_count >= 2 ? argument[1] : false;
 
 // Fix issue #14 :
 // Check an integer value of vsp to avoid boucing gravity check
@@ -17,10 +21,10 @@ if (wall) {
 }
 
 // Check if collision should occur vertically
-if (place_meeting(x, argument0, wallObject)) {
+if (place_meeting(x, nextY, wallObject)) {
 	
 	// If the wall is a platform and player is coming from beneath, no collision
-	if (!isCollidingPlatform(x, argument0)) {
+	if (!isCollidingPlatform(x, nextY, ignorePlatform)) {
 		// Pixel perfect position
 		while(!place_meeting(x, y + sign(vsp), wallObject)) {
 			y += sign(vsp);

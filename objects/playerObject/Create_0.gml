@@ -30,7 +30,11 @@ isJumping = true; // jumping flag (true to avoid creating player air-jump)
 jumpBuffer = 0; // jump buffer to handle jump before the actual jump
 coyoteCounter = 0;
 hasControl = false; // define if player can do inputs
-move = 0; // movement orientation
+move = 0; // horizontal movement orientation
+vMove = 0; // vertical movement
+downCounter = 0;
+downMaxTime = 30; // max time pressing down to go through a platform
+ignorePlatform = false;
 
 // Death magic variables
 deathHearts = 0; // total of death hearts

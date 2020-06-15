@@ -26,28 +26,52 @@ if (isVisible) {
 			keyLeft = keyboard_check(ord("Q")) or keyboard_check(ord("A"));
 			keyRight = keyboard_check(ord("D"));
 			keyJump = keyboard_check_pressed(vk_space);
+			keyUp = keyboard_check(ord("Z")) or keyboard_check(ord("W"));
+			keyDown = keyboard_check(ord("S"));
 			hAxis = gamepad_axis_value(0, gp_axislh);
+			vAxis = gamepad_axis_value(0, gp_axislv);
 
 			// Check if keyboard is used
-			if (keyLeft or keyRight or keyJump) {
+			if (keyLeft or keyRight or keyJump or keyDown or keyUp) {
 				controller = false;
 			}
 			// Check if gamepad is used and get gamepad direction
-			if (abs(hAxis) > gpMin) {
+			if (abs(hAxis) > gpMin or abs(vAxis) > gpMin) {
 				keyLeft = abs(min(hAxis, 0));
 				keyRight = max(hAxis, 0);
+				keyUp = abs(min(vAxis, 0));
+				keyDown = max(vAxis, 0);
 				controller = true;
 			}
+			// Gamepage buttons check
 			if (gamepad_button_check_pressed(0, gp_face1)) {
 				controller = true;
 				keyJump = true;
 			}
 
 			move = keyRight - keyLeft;
+			vMove = keyUp - keyDown;
 		} else {
 			keyLeft = 0;
 			keyRight = 0;
 			keyJump = 0;
+			keyUp = 0;
+			keyDown = 0;
+		}
+		
+		// Handle player pressing down to go through a platform
+		if (isGrounded and vMove < 0) {
+			// If the down counter is under the timer
+			if (downCounter < downMaxTime) {
+				downCounter++;
+			} else if (!ignorePlatform) {
+				// When reached, and if the flag is not set yet, update it
+				ignorePlatform = true;
+			}
+		} else if (downCounter > 0) {
+			// If the player don't move down or don't at all
+			// if the down counter still has a value
+			downCounter = 0;
 		}
 
 		initMovement();
@@ -63,7 +87,7 @@ if (isVisible) {
 		}
 
 		var wasGrounded = isGrounded;
-		var isVerticallyColliding = handleVerticalCollision(nextY);
+		var isVerticallyColliding = handleVerticalCollision(nextY, ignorePlatform);
 		if (isVerticallyColliding) {
 			if (debugColor == c_blue) {
 				debugColor = c_purple;	
@@ -78,7 +102,7 @@ if (isVisible) {
 		if (!isHorizontallyColliding and !isVerticallyColliding) {
 			if (place_meeting(nextX, nextY, wallObject)) {
 				// Check if player isn't colliding a platform from beneath
-				if (!isCollidingPlatform(nextX, nextY)) {
+				if (!isCollidingPlatform(nextX, nextY, ignorePlatform)) {
 					while(!place_meeting(x + sign(hsp), y + sign(vsp), wallObject)) {
 						x += sign(hsp);
 						y += sign(vsp);
@@ -91,9 +115,12 @@ if (isVisible) {
 			}
 		}
 
-		// Play landing sound only when landing
+		// On the first landing step
 		if (!wasGrounded and isGrounded) {
+			ignorePlatform = false; // Reset ignore platform when grounded
 			isBeingHit = false; // reset being hit when landing
+			
+			// Play landing sound only when landing
 			audio_sound_pitch(landingSound, choose(0.7, 1.0, 1.3));
 			audio_play_sound(landingSound, 3, false);
 			// Make dusts
