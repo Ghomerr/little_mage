@@ -1,6 +1,9 @@
 /// @desc Create a stone pillard
 with(instance_create_layer(x, y, layer, stonePillarObject)) {
 	
+	audio_sound_pitch(stonePillarSound, choose(0.9, 1.0, 1.1));
+	audio_play_sound(stonePillarSound, 2, false);
+	
 	// Get the angle from the pillar source
 	image_angle = other.image_angle;
 	

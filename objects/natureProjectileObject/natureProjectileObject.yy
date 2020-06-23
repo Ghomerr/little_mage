@@ -31,7 +31,7 @@
             "mvc": "1.0",
             "objectId": "7f34e096-7366-457c-817b-7dcf13435218",
             "propertyId": "9a62caa3-0f43-4e92-9ced-037540617723",
-            "value": "manaBoltSound"
+            "value": "natureProjectileSound"
         },
         {
             "id": "90c80541-276e-436b-8dd0-4a33d6f204e1",

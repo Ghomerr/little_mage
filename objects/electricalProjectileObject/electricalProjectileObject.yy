@@ -96,6 +96,14 @@
             "objectId": "7f34e096-7366-457c-817b-7dcf13435218",
             "propertyId": "fc53186e-4f6e-42ee-9e34-07997381047c",
             "value": "3"
+        },
+        {
+            "id": "465366d9-059d-438b-80e1-aed6725d3b5b",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "7f34e096-7366-457c-817b-7dcf13435218",
+            "propertyId": "9a62caa3-0f43-4e92-9ced-037540617723",
+            "value": "electricalProjectileSound"
         }
     ],
     "parentObjectId": "7f34e096-7366-457c-817b-7dcf13435218",

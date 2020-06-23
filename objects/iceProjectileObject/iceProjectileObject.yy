@@ -56,6 +56,14 @@
             "objectId": "7f34e096-7366-457c-817b-7dcf13435218",
             "propertyId": "37f7e140-883c-4f91-94d2-af0f5cac5fd8",
             "value": "60"
+        },
+        {
+            "id": "541061d6-4b09-4e15-a575-0748139fe199",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "7f34e096-7366-457c-817b-7dcf13435218",
+            "propertyId": "9a62caa3-0f43-4e92-9ced-037540617723",
+            "value": "iceProjectileSound"
         }
     ],
     "parentObjectId": "7f34e096-7366-457c-817b-7dcf13435218",

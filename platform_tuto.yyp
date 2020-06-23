@@ -495,6 +495,14 @@
             }
         },
         {
+            "Key": "2cf18998-cee3-4773-95b3-9f3ba8be25a9",
+            "Value": {
+                "id": "84b66084-ba28-437f-ac8e-8933108c9ea6",
+                "resourcePath": "sounds\\stoneProjectileSound\\stoneProjectileSound.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "2d61015e-dbf6-412c-981d-bf82952702e2",
             "Value": {
                 "id": "f44de49f-b465-4fca-a07f-cc9d3348d0d3",
@@ -636,6 +644,14 @@
                 "id": "c2acb364-70f5-435d-8a6f-254f9c9a4d91",
                 "resourcePath": "views\\365df632-f2b4-42e5-abe9-9a726dd4677a.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "37d13d1e-5ffc-4dff-a071-27110769783d",
+            "Value": {
+                "id": "86bf8ba8-f3bb-4b74-acdd-f86f4785a7ca",
+                "resourcePath": "sounds\\electricalProjectileSound\\electricalProjectileSound.yy",
+                "resourceType": "GMSound"
             }
         },
         {
@@ -1007,6 +1023,14 @@
             }
         },
         {
+            "Key": "593a28bd-577a-415c-bed2-f4449d620ac3",
+            "Value": {
+                "id": "939f24ac-9932-4dd1-948b-e50ca5bceb35",
+                "resourcePath": "sounds\\fireProjectileSound\\fireProjectileSound.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "5a3e29aa-acc3-432e-9011-e27182bcc991",
             "Value": {
                 "id": "3fbaa19b-11f5-4750-bf8c-a7cd2b20c68b",
@@ -1052,6 +1076,14 @@
                 "id": "e2b8a819-19bc-42fb-9128-e5df51d4181b",
                 "resourcePath": "sprites\\playerJumpingSprite\\playerJumpingSprite.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "5d917810-8234-4fc4-a8d4-607d45e8f7ed",
+            "Value": {
+                "id": "29403495-25ab-4aa8-a47a-4289aa9a03e3",
+                "resourcePath": "sounds\\iceProjectileSound\\iceProjectileSound.yy",
+                "resourceType": "GMSound"
             }
         },
         {
@@ -1156,6 +1188,14 @@
                 "id": "fd43f8f1-ea50-4aed-8d99-c0fb6ad3a2ce",
                 "resourcePath": "views\\65f65dd6-324c-43ec-a6f2-bac415c50008.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "664a471b-67a3-45a4-b7bb-fa99ddd1ab6e",
+            "Value": {
+                "id": "a7958776-3090-44e7-a602-2358657347b7",
+                "resourcePath": "sounds\\natureProjectileSound\\natureProjectileSound.yy",
+                "resourceType": "GMSound"
             }
         },
         {
@@ -2468,6 +2508,14 @@
                 "id": "ca6af8d9-3bc3-477f-907d-c29c8aa20fbb",
                 "resourcePath": "scripts\\createEnums\\createEnums.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "e5ea2abf-0ead-400f-99b8-ac7a846a5eb2",
+            "Value": {
+                "id": "84964f0d-4a12-473c-9a5e-50f1b4cf10bb",
+                "resourcePath": "sounds\\stonePillarSound\\stonePillarSound.yy",
+                "resourceType": "GMSound"
             }
         },
         {
