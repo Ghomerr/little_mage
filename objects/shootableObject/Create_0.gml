@@ -20,6 +20,8 @@ elecShockCounter = 0;
 
 spriteWidth = (bbox_right - bbox_left) * size;
 spriteHalfWidth = spriteWidth / 2;
+spriteHeight = (bbox_bottom - bbox_top) * size;
+spriteHalfHeight = spriteHeight / 2;
 
 // If collidable, create a wall instance scaled to this instance
 if (isCollidable) {

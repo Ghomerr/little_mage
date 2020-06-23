@@ -18,6 +18,9 @@ if (isDebugEnabled) {
 	draw_rectangle_colour(bbox_left,bbox_top,bbox_right,bbox_bottom,debugColor,debugColor,debugColor,debugColor,false);
 	draw_set_alpha(1);
 	
+	drawSetText(c_yellow, signPostFont, fa_center, fa_bottom);
+	draw_text(x, y - spriteHalfHeight, string(id));
+	
 	// Draw spriteWidth inside the collision box
 	//draw_set_color(c_black);
 	//var testValue = sign(hsp) * spriteWidth / 2;

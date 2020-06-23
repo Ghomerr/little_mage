@@ -9,5 +9,7 @@ if (room != menuRoom) {
 	file_text_write_real(file, global.kills);
 	file_text_write_real(file, global.coins);
 	file_text_write_real(file, playerObject.currentHat);
+	file_text_write_real(file, playerObject.hp);
+	file_text_write_real(file, playerObject.deathHearts);
 	file_text_close(file);
 }
