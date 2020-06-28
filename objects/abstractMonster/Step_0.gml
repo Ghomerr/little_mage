@@ -50,6 +50,7 @@ if (!isDying) {
 			// Spread electrical shock
 			if (other.elecShockCounter > 0 and elecShockCounter <= 0) {
 				elecShockCounter = other.elecShockCounter;
+				audio_play_sound(electricalBurstSound, 3, false);
 			}
 		}
 	}

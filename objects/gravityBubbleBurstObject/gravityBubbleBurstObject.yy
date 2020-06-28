@@ -4,7 +4,16 @@
     "mvc": "1.0",
     "name": "gravityBubbleBurstObject",
     "eventList": [
-        
+        {
+            "id": "363eee50-afda-4bb5-9b9c-307f29d46f30",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 0,
+            "m_owner": "181641d9-9e3b-4112-8467-fe005017c24c"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,

@@ -271,6 +271,14 @@
             }
         },
         {
+            "Key": "17239357-de04-4bdd-9045-659215b38a6a",
+            "Value": {
+                "id": "ec522f1a-2545-4b1b-985c-c2eb063b0452",
+                "resourcePath": "sounds\\gravityBurstSound\\gravityBurstSound.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "17720fa4-f3a6-40c7-8589-e3964f0d7d67",
             "Value": {
                 "id": "33ca82d8-9b71-4c3e-8a9d-44fff434d455",
@@ -1471,6 +1479,14 @@
             }
         },
         {
+            "Key": "828878a9-af3d-452c-a07a-ce8121660823",
+            "Value": {
+                "id": "1f2b599c-997c-4bf6-bfb9-96e64a1a54f9",
+                "resourcePath": "sounds\\gravityProjectileSound\\gravityProjectileSound.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "831d5b43-4baa-49bf-960e-299e5ed55aa9",
             "Value": {
                 "id": "758e011d-3648-4c63-aaa6-6570aa812bdc",
@@ -2028,6 +2044,14 @@
                 "id": "7f05ddbe-55e8-4e6f-8634-16fb3df7679e",
                 "resourcePath": "sprites\\squirrelRunningSprite\\squirrelRunningSprite.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "b50ef65c-eb47-4c9c-8bfe-42b67da07df7",
+            "Value": {
+                "id": "799c7d52-d96c-4ae4-b9a9-774c226e32c8",
+                "resourcePath": "sounds\\windTornadoSound\\windTornadoSound.yy",
+                "resourceType": "GMSound"
             }
         },
         {

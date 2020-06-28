@@ -66,6 +66,14 @@
             "objectId": "7f34e096-7366-457c-817b-7dcf13435218",
             "propertyId": "37f7e140-883c-4f91-94d2-af0f5cac5fd8",
             "value": "60"
+        },
+        {
+            "id": "e0414a75-f95e-4740-a611-6a74bf8752e3",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "7f34e096-7366-457c-817b-7dcf13435218",
+            "propertyId": "9a62caa3-0f43-4e92-9ced-037540617723",
+            "value": "gravityProjectileSound"
         }
     ],
     "parentObjectId": "7f34e096-7366-457c-817b-7dcf13435218",

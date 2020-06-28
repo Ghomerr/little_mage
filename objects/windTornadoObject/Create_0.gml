@@ -23,3 +23,6 @@ image_xscale = move;
 if (!hasCollidedLivingEntity and place_meeting(x, y, wallObject)) {
 	initWindProjectilePosition(x, y);
 }
+
+audio_sound_pitch(windTornadoSound, choose(0.9, 1.0, 1.1));
+audio_play_sound(windTornadoSound, 5, false);

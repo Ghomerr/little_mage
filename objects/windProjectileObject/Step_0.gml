@@ -1,4 +1,4 @@
-/// @description ?
+/// @description Emit particles
 
 // Inherit the parent event
 event_inherited();
