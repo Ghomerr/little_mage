@@ -36,9 +36,6 @@ if (playerObject.hasControl) {
 			// Set firing cooldown
 			other.firingDelay = cooldown;
 			
-			// Play sound
-			audio_sound_pitch(sound, choose(0.9, 1.0, 1.1));
-			audio_play_sound(sound, 5, false);
 			shooter = playerObject.id;
 			prjSpeed = DEFAULT_SPEED;
 			direction = other.image_angle + random_range(-other.STAFF_DISPERSION, other.STAFF_DISPERSION);

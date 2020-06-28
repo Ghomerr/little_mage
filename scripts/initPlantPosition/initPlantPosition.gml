@@ -32,7 +32,7 @@ switch (collidingAngle) {
 }
 
 // If the plant should follow its source
-if (followInstance) {
+if (isShootableInstance) {
 	image_angle = angleRound(projectileAngle + ANGLE.OPPOSITE);
 	posXOffset = x - collidingInstance.x;
 	posYOffset = y - collidingInstance.y;

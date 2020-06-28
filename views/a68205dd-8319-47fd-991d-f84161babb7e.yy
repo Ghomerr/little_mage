@@ -11,7 +11,9 @@
         "593a28bd-577a-415c-bed2-f4449d620ac3",
         "664a471b-67a3-45a4-b7bb-fa99ddd1ab6e",
         "5d917810-8234-4fc4-a8d4-607d45e8f7ed",
-        "37d13d1e-5ffc-4dff-a071-27110769783d"
+        "37d13d1e-5ffc-4dff-a071-27110769783d",
+        "1de0d786-2d0c-4352-bf94-22254e6b72a5",
+        "beeada54-89ef-4e8d-b935-71e769f2ca0b"
     ],
     "filterType": "GMSound",
     "folderName": "Magic",

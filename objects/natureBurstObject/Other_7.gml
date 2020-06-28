@@ -8,7 +8,7 @@ if (instance_exists(collidingInstance)) {
 	with(instance_create_layer(x, y, layer, naturePlantObject)) {
 		// init plant variables
 		collidingInstance = other.collidingInstance;
-		followInstance = other.followInstance;
+		isShootableInstance = other.isShootableInstance;
 		collidingAngle = other.collidingAngle;
 		onLivingInstance = other.hasCollidedLivingEntity;
 		projectileAngle = other.image_angle;

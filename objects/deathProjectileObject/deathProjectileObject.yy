@@ -53,6 +53,16 @@
             "enumb": 10,
             "eventtype": 7,
             "m_owner": "1fa866bf-8aef-4e62-9887-2ef1d494618d"
+        },
+        {
+            "id": "05c19ab8-5228-4ea7-96d3-c1c6f240d6e8",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 11,
+            "eventtype": 7,
+            "m_owner": "1fa866bf-8aef-4e62-9887-2ef1d494618d"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
@@ -79,7 +89,7 @@
             "mvc": "1.0",
             "objectId": "7f34e096-7366-457c-817b-7dcf13435218",
             "propertyId": "37f7e140-883c-4f91-94d2-af0f5cac5fd8",
-            "value": "45"
+            "value": "90"
         },
         {
             "id": "e12e2565-ebc6-438c-9c39-41f90e561c1a",
@@ -96,6 +106,14 @@
             "objectId": "7f34e096-7366-457c-817b-7dcf13435218",
             "propertyId": "5900b3cd-7f33-47e6-878c-0b3c34a2b41a",
             "value": "True"
+        },
+        {
+            "id": "3e299aad-d910-4898-9ce3-fe0d1bb1f232",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "7f34e096-7366-457c-817b-7dcf13435218",
+            "propertyId": "9a62caa3-0f43-4e92-9ced-037540617723",
+            "value": "deathProjectileSound"
         }
     ],
     "parentObjectId": "7f34e096-7366-457c-817b-7dcf13435218",

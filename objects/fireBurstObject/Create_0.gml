@@ -1,7 +1,7 @@
 /// @description Burst particles and embers
 
 // Apply burnt effect directly
-if (followInstance) {
+if (isShootableInstance) {
 	applyBurntEffect(collidingInstance, playerObject.id, burntTimer);
 }
 

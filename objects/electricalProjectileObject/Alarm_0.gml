@@ -1,3 +1,2 @@
-/// @description Destroy projectile
-
+/// @description Destroy projectile 
 instance_change(burstObject, true);

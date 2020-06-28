@@ -1,7 +1,7 @@
 /// @description Init variables
 
 state = PLANT_STATE.GROWTH;
-followInstance = false;
+isShootableInstance = false;
 onLivingInstance = false;
 collidingInstance = noone;
 collidingAngle = ANGLE.MIN;

@@ -343,6 +343,14 @@
             }
         },
         {
+            "Key": "1de0d786-2d0c-4352-bf94-22254e6b72a5",
+            "Value": {
+                "id": "1a8c4087-af3c-47ba-810e-452f5e2c71a8",
+                "resourcePath": "sounds\\deathProjectileSound\\deathProjectileSound.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "1e7d733b-95e2-4fd3-ab58-efe46027fa59",
             "Value": {
                 "id": "bb9d266a-db73-4dad-95e6-f3e751f65965",
@@ -2100,6 +2108,14 @@
                 "id": "5f5c1500-7c22-406f-8cf5-2ffedc38b1c5",
                 "resourcePath": "sprites\\signPostLeftSprite\\signPostLeftSprite.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "beeada54-89ef-4e8d-b935-71e769f2ca0b",
+            "Value": {
+                "id": "6a5f636c-8da9-433c-9551-f86ce009fb4f",
+                "resourcePath": "sounds\\electricalBurstSound\\electricalBurstSound.yy",
+                "resourceType": "GMSound"
             }
         },
         {

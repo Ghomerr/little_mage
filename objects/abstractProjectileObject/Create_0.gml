@@ -10,7 +10,10 @@ vsp = 0;
 vspRatio = 0;
 MAX_FALL_SPEED = 3;
 
-followInstance = false;
+isShootableInstance = false;
 collidingInstance = noone;
 hasCollidedLivingEntity = false;
 projectileDelay = 20;
+
+// Play sound
+event_user(1);

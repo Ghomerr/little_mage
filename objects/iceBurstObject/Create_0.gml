@@ -5,14 +5,16 @@ event_inherited();
 
 // Apply frozen effect to collided instance
 frozenTimer = 180;
-with (collidingInstance) {
+if (isShootableInstance) {
+	with (collidingInstance) {
 	
-	// Remove burnt effect
-	if (burntCounter > 0) {
-		burntCounter = 0;
-	} else {
-		// Apply frozen only if not burnt
-		frozenCounter = other.frozenTimer;	
+		// Remove burnt effect
+		if (burntCounter > 0) {
+			burntCounter = 0;
+		} else {
+			// Apply frozen only if not burnt
+			frozenCounter = other.frozenTimer;	
+		}
 	}
 }
 

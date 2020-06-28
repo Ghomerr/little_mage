@@ -31,10 +31,10 @@ if (place_meeting(argument1, argument2, argument0)) {
 		if (avoidWalls and collidingInstance.wall) {
 			return noone;
 		}
-		followInstance = true;
+		isShootableInstance = true;
 		hasCollidedLivingEntity = collidingInstance.isLivingEntity;
 	} else {
-		followInstance = false;
+		isShootableInstance = false;
 		hasCollidedLivingEntity = false;
 	}
 	self.collidingInstance = collidingInstance;
@@ -66,7 +66,7 @@ if (place_meeting(argument1, argument2, argument0)) {
 		prjSpeed = 0; // stop projectile
 		
 		// Change into a burst depending of
-		if (followInstance and onEntityBurstObject != noone) {
+		if (isShootableInstance and onEntityBurstObject != noone) {
 			instance_change(onEntityBurstObject, true);
 		} else if (burstObject) {
 			instance_change(burstObject, true);

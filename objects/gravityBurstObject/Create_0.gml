@@ -4,7 +4,7 @@
 event_inherited();
 
 // If the target is a shootable instance
-if (followInstance) {
+if (isShootableInstance) {
 	life = 300;
 	isDone = false;
 	collidingInstance.inGravityBubble = true;

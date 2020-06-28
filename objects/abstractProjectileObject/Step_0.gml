@@ -44,5 +44,7 @@ if (isFalling or prjSpeed > 0) {
 		// Update position if no collision
 		x = nextX;
 		y = nextY;
+	} else {
+		event_user(2); // notify hitting a wall	
 	}
 }
