@@ -1375,6 +1375,14 @@
             }
         },
         {
+            "Key": "7b91151a-8f4e-4955-baac-221f1f8cad4e",
+            "Value": {
+                "id": "b8c3dd60-8c98-4d8f-83d1-b5dc96e2c2ac",
+                "resourcePath": "sounds\\natureRoomMusic\\natureRoomMusic.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "7bc75239-0cc1-4c5b-ab9f-02bbad12ea8c",
             "Value": {
                 "id": "d34dfcce-1269-4977-85d6-0febfb3f969f",
@@ -1815,6 +1823,14 @@
             }
         },
         {
+            "Key": "9bd7ca6e-706d-4873-9503-2e55a194022a",
+            "Value": {
+                "id": "3428e8d8-652e-42a7-bab7-1b061e4243cf",
+                "resourcePath": "scripts\\burstLeafParticles\\burstLeafParticles.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "9bf46517-2538-48ae-a80a-5e77e9f9e30f",
             "Value": {
                 "id": "c630e36a-2ba9-4479-abcd-61a6b2339eda",
@@ -1828,6 +1844,14 @@
                 "id": "c49c84d0-ee31-4a79-ad03-27c141ebb2c7",
                 "resourcePath": "objects\\squirrelObject\\squirrelObject.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "9d8b952a-6206-4cd0-b3b0-398daf7feaba",
+            "Value": {
+                "id": "c451042e-ed2d-425d-a327-3f6270137a15",
+                "resourcePath": "scripts\\burstSnowParticles\\burstSnowParticles.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -1892,6 +1916,14 @@
                 "id": "7fe22c98-4739-4221-8ec2-180c4a4b43ec",
                 "resourcePath": "sprites\\acornSprite\\acornSprite.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "a42da00f-23d0-43b5-8b69-141b501346ef",
+            "Value": {
+                "id": "54d5ad1b-a21f-4d64-9562-dfd7513f12ab",
+                "resourcePath": "scripts\\emitExplosionParticles\\emitExplosionParticles.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -2036,6 +2068,14 @@
                 "id": "903f0f57-a6d2-413e-a596-c8fbe859c56c",
                 "resourcePath": "sounds\\footStep2Sound\\footStep2Sound.yy",
                 "resourceType": "GMSound"
+            }
+        },
+        {
+            "Key": "b46f9375-0569-4681-8468-7d69a930f506",
+            "Value": {
+                "id": "c83becaf-868a-4ec2-87ec-f6f9467b37b1",
+                "resourcePath": "views\\b46f9375-0569-4681-8468-7d69a930f506.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -2380,6 +2420,14 @@
                 "id": "d85c88b4-9ea0-4903-9deb-6691f64b9c20",
                 "resourcePath": "views\\d40dee37-6b6a-47e0-ac1d-c1dca1ed21c9.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "d466a3fc-3f81-4e3a-a931-cfb30c1252d0",
+            "Value": {
+                "id": "9a52d805-824f-41fc-8aaa-5fcc45731f4c",
+                "resourcePath": "scripts\\displayHatChangeEffect\\displayHatChangeEffect.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -2829,6 +2877,10 @@
         "ce25e0ed-6b67-4783-b238-7f637dd49419",
         "ab1c3191-af95-4181-8828-716d7ced2c01",
         "0ce2f648-dc7d-4b8e-a473-a272f9dc5feb",
+        "a42da00f-23d0-43b5-8b69-141b501346ef",
+        "9bd7ca6e-706d-4873-9503-2e55a194022a",
+        "9d8b952a-6206-4cd0-b3b0-398daf7feaba",
+        "d466a3fc-3f81-4e3a-a931-cfb30c1252d0",
         "868d601d-1635-4df2-87b2-0af6e99e2297",
         "75d5c437-78ed-46c7-9237-6de1f320c0d0",
         "84eee432-9cfd-4939-889d-0987fd9be3c9",

@@ -9,7 +9,7 @@ if (file_exists(SAVEFILE)) {
 	global.coins = file_text_read_real(file);
 	afterUpdateCoinsCounter();
 	playerObject.selectedHat = file_text_read_real(file);
-	with (playerObject) selectNewHat();
+	with (playerObject) selectNewHat(false);
 	playerObject.hp = file_text_read_real(file);
 	playerObject.deathHearts = file_text_read_real(file);
 	file_text_close(file);

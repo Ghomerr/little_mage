@@ -20,6 +20,7 @@ part_type_alpha3(fireExplosion, 1, 0.75, 0);
 part_type_size(fireExplosion, 1, 2, -0.01, 0.02);
 part_type_life(fireExplosion, 30, 30);
 part_type_speed(fireExplosion, 0.25, 1, -0.01, 0.02);
+part_type_direction(fireExplosion, ANGLE.MIN, ANGLE.MAX, 0, 0);
 
 // Snow particles type
 snow = part_type_create();

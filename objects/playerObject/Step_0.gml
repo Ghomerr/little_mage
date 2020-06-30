@@ -17,7 +17,7 @@ if (isVisible) {
 			} else if (keyboard_check_released(vk_shift) or gamepad_button_check_released(0, gp_shoulderlb)) {
 				showHatsWheel = false;
 			
-				selectNewHat();
+				selectNewHat(true);
 			}
 		}
 

@@ -1,3 +1,6 @@
+/// @desc select new hat
+/// @arg display change effect
+
 // If a hat is selected
 if (selectedHat != HATS.NONE) {
 	if (selectedHat == currentHat) {
@@ -10,6 +13,9 @@ if (selectedHat != HATS.NONE) {
 		currentHat = selectedHat;
 		enableColorSwapping = true;
 		currentPalette = PLAYER_PALETTES[currentHat];
+		if (argument0) {
+			displayHatChangeEffect();
+		}
 	}
 	
 	// If player has weapon, change current sprite
