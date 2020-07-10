@@ -39,10 +39,13 @@ if (life > 0) {
 	// Emit dust particles
 	if (irandom_range(1, 5) == 1) {
 		var partDir = isGrounded ? choose(ANGLE.RIGHT, ANGLE.LEFT) : irandom_range(ANGLE.UP - 30, ANGLE.UP + 30);
-		var partGrav = move ? ANGLE.LEFT : ANGLE.RIGHT;
-		part_type_direction(pm.windDust, partDir, partDir, 0, 0);
-		if (isGrounded) part_type_gravity(pm.windDust, 0.02, partGrav);
-		part_particles_create(pm.ps, x + irandom_range(-2, 2), bbox_bottom + irandom_range(-1, 1), pm.windDust, 1);
+		emitWindDustParticles(
+			partDir, partDir,
+			isGrounded,
+			2, 1,
+			x, bbox_bottom, 
+			1
+		);
 	}
 	
 } else if (!isDying) {

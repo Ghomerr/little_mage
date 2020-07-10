@@ -16,9 +16,4 @@ if (isShootableInstance) {
 	life = 0;
 }
 
-// Burst particles
-part_type_speed(pm.gravitySparkle, 0.5, 0.5, -0.5, 0);
-repeat (irandom_range(4, 6)) {
-	part_particles_create(pm.ps, x + irandom_range(-4, 4), y + irandom_range(-4, 4), pm.gravitySparkle, 1);
-}
-
+emitGravityParticles(1, 2, irandom_range(4, 6), 4, 4);

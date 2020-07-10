@@ -28,13 +28,9 @@ if (!isDone) {
 							}
 						
 							if (hsp != 0 or vsp != 0) {
-								// Emit particles
 								if (irandom_range(1, 5) == 5) {
-									part_particles_create(pm.ps, 
-										x + irandom_range(-other.spriteHalfWidth, other.spriteHalfWidth), 
-										y + irandom_range(-other.spriteHalfHeight, other.spriteHalfHeight), 
-										pm.gravitySparkle, 1);
-								}	
+									emitGravityParticles(0, 0, 1, other.spriteHalfWidth, other.spriteHalfHeight);
+								}
 							}
 						} else {
 							hsp = 0;

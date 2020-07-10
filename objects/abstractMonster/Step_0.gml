@@ -69,7 +69,7 @@ if (!isDying) {
 	}
 	
 	if (elecShockCounter > 0 and elecShockCounter % 60 == 0) {
-		emitElectricalParticles(4, 8, spriteWidth);	
+		emitElectricalParticles(4, 8, spriteWidth, 1, 2);	
 	}
 	
 } else {

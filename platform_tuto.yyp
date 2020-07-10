@@ -343,6 +343,14 @@
             }
         },
         {
+            "Key": "1b9216f0-1d56-4293-8264-f247d366221f",
+            "Value": {
+                "id": "7068965b-7e37-4700-883e-9790aad77a09",
+                "resourcePath": "scripts\\emitWindDustParticles\\emitWindDustParticles.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "1c2ead76-bd22-46db-950e-e972c1dee0f7",
             "Value": {
                 "id": "457431ca-44f7-4a95-ab55-7d93f744f951",
@@ -2455,6 +2463,14 @@
             }
         },
         {
+            "Key": "d7176b03-3a3f-442f-a7d4-07d2789b1c6a",
+            "Value": {
+                "id": "e19794a2-e708-4498-836c-87b41ee93a33",
+                "resourcePath": "scripts\\emitStoneParticles\\emitStoneParticles.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "d75a42fa-4279-4495-9276-89279fc73c65",
             "Value": {
                 "id": "1154f205-e072-42bb-9f86-f5ad4998ce6a",
@@ -2524,6 +2540,14 @@
                 "id": "845152cb-d9cd-46e8-a8ee-0a08f03b4905",
                 "resourcePath": "views\\dedba9d2-4f29-476a-b998-502d6dff83da.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "df75670c-9e7b-49fb-91e7-8b1879c83421",
+            "Value": {
+                "id": "9e2f15db-f8b0-452a-aa07-bc7a8ab6f912",
+                "resourcePath": "scripts\\emitGravityParticles\\emitGravityParticles.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -2881,6 +2905,9 @@
         "9bd7ca6e-706d-4873-9503-2e55a194022a",
         "9d8b952a-6206-4cd0-b3b0-398daf7feaba",
         "d466a3fc-3f81-4e3a-a931-cfb30c1252d0",
+        "d7176b03-3a3f-442f-a7d4-07d2789b1c6a",
+        "1b9216f0-1d56-4293-8264-f247d366221f",
+        "df75670c-9e7b-49fb-91e7-8b1879c83421",
         "868d601d-1635-4df2-87b2-0af6e99e2297",
         "75d5c437-78ed-46c7-9237-6de1f320c0d0",
         "84eee432-9cfd-4939-889d-0987fd9be3c9",
