@@ -383,6 +383,14 @@
             }
         },
         {
+            "Key": "1f3307ed-acf3-49c4-bd08-9bec6fdf88ab",
+            "Value": {
+                "id": "87bccd07-fdbd-45ea-aa5a-991c6e3f7401",
+                "resourcePath": "sprites\\playerClimbingSprite\\playerClimbingSprite.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "1fa866bf-8aef-4e62-9887-2ef1d494618d",
             "Value": {
                 "id": "477aedbd-fc73-4dfb-a555-482706991e92",
@@ -1355,6 +1363,14 @@
             "Value": {
                 "id": "e8c54b65-d471-41cd-a9f2-2c951aa4bd3d",
                 "resourcePath": "sprites\\deathBurstSprite\\deathBurstSprite.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "789bbe51-9808-463e-9f81-ad5e444b891a",
+            "Value": {
+                "id": "339047a5-13ff-40f1-88d9-8091d2a2fa7b",
+                "resourcePath": "sprites\\ladderSprite\\ladderSprite.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -2615,6 +2631,14 @@
             }
         },
         {
+            "Key": "e50ff380-16e5-41ca-8954-42241c85b23c",
+            "Value": {
+                "id": "08155cb8-bf9d-4048-a05f-3655b448537b",
+                "resourcePath": "scripts\\climbLadder\\climbLadder.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "e559797d-41a4-4f86-9e4e-5c33714b8b38",
             "Value": {
                 "id": "ca6af8d9-3bc3-477f-907d-c29c8aa20fbb",
@@ -2635,6 +2659,14 @@
             "Value": {
                 "id": "a22b213b-f45a-4c21-889e-83a646c3f04e",
                 "resourcePath": "sprites\\squirrelAttackSprite\\squirrelAttackSprite.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "e65c4f88-ae56-47a3-b52f-1171fbd179b4",
+            "Value": {
+                "id": "f24ebc15-4e4f-404a-bf92-fa8931c31517",
+                "resourcePath": "sprites\\staffOnlySprite\\staffOnlySprite.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -2724,6 +2756,14 @@
                 "id": "f2571e38-4d02-4705-a96f-5ab6c7af36b6",
                 "resourcePath": "sprites\\heartSprite\\heartSprite.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "ee5f0dbc-9268-422f-9e4f-4afc7e2a8d2f",
+            "Value": {
+                "id": "3d27d2f7-ea3f-4c9e-9f13-91ab9f4ae136",
+                "resourcePath": "objects\\ladderObject\\ladderObject.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -2885,6 +2925,7 @@
         "81f7b92f-2056-4381-afc4-3cb1e49bf1ff",
         "8baa8c56-9ab5-4b53-a2d4-3c2dc50f8e41",
         "7e2b2a9b-7146-4d42-9a22-b595c27958a8",
+        "e50ff380-16e5-41ca-8954-42241c85b23c",
         "619505d0-d81e-408d-b19d-9d41fd656708",
         "280fb53e-3f62-45d9-8459-d0b9325d0102",
         "0faa606a-8ae3-4340-9c03-a0f10e183bc3",

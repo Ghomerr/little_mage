@@ -26,6 +26,7 @@ isDebugEnabled = false;
 maxYbeforeDead = 0;
 isGrounded = false; // grounded flag
 isJumping = true; // jumping flag (true to avoid creating player air-jump)
+isOnLadder = false; // on ladder
 //isBeingHit = false; // is true if player is flying in the air after being hit
 jumpBuffer = 0; // jump buffer to handle jump before the actual jump
 coyoteCounter = 0;

@@ -16,7 +16,6 @@ if (isVisible) {
 				showHatsWheel = keyboard_check_pressed(vk_shift) or gamepad_button_check_pressed(0, gp_shoulderlb);
 			} else if (keyboard_check_released(vk_shift) or gamepad_button_check_released(0, gp_shoulderlb)) {
 				showHatsWheel = false;
-			
 				selectNewHat(true);
 			}
 		}
@@ -50,7 +49,7 @@ if (isVisible) {
 			}
 
 			move = keyRight - keyLeft;
-			vMove = keyUp - keyDown;
+			vMove = keyDown - keyUp;
 		} else {
 			keyLeft = 0;
 			keyRight = 0;
@@ -60,12 +59,13 @@ if (isVisible) {
 		}
 		
 		// Handle player pressing down to go through a platform
-		if (isGrounded and vMove < 0) {
+		if (isGrounded and vMove > 0) {
 			// If the down counter is under the timer
 			if (downCounter < downMaxTime) {
 				downCounter++;
 			} else if (!ignorePlatform) {
 				// When reached, and if the flag is not set yet, update it
+				// or if the player is above a ladder
 				ignorePlatform = true;
 			}
 		} else if (downCounter > 0) {
@@ -73,7 +73,15 @@ if (isVisible) {
 			// if the down counter still has a value
 			downCounter = 0;
 		}
-
+				
+		// Handle ladder selection
+		if (isOnLadder and (keyJump or !place_meeting(x, y, ladderObject))) {
+			isOnLadder = false;
+			ignorePlatform = false;
+		} else if (!isOnLadder and keyUp and place_meeting(x, y, ladderObject)) {
+			climbLadder();
+		}
+		
 		initMovement();
 		
 		var nextX = x + hsp;
@@ -119,6 +127,7 @@ if (isVisible) {
 		if (!wasGrounded and isGrounded) {
 			ignorePlatform = false; // Reset ignore platform when grounded
 			isBeingHit = false; // reset being hit when landing
+			isOnLadder = false; // reset being on ladder
 			
 			// Play landing sound only when landing
 			audio_sound_pitch(landingSound, choose(0.7, 1.0, 1.3));
@@ -177,6 +186,11 @@ if (isVisible) {
 		}
 
 		updatePosition();
+		
+		// If the player is passing through a platform and is on a ladder, climb it automatically
+		if (!isGrounded and !isOnLadder and ignorePlatform and place_meeting(x, y, ladderObject)) {
+			climbLadder();
+		}
 
 		handleAnimations();
 

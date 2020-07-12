@@ -17,6 +17,8 @@ isInPillar = false;
 isBeingHit = false;
 deathMarkCounter = 0;
 elecShockCounter = 0;
+isGrounded = false;
+isOnLadder = false;
 
 spriteWidth = (bbox_right - bbox_left) * size;
 spriteHalfWidth = spriteWidth / 2;

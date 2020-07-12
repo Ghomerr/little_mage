@@ -14,6 +14,9 @@ if ((!isPlayer or !hasWeapon) and hsp != 0) {
 if (elecShockCounter > 0 and shockedSprite) {
 	sprite_index = shockedSprite;
 	image_speed = 1;
+} else if (isOnLadder) {
+	sprite_index = playerClimbingSprite;
+	image_speed = sign(vsp);
 } else if (isGrounded) {
 	if (hsp != 0) {
 		// Entity running
