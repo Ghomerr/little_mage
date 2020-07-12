@@ -27,6 +27,7 @@ if (argument_count == 1 and array_length_1d(argument0) >= 2) {
 		case "walls":
 			if (instance_exists(wallObject)) {
 				wallObject.visible = !wallObject.visible;
+				ladderObject.visible = wallObject.visible;
 				commandResultColor = c_yellow;
 				commandResult = "Debug Walls " + (wallObject.visible ? "ON" : "OFF");
 			}

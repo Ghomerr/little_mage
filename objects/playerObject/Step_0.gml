@@ -11,7 +11,7 @@ if (isVisible) {
 		}
 		
 		// Handle hats wheel show input
-		if (hasWeapon and !gameManager.isDebugOpen) {
+		if (hasWeapon and !isOnLadder and !gameManager.isDebugOpen) {
 			if (!showHatsWheel) {
 				showHatsWheel = keyboard_check_pressed(vk_shift) or gamepad_button_check_pressed(0, gp_shoulderlb);
 			} else if (keyboard_check_released(vk_shift) or gamepad_button_check_released(0, gp_shoulderlb)) {
