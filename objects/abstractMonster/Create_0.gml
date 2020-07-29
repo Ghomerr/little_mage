@@ -18,6 +18,7 @@ image_yscale = size;
 debugColor = c_red;
 
 // Shooting init
+canShoot = shootingRate > 0 and shootingRange > 0;
 shootCounter = 0;
 myProjectile = noone;
 isCollidingOther = false;

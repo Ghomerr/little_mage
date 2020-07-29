@@ -4,7 +4,46 @@
     "mvc": "1.0",
     "name": "buffshroomObject",
     "eventList": [
-        
+        {
+            "id": "67569874-dc31-4723-8622-675cb38c35e0",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 1,
+            "eventtype": 3,
+            "m_owner": "d27ce5d1-1e74-44fa-a474-69be0ee73a8e"
+        },
+        {
+            "id": "8b5a11f9-addc-427b-ba62-01aac56cb8c0",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 8,
+            "m_owner": "d27ce5d1-1e74-44fa-a474-69be0ee73a8e"
+        },
+        {
+            "id": "3e7058c8-b7ab-4115-9264-4045abdc3072",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 7,
+            "eventtype": 7,
+            "m_owner": "d27ce5d1-1e74-44fa-a474-69be0ee73a8e"
+        },
+        {
+            "id": "53fd5767-5d22-4b3d-84b7-99fbbfba429a",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 0,
+            "m_owner": "d27ce5d1-1e74-44fa-a474-69be0ee73a8e"
+        }
     ],
     "maskSpriteId": "c88fbf33-c678-4170-8dc6-93f66764daea",
     "overriddenProperties": [
@@ -79,6 +118,30 @@
             "objectId": "2f80b86a-f496-4621-988a-3bc5c5fd2787",
             "propertyId": "43ee3a5c-8972-4abd-aa2e-f52a46c584c2",
             "value": "buffshroomShockedSprite"
+        },
+        {
+            "id": "54cb67a0-3dd7-478b-9256-72526254a82c",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "2f80b86a-f496-4621-988a-3bc5c5fd2787",
+            "propertyId": "6a459a0b-9397-437b-83ab-6c5cc511cafc",
+            "value": "buffshroomAttackSprite"
+        },
+        {
+            "id": "3b9b83fe-3c85-4d55-b0e7-9405e222b6c2",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "2f80b86a-f496-4621-988a-3bc5c5fd2787",
+            "propertyId": "6957e7c2-3c8b-421b-b003-cebe0708727c",
+            "value": "40"
+        },
+        {
+            "id": "af4172b6-b14d-4ec4-996a-58717d2422c0",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "2f80b86a-f496-4621-988a-3bc5c5fd2787",
+            "propertyId": "6fc8c848-a7fd-4d1f-92fc-d21ef589a967",
+            "value": "120"
         }
     ],
     "parentObjectId": "2f80b86a-f496-4621-988a-3bc5c5fd2787",

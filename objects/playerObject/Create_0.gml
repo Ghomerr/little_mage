@@ -36,6 +36,7 @@ vMove = 0; // vertical movement
 downCounter = 0;
 downMaxTime = 30; // max time pressing down to go through a platform
 ignorePlatform = false;
+isAttacking = false; // player doesnt attack
 
 // Death magic variables
 deathHearts = 0; // total of death hearts

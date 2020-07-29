@@ -162,7 +162,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "manaBoltSound",
+            "value": "noone",
             "varName": "sound",
             "varType": 5
         },

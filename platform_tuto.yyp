@@ -1663,6 +1663,14 @@
             }
         },
         {
+            "Key": "8c4d906b-121f-452d-9dce-59fa70c3dd85",
+            "Value": {
+                "id": "5f039444-c259-403f-9bcb-dac68ee01167",
+                "resourcePath": "scripts\\getDefaultSpeed\\getDefaultSpeed.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "8ca35f54-05fc-4c4b-9070-150ab3959176",
             "Value": {
                 "id": "ce19ba36-f88f-4cbb-825f-953d79b36eb1",
@@ -2599,6 +2607,14 @@
             }
         },
         {
+            "Key": "e207e21e-e207-4b6b-bf7e-e85f96cd0f22",
+            "Value": {
+                "id": "55d2a022-dea3-41a7-b671-1371da61c532",
+                "resourcePath": "scripts\\monsterHitsPlayer\\monsterHitsPlayer.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "e2cf261e-d130-4cbf-93cd-8240d848b9e0",
             "Value": {
                 "id": "aa603f31-2fe5-42ac-89ef-87ff72de0a11",
@@ -2937,6 +2953,7 @@
         "98c2fc48-ffdb-4904-b243-1174bbc87e81",
         "b93e9e00-3d8c-4773-8acd-e6120c11983e",
         "d75a42fa-4279-4495-9276-89279fc73c65",
+        "e207e21e-e207-4b6b-bf7e-e85f96cd0f22",
         "dbd2826f-cd2c-4975-af8b-7c87fcb94657",
         "79f979e4-29b3-4ad1-a356-5ae3e0f0f470",
         "ce25e0ed-6b67-4783-b238-7f637dd49419",
@@ -2978,6 +2995,7 @@
         "18d7f235-622f-4ff2-9ca9-75021be48b93",
         "30e2abce-f25f-4e7e-aa49-9320626ed26d",
         "4e6e0518-98e3-4e83-b9e8-cd6a5fac58f8",
+        "8c4d906b-121f-452d-9dce-59fa70c3dd85",
         "84c2a582-2e79-404d-80ca-e839a54c7482",
         "91fb81ef-ed97-4efd-a761-23ebf6e3ee32",
         "753293eb-e306-47c8-bc0b-3790722ec1f8",

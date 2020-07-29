@@ -7,6 +7,10 @@ if (argument_count == 1) {
 	
 		var command = argument0[1];
 		switch (command) {
+			case "cointext":
+				commandResult = "Spawn coins using the given number. Usage: cointext [number]";
+				break;
+			
 			case "debug":
 				commandResult = "Show debug infos. Usage: debug [player|monsters|walls|fps]";
 				break;
@@ -52,6 +56,6 @@ if (argument_count == 1) {
 				commandResult = "Unknown command: " + command;
 		}
 	} else {
-		commandResult = "Available commands: debug, effect, give, god, quit, restart, room, spawn, version";
+		commandResult = "Available commands: conintext, debug, effect, give, god, quit, restart, room, spawn, version";
 	}
 }

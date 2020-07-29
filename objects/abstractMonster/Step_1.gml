@@ -43,17 +43,19 @@ if (!isDying) {
 	}
 	
 	// If this monster can shoot
-	if (shootingRate > 0 and shootingRange > 0 and instance_exists(playerObject) and !playerObject.isDying) {
-		if (point_distance(x, y, playerObject.x, playerObject.y) < shootingRange) {
-			// Turn monster face to the player
-			var newScale = sign(playerObject.x - x);
-			if (newScale != 0) {
-				image_xscale = newScale * size;
-			}
+	if (canShoot) {
+		if (shootCounter > 0) {
+			shootCounter -= getDefaultSpeed();
+		} else if (instance_exists(playerObject) and !playerObject.isDying and playerObject.invulCounter <= 0) {
+			if (point_distance(x, y, playerObject.x, playerObject.y) < shootingRange) {
+				// Turn monster face to the player
+				var newScale = sign(playerObject.x - x);
+				if (newScale != 0) {
+					image_xscale = newScale * size;
+					move = move != 0 ? getDefaultSpeed() * newScale : 0;
+				}
 			
-			// Handle shooting
-			shootCounter -= frozenCounter > 0 ? global.frozenFactor : 1;
-			if (shootCounter <= 0) {
+				// Handle shooting
 				shootCounter = shootingRate;
 				var wallInstance = collision_line(x, y, playerObject.x, playerObject.y, wallObject, false, true);
 				// Attack if no wall or it's a platform
@@ -62,10 +64,11 @@ if (!isDying) {
 				} else {
 					isAttacking = false;
 				}
+				
+			} else {
+				isAttacking = false;
+				shootCounter = 0;
 			}
-		} else {
-			isAttacking = false;
-			shootCounter = 0;
 		}
 	}
 }

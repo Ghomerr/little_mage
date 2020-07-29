@@ -20,20 +20,4 @@ if (isDebugEnabled) {
 	
 	drawSetText(c_yellow, signPostFont, fa_center, fa_bottom);
 	draw_text(x, y - spriteHalfHeight, string(id));
-	
-	// Draw spriteWidth inside the collision box
-	//draw_set_color(c_black);
-	//var testValue = sign(hsp) * spriteWidth / 2;
-	//draw_line(x - testValue, y, x + testValue, y);
-	
-	// Draw spriteWidth and spriteHeight values
-	/*drawSetText(c_red, signPostFont, fa_center, fa_middle);
-	draw_text(x, y - 20, string(shootCounter));
-	if (isAttacking) {
-		draw_set_color(c_yellow);
-	} else {
-		draw_set_color(c_red);	
-	}
-	draw_text(x, y - 30, string(image_speed)); */
-	//draw_text(x, y - 20, string(spriteWidth) + " " + string(spriteHeight));
 }

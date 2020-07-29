@@ -1,5 +1,5 @@
 // Animation
-var imgSpd = frozenCounter > 0 ? global.frozenFactor : 1;
+var imgSpd = getDefaultSpeed();
 
 if (inGravityBubble) {
 	sprite_index = hitSprite;
@@ -18,7 +18,7 @@ if (elecShockCounter > 0 and shockedSprite) {
 	sprite_index = playerClimbingSprite;
 	image_speed = sign(vsp);
 } else if (isGrounded) {
-	if (hsp != 0) {
+	if (hsp != 0 and !isAttacking) {
 		// Entity running
 		sprite_index = runningSprite;
 		image_speed = imgSpd;

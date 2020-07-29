@@ -53,7 +53,6 @@ if (isDebugOpen) {
 			// Send command
 			case vk_enter:
 				if (string_length(debugText) > 0) {
-					//show_debug_message("Do command : " + debugText);
 					_executeCommand(debugText);
 				
 					// Command history update
