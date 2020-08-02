@@ -151,12 +151,7 @@ if (isVisible) {
 	
 			// If player hit keyJump or jump buffer is positive
 			if (keyJump or jumpBuffer > 0) {
-				// Do JUMP
-				vsp -= jump;
-				jumpBuffer = 0;
-				isJumping = true;
-				audio_sound_pitch(jumpSound, choose(0.9, 1.0, 1.1));
-				audio_play_sound(jumpSound, 5, false);
+				doJump();
 			}
 		} 
 		// While not grounded :
@@ -166,11 +161,7 @@ if (isVisible) {
 				coyoteCounter--;
 				// if player is not jumping and key jump is hit
 				if (!isJumping and keyJump and !isBeingHit) {
-					// Do JUMP
-					vsp -= jump;
-					isJumping = true;
-					audio_sound_pitch(jumpSound, choose(0.9, 1.0, 1.1));
-					audio_play_sound(jumpSound, 5, false);
+					doJump();
 				}
 			}
 			// if buffer is positive

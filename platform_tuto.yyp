@@ -903,6 +903,14 @@
             }
         },
         {
+            "Key": "4e68c076-3d94-446b-b0bb-0b6a52ecbbd8",
+            "Value": {
+                "id": "029232b6-792b-4276-9356-0d1c3ccef1dd",
+                "resourcePath": "scripts\\doJump\\doJump.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "4e6e0518-98e3-4e83-b9e8-cd6a5fac58f8",
             "Value": {
                 "id": "20495d48-bc78-4046-b18b-e2e30d5c08aa",
@@ -2183,6 +2191,14 @@
             }
         },
         {
+            "Key": "b9f9e8f3-177a-4d64-8e30-004219005203",
+            "Value": {
+                "id": "8166d2ba-fd7a-4bce-9d12-8e581c7d186f",
+                "resourcePath": "sprites\\playerCrouchSprite\\playerCrouchSprite.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "bbfc6c4c-6cdb-4d4c-9288-f46a81e67327",
             "Value": {
                 "id": "4536409f-58ac-44d1-877c-d80b39d44f46",
@@ -2942,6 +2958,7 @@
         "8baa8c56-9ab5-4b53-a2d4-3c2dc50f8e41",
         "7e2b2a9b-7146-4d42-9a22-b595c27958a8",
         "e50ff380-16e5-41ca-8954-42241c85b23c",
+        "4e68c076-3d94-446b-b0bb-0b6a52ecbbd8",
         "619505d0-d81e-408d-b19d-9d41fd656708",
         "280fb53e-3f62-45d9-8459-d0b9325d0102",
         "0faa606a-8ae3-4340-9c03-a0f10e183bc3",

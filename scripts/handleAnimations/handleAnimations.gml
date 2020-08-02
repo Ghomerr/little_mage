@@ -1,5 +1,6 @@
 // Animation
 var imgSpd = getDefaultSpeed();
+isCrouched = false;
 
 if (inGravityBubble) {
 	sprite_index = hitSprite;
@@ -31,22 +32,26 @@ if (elecShockCounter > 0 and shockedSprite) {
 				image_speed = imgSpd;
 				sprite_index = attackSprite;
 			}
-		}
-		
-		// Is player or is not attacking : idle animation
-		if (isPlayer or !isAttacking) {
-			// Entity is idle
-			switch (idleDelay) {
-				case -1:
-					sprite_index = defaultSprite;
-					if (idleRestart) {
-						idleRestart = false;
-						image_speed = 0;
-						alarm[0] = irandom_range(30, 90);
-					}
-					break;
-				
-				case 0:
+		} else {
+			// For player and not attacking monsters
+			// Is player or is not attacking : idle animation
+			
+			if (keyDown) {
+				sprite_index = playerCrouchSprite;
+				image_speed = 0;
+				isCrouched = true;
+			} else {
+				// Entity is idle
+				if (idleDelay == -1) {
+					// No idle
+						sprite_index = defaultSprite;
+						if (idleRestart) {
+							idleRestart = false;
+							image_speed = 0;
+							// Random init
+							alarm[0] = irandom_range(30, 90);
+						}
+				} else if (idleDelay == 0) {
 					// Random blinking
 					var idleRnd = irandom_range(1, 100);
 					if (idleRnd == 50) {
@@ -58,8 +63,12 @@ if (elecShockCounter > 0 and shockedSprite) {
 						sprite_index = defaultSprite;
 						image_speed = 0;
 					}
-					break;
-			}
+				} 
+				// Reset idle delay 
+				if (idleDelay > 0 and sprite_index != idleSprite) {
+					idleDelay = 0;
+				}
+			 }
 		}
 	}
 } else {

@@ -26,6 +26,7 @@ if (isVisible and !isDying and (hp <= 0 or y >= maxYbeforeDead)) {
 	
 	// Start player dying
 	isDying = true;
+	isOnLadder = false;
 	sprite_index = hitSprite;
 	invulCounter = 0;
 	beHitInTheAir();

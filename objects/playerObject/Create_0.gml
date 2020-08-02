@@ -10,6 +10,7 @@ JUMP_COOLDOWN = 5; // Frames before a jump can be done
 COYOTE_MAX = 10; // Frames during the player can still jump in air 
 gpMin = 0.8; // minimum value for gamepad 
 WEAPON_Y_OFFSET = 8;
+WEAPON_Y_OFFSET_CROUCHED = 12;
 INVUL_TIMER = 100;
 INVUL_INTERVAL = 5;
 
@@ -27,6 +28,7 @@ maxYbeforeDead = 0;
 isGrounded = false; // grounded flag
 isJumping = true; // jumping flag (true to avoid creating player air-jump)
 isOnLadder = false; // on ladder
+isCrouched = false;
 //isBeingHit = false; // is true if player is flying in the air after being hit
 jumpBuffer = 0; // jump buffer to handle jump before the actual jump
 coyoteCounter = 0;
