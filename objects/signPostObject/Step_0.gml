@@ -1,5 +1,5 @@
 /// @description Check if player is in radius
-if (instance_exists(playerObject)) {
+if (hasText and instance_exists(playerObject)) {
 
 	// Detect if player is in radius and add sign post outline
 	if (point_in_circle(playerObject.x, playerObject.y, x, y, PLAYER_RADIUS)) {

@@ -16,8 +16,25 @@ if (elecShockCounter > 0 and shockedSprite) {
 	sprite_index = shockedSprite;
 	image_speed = 1;
 } else if (isOnLadder) {
-	sprite_index = playerClimbingSprite;
-	image_speed = sign(vsp);
+	if (move != 0) {
+		sprite_index = playerLadderJumpSprite;
+		image_speed = 0;
+		if (keyRight) {
+			image_index = 0;
+			image_xscale = 1;
+		} else {
+			image_index = 1;
+			image_xscale = -1;
+		}
+	} else {
+		image_xscale = 1;
+		var wasLadderJumpSprite = sprite_index == playerLadderJumpSprite;
+		sprite_index = playerClimbingSprite;
+		image_speed = sign(vsp);
+		if (wasLadderJumpSprite) {
+			image_index *= 2;
+		}
+	}
 } else if (isGrounded) {
 	if (hsp != 0 and !isAttacking) {
 		// Entity running

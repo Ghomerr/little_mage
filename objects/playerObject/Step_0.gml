@@ -78,6 +78,9 @@ if (isVisible) {
 		if (isOnLadder and (keyJump or !place_meeting(x, y, ladderObject))) {
 			isOnLadder = false;
 			ignorePlatform = false;
+			if (move != 0) {
+				doJump();	
+			}
 		} else if (!isOnLadder and keyUp and place_meeting(x, y, ladderObject)) {
 			climbLadder();
 		}

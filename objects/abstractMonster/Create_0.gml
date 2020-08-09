@@ -7,6 +7,8 @@ DYING_JUMP = 3;
 isAttacking = false;
 idleRestart = true;
 keyDown = false;
+keyLeft = false;
+keyRight = false;
 
 // Compute sprite width
 //spriteWidth = (bbox_right - bbox_left) * size; // done in the parent !

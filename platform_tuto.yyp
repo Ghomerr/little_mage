@@ -2247,6 +2247,14 @@
             }
         },
         {
+            "Key": "c0d17137-78a2-4d87-add7-9619858a1742",
+            "Value": {
+                "id": "c2fd42a7-6396-4874-97c1-9b6cab287528",
+                "resourcePath": "sprites\\playerLadderJumpSprite\\playerLadderJumpSprite.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "c21e4715-ab4c-4e46-8678-04afe0be47b8",
             "Value": {
                 "id": "801b4884-b040-4cf9-8524-72fc6de0c851",

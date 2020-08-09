@@ -9,5 +9,10 @@ if (!isBeingHit and !isOnLadder) {
 if (!isOnLadder) {
 	updateVspWithGravity(vsp, jump);
 } else {
-	vsp = vMove;
+	// If player dont look left or right, move up or down
+	if (move == 0) {
+		vsp = vMove;
+	} else {
+		vsp = 0;	
+	}
 }
