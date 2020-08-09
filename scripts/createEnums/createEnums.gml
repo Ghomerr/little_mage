@@ -86,3 +86,10 @@ enum PLANT_STATE {
 	NORMAL,
 	DEATH
 }
+
+// Nature ladder types
+enum NAT_LADDER {
+	BASE,
+	MIDDLE,
+	TOP
+}

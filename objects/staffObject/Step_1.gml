@@ -30,28 +30,51 @@ if (playerObject.hasControl) {
 
 		// Firing event
 		firingDelay--;
-		if ((mouse_check_button(mb_left) or gamepad_button_check(0, gp_shoulderrb)) and firingDelay < 0) {
-			// Screen shake
-			//screenShake(2, 10);
+		if (firingDelay < 0) {
+			if (mouse_check_button(mb_left) or gamepad_button_check(0, gp_shoulderrb)) {
+				// Primary magic
 		
-			// Compute projectile start coordinates at the end of the staff
-			var prjX = x + lengthdir_x(STAFF_LENGTH, image_angle);
-			var prjY = y + lengthdir_y(STAFF_LENGTH, image_angle);
+				// Compute projectile start coordinates at the end of the staff
+				var prjX = x + lengthdir_x(STAFF_LENGTH, image_angle);
+				var prjY = y + lengthdir_y(STAFF_LENGTH, image_angle);
 	
-			// Create a new projectile using staff angle
-			with (instance_create_layer(prjX, prjY, global.projLayer, projectile)) {
-				// Set firing cooldown
-				other.firingDelay = cooldown;
+				// Create a new projectile using staff angle
+				with (instance_create_layer(prjX, prjY, global.projLayer, projectile)) {
+					// Set firing cooldown
+					other.firingDelay = cooldown;
 			
-				shooter = playerObject.id;
-				prjSpeed = DEFAULT_SPEED;
-				direction = other.image_angle + random_range(-other.STAFF_DISPERSION, other.STAFF_DISPERSION);
-				isAimingRight = other.isAimingRight;
-				hsp = lengthdir_x(prjSpeed, direction);
-				vsp = lengthdir_y(prjSpeed, direction);
-				hspRatio = hsp / prjSpeed;
-				vspRatio = vsp / prjSpeed;
-				image_angle = direction;
+					shooter = playerObject.id;
+					prjSpeed = DEFAULT_SPEED;
+					direction = other.image_angle + random_range(-other.STAFF_DISPERSION, other.STAFF_DISPERSION);
+					isAimingRight = other.isAimingRight;
+					hsp = lengthdir_x(prjSpeed, direction);
+					vsp = lengthdir_y(prjSpeed, direction);
+					hspRatio = hsp / prjSpeed;
+					vspRatio = vsp / prjSpeed;
+					image_angle = direction;
+				}
+			} else if (secondary != noone and (mouse_check_button(mb_right) or gamepad_button_check(0, gp_face3))) {
+				// Get secondary magic init position
+				var secX, secY;
+				with (playerObject) {
+					secX = getOnTileX(0.5);
+					secY = getOnTileY(0.5);
+				}
+				
+				// Check collision with environment
+				if (!collision_point(
+					secX,
+					secY,
+					environmentObject,
+					false,
+					true)) 
+				{
+					// Use secondary magic
+					with(instance_create_layer(secX, secY, getLayer(LAYER.ENTITIES), other.secondary)) {
+						// Set firing cooldown
+						other.firingDelay = cooldown;
+					}
+				}
 			}
 		}
 	}

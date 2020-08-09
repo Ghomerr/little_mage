@@ -13,6 +13,10 @@ if (isAimingRight) {
 	image_yscale = -1;
 	// Flip player too
 	with(playerObject) {
-		image_xscale = -1;
+		if (!isOnLadder) {
+			image_xscale = -1;
+		} else {
+			image_xscale = 1;	
+		}
 	}
 }

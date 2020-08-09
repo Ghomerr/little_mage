@@ -49,8 +49,8 @@ if (argument_count == 1 and array_length_1d(argument0) >= 2) {
 		
 		// Init position of the spawn
 		with (playerObject) {
-			var posX = (sign(image_xscale) ? ceil (x / gameManager.TILE_SIZE) + 1 : floor(x / gameManager.TILE_SIZE) - 1) * gameManager.TILE_SIZE;
-			var posY = ceil(y / gameManager.TILE_SIZE) * gameManager.TILE_SIZE;
+			var posX = getOnTileX();
+			var posY = getOnTileY();
 	
 			if (quantity > 1) {
 				// Compute rows and columns of the spawn

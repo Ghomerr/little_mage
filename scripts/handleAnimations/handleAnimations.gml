@@ -21,13 +21,10 @@ if (elecShockCounter > 0 and shockedSprite) {
 		image_speed = 0;
 		if (keyRight) {
 			image_index = 0;
-			image_xscale = 1;
 		} else {
 			image_index = 1;
-			image_xscale = -1;
 		}
 	} else {
-		image_xscale = 1;
 		var wasLadderJumpSprite = sprite_index == playerLadderJumpSprite;
 		sprite_index = playerClimbingSprite;
 		image_speed = sign(vsp);

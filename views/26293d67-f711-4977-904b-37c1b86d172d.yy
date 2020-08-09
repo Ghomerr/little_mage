@@ -35,7 +35,7 @@
         "d21895a1-6c09-447d-8a6e-6851e26d2439"
     ],
     "filterType": "GMSprite",
-    "folderName": "Magics",
+    "folderName": "Projectiles",
     "isDefaultView": false,
     "localisedFolderName": ""
 }

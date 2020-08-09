@@ -7,6 +7,8 @@ STAFF_DISPERSION = 3;
 // Staff variables
 firingDelay = 0;
 isAimingRight = true;
+projectile = noone;
+secondary = noone;
 
 // Projectile
 PROJECTILES = [
@@ -19,6 +21,18 @@ PROJECTILES = [
 	windProjectileObject,	// wind
 	gravityProjectileObject,	// gravity
 	flameProjectileObject	// mana bolt
+];
+
+SECONDARY_MAGICS = [
+	natureLadderObject,
+	noone,
+	noone,
+	noone,
+	noone,
+	noone,
+	noone,
+	noone,
+	noone
 ];
 
 changeStaffMagic();
