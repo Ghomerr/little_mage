@@ -88,6 +88,14 @@
             "objectId": "7f34e096-7366-457c-817b-7dcf13435218",
             "propertyId": "38e63daa-23ae-418d-b05f-f2f10d01761f",
             "value": "2"
+        },
+        {
+            "id": "41f4b95d-7737-4384-9ebb-8c18a7b64a79",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "0d7a2ec1-76bb-465d-9918-d30fcf137d7a",
+            "propertyId": "5e029338-8a40-44bf-9ac1-77805a80caba",
+            "value": "stoneProjectileSprite"
         }
     ],
     "parentObjectId": "7f34e096-7366-457c-817b-7dcf13435218",

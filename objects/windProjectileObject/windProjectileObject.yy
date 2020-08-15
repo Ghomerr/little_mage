@@ -72,6 +72,14 @@
             "objectId": "7f34e096-7366-457c-817b-7dcf13435218",
             "propertyId": "9a62caa3-0f43-4e92-9ced-037540617723",
             "value": "noone"
+        },
+        {
+            "id": "83be72b4-3bf9-4770-b17d-e3c4222641d2",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "0d7a2ec1-76bb-465d-9918-d30fcf137d7a",
+            "propertyId": "5e029338-8a40-44bf-9ac1-77805a80caba",
+            "value": "windTornadoSprite"
         }
     ],
     "parentObjectId": "7f34e096-7366-457c-817b-7dcf13435218",

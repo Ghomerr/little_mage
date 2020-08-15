@@ -15,6 +15,7 @@ global.frozenFactor = 0.3;
 // Resolution const
 #macro RES_W 1024
 #macro RES_H 768
+middleScreen = RES_W / 2;
 
 // Force GUI size
 display_set_gui_size(RES_W, RES_H);
@@ -51,10 +52,20 @@ killsTextWidth = 0;
 // Health bar
 heartSpriteScale = 1;
 heartSpriteWidth = sprite_get_width(heartSprite);
-heartMiddleScreen = RES_W / 2;
 heartSpriteGap = 4;
 heartSpriteY = 12;
-heartSpriteX = heartMiddleScreen - (playerObject.initHp * heartSpriteWidth + (playerObject.initHp - 1) * heartSpriteGap ) / 2;
+heartSpriteX = middleScreen - (playerObject.initHp * heartSpriteWidth + (playerObject.initHp - 1) * heartSpriteGap ) / 2;
+
+// Magic frame
+frameSpriteOffsetX = 5;
+frameSpriteOffsetY = 12;
+frameSpriteWidth = sprite_get_width(frameSprite);
+primaryFramePosX = middleScreen - frameSpriteWidth - frameSpriteOffsetX;
+secondayFramePosX = middleScreen + frameSpriteOffsetX;
+frameSpritePosY = RES_H - frameSpriteOffsetY;
+primaryFrameCenterPosX = primaryFramePosX + frameSpriteWidth / 2;
+secondaryFrameCenterPosX = secondayFramePosX + frameSpriteWidth / 2;
+frameCenterPosY = frameSpritePosY - sprite_get_height(frameSprite) / 2;
 
 GAME_SPEED = game_get_speed(gamespeed_fps);
 TILE_SIZE = 16;

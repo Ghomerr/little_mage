@@ -74,6 +74,22 @@
             "objectId": "7f34e096-7366-457c-817b-7dcf13435218",
             "propertyId": "9a62caa3-0f43-4e92-9ced-037540617723",
             "value": "gravityProjectileSound"
+        },
+        {
+            "id": "7e4cc40e-cf67-4fdf-bcad-a77661725a62",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "0d7a2ec1-76bb-465d-9918-d30fcf137d7a",
+            "propertyId": "5e029338-8a40-44bf-9ac1-77805a80caba",
+            "value": "gravityProjectileSprite"
+        },
+        {
+            "id": "50e7f186-b50c-4bbc-aba3-5dda20bdd867",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "0d7a2ec1-76bb-465d-9918-d30fcf137d7a",
+            "propertyId": "e0e89269-dec4-4446-9ec7-a69c20718232",
+            "value": "4"
         }
     ],
     "parentObjectId": "7f34e096-7366-457c-817b-7dcf13435218",

@@ -32,6 +32,35 @@ if (room != menuRoom and instance_exists(playerObject)) {
 		draw_sprite_ext(heartSprite, getHeartState(i), spriteX, heartSpriteY, heartSpriteScale, heartSpriteScale, 0, c_white, 1);
 	}
 	
+	// Draw magic frames
+	draw_sprite_ext(frameSprite, 0, primaryFramePosX, frameSpritePosY, 1, 1, 0, c_white, 1);
+	draw_sprite_ext(frameSprite, 0, secondayFramePosX, frameSpritePosY, 1, 1, 0, c_white, 1);
+	
+	with (staffObject) {
+		if (projectile != noone) {
+			draw_sprite_ext(
+				projectile.guiSprite,
+				projectile.guiSubImg,
+				other.primaryFrameCenterPosX + projectile.guiOffsetPosX,
+				other.frameCenterPosY + projectile.guiOffsetPosY,
+				projectile.guiScaleX,
+				projectile.guiScaleY,
+				0, c_white, 1
+			);
+		}
+		if (secondary != noone) {
+			draw_sprite_ext(
+				secondary.guiSprite,
+				secondary.guiSubImg,
+				other.secondaryFrameCenterPosX + secondary.guiOffsetPosX,
+				other.frameCenterPosY + secondary.guiOffsetPosY,
+				secondary.guiScaleX,
+				secondary.guiScaleY,
+				0, c_white, 1
+			);
+		}
+	}
+	
 	// DEBUG DIALOG
 	if (isDebugOpen) {
 		draw_set_alpha(0.5);

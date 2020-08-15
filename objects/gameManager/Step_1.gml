@@ -17,6 +17,6 @@ if (room != menuRoom and instance_exists(playerObject)) {
 	
 	if (heartSpriteScale > 1) {
 		heartSpriteScale = max(heartSpriteScale * 0.95, 1);
-		heartSpriteX = heartMiddleScreen - (playerObject.initHp * heartSpriteWidth * heartSpriteScale + (playerObject.initHp - 1) * heartSpriteGap ) / 2;
+		heartSpriteX = middleScreen - (playerObject.initHp * heartSpriteWidth * heartSpriteScale + (playerObject.initHp - 1) * heartSpriteGap ) / 2;
 	}
 }

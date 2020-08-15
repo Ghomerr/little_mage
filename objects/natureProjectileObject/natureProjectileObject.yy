@@ -48,6 +48,14 @@
             "objectId": "7f34e096-7366-457c-817b-7dcf13435218",
             "propertyId": "38e63daa-23ae-418d-b05f-f2f10d01761f",
             "value": "1.5"
+        },
+        {
+            "id": "6d2d162e-0d3d-40ea-a37d-b5eabc6ca2d6",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "0d7a2ec1-76bb-465d-9918-d30fcf137d7a",
+            "propertyId": "5e029338-8a40-44bf-9ac1-77805a80caba",
+            "value": "natureProjectileSprite"
         }
     ],
     "parentObjectId": "7f34e096-7366-457c-817b-7dcf13435218",

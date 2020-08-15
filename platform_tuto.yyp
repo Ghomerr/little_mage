@@ -159,6 +159,14 @@
             }
         },
         {
+            "Key": "0d7a2ec1-76bb-465d-9918-d30fcf137d7a",
+            "Value": {
+                "id": "a8f118ba-5893-41a4-b97a-50ac670c4c4e",
+                "resourcePath": "objects\\abstractMagicObject\\abstractMagicObject.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "0d9fba51-4044-403f-81e9-31c4c6ee4b85",
             "Value": {
                 "id": "71eb909d-4e35-47e5-a48e-900cec3a23f1",
@@ -515,6 +523,14 @@
             "Value": {
                 "id": "d56edc4f-75d9-48fc-8a69-0b83123a88a7",
                 "resourcePath": "sprites\\squirrelFallingSprite\\squirrelFallingSprite.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "2a5e066c-dad4-46df-9505-4c4df42e4300",
+            "Value": {
+                "id": "5e82b4f3-acd9-4c4f-8fa4-d9492b2ae2d0",
+                "resourcePath": "sprites\\frameSprite\\frameSprite.yy",
                 "resourceType": "GMSprite"
             }
         },

@@ -64,6 +64,22 @@
             "objectId": "7f34e096-7366-457c-817b-7dcf13435218",
             "propertyId": "9a62caa3-0f43-4e92-9ced-037540617723",
             "value": "iceProjectileSound"
+        },
+        {
+            "id": "70e481f9-9069-4b52-b560-ced73180fe99",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "0d7a2ec1-76bb-465d-9918-d30fcf137d7a",
+            "propertyId": "5e029338-8a40-44bf-9ac1-77805a80caba",
+            "value": "iceProjectileSprite"
+        },
+        {
+            "id": "eea18072-d1a7-4673-85fa-a638344c9f37",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "0d7a2ec1-76bb-465d-9918-d30fcf137d7a",
+            "propertyId": "ac0fa771-d4b4-4d35-a1f4-4cdc91b4e6dd",
+            "value": "-1"
         }
     ],
     "parentObjectId": "7f34e096-7366-457c-817b-7dcf13435218",

@@ -64,6 +64,22 @@
             "objectId": "3401a015-b5c8-4ba3-8eab-834453b8fa0e",
             "propertyId": "80f754b1-114f-42bb-8537-29fcf8639a87",
             "value": "60"
+        },
+        {
+            "id": "6849385c-d4da-4488-884b-667a7a463755",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "0d7a2ec1-76bb-465d-9918-d30fcf137d7a",
+            "propertyId": "5e029338-8a40-44bf-9ac1-77805a80caba",
+            "value": "natureLadderTopSprite"
+        },
+        {
+            "id": "e2dad952-4570-4a9a-bb54-5e496f15a30d",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "0d7a2ec1-76bb-465d-9918-d30fcf137d7a",
+            "propertyId": "e0e89269-dec4-4446-9ec7-a69c20718232",
+            "value": "5"
         }
     ],
     "parentObjectId": "3401a015-b5c8-4ba3-8eab-834453b8fa0e",

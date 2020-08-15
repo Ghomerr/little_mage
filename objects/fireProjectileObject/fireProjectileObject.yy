@@ -66,6 +66,30 @@
             "objectId": "7f34e096-7366-457c-817b-7dcf13435218",
             "propertyId": "37f7e140-883c-4f91-94d2-af0f5cac5fd8",
             "value": "60"
+        },
+        {
+            "id": "e170f0ed-53db-4dbb-b79f-b1e40fd152ad",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "0d7a2ec1-76bb-465d-9918-d30fcf137d7a",
+            "propertyId": "5e029338-8a40-44bf-9ac1-77805a80caba",
+            "value": "fireProjectileSprite"
+        },
+        {
+            "id": "8c73312f-042d-459e-b04b-24db3637643e",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "0d7a2ec1-76bb-465d-9918-d30fcf137d7a",
+            "propertyId": "8f6a54e2-ca7f-40d9-b451-1b92e2102697",
+            "value": "1.5"
+        },
+        {
+            "id": "70eaab9e-211b-46b6-911c-e550e3e01dea",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "0d7a2ec1-76bb-465d-9918-d30fcf137d7a",
+            "propertyId": "462dae96-a259-4a24-bfc3-5b3a3e060a10",
+            "value": "1.5"
         }
     ],
     "parentObjectId": "7f34e096-7366-457c-817b-7dcf13435218",
