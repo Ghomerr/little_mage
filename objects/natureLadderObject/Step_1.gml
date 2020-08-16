@@ -1,6 +1,6 @@
 /// @description Init ladder
 // First ladder, initialize
-if (isActive and totalHeight == 0) {
+if (totalHeight == 0) {
 	// If the ladder is in the air, destroy it
 	if (!collision_point(x, y + gameManager.TILE_SIZE, wallObject, false, true)) {
 		instance_destroy();

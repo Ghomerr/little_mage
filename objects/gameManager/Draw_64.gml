@@ -1,6 +1,7 @@
 /// @description Draw score
 if (room != menuRoom and instance_exists(playerObject)) {
 	
+	#region kills_counter
 	// Draw kills counter
 	if (global.kills > 0) {
 		// Kills text counter
@@ -11,7 +12,9 @@ if (room != menuRoom and instance_exists(playerObject)) {
 		// Kills sprite counter
 		draw_sprite_ext(killsCounterSprite, 0, killsCounterX, killsCounterY, killsTextScale, killsTextScale, 0, c_white, 1);
 	}
+	#endregion
 	
+	#region coins_counter
 	// Draw coins counter
 	if (global.coins > 0 or global.coinsPickedUp) {
 		// Coins sprite counter
@@ -22,7 +25,9 @@ if (room != menuRoom and instance_exists(playerObject)) {
 		draw_set_color(coinsColor);
 		draw_text_transformed(coinsTextX, coinsTextY, coinsText, coinsTextScale, coinsTextScale, 0);
 	}
+	#endregion
 	
+	#region heart_counter
 	// Draw health heart sprites
 	for (var i = 0 ; i < playerObject.initHp ; i++) {
 		// Move sprite x according to current heart to draw
@@ -31,36 +36,45 @@ if (room != menuRoom and instance_exists(playerObject)) {
 		// Check if health is above current heart
 		draw_sprite_ext(heartSprite, getHeartState(i), spriteX, heartSpriteY, heartSpriteScale, heartSpriteScale, 0, c_white, 1);
 	}
+	#endregion
 	
-	// Draw magic frames
-	draw_sprite_ext(frameSprite, 0, primaryFramePosX, frameSpritePosY, 1, 1, 0, c_white, 1);
-	draw_sprite_ext(frameSprite, 0, secondayFramePosX, frameSpritePosY, 1, 1, 0, c_white, 1);
-	
-	with (staffObject) {
-		if (projectile != noone) {
+	#region current_magics
+	// Dram current magics
+	with (playerObject) {
+		var primaryMagicFrameGuiConfig = other.PRIMARY_MAGIC_FRAME_GUI_CONF[currentHat];
+		if (primaryMagicFrameGuiConfig[MAGIC_FRAME_GUI_CONF.SPRITE] != noone) {
 			draw_sprite_ext(
-				projectile.guiSprite,
-				projectile.guiSubImg,
-				other.primaryFrameCenterPosX + projectile.guiOffsetPosX,
-				other.frameCenterPosY + projectile.guiOffsetPosY,
-				projectile.guiScaleX,
-				projectile.guiScaleY,
+				primaryMagicFrameGuiConfig[MAGIC_FRAME_GUI_CONF.SPRITE],
+				primaryMagicFrameGuiConfig[MAGIC_FRAME_GUI_CONF.SUBIMG],
+				other.primaryFrameCenterPosX + primaryMagicFrameGuiConfig[MAGIC_FRAME_GUI_CONF.OFFSET_X],
+				other.frameCenterPosY + primaryMagicFrameGuiConfig[MAGIC_FRAME_GUI_CONF.OFFSET_Y],
+				primaryMagicFrameGuiConfig[MAGIC_FRAME_GUI_CONF.SCALE_X],
+				primaryMagicFrameGuiConfig[MAGIC_FRAME_GUI_CONF.SCALE_Y],
 				0, c_white, 1
 			);
 		}
-		if (secondary != noone) {
+		var secondaryMagicFrameGuiConfig = other.SECONDRARY_MAGIC_FRAME_GUI_CONF[currentHat];
+		if (secondaryMagicFrameGuiConfig[MAGIC_FRAME_GUI_CONF.SPRITE] != noone) {
 			draw_sprite_ext(
-				secondary.guiSprite,
-				secondary.guiSubImg,
-				other.secondaryFrameCenterPosX + secondary.guiOffsetPosX,
-				other.frameCenterPosY + secondary.guiOffsetPosY,
-				secondary.guiScaleX,
-				secondary.guiScaleY,
+				secondaryMagicFrameGuiConfig[MAGIC_FRAME_GUI_CONF.SPRITE],
+				secondaryMagicFrameGuiConfig[MAGIC_FRAME_GUI_CONF.SUBIMG],
+				other.secondaryFrameCenterPosX + secondaryMagicFrameGuiConfig[MAGIC_FRAME_GUI_CONF.OFFSET_X],
+				other.frameCenterPosY + secondaryMagicFrameGuiConfig[MAGIC_FRAME_GUI_CONF.OFFSET_Y],
+				secondaryMagicFrameGuiConfig[MAGIC_FRAME_GUI_CONF.SCALE_X],
+				secondaryMagicFrameGuiConfig[MAGIC_FRAME_GUI_CONF.SCALE_Y],
 				0, c_white, 1
 			);
 		}
 	}
+	#endregion
 	
+	#region magic_frames
+	// Draw magic frames
+	draw_sprite_ext(frameSprite, 0, primaryFramePosX, frameSpritePosY, 1, 1, 0, c_white, 1);
+	draw_sprite_ext(frameSprite, 0, secondayFramePosX, frameSpritePosY, 1, 1, 0, c_white, 1);
+	#endregion
+	
+	#region debug
 	// DEBUG DIALOG
 	if (isDebugOpen) {
 		draw_set_alpha(0.5);
@@ -81,4 +95,5 @@ if (room != menuRoom and instance_exists(playerObject)) {
 		drawSetText(c_white, signPostFont, fa_left, fa_middle);
 		draw_text(10, 10, "FPS: " + currentFpsDisplay);
 	}
+	#endregion
 }

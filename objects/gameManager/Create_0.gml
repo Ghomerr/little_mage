@@ -67,6 +67,12 @@ primaryFrameCenterPosX = primaryFramePosX + frameSpriteWidth / 2;
 secondaryFrameCenterPosX = secondayFramePosX + frameSpriteWidth / 2;
 frameCenterPosY = frameSpritePosY - sprite_get_height(frameSprite) / 2;
 
+
+
+// Magic Frame GUI Config : 
+PRIMARY_MAGIC_FRAME_GUI_CONF = getPrimaryMagicFrameGuiConfig();
+SECONDRARY_MAGIC_FRAME_GUI_CONF = getSecondrayMagicFrameGuiConfig();
+
 GAME_SPEED = game_get_speed(gamespeed_fps);
 TILE_SIZE = 16;
 

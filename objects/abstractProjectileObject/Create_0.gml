@@ -4,7 +4,6 @@ debugColor = c_red;
 isAimingRight = true;
 collidingAngle = -1;
 
-isActive = true;
 hsp = 0;
 hspRatio = 0;
 vsp = 0;

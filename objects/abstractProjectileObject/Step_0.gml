@@ -1,7 +1,7 @@
 /// @description Handle movement and collisions
 
 // Handle falling or moving projectile only
-if (isActive and (isFalling or prjSpeed > 0)) {
+if (isFalling or prjSpeed > 0) {
 	
 	// Turn the sprite
 	if (STEP_ANGLE > 0) {

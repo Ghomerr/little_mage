@@ -93,3 +93,13 @@ enum NAT_LADDER {
 	MIDDLE,
 	TOP
 }
+
+// Magic frame GUI Config
+enum MAGIC_FRAME_GUI_CONF {
+	SPRITE,
+	SUBIMG,
+	SCALE_X,
+	SCALE_Y,
+	OFFSET_X,
+	OFFSET_Y
+}

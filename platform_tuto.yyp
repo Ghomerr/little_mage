@@ -671,6 +671,14 @@
             }
         },
         {
+            "Key": "329fa8e6-852b-49d9-819a-9ea3128f2e0a",
+            "Value": {
+                "id": "877f2362-b34b-4eb0-8655-8bf0165ca46a",
+                "resourcePath": "scripts\\getSecondrayMagicFrameGuiConfig\\getSecondrayMagicFrameGuiConfig.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "33c504d2-855b-4742-93b5-a84f57366707",
             "Value": {
                 "id": "bb7b551a-c915-48bd-a2e2-d32d4a286b8d",
@@ -2343,6 +2351,14 @@
             }
         },
         {
+            "Key": "c2fd92b1-a0b8-4a1a-864c-51c39c2a2103",
+            "Value": {
+                "id": "509a55b5-18ae-4cde-bffe-7f9f550730d4",
+                "resourcePath": "scripts\\getPrimaryMagicFrameGuiConfig\\getPrimaryMagicFrameGuiConfig.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "c314de00-40f3-4546-9c6f-61377511d231",
             "Value": {
                 "id": "b196bc5a-e816-431d-a41d-285c02c35d48",
@@ -3109,6 +3125,8 @@
         "49f01be5-4103-4286-98d9-2ab9f65aa8b2",
         "c21e4715-ab4c-4e46-8678-04afe0be47b8",
         "8a4be7bf-6c8a-4cb5-9272-35ce8ec7a540",
+        "c2fd92b1-a0b8-4a1a-864c-51c39c2a2103",
+        "329fa8e6-852b-49d9-819a-9ea3128f2e0a",
         "4eeebcec-b4ce-4da4-87fd-50e054849c76",
         "2555e036-4770-49c4-b354-4a3f28fdc3d3",
         "9dd8b2e1-2898-4744-8b16-40871fd77a41",
