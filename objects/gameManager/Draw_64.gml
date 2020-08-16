@@ -39,45 +39,47 @@ if (room != menuRoom and instance_exists(playerObject)) {
 	#endregion
 	
 	#region current_magics
-	// Dram current magics
-	with (playerObject) {
-		var primaryMagicFrameGuiConfig = other.PRIMARY_MAGIC_FRAME_GUI_CONF[currentHat];
-		if (primaryMagicFrameGuiConfig[MAGIC_FRAME_GUI_CONF.SPRITE] != noone) {
-			// draw magic background
-			draw_sprite_ext(frameSprite, 1, other.primaryFramePosX, other.frameSpritePosY, 1, 1, 0, primaryMagicFrameGuiConfig[MAGIC_FRAME_GUI_CONF.BG_COLOR], 1);
-			// draw primary magic
-			draw_sprite_ext(
-				primaryMagicFrameGuiConfig[MAGIC_FRAME_GUI_CONF.SPRITE],
-				primaryMagicFrameGuiConfig[MAGIC_FRAME_GUI_CONF.SUBIMG],
-				other.primaryFrameCenterPosX + primaryMagicFrameGuiConfig[MAGIC_FRAME_GUI_CONF.OFFSET_X],
-				other.frameCenterPosY + primaryMagicFrameGuiConfig[MAGIC_FRAME_GUI_CONF.OFFSET_Y],
-				primaryMagicFrameGuiConfig[MAGIC_FRAME_GUI_CONF.SCALE_X],
-				primaryMagicFrameGuiConfig[MAGIC_FRAME_GUI_CONF.SCALE_Y],
-				0, c_white, 1
-			);
+	if (instance_exists(playerObject) and playerObject.hasWeapon) {
+		// Dram current magics
+		with (playerObject) {
+			var primaryMagicFrameGuiConfig = other.PRIMARY_MAGIC_FRAME_GUI_CONF[currentHat];
+			if (primaryMagicFrameGuiConfig[MAGIC_FRAME_GUI_CONF.SPRITE] != noone) {
+				// draw magic background
+				draw_sprite_ext(frameSprite, 1, other.primaryFramePosX, other.frameSpritePosY, 1, 1, 0, primaryMagicFrameGuiConfig[MAGIC_FRAME_GUI_CONF.BG_COLOR], 1);
+				// draw primary magic
+				draw_sprite_ext(
+					primaryMagicFrameGuiConfig[MAGIC_FRAME_GUI_CONF.SPRITE],
+					primaryMagicFrameGuiConfig[MAGIC_FRAME_GUI_CONF.SUBIMG],
+					other.primaryFrameCenterPosX + primaryMagicFrameGuiConfig[MAGIC_FRAME_GUI_CONF.OFFSET_X],
+					other.frameCenterPosY + primaryMagicFrameGuiConfig[MAGIC_FRAME_GUI_CONF.OFFSET_Y],
+					primaryMagicFrameGuiConfig[MAGIC_FRAME_GUI_CONF.SCALE_X],
+					primaryMagicFrameGuiConfig[MAGIC_FRAME_GUI_CONF.SCALE_Y],
+					0, c_white, 1
+				);
+			}
+			var secondaryMagicFrameGuiConfig = other.SECONDRARY_MAGIC_FRAME_GUI_CONF[currentHat];
+			if (secondaryMagicFrameGuiConfig[MAGIC_FRAME_GUI_CONF.SPRITE] != noone) {
+				// draw magic background
+				draw_sprite_ext(frameSprite, 1, other.secondayFramePosX, other.frameSpritePosY, 1, 1, 0, secondaryMagicFrameGuiConfig[MAGIC_FRAME_GUI_CONF.BG_COLOR], 1);
+				// draw secondary magic
+				draw_sprite_ext(
+					secondaryMagicFrameGuiConfig[MAGIC_FRAME_GUI_CONF.SPRITE],
+					secondaryMagicFrameGuiConfig[MAGIC_FRAME_GUI_CONF.SUBIMG],
+					other.secondaryFrameCenterPosX + secondaryMagicFrameGuiConfig[MAGIC_FRAME_GUI_CONF.OFFSET_X],
+					other.frameCenterPosY + secondaryMagicFrameGuiConfig[MAGIC_FRAME_GUI_CONF.OFFSET_Y],
+					secondaryMagicFrameGuiConfig[MAGIC_FRAME_GUI_CONF.SCALE_X],
+					secondaryMagicFrameGuiConfig[MAGIC_FRAME_GUI_CONF.SCALE_Y],
+					0, c_white, 1
+				);
+			}
 		}
-		var secondaryMagicFrameGuiConfig = other.SECONDRARY_MAGIC_FRAME_GUI_CONF[currentHat];
-		if (secondaryMagicFrameGuiConfig[MAGIC_FRAME_GUI_CONF.SPRITE] != noone) {
-			// draw magic background
-			draw_sprite_ext(frameSprite, 1, other.secondayFramePosX, other.frameSpritePosY, 1, 1, 0, secondaryMagicFrameGuiConfig[MAGIC_FRAME_GUI_CONF.BG_COLOR], 1);
-			// draw secondary magic
-			draw_sprite_ext(
-				secondaryMagicFrameGuiConfig[MAGIC_FRAME_GUI_CONF.SPRITE],
-				secondaryMagicFrameGuiConfig[MAGIC_FRAME_GUI_CONF.SUBIMG],
-				other.secondaryFrameCenterPosX + secondaryMagicFrameGuiConfig[MAGIC_FRAME_GUI_CONF.OFFSET_X],
-				other.frameCenterPosY + secondaryMagicFrameGuiConfig[MAGIC_FRAME_GUI_CONF.OFFSET_Y],
-				secondaryMagicFrameGuiConfig[MAGIC_FRAME_GUI_CONF.SCALE_X],
-				secondaryMagicFrameGuiConfig[MAGIC_FRAME_GUI_CONF.SCALE_Y],
-				0, c_white, 1
-			);
-		}
-	}
 	#endregion
 	
 	#region magic_frames
-	// Draw magic frames
-	draw_sprite_ext(frameSprite, 0, primaryFramePosX, frameSpritePosY, 1, 1, 0, c_white, 1);
-	draw_sprite_ext(frameSprite, 0, secondayFramePosX, frameSpritePosY, 1, 1, 0, c_white, 1);
+		// Draw magic frames
+		draw_sprite_ext(frameSprite, 0, primaryFramePosX, frameSpritePosY, 1, 1, 0, c_white, 1);
+		draw_sprite_ext(frameSprite, 0, secondayFramePosX, frameSpritePosY, 1, 1, 0, c_white, 1);
+	}
 	#endregion
 	
 	#region debug
