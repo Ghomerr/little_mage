@@ -43,6 +43,9 @@ if (room != menuRoom and instance_exists(playerObject)) {
 	with (playerObject) {
 		var primaryMagicFrameGuiConfig = other.PRIMARY_MAGIC_FRAME_GUI_CONF[currentHat];
 		if (primaryMagicFrameGuiConfig[MAGIC_FRAME_GUI_CONF.SPRITE] != noone) {
+			// draw magic background
+			draw_sprite_ext(frameSprite, 1, other.primaryFramePosX, other.frameSpritePosY, 1, 1, 0, primaryMagicFrameGuiConfig[MAGIC_FRAME_GUI_CONF.BG_COLOR], 1);
+			// draw primary magic
 			draw_sprite_ext(
 				primaryMagicFrameGuiConfig[MAGIC_FRAME_GUI_CONF.SPRITE],
 				primaryMagicFrameGuiConfig[MAGIC_FRAME_GUI_CONF.SUBIMG],
@@ -55,6 +58,9 @@ if (room != menuRoom and instance_exists(playerObject)) {
 		}
 		var secondaryMagicFrameGuiConfig = other.SECONDRARY_MAGIC_FRAME_GUI_CONF[currentHat];
 		if (secondaryMagicFrameGuiConfig[MAGIC_FRAME_GUI_CONF.SPRITE] != noone) {
+			// draw magic background
+			draw_sprite_ext(frameSprite, 1, other.secondayFramePosX, other.frameSpritePosY, 1, 1, 0, secondaryMagicFrameGuiConfig[MAGIC_FRAME_GUI_CONF.BG_COLOR], 1);
+			// draw secondary magic
 			draw_sprite_ext(
 				secondaryMagicFrameGuiConfig[MAGIC_FRAME_GUI_CONF.SPRITE],
 				secondaryMagicFrameGuiConfig[MAGIC_FRAME_GUI_CONF.SUBIMG],
