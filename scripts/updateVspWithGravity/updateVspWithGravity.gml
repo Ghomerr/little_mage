@@ -1,6 +1,10 @@
 /// @desc update vsp with gravity
 /// @arg vsp to check
 /// @arg max vsp value = jump
-if (argument0 < argument1) {
-	vsp += grv;
+function updateVspWithGravity(argument0, argument1) {
+	if (argument0 < argument1) {
+		vsp += grv;
+	}
+
+
 }

@@ -1,8 +1,12 @@
 {
-    "id": "753293eb-e306-47c8-bc0b-3790722ec1f8",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "debugCommand",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "isDnD": false,
+  "isCompatibility": false,
+  "parent": {
+    "name": "Commands",
+    "path": "folders/Scripts/Commands.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "debugCommand",
+  "tags": [],
+  "resourceType": "GMScript",
 }

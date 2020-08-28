@@ -1,8 +1,12 @@
 {
-    "id": "d7176b03-3a3f-442f-a7d4-07d2789b1c6a",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "emitStoneParticles",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "isDnD": false,
+  "isCompatibility": false,
+  "parent": {
+    "name": "Effects",
+    "path": "folders/Scripts/Effects.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "emitStoneParticles",
+  "tags": [],
+  "resourceType": "GMScript",
 }

@@ -1,1 +1,5 @@
-return frozenCounter > 0 ? global.frozenFactor : 1;
+function getDefaultSpeed() {
+	return frozenCounter > 0 ? global.frozenFactor : 1;
+
+
+}

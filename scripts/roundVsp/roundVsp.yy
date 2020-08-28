@@ -1,8 +1,12 @@
 {
-    "id": "240aec97-84d2-4c37-87d9-09c3e79c522c",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "roundVsp",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "isDnD": false,
+  "isCompatibility": false,
+  "parent": {
+    "name": "Helpers",
+    "path": "folders/Scripts/Helpers.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "roundVsp",
+  "tags": [],
+  "resourceType": "GMScript",
 }

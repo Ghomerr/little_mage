@@ -1,8 +1,12 @@
 {
-    "id": "22d8a09a-1732-4051-aaf9-d0851053ac19",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "beHitInTheAir",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "isDnD": false,
+  "isCompatibility": false,
+  "parent": {
+    "name": "Entities",
+    "path": "folders/Scripts/Entities.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "beHitInTheAir",
+  "tags": [],
+  "resourceType": "GMScript",
 }

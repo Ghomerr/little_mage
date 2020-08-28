@@ -1,8 +1,12 @@
 {
-    "id": "280fb53e-3f62-45d9-8459-d0b9325d0102",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "handleVerticalCollision",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "isDnD": false,
+  "isCompatibility": false,
+  "parent": {
+    "name": "Entities",
+    "path": "folders/Scripts/Entities.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "handleVerticalCollision",
+  "tags": [],
+  "resourceType": "GMScript",
 }

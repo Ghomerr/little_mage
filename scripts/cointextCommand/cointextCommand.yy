@@ -1,8 +1,12 @@
 {
-    "id": "91fb81ef-ed97-4efd-a761-23ebf6e3ee32",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "cointextCommand",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "isDnD": false,
+  "isCompatibility": false,
+  "parent": {
+    "name": "Commands",
+    "path": "folders/Scripts/Commands.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "cointextCommand",
+  "tags": [],
+  "resourceType": "GMScript",
 }

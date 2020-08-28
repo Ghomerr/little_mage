@@ -1,8 +1,12 @@
 {
-    "id": "61efac8a-1be5-4dfd-b939-5c581b95ce8a",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "afterUpdateKillsCounter",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "isDnD": false,
+  "isCompatibility": false,
+  "parent": {
+    "name": "GUI",
+    "path": "folders/Scripts/GUI.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "afterUpdateKillsCounter",
+  "tags": [],
+  "resourceType": "GMScript",
 }

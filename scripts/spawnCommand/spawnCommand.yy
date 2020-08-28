@@ -1,8 +1,12 @@
 {
-    "id": "34dd03c6-cc6a-41b3-917c-f8f3ff56975d",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "spawnCommand",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "isDnD": false,
+  "isCompatibility": false,
+  "parent": {
+    "name": "Commands",
+    "path": "folders/Scripts/Commands.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "spawnCommand",
+  "tags": [],
+  "resourceType": "GMScript",
 }

@@ -3,22 +3,26 @@
 /// @arg minAngle 
 /// @arg maxAngle
 /// @arg strict (default false)
+function isBetweenAngles() {
 
-var angle = sign(argument0) ? argument0 : argument0 + ANGLE.COMPLETE;
-var minAngle = argument1;
-var maxAngle = argument2;
-var strict = false;
+	var angle = sign(argument0) ? argument0 : argument0 + ANGLE.COMPLETE;
+	var minAngle = argument1;
+	var maxAngle = argument2;
+	var strict = false;
 
-if (angle > maxAngle) {
-	angle -= ANGLE.COMPLETE;	
-}
+	if (angle > maxAngle) {
+		angle -= ANGLE.COMPLETE;	
+	}
 
-if (argument_count >= 4) {
-	strict = argument[3];	
-}
+	if (argument_count >= 4) {
+		strict = argument[3];	
+	}
 
-if (strict) {
-	return angle > minAngle and angle < maxAngle;
-} else {
-	return angle >= minAngle and angle <= maxAngle;
+	if (strict) {
+		return angle > minAngle and angle < maxAngle;
+	} else {
+		return angle >= minAngle and angle <= maxAngle;
+	}
+
+
 }

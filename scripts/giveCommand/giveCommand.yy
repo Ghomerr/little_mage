@@ -1,8 +1,12 @@
 {
-    "id": "d40c851f-ce28-4bd2-b074-d916a3c11174",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "giveCommand",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "isDnD": false,
+  "isCompatibility": false,
+  "parent": {
+    "name": "Commands",
+    "path": "folders/Scripts/Commands.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "giveCommand",
+  "tags": [],
+  "resourceType": "GMScript",
 }

@@ -1,7 +1,11 @@
 {
-    "id": "8bebe374-b028-4dca-993b-28aa1cf49238",
-    "modelName": "GMShader",
-    "mvc": "1.0",
-    "name": "burntShader",
-    "type": 1
+  "type": 1,
+  "parent": {
+    "name": "Shaders",
+    "path": "folders/Shaders.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "burntShader",
+  "tags": [],
+  "resourceType": "GMShader",
 }

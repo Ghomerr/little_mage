@@ -1,92 +1,82 @@
 {
-    "id": "c0d17137-78a2-4d87-add7-9619858a1742",
-    "modelName": "GMSprite",
-    "mvc": "1.12",
-    "name": "playerLadderJumpSprite",
-    "For3D": false,
-    "HTile": false,
-    "VTile": false,
-    "bbox_bottom": 31,
-    "bbox_left": 6,
-    "bbox_right": 25,
-    "bbox_top": 3,
-    "bboxmode": 0,
-    "colkind": 1,
-    "coltolerance": 0,
-    "edgeFiltering": false,
-    "frames": [
-        {
-            "id": "b5a58805-e7fe-427f-a1b2-0b859066beec",
-            "modelName": "GMSpriteFrame",
-            "mvc": "1.0",
-            "SpriteId": "c0d17137-78a2-4d87-add7-9619858a1742",
-            "compositeImage": {
-                "id": "154bc21f-ac9c-4787-a933-d92c0d54c009",
-                "modelName": "GMSpriteImage",
-                "mvc": "1.0",
-                "FrameId": "b5a58805-e7fe-427f-a1b2-0b859066beec",
-                "LayerId": "00000000-0000-0000-0000-000000000000"
-            },
-            "images": [
-                {
-                    "id": "8165f8f5-282a-4568-a84f-a7a767f03fcb",
-                    "modelName": "GMSpriteImage",
-                    "mvc": "1.0",
-                    "FrameId": "b5a58805-e7fe-427f-a1b2-0b859066beec",
-                    "LayerId": "40c160ac-cd14-4c22-889d-b8f2751600b0"
-                }
-            ]
-        },
-        {
-            "id": "c807fd1e-679c-4fbb-9179-d545188127b5",
-            "modelName": "GMSpriteFrame",
-            "mvc": "1.0",
-            "SpriteId": "c0d17137-78a2-4d87-add7-9619858a1742",
-            "compositeImage": {
-                "id": "58169ce6-8c6d-4132-8114-cec498a05f08",
-                "modelName": "GMSpriteImage",
-                "mvc": "1.0",
-                "FrameId": "c807fd1e-679c-4fbb-9179-d545188127b5",
-                "LayerId": "00000000-0000-0000-0000-000000000000"
-            },
-            "images": [
-                {
-                    "id": "c86e956e-76d2-46d2-af12-abc043317fe0",
-                    "modelName": "GMSpriteImage",
-                    "mvc": "1.0",
-                    "FrameId": "c807fd1e-679c-4fbb-9179-d545188127b5",
-                    "LayerId": "40c160ac-cd14-4c22-889d-b8f2751600b0"
-                }
-            ]
-        }
-    ],
-    "gridX": 0,
-    "gridY": 0,
-    "height": 32,
-    "layers": [
-        {
-            "id": "40c160ac-cd14-4c22-889d-b8f2751600b0",
-            "modelName": "GMImageLayer",
-            "mvc": "1.0",
-            "SpriteId": "c0d17137-78a2-4d87-add7-9619858a1742",
-            "blendMode": 0,
-            "isLocked": false,
-            "name": "default",
-            "opacity": 100,
-            "visible": true
-        }
-    ],
-    "origin": 4,
-    "originLocked": false,
-    "playbackSpeed": 0,
+  "bboxMode": 0,
+  "collisionKind": 1,
+  "type": 0,
+  "origin": 4,
+  "preMultiplyAlpha": false,
+  "edgeFiltering": false,
+  "collisionTolerance": 0,
+  "swfPrecision": 2.525,
+  "bbox_left": 6,
+  "bbox_right": 25,
+  "bbox_top": 3,
+  "bbox_bottom": 31,
+  "HTile": false,
+  "VTile": false,
+  "For3D": false,
+  "width": 32,
+  "height": 32,
+  "textureGroupId": {
+    "name": "Default",
+    "path": "texturegroups/Default",
+  },
+  "swatchColours": null,
+  "gridX": 0,
+  "gridY": 0,
+  "frames": [
+    {"compositeImage":{"FrameId":{"name":"b5a58805-e7fe-427f-a1b2-0b859066beec","path":"sprites/playerLadderJumpSprite/playerLadderJumpSprite.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"b5a58805-e7fe-427f-a1b2-0b859066beec","path":"sprites/playerLadderJumpSprite/playerLadderJumpSprite.yy",},"LayerId":{"name":"40c160ac-cd14-4c22-889d-b8f2751600b0","path":"sprites/playerLadderJumpSprite/playerLadderJumpSprite.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"playerLadderJumpSprite","path":"sprites/playerLadderJumpSprite/playerLadderJumpSprite.yy",},"resourceVersion":"1.0","name":"b5a58805-e7fe-427f-a1b2-0b859066beec","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"c807fd1e-679c-4fbb-9179-d545188127b5","path":"sprites/playerLadderJumpSprite/playerLadderJumpSprite.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"c807fd1e-679c-4fbb-9179-d545188127b5","path":"sprites/playerLadderJumpSprite/playerLadderJumpSprite.yy",},"LayerId":{"name":"40c160ac-cd14-4c22-889d-b8f2751600b0","path":"sprites/playerLadderJumpSprite/playerLadderJumpSprite.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"playerLadderJumpSprite","path":"sprites/playerLadderJumpSprite/playerLadderJumpSprite.yy",},"resourceVersion":"1.0","name":"c807fd1e-679c-4fbb-9179-d545188127b5","tags":[],"resourceType":"GMSpriteFrame",},
+  ],
+  "sequence": {
+    "spriteId": {"name":"playerLadderJumpSprite","path":"sprites/playerLadderJumpSprite/playerLadderJumpSprite.yy",},
+    "timeUnits": 1,
+    "playback": 1,
+    "playbackSpeed": 0.0,
     "playbackSpeedType": 0,
-    "premultiplyAlpha": false,
-    "sepmasks": false,
-    "swatchColours": null,
-    "swfPrecision": 2.525,
-    "textureGroupId": "1225f6b0-ac20-43bd-a82e-be73fa0b6f4f",
-    "type": 0,
-    "width": 32,
-    "xorig": 16,
-    "yorig": 16
+    "autoRecord": true,
+    "volume": 1.0,
+    "length": 2.0,
+    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
+    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
+    "tracks": [
+      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+            {"id":"b5c8b45f-77dd-4fa2-b3b1-67a5f1c8841f","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"b5a58805-e7fe-427f-a1b2-0b859066beec","path":"sprites/playerLadderJumpSprite/playerLadderJumpSprite.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"292a05f6-dd31-49fd-8908-e80bff6150de","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"c807fd1e-679c-4fbb-9179-d545188127b5","path":"sprites/playerLadderJumpSprite/playerLadderJumpSprite.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
+    ],
+    "visibleRange": {"x":0.0,"y":0.0,},
+    "lockOrigin": false,
+    "showBackdrop": true,
+    "showBackdropImage": false,
+    "backdropImagePath": "",
+    "backdropImageOpacity": 0.5,
+    "backdropWidth": 1920,
+    "backdropHeight": 1080,
+    "backdropXOffset": 0.0,
+    "backdropYOffset": 0.0,
+    "xorigin": 16,
+    "yorigin": 16,
+    "eventToFunction": {},
+    "eventStubScript": null,
+    "parent": {"name":"playerLadderJumpSprite","path":"sprites/playerLadderJumpSprite/playerLadderJumpSprite.yy",},
+    "resourceVersion": "1.3",
+    "name": "",
+    "tags": [],
+    "resourceType": "GMSequence",
+  },
+  "layers": [
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"40c160ac-cd14-4c22-889d-b8f2751600b0","tags":[],"resourceType":"GMImageLayer",},
+  ],
+  "parent": {
+    "name": "Player",
+    "path": "folders/Sprites/Player.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "playerLadderJumpSprite",
+  "tags": [],
+  "resourceType": "GMSprite",
 }

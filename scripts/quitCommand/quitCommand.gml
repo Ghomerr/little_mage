@@ -1,3 +1,7 @@
 /// @desc Quit game
+function quitCommand() {
 
-game_end();
+	game_end();
+
+
+}

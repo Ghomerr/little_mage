@@ -4,23 +4,27 @@
 /// @arg playerX (optional) used to move player X coordinate
 /// @arg playerY (optional) used to move player Y coordinate
 /// @arg staffAngle (optional) used to set the new orientation of the player sprite
+function startTransition() {
 
-with(playerObject) {
-	hasControl = false;
-}
+	with(playerObject) {
+		hasControl = false;
+	}
 
-with (transitionsHandler) {
-	mode = argument[0];
-	if (argument_count > 1) {
-		target = argument[1];
+	with (transitionsHandler) {
+		mode = argument[0];
+		if (argument_count > 1) {
+			target = argument[1];
+		}
+		if (argument_count > 2) {
+			playerX = argument[2];
+			playerY = argument[3];
+			staffAngle = argument[4];
+		} else {
+			playerX = 0;
+			playerY = 0;
+			staffAngle = 0;
+		}
 	}
-	if (argument_count > 2) {
-		playerX = argument[2];
-		playerY = argument[3];
-		staffAngle = argument[4];
-	} else {
-		playerX = 0;
-		playerY = 0;
-		staffAngle = 0;
-	}
+
+
 }

@@ -1,8 +1,12 @@
 {
-    "id": "e36a8e31-8493-4098-a912-4d7f8e9b80c0",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "quitCommand",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "isDnD": false,
+  "isCompatibility": false,
+  "parent": {
+    "name": "Commands",
+    "path": "folders/Scripts/Commands.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "quitCommand",
+  "tags": [],
+  "resourceType": "GMScript",
 }

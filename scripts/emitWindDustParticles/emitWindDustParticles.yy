@@ -1,8 +1,12 @@
 {
-    "id": "1b9216f0-1d56-4293-8264-f247d366221f",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "emitWindDustParticles",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "isDnD": false,
+  "isCompatibility": false,
+  "parent": {
+    "name": "Effects",
+    "path": "folders/Scripts/Effects.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "emitWindDustParticles",
+  "tags": [],
+  "resourceType": "GMScript",
 }

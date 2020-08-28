@@ -1,8 +1,12 @@
 {
-    "id": "de4cc3d4-fa1b-41d5-b5c7-78cfb6f2688a",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "handleBackgroundsParallax",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "isDnD": false,
+  "isCompatibility": false,
+  "parent": {
+    "name": "Cameras",
+    "path": "folders/Scripts/Cameras.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "handleBackgroundsParallax",
+  "tags": [],
+  "resourceType": "GMScript",
 }

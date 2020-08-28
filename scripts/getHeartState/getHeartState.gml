@@ -1,33 +1,37 @@
 /// @desc get heart state to display
 /// @arg heartPos 0 to 3
+function getHeartState(argument0) {
 
-var heartState = HEART.EMPTY;
-with (playerObject) {
-	// Every heart post under hp value are full
-	heartState = argument0 < hp and isVisible ? HEART.FULL : HEART.EMPTY;
+	var heartState = HEART.EMPTY;
+	with (playerObject) {
+		// Every heart post under hp value are full
+		heartState = argument0 < hp and isVisible ? HEART.FULL : HEART.EMPTY;
 		
-	// If heart is not empty and player has death heatys
-	if (heartState == HEART.FULL and deathHearts > 0) {
-		// Check if this heart is a death one
-		var deltaHp = hp - deathHearts;
-		if (argument0 >= deltaHp) {
-			// If least heart, display death heart status
-			if (argument0 == hp - 1) {
-				// Display death heart status depending of the counter
-				if (deathHeartsCounter > deathHeartsTimer * 0.75) {
-					heartState = HEART.DEATH_FULL;
-				} else if (deathHeartsCounter > deathHeartsTimer * 0.5) {
-					heartState = HEART.DEATH_GOOD;
-				} else if (deathHeartsCounter > deathHeartsTimer * 0.25) {
-					heartState = HEART.DEATH_MID;
+		// If heart is not empty and player has death heatys
+		if (heartState == HEART.FULL and deathHearts > 0) {
+			// Check if this heart is a death one
+			var deltaHp = hp - deathHearts;
+			if (argument0 >= deltaHp) {
+				// If least heart, display death heart status
+				if (argument0 == hp - 1) {
+					// Display death heart status depending of the counter
+					if (deathHeartsCounter > deathHeartsTimer * 0.75) {
+						heartState = HEART.DEATH_FULL;
+					} else if (deathHeartsCounter > deathHeartsTimer * 0.5) {
+						heartState = HEART.DEATH_GOOD;
+					} else if (deathHeartsCounter > deathHeartsTimer * 0.25) {
+						heartState = HEART.DEATH_MID;
+					} else {
+						heartState = HEART.DEATH_CRIT;
+					}
 				} else {
-					heartState = HEART.DEATH_CRIT;
+					// Death heart is full
+					heartState = HEART.DEATH_FULL;
 				}
-			} else {
-				// Death heart is full
-				heartState = HEART.DEATH_FULL;
 			}
 		}
 	}
+	return heartState;
+
+
 }
-return heartState;

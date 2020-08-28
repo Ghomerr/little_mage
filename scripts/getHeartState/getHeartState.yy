@@ -1,8 +1,12 @@
 {
-    "id": "8a4be7bf-6c8a-4cb5-9272-35ce8ec7a540",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "getHeartState",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "isDnD": false,
+  "isCompatibility": false,
+  "parent": {
+    "name": "GUI",
+    "path": "folders/Scripts/GUI.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "getHeartState",
+  "tags": [],
+  "resourceType": "GMScript",
 }

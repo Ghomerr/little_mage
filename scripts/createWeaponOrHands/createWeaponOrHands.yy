@@ -1,8 +1,12 @@
 {
-    "id": "e7180214-e955-4850-92bc-078b7a1117d8",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "createWeaponOrHands",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "isDnD": false,
+  "isCompatibility": false,
+  "parent": {
+    "name": "Player",
+    "path": "folders/Scripts/Entities/Player.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "createWeaponOrHands",
+  "tags": [],
+  "resourceType": "GMScript",
 }

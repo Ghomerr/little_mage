@@ -1,25 +1,29 @@
 /// @desc select new hat
 /// @arg display change effect
+function selectNewHat(argument0) {
 
-// If a hat is selected
-if (selectedHat != HATS.NONE) {
-	if (selectedHat == currentHat) {
-		// Same hat : remove it
-		currentHat = HATS.NONE;
-		enableColorSwapping = false;
-		currentPalette = noone;
-	} else {
-		// It's a new hat : change it
-		currentHat = selectedHat;
-		enableColorSwapping = true;
-		currentPalette = PLAYER_PALETTES[currentHat];
-		if (argument0) {
-			displayHatChangeEffect();
+	// If a hat is selected
+	if (selectedHat != HATS.NONE) {
+		if (selectedHat == currentHat) {
+			// Same hat : remove it
+			currentHat = HATS.NONE;
+			enableColorSwapping = false;
+			currentPalette = noone;
+		} else {
+			// It's a new hat : change it
+			currentHat = selectedHat;
+			enableColorSwapping = true;
+			currentPalette = PLAYER_PALETTES[currentHat];
+			if (argument0) {
+				displayHatChangeEffect();
+			}
+		}
+	
+		// If player has weapon, change current sprite
+		if (hasWeapon) {
+			changeStaffMagic();
 		}
 	}
-	
-	// If player has weapon, change current sprite
-	if (hasWeapon) {
-		changeStaffMagic();
-	}
+
+
 }

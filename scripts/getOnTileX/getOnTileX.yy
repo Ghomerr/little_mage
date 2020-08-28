@@ -1,8 +1,12 @@
 {
-    "id": "ed9cc03d-5cc4-45e9-9b3e-7443322dd33f",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "getOnTileX",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "isDnD": false,
+  "isCompatibility": false,
+  "parent": {
+    "name": "Player",
+    "path": "folders/Scripts/Entities/Player.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "getOnTileX",
+  "tags": [],
+  "resourceType": "GMScript",
 }
