@@ -1,14 +1,12 @@
 /// @desc Round angle values over 360 or under -360
 /// @arg angle to round
-function angleRound(argument0) {
+function angleRound(angle) {
 
-	if (argument0 >= ANGLE.COMPLETE) {
-		return argument0 - ANGLE.COMPLETE;
+	if (angle >= ANGLE.COMPLETE) {
+		return angle - ANGLE.COMPLETE;
 	}
-	if (argument0 <= -ANGLE.COMPLETE) {
-		return argument0 + ANGLE.COMPLETE;
+	if (angle <= -ANGLE.COMPLETE) {
+		return angle + ANGLE.COMPLETE;
 	}
-	return argument0;
-
-
+	return angle;
 }

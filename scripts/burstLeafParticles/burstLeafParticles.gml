@@ -8,6 +8,4 @@ function burstLeafParticles() {
 	repeat (irandom_range(5, 10)) {
 		part_particles_create(pm.ps, x + irandom_range(-4, 4), y + irandom_range(-4, 4), choose(pm.leafLeft, pm.leafRight), 1);
 	}
-
-
 }

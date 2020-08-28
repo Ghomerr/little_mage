@@ -1,12 +1,12 @@
 /// @desc display help of each commands or list all available commands
-function helpCommand(argument0) {
+function helpCommand(args) {
 
 	commandResultColor = c_yellow;
 
 	if (argument_count == 1) {
-		if (array_length_1d(argument0) >= 2) {
+		if (array_length(args) >= 2) {
 	
-			var command = argument0[1];
+			var command = args[1];
 			switch (command) {
 				case "cointext":
 					commandResult = "Spawn coins using the given number. Usage: cointext [number]";

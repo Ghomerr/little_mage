@@ -22,7 +22,7 @@ fontHeight = font_get_size(menuFont) * 1.5;
 menu[MENU_CHOICE.NEW_GAME] = "New Game";
 menu[MENU_CHOICE.CONTINUE] = "Continue";
 menu[MENU_CHOICE.QUIT] = "Quit";
-length = array_length_1d(menu);
+length = array_length(menu);
 
 // Menu variables
 menuX = guiWidth + menuHideOffset;

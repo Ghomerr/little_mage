@@ -25,6 +25,4 @@ function startTransition() {
 			staffAngle = 0;
 		}
 	}
-
-
 }

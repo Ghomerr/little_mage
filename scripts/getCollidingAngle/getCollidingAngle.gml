@@ -1,11 +1,11 @@
 /// @desc compute colliding angle
 /// @arg collidingObject
-function getCollidingAngle(argument0) {
+function getCollidingAngle(collidingObject) {
 
-	var topCheck = abs(bbox_bottom - argument0.bbox_top);
-	var bottomCheck = abs(bbox_top - argument0.bbox_bottom);
-	var leftCheck = abs(bbox_right - argument0.bbox_left);
-	var rightCheck = abs(bbox_left - argument0.bbox_right);
+	var topCheck = abs(bbox_bottom - collidingObject.bbox_top);
+	var bottomCheck = abs(bbox_top - collidingObject.bbox_bottom);
+	var leftCheck = abs(bbox_right - collidingObject.bbox_left);
+	var rightCheck = abs(bbox_left - collidingObject.bbox_right);
 
 	var minCollision = min(topCheck, bottomCheck, leftCheck, rightCheck);
 	if (minCollision == topCheck) {
@@ -20,6 +20,4 @@ function getCollidingAngle(argument0) {
 	if (minCollision == rightCheck) {
 		return ANGLE.RIGHT;
 	}
-
-
 }

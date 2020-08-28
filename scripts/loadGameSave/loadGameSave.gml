@@ -20,7 +20,4 @@ function loadGameSave() {
 		// Otherwise, start a new game
 		return nature1Room;
 	}
-
-
-
 }

@@ -1,5 +1,3 @@
-function roundVsp(argument0) {
-	return sign(argument0) ? ceil(argument0) : floor(argument0);
-
-
+function roundVsp(vspVal) {
+	return sign(vspVal) ? ceil(vspVal) : floor(vspVal);
 }

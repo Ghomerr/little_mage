@@ -1,5 +1,5 @@
-function getLayer(argument0) {
-	switch (argument0) {
+function getLayer(layerName) {
+	switch (layerName) {
 		case LAYER.PROJECTILES:
 			if (global.projLayer == -1) global.projLayer = layer_get_id("Projectiles");
 			return global.projLayer;	
@@ -24,6 +24,4 @@ function getLayer(argument0) {
 			if (global.wallLayer == -1) global.wallLayer = layer_get_id("Walls");
 			return global.wallLayer;
 	}
-
-
 }

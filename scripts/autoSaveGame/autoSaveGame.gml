@@ -14,6 +14,4 @@ function autoSaveGame() {
 		file_text_write_real(file, playerObject.deathHearts);
 		file_text_close(file);
 	}
-
-
 }

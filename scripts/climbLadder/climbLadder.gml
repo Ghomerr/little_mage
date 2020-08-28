@@ -8,6 +8,4 @@ function climbLadder() {
 	ignorePlatform = true;
 	var ladder = instance_place(x, y, ladderObject);
 	x = ladder.x;
-
-
 }

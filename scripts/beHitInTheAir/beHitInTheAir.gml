@@ -19,7 +19,4 @@ function beHitInTheAir() {
 	vsp = lengthdir_y(yLen, knockBackDirection);
 	move = (hsp != 0) ? sign(hsp) : 1;
 	image_xscale *= -move;
-
-
-
 }

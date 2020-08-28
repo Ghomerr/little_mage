@@ -1,9 +1,7 @@
 /// @desc Handle event of kills counter update
 /// @arg killTextScale value
 function afterUpdateKillsCounter() {
-
 	with (gameManager) {
-	
 		killsText = string(global.kills);
 		killsTextWidth = string_width(killsText);
 	
@@ -13,6 +11,4 @@ function afterUpdateKillsCounter() {
 			killsCounterX = killsTextX - (killsTextWidth + killsCounterOffset) * killsTextScale;
 		}
 	}
-
-
 }

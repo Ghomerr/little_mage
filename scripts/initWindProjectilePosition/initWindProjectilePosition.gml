@@ -1,5 +1,5 @@
-function initWindProjectilePosition(argument0, argument1) {
-	var collidingWall = instance_place(argument0, argument1, wallObject);
+function initWindProjectilePosition(posX, posY) {
+	var collidingWall = instance_place(posX, posY, wallObject);
 	
 	if (bbox_bottom >= collidingWall.bbox_top) {
 		y -= (bbox_bottom - collidingWall.bbox_top) + 1;
@@ -8,6 +8,4 @@ function initWindProjectilePosition(argument0, argument1) {
 	}
 
 	isGrounded = true;
-
-
 }

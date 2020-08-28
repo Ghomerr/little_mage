@@ -17,15 +17,13 @@ function initSimpleParallax() {
 	with(instance_create_layer(0, 0, "Cameras", backgroundManager)) {
 	
 		// Init backgrounds ids
-		for (var i = 0 ; i < array_length_1d(bgNames) ; i++) {
+		for (var i = 0 ; i < array_length(bgNames) ; i++) {
 			backgroundsIds[i] = layer_get_id(bgNames[i]);
 		}
 	
 		// Init backgrounds speed
-		for (var i = 0 ; i < array_length_1d(bgSpeeds) ; i++) {
+		for (var i = 0 ; i < array_length(bgSpeeds) ; i++) {
 			backgroundsSpeeds[i] = bgSpeeds[i];
 		}
 	}
-
-
 }

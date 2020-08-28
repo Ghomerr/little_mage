@@ -1,8 +1,8 @@
 /// @desc set debug game speed
-/// @arg debug factor modifier
-function setGameSpeed(argument0) {
+/// @arg fpsValue factor modifier
+function setGameSpeed(fpsValue) {
 
-	debugFps += argument0;
+	debugFps += fpsValue;
 
 	if (debugFps > GAME_SPEED) {
 		debugFps = GAME_SPEED;
@@ -14,7 +14,4 @@ function setGameSpeed(argument0) {
 
 	// Slow game speed
 	game_set_speed(debugFps, gamespeed_fps);
-
-
-
 }

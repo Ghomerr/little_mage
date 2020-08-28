@@ -2,7 +2,6 @@
 /// @arg coinsTextScale value
 /// @arg coinsColor value
 function afterUpdateCoinsCounter() {
-
 	// Check global coins if negative set to zero
 	if (global.coins < 0) {
 		global.coins = 0;
@@ -27,6 +26,4 @@ function afterUpdateCoinsCounter() {
 			coinsTextShadowX = coinsTextX + 2;
 		}
 	}
-
-
 }

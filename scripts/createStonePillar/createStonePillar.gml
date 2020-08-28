@@ -47,6 +47,4 @@ function createStonePillar() {
 			1, irandom_range(10, 20)
 		);
 	}
-
-
 }

@@ -4,20 +4,18 @@
 /// @arg number
 /// @arg random
 /// @arg useSpeed
-function emitDeathParticles(argument0, argument1, argument2, argument3, argument4, argument5) {
+function emitDeathParticles(partDir, dirOffset, range, number, random, useSpeed) {
 
-	var xDelta = argument0 and argument1 ? lengthdir_x(argument1, argument0) : 0;
-	var yDelta = argument0 and argument1 ? lengthdir_y(argument1, argument0) : 0;
+	var xDelta = partDir and dirOffset ? lengthdir_x(dirOffset, partDir) : 0;
+	var yDelta = partDir and dirOffset ? lengthdir_y(dirOffset, partDir) : 0;
 
-	if (argument5) {
+	if (useSpeed) {
 		part_type_speed(pm.deathSmoke, 0.5, 1, -0.1, 0);	
 	}
-	repeat(argument4 ? irandom_range(1, argument3) : argument3) {
-		part_particles_create(pm.psUnderProj, x + irandom_range(-argument2, argument2) + xDelta, y + irandom_range(-argument2, argument2) + yDelta, pm.deathSmoke, 1);
+	repeat(random ? irandom_range(1, number) : number) {
+		part_particles_create(pm.psUnderProj, x + irandom_range(-range, range) + xDelta, y + irandom_range(-range, range) + yDelta, pm.deathSmoke, 1);
 	}
-	if (argument5) {
+	if (useSpeed) {
 		part_type_speed(pm.deathSmoke, 0, 0, 0, 0);
 	}
-
-
 }

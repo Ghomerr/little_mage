@@ -14,6 +14,4 @@ function isCollidingPlatform() {
 		return true;
 	}
 	return false;
-
-
 }

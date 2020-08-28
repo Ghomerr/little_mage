@@ -2,11 +2,11 @@
 /// @arg object type to check collision with
 /// @arg nextX of projectile
 /// @arg nextY of projectile
-function handleCollisionWith(argument0, argument1, argument2) {
+function handleCollisionWith(object, nextX, nextY) {
 
-	if (place_meeting(argument1, argument2, argument0)) {
+	if (place_meeting(nextX, nextY, object)) {
 		// Get colliding instance
-		var collidingInstance = instance_place(argument1, argument2, argument0);
+		var collidingInstance = instance_place(nextX, nextY, object);
 	
 		// Avoid self shooting
 		if (shooter == collidingInstance.id) {

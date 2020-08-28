@@ -21,6 +21,4 @@ function getPrimaryMagicFrameGuiConfig() {
 		pGravGuiConf,
 		pManaGuiConf
 	];
-
-
 }

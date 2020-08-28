@@ -2,7 +2,6 @@
 /// @arg nextY value with vsp
 /// @arg ignorePlatform optional flag to pass through platforms
 function handleVerticalCollision() {
-
 	var nextY = argument[0];
 	var ignorePlatform = argument_count >= 2 ? argument[1] : false;
 
@@ -48,6 +47,4 @@ function handleVerticalCollision() {
 	}
 
 	return hasCollided;
-
-
 }

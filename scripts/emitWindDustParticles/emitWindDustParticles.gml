@@ -1,32 +1,29 @@
 /// @desc emit wind dust particles
-/// @arg minDirection	argument0
-/// @arg maxDirection	argument1
-/// @arg useGravity		argument2
-/// @arg xRange			argument3
-/// @arg yRange			argument4
-/// @arg partX			argument5
-/// @arg partY			argument6
-/// @arg number			argument7
-function emitWindDustParticles(argument0, argument1, argument2, argument3, argument4, argument5, argument6, argument7) {
+/// @arg minDir	
+/// @arg maxDir	
+/// @arg useGrav		
+/// @arg xRange			
+/// @arg yRange			
+/// @arg partX			
+/// @arg partY			
+/// @arg number			
+function emitWindDustParticles(minDir, maxDir, useGrav, xRange, yRange, partX, partY, number) {
+	part_type_direction(pm.windDust, minDir, maxDir, 0, 0);
 
-	part_type_direction(pm.windDust, argument0, argument1, 0, 0);
-
-	if (argument2)  {
+	if (useGrav)  {
 		var partGrav = move ? ANGLE.LEFT : ANGLE.RIGHT;
 		part_type_gravity(pm.windDust, 0.02, partGrav);
 	} else {
 		part_type_gravity(pm.windDust, 0, 0);
 	}
 
-	repeat(argument7) {
+	repeat(number) {
 		part_particles_create(
 			pm.ps,
-			argument5 + irandom_range(-argument3, argument3),
-			argument6 + irandom_range(-argument4, argument4),
+			partX + irandom_range(-xRange, xRange),
+			partY + irandom_range(-yRange, yRange),
 			pm.windDust,
 			1
 		);
 	}
-
-
 }

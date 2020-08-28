@@ -65,6 +65,4 @@ function buildPlayerPalettes() {
 		windColors,
 		gravityColors
 	];
-
-
 }

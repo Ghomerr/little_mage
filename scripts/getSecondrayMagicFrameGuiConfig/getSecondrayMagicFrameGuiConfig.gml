@@ -21,6 +21,4 @@ function getSecondrayMagicFrameGuiConfig() {
 		sGravGuiConf,
 		sManaGuiConf
 	];
-
-
 }

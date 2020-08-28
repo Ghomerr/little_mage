@@ -1,10 +1,10 @@
 /// @desc Debug the game
 /// @arg args of the command : debug <target>
-function debugCommand(argument0) {
+function debugCommand(args) {
 
-	if (argument_count == 1 and array_length_1d(argument0) >= 2) {
+	if (argument_count == 1 and array_length(args) >= 2) {
 
-		var debugArg = argument0[1];
+		var debugArg = args[1];
 		switch (debugArg) {
 			case "player":
 				if (instance_exists(playerObject)) {

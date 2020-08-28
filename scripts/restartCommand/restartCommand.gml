@@ -1,10 +1,10 @@
 /// @desc restart the room or the game
 /// @arg args of the command : restart <target>
-function restartCommand(argument0) {
+function restartCommand(args) {
 
-	if (argument_count == 1 and array_length_1d(argument0) >= 1) {
+	if (argument_count == 1 and array_length(args) >= 1) {
 
-		var restartArg = array_length_1d(argument0) >= 1 ? argument0[1] : "";
+		var restartArg = array_length(args) >= 1 ? args[1] : "";
 		switch (restartArg) {
 			case "game":
 				commandResultColor = c_yellow;
@@ -23,6 +23,4 @@ function restartCommand(argument0) {
 		commandResultColor = c_red;
 		commandResult = "Invalid restart arguments. Type help restart to see the usage.";
 	}
-
-
 }

@@ -1,13 +1,13 @@
 /// @desc Spawn something with quantity
 /// @arg args of the command : spawn <entity> (<quantity>)
-function spawnCommand(argument0) {
+function spawnCommand(args) {
 
-	if (argument_count == 1 and array_length_1d(argument0) >= 2) {
+	if (argument_count == 1 and array_length(args) >= 2) {
 	
-		var spawnName = argument0[1];
+		var spawnName = args[1];
 	
 		// Get quantity
-		var qtyArray = getCommandQuantity(argument0);
+		var qtyArray = getCommandQuantity(args);
 		var quantity = max(1, min(qtyArray[0], 100));
 		//var quantityString = qtyArray[1];
 	

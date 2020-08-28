@@ -27,6 +27,4 @@ function getHatFromStaffAngle() {
 		}
 		return noone;
 	}
-
-
 }

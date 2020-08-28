@@ -1,12 +1,12 @@
 /// @desc Apply the given effect to the player
 /// @arg args of the command : effect <effect> <duration>
-function effectCommand(argument0) {
+function effectCommand(args) {
 
-	if (argument_count == 1 and array_length_1d(argument0) >= 2) {
+	if (argument_count == 1 and array_length(args) >= 2) {
 	
-		var effectName = argument0[1];
+		var effectName = args[1];
 	
-		var qtyArray = getCommandQuantity(argument0);
+		var qtyArray = getCommandQuantity(args);
 		var quantity = max(1, min(qtyArray[0], 3600)) * game_get_speed(gamespeed_fps);
 	
 		if (!instance_exists(playerObject)) {

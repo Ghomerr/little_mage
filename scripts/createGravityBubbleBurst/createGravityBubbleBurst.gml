@@ -6,6 +6,4 @@ function createGravityBubbleBurst() {
 			image_yscale = other.image_yscale * other.gravityBubbleScale;
 		}
 	}
-
-
 }

@@ -41,8 +41,4 @@ function initPlantPosition() {
 	} else {
 		image_angle = collidingAngle;
 	}
-
-
-
-
 }

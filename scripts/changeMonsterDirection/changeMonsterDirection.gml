@@ -8,6 +8,4 @@ function changeMonsterDirection() {
 		debugColor = c_yellow;
 		isCollidingOther = true;
 	}
-
-
 }

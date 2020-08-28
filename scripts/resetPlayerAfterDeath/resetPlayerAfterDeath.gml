@@ -13,6 +13,4 @@ function resetPlayerAfterDeath() {
 	move = 0;
 	invulShaderTransparent = false;
 	showHatsWheel = false;
-
-
 }

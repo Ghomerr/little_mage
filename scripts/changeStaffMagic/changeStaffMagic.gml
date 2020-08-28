@@ -4,6 +4,4 @@ function changeStaffMagic() {
 		projectile = PROJECTILES[playerObject.currentHat];
 		secondary = SECONDARY_MAGICS[playerObject.currentHat];
 	}
-
-
 }

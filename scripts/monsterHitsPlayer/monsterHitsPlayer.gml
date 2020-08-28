@@ -7,6 +7,4 @@ function monsterHitsPlayer() {
 		isBeingHit = true;
 		invulCounter = INVUL_TIMER;
 	}
-
-
 }

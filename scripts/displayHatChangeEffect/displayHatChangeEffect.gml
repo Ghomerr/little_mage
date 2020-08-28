@@ -53,6 +53,4 @@ function displayHatChangeEffect() {
 			emitGravityParticles(1, 2, irandom_range(5, 10), spriteHalfWidth, spriteHalfWidth);
 			break;
 	}
-
-
 }

@@ -1,6 +1,5 @@
 function initMovement() {
 	// Init movement
-
 	var realMove = elecShockCounter > 0 ? 0 : move;
 
 	if (!isBeingHit and !isOnLadder) {
@@ -17,6 +16,4 @@ function initMovement() {
 			vsp = 0;	
 		}
 	}
-
-
 }

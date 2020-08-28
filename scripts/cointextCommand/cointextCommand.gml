@@ -1,6 +1,6 @@
 /// @desc Spawn coins according to the given text
 /// @arg args of the command : cointext <characters>
-function cointextCommand(argument0) {
+function cointextCommand(args) {
 
 	var CHARACTERS = [
 		"OOOO OO OO OOOO", // zero
@@ -15,9 +15,9 @@ function cointextCommand(argument0) {
 		"OOOO OOOO  OOOO"  // nine
 	];
 
-	if (argument_count == 1 and array_length_1d(argument0) >= 2) {
+	if (argument_count == 1 and array_length(args) >= 2) {
 	
-		var coinText = string_digits(argument0[1]); // TODO : handle characters later
+		var coinText = string_digits(args[1]); // TODO : handle characters later
 	
 		with (playerObject) {	
 			var startX = (sign(image_xscale) ? ceil (x / gameManager.TILE_SIZE) + 2 : floor(x / gameManager.TILE_SIZE) - 2) * gameManager.TILE_SIZE;

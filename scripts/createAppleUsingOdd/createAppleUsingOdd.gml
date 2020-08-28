@@ -12,6 +12,4 @@ function createAppleUsingOdd() {
 			vsp = lengthdir_y(jump, dir);
 		}
 	}
-
-
 }

@@ -1,8 +1,8 @@
 /// @desc be hit by something
-/// @arg damage
-function beHit(argument0) {
+/// @arg dmgVal
+function beHit(dmgVal) {
 	if (flash <= 0) {
-		if (argument0 > 0) {
+		if (dmgVal > 0) {
 			if (isPlayer) {
 				with (playerObject) {
 					if (canBeHit) {
@@ -21,7 +21,7 @@ function beHit(argument0) {
 				}
 				with(gameManager) heartSpriteScale = 2;
 			} else {
-				hp -= argument0;
+				hp -= dmgVal;
 			}
 
 			audio_sound_pitch(manaBoltHitSound, choose(0.8, 1.0, 1.2));

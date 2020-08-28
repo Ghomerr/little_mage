@@ -45,6 +45,4 @@ function setPlayerUniforms() {
 			shader_set_uniform_f(useColorSwapUniform, false);
 		}
 	}
-
-
 }

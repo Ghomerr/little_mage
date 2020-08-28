@@ -10,6 +10,4 @@ function godCommand() {
 
 	commandResultColor = c_yellow;
 	commandResult = "God mode: " + (inGodMod ? "ON" : "OFF");
-
-
 }

@@ -1,13 +1,13 @@
 /// @desc give something to the player
 /// @arg args of the command : give <item> <quantity>
-function giveCommand(argument0) {
+function giveCommand(args) {
 
-	if (argument_count == 1 and array_length_1d(argument0) >= 2) {
+	if (argument_count == 1 and array_length(args) >= 2) {
 
-		var giveElement = argument0[1];
+		var giveElement = args[1];
 	
 		// Get quantity
-		var qtyArray = getCommandQuantity(argument0);
+		var qtyArray = getCommandQuantity(args);
 		var quantity = qtyArray[0];
 		var quantityString = qtyArray[1]; 
 	

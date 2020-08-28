@@ -4,17 +4,14 @@
 /// @arg grvDir
 /// @arg range
 /// @arg partCount
-function emitFireParticles(argument0, argument1, argument2, argument3, argument4) {
-
-	part_type_direction(pm.fireball, argument0, argument1, 0, 0);
-	part_type_gravity(pm.fireball, 0.1, argument2);
+function emitFireParticles(dirMin, dirMax, grvDir, range, partCount) {
+	part_type_direction(pm.fireball, dirMin, dirMax, 0, 0);
+	part_type_gravity(pm.fireball, 0.1, grvDir);
 	part_particles_create(
 		pm.ps, 
-		x + irandom_range(-argument3, argument3), 
-		y + irandom_range(-argument3, argument3), 
+		x + irandom_range(-range, range), 
+		y + irandom_range(-range, range), 
 		pm.fireball,
-		argument4
+		partCount
 	);
-
-
 }

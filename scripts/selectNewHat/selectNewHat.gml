@@ -1,6 +1,6 @@
 /// @desc select new hat
-/// @arg display change effect
-function selectNewHat(argument0) {
+/// @arg isDisplayed change effect
+function selectNewHat(isDisplayed) {
 
 	// If a hat is selected
 	if (selectedHat != HATS.NONE) {
@@ -14,7 +14,7 @@ function selectNewHat(argument0) {
 			currentHat = selectedHat;
 			enableColorSwapping = true;
 			currentPalette = PLAYER_PALETTES[currentHat];
-			if (argument0) {
+			if (isDisplayed) {
 				displayHatChangeEffect();
 			}
 		}

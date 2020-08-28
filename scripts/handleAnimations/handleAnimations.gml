@@ -104,6 +104,4 @@ function handleAnimations() {
 	if (sprite_index != defaultSprite) {
 		idleRestart = true;
 	}
-
-
 }
