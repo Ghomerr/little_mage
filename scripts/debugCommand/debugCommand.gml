@@ -28,10 +28,12 @@ function debugCommand(args) {
 			case "walls":
 				if (instance_exists(wallObject)) {
 					wallObject.visible = !wallObject.visible;
-					ladderObject.visible = wallObject.visible;
-					commandResultColor = c_yellow;
-					commandResult = "Debug Walls " + (wallObject.visible ? "ON" : "OFF");
+					if (instance_exists(ladderObject)) {
+						ladderObject.visible = wallObject.visible;
+					}
 				}
+				commandResultColor = c_yellow;
+				commandResult = "Debug Walls " + (wallObject.visible ? "ON" : "OFF");
 				break;
 			
 			case "fps":

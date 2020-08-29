@@ -81,7 +81,7 @@ if (isVisible) {
 			if (move != 0) {
 				doJump();	
 			}
-		} else if (!isOnLadder and keyUp and place_meeting(x, y, ladderObject)) {
+		} else if (!isOnLadder and !isBeingHit and keyUp and place_meeting(x, y, ladderObject)) {
 			climbLadder();
 		}
 		

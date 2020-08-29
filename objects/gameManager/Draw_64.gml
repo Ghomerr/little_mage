@@ -39,7 +39,7 @@ if (room != menuRoom and instance_exists(playerObject)) {
 	#endregion
 	
 	#region current_magics
-	if (instance_exists(playerObject) and playerObject.hasWeapon) {
+	if (instance_exists(playerObject) and instance_exists(staffObject)) {
 		
 		// Draw current magics
 		with (playerObject) {

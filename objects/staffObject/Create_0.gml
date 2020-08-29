@@ -38,4 +38,11 @@ SECONDARY_MAGICS = [
 	noone
 ];
 
+// Nature ladders handler
+natureLadders = {
+	maxi: 3,
+	list: [noone, noone, noone],
+	cursor: 0
+}
+
 changeStaffMagic();
