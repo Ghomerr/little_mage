@@ -75,6 +75,7 @@ SECONDRARY_MAGIC_FRAME_GUI_CONF = getSecondrayMagicFrameGuiConfig();
 
 GAME_SPEED = game_get_speed(gamespeed_fps);
 TILE_SIZE = 16;
+PIE_RADIUS = 10;
 
 // Debug
 playerHasControl = false;

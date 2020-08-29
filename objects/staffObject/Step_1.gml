@@ -1,7 +1,13 @@
 /// @desc Handle staff direction and firing
 
+if (primaryDelay > 0) {
+	primaryDelay--;
+}
+if (secondaryDelay > 0) {
+	secondaryDelay--;
+}
+
 if (playerObject.hasControl) {
-	
 	if (playerObject.isOnLadder) {
 		sprite_index = staffOnlySprite;
 		image_angle = ANGLE.HALF_CORNER;
@@ -26,11 +32,9 @@ if (playerObject.hasControl) {
 				image_angle = point_direction(0, 0, controllerH, controllerV);
 			}
 		}
-	
 
-		// Firing event
-		firingDelay--;
-		if (firingDelay < 0) {
+		// Primary action
+		if (primaryDelay <= 0) {
 			if (mouse_check_button(mb_left) or gamepad_button_check(0, gp_shoulderrb)) {
 				// Primary magic
 		
@@ -41,7 +45,8 @@ if (playerObject.hasControl) {
 				// Create a new projectile using staff angle
 				with (instance_create_layer(prjX, prjY, global.projLayer, projectile)) {
 					// Set firing cooldown
-					other.firingDelay = cooldown;
+					other.primaryDelay = cooldown;
+					other.primaryCooldown = cooldown;
 			
 					shooter = playerObject.id;
 					prjSpeed = DEFAULT_SPEED;
@@ -53,7 +58,12 @@ if (playerObject.hasControl) {
 					vspRatio = vsp / prjSpeed;
 					image_angle = direction;
 				}
-			} else if (secondary != noone and (mouse_check_button(mb_right) or gamepad_button_check(0, gp_face3))) {
+			}
+		}
+		
+		// Secondary action
+		if (secondaryDelay <= 0) {
+			 if (secondary != noone and (mouse_check_button(mb_right) or gamepad_button_check(0, gp_face3))) {
 				// Get secondary magic init position
 				var secX, secY;
 				with (playerObject) {
@@ -67,12 +77,13 @@ if (playerObject.hasControl) {
 					secY,
 					environmentObject,
 					false,
-					true)) 
+					true))
 				{
 					// Use secondary magic
 					with(instance_create_layer(secX, secY, getLayer(LAYER.ENTITIES), other.secondary)) {
 						// Set firing cooldown
-						other.firingDelay = cooldown;
+						other.secondaryDelay = cooldown;
+						other.secondaryCooldown = cooldown;
 					}
 				}
 			}

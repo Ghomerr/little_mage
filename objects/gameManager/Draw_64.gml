@@ -40,12 +40,16 @@ if (room != menuRoom and instance_exists(playerObject)) {
 	
 	#region current_magics
 	if (instance_exists(playerObject) and playerObject.hasWeapon) {
-		// Dram current magics
+		
+		// Draw current magics
 		with (playerObject) {
 			var primaryMagicFrameGuiConfig = other.PRIMARY_MAGIC_FRAME_GUI_CONF[currentHat];
 			if (primaryMagicFrameGuiConfig[MAGIC_FRAME_GUI_CONF.SPRITE] != noone) {
+				var isPrimaryFiring = staffObject.primaryDelay > 0;
 				// draw magic background
-				draw_sprite_ext(frameSprite, 1, other.primaryFramePosX, other.frameSpritePosY, 1, 1, 0, primaryMagicFrameGuiConfig[MAGIC_FRAME_GUI_CONF.BG_COLOR], 1);
+				draw_sprite_ext(frameSprite, 1, other.primaryFramePosX, other.frameSpritePosY, 1, 1, 0, 
+					isPrimaryFiring ? c_ltgray : primaryMagicFrameGuiConfig[MAGIC_FRAME_GUI_CONF.BG_COLOR], 
+					1);
 				// draw primary magic
 				draw_sprite_ext(
 					primaryMagicFrameGuiConfig[MAGIC_FRAME_GUI_CONF.SPRITE],
@@ -54,13 +58,20 @@ if (room != menuRoom and instance_exists(playerObject)) {
 					other.frameCenterPosY + primaryMagicFrameGuiConfig[MAGIC_FRAME_GUI_CONF.OFFSET_Y],
 					primaryMagicFrameGuiConfig[MAGIC_FRAME_GUI_CONF.SCALE_X],
 					primaryMagicFrameGuiConfig[MAGIC_FRAME_GUI_CONF.SCALE_Y],
-					0, c_white, 1
+					0, c_white, (isPrimaryFiring ? 0.5 : 1)
 				);
+				// Draw cooldown display
+				if (isPrimaryFiring) {
+					drawPie(other.primaryFrameCenterPosX, other.frameCenterPosY, staffObject.primaryDelay, staffObject.primaryCooldown, c_red, other.PIE_RADIUS, 0.8);
+				}
 			}
 			var secondaryMagicFrameGuiConfig = other.SECONDRARY_MAGIC_FRAME_GUI_CONF[currentHat];
 			if (secondaryMagicFrameGuiConfig[MAGIC_FRAME_GUI_CONF.SPRITE] != noone) {
+				var isSecondaryFiring = staffObject.secondaryDelay > 0;
 				// draw magic background
-				draw_sprite_ext(frameSprite, 1, other.secondayFramePosX, other.frameSpritePosY, 1, 1, 0, secondaryMagicFrameGuiConfig[MAGIC_FRAME_GUI_CONF.BG_COLOR], 1);
+				draw_sprite_ext(frameSprite, 1, other.secondayFramePosX, other.frameSpritePosY, 1, 1, 0, 
+					isSecondaryFiring ? c_ltgray : secondaryMagicFrameGuiConfig[MAGIC_FRAME_GUI_CONF.BG_COLOR], 
+					1);
 				// draw secondary magic
 				draw_sprite_ext(
 					secondaryMagicFrameGuiConfig[MAGIC_FRAME_GUI_CONF.SPRITE],
@@ -69,8 +80,12 @@ if (room != menuRoom and instance_exists(playerObject)) {
 					other.frameCenterPosY + secondaryMagicFrameGuiConfig[MAGIC_FRAME_GUI_CONF.OFFSET_Y],
 					secondaryMagicFrameGuiConfig[MAGIC_FRAME_GUI_CONF.SCALE_X],
 					secondaryMagicFrameGuiConfig[MAGIC_FRAME_GUI_CONF.SCALE_Y],
-					0, c_white, 1
+					0, c_white, (isSecondaryFiring ? 0.5 : 1)
 				);
+				// Draw cooldown display
+				if (isSecondaryFiring) {
+					drawPie(other.secondaryFrameCenterPosX, other.frameCenterPosY, staffObject.secondaryDelay, staffObject.secondaryCooldown, c_red, other.PIE_RADIUS, 0.8);
+				}
 			}
 		}
 	#endregion

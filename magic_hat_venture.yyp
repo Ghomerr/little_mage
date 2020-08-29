@@ -59,6 +59,7 @@
     {"id":{"name":"caveEnvSprite","path":"sprites/caveEnvSprite/caveEnvSprite.yy",},"order":0,},
     {"id":{"name":"natureEnvSprite","path":"sprites/natureEnvSprite/natureEnvSprite.yy",},"order":1,},
     {"id":{"name":"treesTilesetSprite","path":"sprites/treesTilesetSprite/treesTilesetSprite.yy",},"order":2,},
+    {"id":{"name":"drawPie","path":"scripts/drawPie/drawPie.yy",},"order":8,},
     {"id":{"name":"forestTilesetSprite","path":"sprites/forestTilesetSprite/forestTilesetSprite.yy",},"order":3,},
     {"id":{"name":"buffshroomSprite","path":"sprites/buffshroomSprite/buffshroomSprite.yy",},"order":0,},
     {"id":{"name":"buffshroomRunningSprite","path":"sprites/buffshroomRunningSprite/buffshroomRunningSprite.yy",},"order":1,},

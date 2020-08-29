@@ -5,7 +5,10 @@ STAFF_LENGTH = 11;
 STAFF_DISPERSION = 3;
 
 // Staff variables
-firingDelay = 0;
+primaryDelay = 0;
+primaryCooldown = 0;
+secondaryDelay = 0;
+secondaryCooldown = 0;
 isAimingRight = true;
 projectile = noone;
 secondary = noone;

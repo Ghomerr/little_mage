@@ -3,6 +3,7 @@
 if (totalHeight == 0) {
 	// If the ladder is in the air, destroy it
 	if (!collision_point(x, y + gameManager.TILE_SIZE, wallObject, false, true)) {
+		with(staffObject) secondaryDelay = 0;
 		instance_destroy();
 		return;
 	}
