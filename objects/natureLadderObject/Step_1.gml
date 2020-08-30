@@ -25,6 +25,7 @@ if (totalHeight == 0) {
 	
 	// Manage other ladders
 	with(staffObject) {
+		var natureLadders = secondaryMagicHandlers[HATS.NATURE];
 		if (instance_exists(natureLadders.list[natureLadders.cursor])) {
 			// If there is already a ladder at this index, destroy the ladder
 			instance_destroy(natureLadders.list[natureLadders.cursor]);
@@ -34,6 +35,11 @@ if (totalHeight == 0) {
 		if (natureLadders.cursor >= natureLadders.maxi) {
 			// Handle array index out of bound
 			natureLadders.cursor = 0;
+		}
+		// Handle ladder counter
+		if (natureLadders.count < natureLadders.maxi) {
+			natureLadders.count++;
+			natureLadders.barHeight = (natureLadders.count / natureLadders.maxi) * gameManager.secondaryEnergyBarRectHeight;
 		}
 	}
 }

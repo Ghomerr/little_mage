@@ -259,6 +259,7 @@
     {"id":{"name":"stonePillarBurstObject","path":"objects/stonePillarBurstObject/stonePillarBurstObject.yy",},"order":13,},
     {"id":{"name":"electricalProjectileObject","path":"objects/electricalProjectileObject/electricalProjectileObject.yy",},"order":14,},
     {"id":{"name":"electricalBurstObject","path":"objects/electricalBurstObject/electricalBurstObject.yy",},"order":15,},
+    {"id":{"name":"energyBarSprite","path":"sprites/energyBarSprite/energyBarSprite.yy",},"order":7,},
     {"id":{"name":"getFirstWallAbove","path":"scripts/getFirstWallAbove/getFirstWallAbove.yy",},"order":7,},
     {"id":{"name":"windProjectileObject","path":"objects/windProjectileObject/windProjectileObject.yy",},"order":16,},
     {"id":{"name":"windTornadoObject","path":"objects/windTornadoObject/windTornadoObject.yy",},"order":17,},

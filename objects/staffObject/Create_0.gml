@@ -39,10 +39,62 @@ SECONDARY_MAGICS = [
 ];
 
 // Nature ladders handler
-natureLadders = {
-	maxi: 3,
-	list: [noone, noone, noone],
-	cursor: 0
-}
+secondaryMagicHandlers = [
+	{// NATURE
+		maxi: 3,
+		list: [noone, noone, noone],
+		cursor: 0,
+		count: 0,
+		barHeight: 0
+	},
+	{// ICE
+		maxi: 2,
+		list: [noone, noone],
+		cursor: 0,
+		count: 0
+	},
+	{// STONE
+		maxi: 0,
+		list: [],
+		cursor: 0,
+		count: 0
+	},
+	{// FIRE
+		maxi: 0,
+		list: [],
+		cursor: 0,
+		count: 0
+	},
+	{// DEATH
+		maxi: 0,
+		list: [],
+		cursor: 0,
+		count: 0
+	},
+	{// ELECTRIC
+		maxi: 0,
+		list: [],
+		cursor: 0,
+		count: 0
+	},
+	{// WIND
+		maxi: 0,
+		list: [],
+		cursor: 0,
+		count: 0
+	},
+	{// GRAVITY
+		maxi: 0,
+		list: [],
+		cursor: 0,
+		count: 0
+	},
+	{// NONE
+		maxi: 0,
+		list: [],
+		cursor: 0,
+		count: 0
+	}
+];
 
 changeStaffMagic();

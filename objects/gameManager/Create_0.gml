@@ -66,8 +66,11 @@ frameSpritePosY = RES_H - frameSpriteOffsetY;
 primaryFrameCenterPosX = primaryFramePosX + frameSpriteWidth / 2;
 secondaryFrameCenterPosX = secondayFramePosX + frameSpriteWidth / 2;
 frameCenterPosY = frameSpritePosY - sprite_get_height(frameSprite) / 2;
-
-
+secondaryEnergyBarPosX = secondayFramePosX + frameSpriteWidth;
+secondaryEnergyBarRectX1 = secondaryEnergyBarPosX + 13;
+secondaryEnergyBarRectY1 = frameSpritePosY - 2;
+secondaryEnergyBarRectX2 = secondaryEnergyBarRectX1 + 6;
+secondaryEnergyBarRectHeight = 28;
 
 // Magic Frame GUI Config : 
 PRIMARY_MAGIC_FRAME_GUI_CONF = getPrimaryMagicFrameGuiConfig();
