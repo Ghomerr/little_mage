@@ -14,8 +14,10 @@ global.frozenFactor = 0.3;
 
 // Resolution const
 #macro RES_W 1024
-#macro RES_H 768
+#macro RES_H 576
 middleScreen = RES_W / 2;
+#macro CAM_H 384
+#macro CAM_W 216
 
 // Force GUI size
 display_set_gui_size(RES_W, RES_H);
