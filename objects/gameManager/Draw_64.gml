@@ -89,14 +89,11 @@ if (room != menuRoom and instance_exists(playerObject)) {
 				// Energy bar
 				var magicHandler = staffObject.secondaryMagicHandlers[currentHat];
 				if (magicHandler.maxi > 0) {
-					// DEBUG
-					//drawSetText(c_red, signPostFont, fa_center, fa_center);
-					//draw_text(other.secondaryFrameCenterPosX + 32, other.frameCenterPosY, string(magicHandler.count));
-					
+					// DEBUG	
 					draw_set_color(secondaryMagicFrameGuiConfig[MAGIC_FRAME_GUI_CONF.BG_COLOR]);
 					draw_set_alpha(1);
-					draw_rectangle(other.secondaryEnergyBarRectX1, other.secondaryEnergyBarRectY1, other.secondaryEnergyBarRectX2, other.secondaryEnergyBarRectY1 - magicHandler.barHeight, false);
-					draw_sprite_ext(energyBarSprite, 0, other.secondaryEnergyBarPosX, other.frameSpritePosY, 1, 1, 0, c_white, 1);
+					draw_rectangle(other.secondaryEnergyBarRectX1, other.secondaryEnergyBarRectY1, other.secondaryEnergyBarRectX1 + magicHandler.barHeight, other.secondaryEnergyBarRectY2, false);
+					draw_sprite_ext(energyBarSprite, 0, other.secondaryEnergyBarPosX, other.secondaryEnergyBarPosY, 1, 1, 0, c_white, 1);
 				}
 			}
 		}

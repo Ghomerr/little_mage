@@ -16,8 +16,6 @@ global.frozenFactor = 0.3;
 #macro RES_W 1024
 #macro RES_H 576
 middleScreen = RES_W / 2;
-#macro CAM_H 384
-#macro CAM_W 216
 
 // Force GUI size
 display_set_gui_size(RES_W, RES_H);
@@ -60,19 +58,24 @@ heartSpriteX = middleScreen - (playerObject.initHp * heartSpriteWidth + (playerO
 
 // Magic frame
 frameSpriteOffsetX = 5;
-frameSpriteOffsetY = 12;
+frameSpriteOffsetY = 5;
 frameSpriteWidth = sprite_get_width(frameSprite);
+frameSpriteHeight = sprite_get_height(frameSprite);
+
 primaryFramePosX = middleScreen - frameSpriteWidth - frameSpriteOffsetX;
 secondayFramePosX = middleScreen + frameSpriteOffsetX;
 frameSpritePosY = RES_H - frameSpriteOffsetY;
 primaryFrameCenterPosX = primaryFramePosX + frameSpriteWidth / 2;
 secondaryFrameCenterPosX = secondayFramePosX + frameSpriteWidth / 2;
-frameCenterPosY = frameSpritePosY - sprite_get_height(frameSprite) / 2;
-secondaryEnergyBarPosX = secondayFramePosX + frameSpriteWidth;
-secondaryEnergyBarRectX1 = secondaryEnergyBarPosX + 13;
-secondaryEnergyBarRectY1 = frameSpritePosY - 2;
-secondaryEnergyBarRectX2 = secondaryEnergyBarRectX1 + 6;
-secondaryEnergyBarRectHeight = 28;
+frameCenterPosY = frameSpritePosY - frameSpriteWidth / 2;
+
+secondaryEnergyBarPosX = secondayFramePosX;
+secondaryEnergyBarPosY = frameSpritePosY - frameSpriteHeight;
+secondaryEnergyBarCenterY = secondaryEnergyBarPosY - (frameSpriteWidth / 2);
+secondaryEnergyBarRectX1 = secondaryEnergyBarPosX + 3;
+secondaryEnergyBarRectY1 = secondaryEnergyBarCenterY + 6;
+secondaryEnergyBarRectY2 = secondaryEnergyBarCenterY - 6;
+secondaryEnergyBarRectHeight = 24;
 
 // Magic Frame GUI Config : 
 PRIMARY_MAGIC_FRAME_GUI_CONF = getPrimaryMagicFrameGuiConfig();
