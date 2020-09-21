@@ -5,6 +5,7 @@ DYING_JUMP = 3;
 
 //isBeingHit = false;
 isAttacking = false;
+isTargetInRange = false;
 idleRestart = true;
 keyDown = false;
 keyLeft = false;

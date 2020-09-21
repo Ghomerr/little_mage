@@ -1,2 +1,2 @@
 /// @description Hit by monster
-monsterHitsPlayer();
+//monsterHitsPlayer();

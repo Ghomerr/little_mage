@@ -189,6 +189,7 @@
     {"id":{"name":"screenShake","path":"scripts/screenShake/screenShake.yy",},"order":0,},
     {"id":{"name":"handleBackgroundsParallax","path":"scripts/handleBackgroundsParallax/handleBackgroundsParallax.yy",},"order":1,},
     {"id":{"name":"initSimpleParallax","path":"scripts/initSimpleParallax/initSimpleParallax.yy",},"order":2,},
+    {"id":{"name":"isInLineOfSight","path":"scripts/isInLineOfSight/isInLineOfSight.yy",},"order":13,},
     {"id":{"name":"autoSaveGame","path":"scripts/autoSaveGame/autoSaveGame.yy",},"order":0,},
     {"id":{"name":"loadGameSave","path":"scripts/loadGameSave/loadGameSave.yy",},"order":1,},
     {"id":{"name":"drawSetText","path":"scripts/drawSetText/drawSetText.yy",},"order":0,},

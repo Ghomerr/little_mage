@@ -47,7 +47,9 @@ if (!isDying) {
 		if (shootCounter > 0) {
 			shootCounter -= getDefaultSpeed();
 		} else if (instance_exists(playerObject) and !playerObject.isDying and playerObject.invulCounter <= 0) {
-			if (point_distance(x, y, playerObject.x, playerObject.y) < shootingRange) {
+			// Check if target is in range
+			event_user(0); // -> isTargetInRange is computed by the current monster			
+			if (isTargetInRange) {
 				// Turn monster face to the player
 				var newScale = sign(playerObject.x - x);
 				if (newScale != 0) {
@@ -59,7 +61,7 @@ if (!isDying) {
 				shootCounter = shootingRate;
 				var wallInstance = collision_line(x, y, playerObject.x, playerObject.y, wallObject, false, true);
 				// Attack if no wall or it's a platform
-				if (!wallInstance or wallInstance.isPlatform) {
+				if (wallInstance == noone or wallInstance.isPlatform) {
 					isAttacking = true;
 				} else {
 					isAttacking = false;

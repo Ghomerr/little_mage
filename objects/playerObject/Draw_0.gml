@@ -50,6 +50,8 @@ if (isVisible) {
 	
 	// Handle the hats selection wheel drawing
 	if (!isDying and showHatsWheel) {
+		draw_set_alpha(1);
+		
 		// Draw the wheel
 		draw_sprite(hatsWheelSprite, 0, x, y);
 		
