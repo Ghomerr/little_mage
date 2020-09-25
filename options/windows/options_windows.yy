@@ -1,7 +1,7 @@
 {
   "option_windows_display_name": "Magic Hat'venture",
   "option_windows_executable_name": "MagicHatventure",
-  "option_windows_version": "0.2020.8.29",
+  "option_windows_version": "0.2020.9.26",
   "option_windows_company_info": "Ghomerr Games",
   "option_windows_product_info": "Made in GameMaker Studio 2",
   "option_windows_copyright_info": "(c) 2019-2020 Ghomerr Games",
