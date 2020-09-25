@@ -294,6 +294,7 @@
     {"id":{"name":"pm","path":"objects/pm/pm.yy",},"order":3,},
     {"id":{"name":"dustParticleSystem","path":"objects/dustParticleSystem/dustParticleSystem.yy",},"order":4,},
     {"id":{"name":"signPostObject","path":"objects/signPostObject/signPostObject.yy",},"order":0,},
+    {"id":{"name":"canBeHit","path":"scripts/canBeHit/canBeHit.yy",},"order":9,},
     {"id":{"name":"crate1Object","path":"objects/crate1Object/crate1Object.yy",},"order":1,},
     {"id":{"name":"signPostTextObject","path":"objects/signPostTextObject/signPostTextObject.yy",},"order":2,},
     {"id":{"name":"signPostLeftObject","path":"objects/signPostLeftObject/signPostLeftObject.yy",},"order":3,},

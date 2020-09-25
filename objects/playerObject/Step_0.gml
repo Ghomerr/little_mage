@@ -24,7 +24,7 @@ if (isVisible) {
 		if (hasControl) {
 			keyLeft = keyboard_check(ord("Q")) or keyboard_check(ord("A"));
 			keyRight = keyboard_check(ord("D"));
-			keyJump = keyboard_check_pressed(vk_space);
+			keyJump = keyboard_check(vk_space);
 			keyUp = keyboard_check(ord("Z")) or keyboard_check(ord("W"));
 			keyDown = keyboard_check(ord("S"));
 			hAxis = gamepad_axis_value(0, gp_axislh);
@@ -43,7 +43,7 @@ if (isVisible) {
 				controller = true;
 			}
 			// Gamepage buttons check
-			if (gamepad_button_check_pressed(0, gp_face1)) {
+			if (gamepad_button_check(0, gp_face1)) {
 				controller = true;
 				keyJump = true;
 			}

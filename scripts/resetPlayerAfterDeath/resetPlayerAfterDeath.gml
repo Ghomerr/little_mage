@@ -11,6 +11,7 @@ function resetPlayerAfterDeath() {
 	hsp = 0;
 	vsp = 0;
 	move = 0;
+	keyJump = 0;
 	invulShaderTransparent = false;
 	showHatsWheel = false;
 }
