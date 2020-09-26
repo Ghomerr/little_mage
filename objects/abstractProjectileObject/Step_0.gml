@@ -29,7 +29,7 @@ if (isFalling or prjSpeed > 0) {
 		// Check colliding entity
 		var collidingInstance = handleCollisionWith(shootableObject, nextX, nextY);
 		if (collidingInstance != noone) {
-			event_user(0); // notify projectile of hitting an instance
+			event_user(EVENT.PROJECTILE_ENTITY_HIT); // notify projectile of hitting an instance
 			with(collidingInstance) {
 				if (!isDying) {
 					beHit(other.damage);
@@ -45,6 +45,6 @@ if (isFalling or prjSpeed > 0) {
 		x = nextX;
 		y = nextY;
 	} else {
-		event_user(2); // notify hitting a wall	
+		event_user(EVENT.PROJECTILE_WALL_HIT); // notify hitting a wall	
 	}
 }

@@ -16,4 +16,4 @@ hasCollidedLivingEntity = false;
 projectileDelay = 20;
 
 // Play sound
-event_user(1);
+event_user(EVENT.ON_CREATE_SOUND);

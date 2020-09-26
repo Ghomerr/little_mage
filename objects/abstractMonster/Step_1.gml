@@ -48,7 +48,7 @@ if (!isDying) {
 			shootCounter -= getDefaultSpeed();
 		} else if (instance_exists(playerObject) and !playerObject.isDying and playerObject.invulCounter <= 0) {
 			// Check if target is in range
-			event_user(0); // -> isTargetInRange is computed by the current monster			
+			event_user(EVENT.PLAYER_COLLISION); // -> isTargetInRange is computed by the current monster			
 			if (isTargetInRange) {
 				// Turn monster face to the player
 				var newScale = sign(playerObject.x - x);
