@@ -304,6 +304,7 @@
     {"id":{"name":"dustObject","path":"objects/dustObject/dustObject.yy",},"order":0,},
     {"id":{"name":"goldCoinObject","path":"objects/goldCoinObject/goldCoinObject.yy",},"order":1,},
     {"id":{"name":"appleObject","path":"objects/appleObject/appleObject.yy",},"order":2,},
+    {"id":{"name":"handleFallDamages","path":"scripts/handleFallDamages/handleFallDamages.yy",},"order":14,},
     {"id":{"name":"menuRoom","path":"rooms/menuRoom/menuRoom.yy",},"order":0,},
     {"id":{"name":"testRoom","path":"rooms/testRoom/testRoom.yy",},"order":1,},
     {"id":{"name":"nature1Room","path":"rooms/nature1Room/nature1Room.yy",},"order":2,},

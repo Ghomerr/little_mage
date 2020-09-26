@@ -62,7 +62,11 @@ if (!isDying) {
 	}
 	
 	updatePosition();
+	
+	handleFallDamages();
+	
 	handleAnimations();
+	
 	if (deathMarkCounter > 0) {
 		deathMarkCounter--;
 		emitDeathParticles(0, 0, spriteHalfWidth, 1, false, false);	

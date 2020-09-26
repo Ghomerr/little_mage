@@ -16,7 +16,7 @@ function beHit(dmgVal) {
 								deathHeartsCounter = 0;
 							}
 						}
-						hp--; // Player only takes damages one by one hp
+						hp -= round(dmgVal);
 					}
 				}
 				with(gameManager) heartSpriteScale = 2;

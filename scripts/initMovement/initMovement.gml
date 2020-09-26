@@ -4,7 +4,6 @@ function initMovement() {
 
 	if (!isBeingHit and !isOnLadder) {
 		hsp = realMove * getDefaultSpeed() * spd;
-		if (!isPlayer) show_debug_message("realMove=" + string(realMove));
 	} 
 	// Add gravity only if lesser than jump
 	if (!isOnLadder) {

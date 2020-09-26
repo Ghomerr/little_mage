@@ -4,6 +4,9 @@ SPREAD_ODD = 5
 MAX_BURNT = 180;
 
 initHp = hp;
+vsp = 0;
+hsp = 0;
+fallFirstY = 0;
 projectileCounter = 0;
 flash = 0;
 hitfrom = 0;

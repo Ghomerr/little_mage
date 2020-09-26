@@ -90,6 +90,7 @@ if (isVisible) {
 		var nextX = x + hsp;
 		var nextY = y + roundVsp(vsp);
 
+
 		var isHorizontallyColliding = handleHorizontalCollision(nextX);
 		if (isHorizontallyColliding) {
 			debugColor = c_blue;	
@@ -185,6 +186,8 @@ if (isVisible) {
 		if (!isGrounded and !isOnLadder and ignorePlatform and place_meeting(x, y, ladderObject)) {
 			climbLadder();
 		}
+		
+		handleFallDamages();
 
 		handleAnimations();
 
