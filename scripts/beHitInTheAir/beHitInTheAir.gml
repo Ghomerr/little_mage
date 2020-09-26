@@ -17,6 +17,6 @@ function beHitInTheAir() {
 	
 	hsp = lengthdir_x(xLen, knockBackDirection);
 	vsp = lengthdir_y(yLen, knockBackDirection);
-	move = (hsp != 0) ? sign(hsp) : 1;
+	move = (hsp != 0) ? sign(hsp) : getDefaultSpeed();
 	image_xscale *= -move;
 }

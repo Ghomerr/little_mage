@@ -3,7 +3,8 @@ function initMovement() {
 	var realMove = elecShockCounter > 0 ? 0 : move;
 
 	if (!isBeingHit and !isOnLadder) {
-		hsp = realMove * (frozenCounter > 0 ? spd * global.frozenFactor : spd);
+		hsp = realMove * getDefaultSpeed() * spd;
+		if (!isPlayer) show_debug_message("realMove=" + string(realMove));
 	} 
 	// Add gravity only if lesser than jump
 	if (!isOnLadder) {

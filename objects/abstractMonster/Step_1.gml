@@ -23,7 +23,7 @@ if (!isDying) {
 		direction = other.hitfrom;
 		hsp = lengthdir_x(DYING_JUMP, direction);
 		vsp = lengthdir_y(DYING_JUMP, direction) - DYING_JUMP;
-		move =  (hsp != 0) ? sign(hsp) : 1;
+		move =  (hsp != 0) ? sign(hsp) : getDefaultSpeed();
 		image_xscale *= hsp != 0 ? sign(hsp) : 1;
 		
 		// Leave projectile fall, if any
@@ -48,13 +48,13 @@ if (!isDying) {
 			shootCounter -= getDefaultSpeed();
 		} else if (instance_exists(playerObject) and !playerObject.isDying and playerObject.invulCounter <= 0) {
 			// Check if target is in range
-			event_user(EVENT.PLAYER_COLLISION); // -> isTargetInRange is computed by the current monster			
+			event_user(EVENT.TARGET_IN_RANGE); // -> isTargetInRange is computed by the current monster			
 			if (isTargetInRange) {
 				// Turn monster face to the player
 				var newScale = sign(playerObject.x - x);
 				if (newScale != 0) {
 					image_xscale = newScale * size;
-					move = move != 0 ? getDefaultSpeed() * newScale : 0;
+					move = move != 0 ? newScale : 0;
 				}
 			
 				// Handle shooting

@@ -46,7 +46,7 @@ if (!isDying) {
 		changeMonsterDirection();
 		nextX *= move;
 		with (otherMonster) {
-			changeMonsterDirection(-other.move);
+			changeMonsterDirection(-sign(other.move));
 			// Spread electrical shock
 			if (other.elecShockCounter > 0 and elecShockCounter <= 0) {
 				elecShockCounter = other.elecShockCounter;
