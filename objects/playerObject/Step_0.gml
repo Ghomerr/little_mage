@@ -75,7 +75,7 @@ if (isVisible) {
 		}
 				
 		// Handle ladder selection
-		if (isOnLadder and (keyJump or !place_meeting(x, y, ladderObject))) {
+		if (isOnLadder and (keyJump and vsp == 0 or !place_meeting(x, y, ladderObject))) {
 			isOnLadder = false;
 			ignorePlatform = false;
 			if (move != 0) {
