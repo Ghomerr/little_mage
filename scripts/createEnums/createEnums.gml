@@ -113,3 +113,10 @@ enum EVENT {
 	ON_CREATE_SOUND = 1,
 	PROJECTILE_WALL_HIT = 2
 }
+
+// BG Config
+enum BG_CFG {
+	NAMES,
+	SPEEDS,
+	OFFSET_Y
+}

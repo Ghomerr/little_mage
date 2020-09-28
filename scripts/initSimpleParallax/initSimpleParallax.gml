@@ -4,14 +4,18 @@
 function initSimpleParallax() {
 
 	// Default values
+	var bgSpeeds = [0.2, 0.1, 0.05];
 	var bgNames = ["Close","Mid","Far"];
-	var bgSpeeds = [0.6, 0.3, 0.1];
+	var bgOffsetY = 230;
 
-	if (argument_count > 0) {
-		bgSpeeds = argument[0];
+	if (argument_count > BG_CFG.NAMES and argument[BG_CFG.NAMES] != noone) {
+		bgSpeeds = argument[BG_CFG.NAMES];
 	}
-	if (argument_count > 1) {
-		bgNames = argument[1];
+	if (argument_count > BG_CFG.SPEEDS and argument[BG_CFG.SPEEDS] != noone) {
+		bgNames = argument[BG_CFG.SPEEDS];
+	}
+	if (argument_count > BG_CFG.OFFSET_Y and argument[BG_CFG.OFFSET_Y] != noone) {
+		bgOffsetY = argument[BG_CFG.OFFSET_Y];
 	}
 
 	with(instance_create_layer(0, 0, "Cameras", backgroundManager)) {
@@ -25,5 +29,7 @@ function initSimpleParallax() {
 		for (var i = 0 ; i < array_length(bgSpeeds) ; i++) {
 			backgroundsSpeeds[i] = bgSpeeds[i];
 		}
+		
+		backgroundOffsetY = bgOffsetY;
 	}
 }

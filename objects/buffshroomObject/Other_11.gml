@@ -10,5 +10,8 @@ with (playerObject) {
 		
 		// Shrink monster
 		other.image_yscale = other.initScaleY * other.shrinkFactor;
+		
+		audio_sound_pitch(jumpSound, choose(0.9, 1.0, 1.1));
+		audio_play_sound(jumpSound, 2, false);
 	}
 }
