@@ -44,7 +44,8 @@ function displayHatChangeEffect() {
 				false,
 				spriteHalfWidth, spriteHalfHeight,
 				x, y,
-				irandom_range(10, 20)
+				irandom_range(10, 20),
+				c_white
 			);
 			break;
 		

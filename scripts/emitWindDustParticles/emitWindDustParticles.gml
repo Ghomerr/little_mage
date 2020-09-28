@@ -7,7 +7,8 @@
 /// @arg partX			
 /// @arg partY			
 /// @arg number			
-function emitWindDustParticles(minDir, maxDir, useGrav, xRange, yRange, partX, partY, number) {
+/// @arg color
+function emitWindDustParticles(minDir, maxDir, useGrav, xRange, yRange, partX, partY, number, color) {
 	part_type_direction(pm.windDust, minDir, maxDir, 0, 0);
 
 	if (useGrav)  {
@@ -16,6 +17,8 @@ function emitWindDustParticles(minDir, maxDir, useGrav, xRange, yRange, partX, p
 	} else {
 		part_type_gravity(pm.windDust, 0, 0);
 	}
+	
+	part_type_color1(pm.windDust, color);
 
 	repeat(number) {
 		part_particles_create(

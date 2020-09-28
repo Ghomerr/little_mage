@@ -10,6 +10,7 @@ if (irandom_range(1, 5) == 1) {
 		false,
 		2, 2,
 		x, y,
-		1
+		1,
+		c_white
 	);
 }

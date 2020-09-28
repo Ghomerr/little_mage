@@ -44,7 +44,8 @@ if (life > 0) {
 			isGrounded,
 			2, 1,
 			x, bbox_bottom, 
-			1
+			1,
+			c_white
 		);
 	}
 	

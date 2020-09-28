@@ -10,7 +10,10 @@
     "path": "sprites/buffshroomSprite/buffshroomSprite.yy",
   },
   "persistent": false,
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "abstractDeadMonsterObject",
+    "path": "objects/abstractDeadMonsterObject/abstractDeadMonsterObject.yy",
+  },
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
@@ -25,7 +28,9 @@
   "physicsShapePoints": [],
   "eventList": [],
   "properties": [],
-  "overriddenProperties": [],
+  "overriddenProperties": [
+    {"propertyId":{"name":"partColor","path":"objects/abstractDeadMonsterObject/abstractDeadMonsterObject.yy",},"objectId":{"name":"abstractDeadMonsterObject","path":"objects/abstractDeadMonsterObject/abstractDeadMonsterObject.yy",},"value":"$FF162DC6","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+  ],
   "parent": {
     "name": "Buffshroom",
     "path": "folders/Objects/Monsters/Buffshroom.yy",

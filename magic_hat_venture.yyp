@@ -179,6 +179,7 @@
     {"id":{"name":"emitGravityParticles","path":"scripts/emitGravityParticles/emitGravityParticles.yy",},"order":11,},
     {"id":{"name":"handleCollisionWith","path":"scripts/handleCollisionWith/handleCollisionWith.yy",},"order":0,},
     {"id":{"name":"getCollidingAngle","path":"scripts/getCollidingAngle/getCollidingAngle.yy",},"order":1,},
+    {"id":{"name":"abstractDeadMonsterObject","path":"objects/abstractDeadMonsterObject/abstractDeadMonsterObject.yy",},"order":3,},
     {"id":{"name":"createStonePillar","path":"scripts/createStonePillar/createStonePillar.yy",},"order":2,},
     {"id":{"name":"initPlantPosition","path":"scripts/initPlantPosition/initPlantPosition.yy",},"order":3,},
     {"id":{"name":"initWindProjectilePosition","path":"scripts/initWindProjectilePosition/initWindProjectilePosition.yy",},"order":4,},
