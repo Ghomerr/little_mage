@@ -1,25 +1,9 @@
 {
-  "spriteId": {
-    "name": "natureEnvSprite",
-    "path": "sprites/natureEnvSprite/natureEnvSprite.yy",
-  },
-  "tileWidth": 16,
-  "tileHeight": 16,
-  "tilexoff": 0,
-  "tileyoff": 0,
-  "tilehsep": 0,
-  "tilevsep": 0,
-  "spriteNoExport": true,
-  "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
-  },
-  "out_tilehborder": 2,
-  "out_tilevborder": 2,
-  "out_columns": 9,
-  "tile_count": 84,
+  "resourceType": "GMTileSet",
+  "resourceVersion": "1.0",
+  "name": "natureEnvTileset",
   "autoTileSets": [
-    {"tiles":[
+    {"resourceType":"GMAutoTileSet","resourceVersion":"1.0","name":"grassAutotile","closed_edge":true,"tiles":[
         15,
         0,
         0,
@@ -36,15 +20,30 @@
         9,
         7,
         0,
-      ],"closed_edge":true,"resourceVersion":"1.0","name":"grassAutotile","tags":[],"resourceType":"GMAutoTileSet",},
+      ],},
   ],
-  "tileAnimationFrames": [
-    {"frames":[
-        47,
-        75,
-      ],"resourceVersion":"1.0","name":"water","tags":[],"resourceType":"GMTileAnimation",},
-  ],
-  "tileAnimationSpeed": 2.0,
+  "macroPageTiles": {
+    "SerialiseHeight": 0,
+    "SerialiseWidth": 0,
+    "TileSerialiseData": [],
+  },
+  "out_columns": 9,
+  "out_tilehborder": 2,
+  "out_tilevborder": 2,
+  "parent": {
+    "name": "Tile Sets",
+    "path": "folders/Tile Sets.yy",
+  },
+  "spriteId": {
+    "name": "natureEnvSprite",
+    "path": "sprites/natureEnvSprite/natureEnvSprite.yy",
+  },
+  "spriteNoExport": true,
+  "textureGroupId": {
+    "name": "Default",
+    "path": "texturegroups/Default",
+  },
+  "tile_count": 84,
   "tileAnimation": {
     "FrameData": [
       0,
@@ -218,17 +217,17 @@
     ],
     "SerialiseFrameCount": 2,
   },
-  "macroPageTiles": {
-    "SerialiseWidth": 0,
-    "SerialiseHeight": 0,
-    "TileSerialiseData": [],
-  },
-  "parent": {
-    "name": "Tile Sets",
-    "path": "folders/Tile Sets.yy",
-  },
-  "resourceVersion": "1.0",
-  "name": "natureEnvTileset",
-  "tags": [],
-  "resourceType": "GMTileSet",
+  "tileAnimationFrames": [
+    {"resourceType":"GMTileAnimation","resourceVersion":"1.0","name":"water","frames":[
+        47,
+        75,
+      ],},
+  ],
+  "tileAnimationSpeed": 2.0,
+  "tileHeight": 16,
+  "tilehsep": 0,
+  "tilevsep": 0,
+  "tileWidth": 16,
+  "tilexoff": 0,
+  "tileyoff": 0,
 }

@@ -1,12 +1,11 @@
 {
-  "isDnD": false,
+  "resourceType": "GMScript",
+  "resourceVersion": "1.0",
+  "name": "climbLadder",
   "isCompatibility": false,
+  "isDnD": false,
   "parent": {
     "name": "Player",
     "path": "folders/Scripts/Entities/Player.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "climbLadder",
-  "tags": [],
-  "resourceType": "GMScript",
 }
